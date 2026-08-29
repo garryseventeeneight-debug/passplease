@@ -5,6 +5,7 @@ import { masteryLevelFor } from "@/lib/mastery";
 export interface AttemptFeedback {
   correct: boolean;
   explanation: string | null;
+  subjectName: string;
   topicName: string;
   source: string;
   answerVerified: boolean;
@@ -45,7 +46,9 @@ export function AnswerFeedback({
       )}
 
       <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-1 text-xs text-neutral-500 dark:text-neutral-400">
-        <span>Topic: {feedback.topicName}</span>
+        <span>
+          Topic: {feedback.subjectName} · {feedback.topicName}
+        </span>
         <span>Source: {feedback.source}</span>
         <span>
           Topic mastery: {level.emoji} {level.label} ({feedback.updatedMasteryScore.toFixed(0)}%)

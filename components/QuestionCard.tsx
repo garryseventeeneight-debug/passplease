@@ -10,6 +10,7 @@ export interface QuestionOption {
 export interface PracticeQuestion {
   id: string;
   questionText: string;
+  subjectName: string;
   topicName: string;
   difficulty: number;
   source: string;
@@ -36,7 +37,9 @@ export function QuestionCard({
   return (
     <div className="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
       <div className="mb-4 flex items-center justify-between text-xs text-neutral-500 dark:text-neutral-400">
-        <span>{question.topicName}</span>
+        <span>
+          {question.subjectName} · {question.topicName}
+        </span>
         <span className="flex gap-2">
           {question.isAiGenerated && (
             <span className="rounded bg-purple-100 px-2 py-0.5 font-medium text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">

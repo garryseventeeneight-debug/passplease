@@ -77,6 +77,7 @@ export function PracticeSession({
     setFeedback({
       correct: data.correct,
       explanation: data.explanation,
+      subjectName: data.subjectName,
       topicName: data.topicName,
       source: data.source,
       answerVerified: data.answerVerified,

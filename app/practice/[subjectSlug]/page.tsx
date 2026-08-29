@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDb } from "@/lib/db";
+import { ASSORTED_SLUG } from "@/lib/constants";
 import { PracticeSession } from "@/components/PracticeSession";
 
 export default async function PracticePage({
@@ -9,9 +10,16 @@ export default async function PracticePage({
   params: Promise<{ subjectSlug: string }>;
 }) {
   const { subjectSlug } = await params;
-  const db = await getDb();
-  const subject = await db.subject.findUnique({ where: { slug: subjectSlug } });
-  if (!subject) notFound();
+
+  let title: string;
+  if (subjectSlug === ASSORTED_SLUG) {
+    title = "Assorted";
+  } else {
+    const db = await getDb();
+    const subject = await db.subject.findUnique({ where: { slug: subjectSlug } });
+    if (!subject) notFound();
+    title = subject.name;
+  }
 
   return (
     <main className="mx-auto max-w-2xl px-4 py-10">
@@ -19,9 +27,9 @@ export default async function PracticePage({
         ← Dashboard
       </Link>
       <h1 className="mt-2 mb-6 text-2xl font-semibold text-neutral-900 dark:text-neutral-100">
-        {subject.name} — Practice
+        {title} — Practice
       </h1>
-      <PracticeSession subjectSlug={subject.slug} subjectName={subject.name} />
+      <PracticeSession subjectSlug={subjectSlug} subjectName={title} />
     </main>
   );
 }

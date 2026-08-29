@@ -18,7 +18,11 @@ export async function POST(request: NextRequest) {
   const db = await getDb();
   const question = await db.question.findUnique({
     where: { id: questionId },
-    include: { options: true, topic: { select: { id: true, name: true } } },
+    include: {
+      options: true,
+      subject: { select: { name: true } },
+      topic: { select: { id: true, name: true } },
+    },
   });
   if (!question) {
     return NextResponse.json({ error: "unknown question" }, { status: 404 });
@@ -64,6 +68,7 @@ export async function POST(request: NextRequest) {
     correct,
     correctOptionId: correctOption?.id ?? null,
     explanation: question.explanation,
+    subjectName: question.subject.name,
     topicName: question.topic.name,
     source: question.source,
     answerVerified: question.answerVerified,

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getDb } from "@/lib/db";
-import { LOCAL_USER_ID } from "@/lib/constants";
+import { ASSORTED_SLUG, LOCAL_USER_ID } from "@/lib/constants";
 import { computeStreak } from "@/lib/streak";
 import { MasteryTable } from "@/components/MasteryTable";
 
@@ -61,6 +61,21 @@ export default async function DashboardPage() {
           {strongest.avg.toFixed(0)}% average mastery)
         </p>
       )}
+
+      <div className="mb-10 flex items-center justify-between rounded-lg border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900">
+        <div>
+          <h2 className="font-medium text-neutral-900 dark:text-neutral-100">Assorted Practice</h2>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">
+            Mixed questions across every subject, weighted toward your weakest topics overall.
+          </p>
+        </div>
+        <Link
+          href={`/practice/${ASSORTED_SLUG}`}
+          className="shrink-0 rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
+        >
+          Practice
+        </Link>
+      </div>
 
       <div className="flex flex-col gap-10">
         {subjects.map((subject) => {

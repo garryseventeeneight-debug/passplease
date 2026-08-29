@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDb } from "@/lib/db";
-import { LOCAL_USER_ID } from "@/lib/constants";
+import { ASSORTED_SLUG, LOCAL_USER_ID } from "@/lib/constants";
 import { pickNextQuestion } from "@/lib/selection";
 
 export async function GET(request: NextRequest) {
@@ -12,13 +12,19 @@ export async function GET(request: NextRequest) {
   }
 
   const db = await getDb();
-  const subject = await db.subject.findUnique({ where: { slug: subjectSlug } });
-  if (!subject) {
-    return NextResponse.json({ error: "unknown subject" }, { status: 404 });
+  const isAssorted = subjectSlug === ASSORTED_SLUG;
+
+  let subjectId: string | undefined;
+  if (!isAssorted) {
+    const subject = await db.subject.findUnique({ where: { slug: subjectSlug } });
+    if (!subject) {
+      return NextResponse.json({ error: "unknown subject" }, { status: 404 });
+    }
+    subjectId = subject.id;
   }
 
   const questions = await db.question.findMany({
-    where: { subjectId: subject.id, type: "MCQ", isTestFixture: false },
+    where: { ...(subjectId ? { subjectId } : {}), type: "MCQ", isTestFixture: false },
     select: { id: true, topicId: true },
   });
 
@@ -27,7 +33,7 @@ export async function GET(request: NextRequest) {
   }
 
   const attempts = await db.attempt.findMany({
-    where: { userId: LOCAL_USER_ID, question: { subjectId: subject.id } },
+    where: { userId: LOCAL_USER_ID, question: subjectId ? { subjectId } : {} },
     select: { correct: true, question: { select: { topicId: true } } },
   });
 
@@ -51,6 +57,7 @@ export async function GET(request: NextRequest) {
   const full = await db.question.findUnique({
     where: { id: picked.id },
     include: {
+      subject: { select: { name: true } },
       topic: { select: { name: true } },
       options: { select: { id: true, text: true, order: true } },
     },
@@ -60,6 +67,7 @@ export async function GET(request: NextRequest) {
     question: full && {
       id: full.id,
       questionText: full.questionText,
+      subjectName: full.subject.name,
       topicName: full.topic.name,
       difficulty: full.difficulty,
       source: full.source,
