@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { db } from "@/lib/db";
+import { getDb } from "@/lib/db";
 import { LOCAL_USER_ID } from "@/lib/constants";
 import { computeStreak } from "@/lib/streak";
 import { MasteryTable } from "@/components/MasteryTable";
@@ -9,6 +9,7 @@ import { MasteryTable } from "@/components/MasteryTable";
 export const dynamic = "force-dynamic";
 
 export default async function DashboardPage() {
+  const db = await getDb();
   const subjects = await db.subject.findMany({
     orderBy: { name: "asc" },
     include: {

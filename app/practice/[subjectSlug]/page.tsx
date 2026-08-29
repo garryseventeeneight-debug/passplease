@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { db } from "@/lib/db";
+import { getDb } from "@/lib/db";
 import { PracticeSession } from "@/components/PracticeSession";
 
 export default async function PracticePage({
@@ -9,6 +9,7 @@ export default async function PracticePage({
   params: Promise<{ subjectSlug: string }>;
 }) {
   const { subjectSlug } = await params;
+  const db = await getDb();
   const subject = await db.subject.findUnique({ where: { slug: subjectSlug } });
   if (!subject) notFound();
 

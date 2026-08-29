@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { db } from "@/lib/db";
+import { getDb } from "@/lib/db";
 import { LOCAL_USER_ID } from "@/lib/constants";
 import { pickNextQuestion } from "@/lib/selection";
 
@@ -11,6 +11,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "subject is required" }, { status: 400 });
   }
 
+  const db = await getDb();
   const subject = await db.subject.findUnique({ where: { slug: subjectSlug } });
   if (!subject) {
     return NextResponse.json({ error: "unknown subject" }, { status: 404 });

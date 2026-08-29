@@ -2,7 +2,9 @@ import "dotenv/config";
 import { PrismaClient } from "@prisma/client";
 import { createPrismaAdapter } from "../lib/prisma-adapter";
 
-const db = new PrismaClient({ adapter: createPrismaAdapter() });
+// tsx transpiles this file to CommonJS, which doesn't support top-level
+// await, so the client is created lazily just before main() runs instead.
+let db: PrismaClient;
 
 // Topic/subtopic titles are the publicly-published NESA HSC syllabus
 // structure (headings only) — not past-paper content, so no external
@@ -542,7 +544,11 @@ async function seedTestFixtures() {
   console.log(`Seeded ${fixtures.length} test-fixture questions.`);
 }
 
-main()
+createPrismaAdapter()
+  .then((adapter) => {
+    db = new PrismaClient({ adapter });
+    return main();
+  })
   .catch((e) => {
     console.error(e);
     process.exit(1);

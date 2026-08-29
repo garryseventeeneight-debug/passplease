@@ -4,7 +4,9 @@ import { join } from "node:path";
 import { PrismaClient } from "@prisma/client";
 import { createPrismaAdapter } from "../lib/prisma-adapter";
 
-const db = new PrismaClient({ adapter: createPrismaAdapter() });
+// tsx transpiles this file to CommonJS, which doesn't support top-level
+// await, so the client is created lazily just before main() runs instead.
+let db: PrismaClient;
 
 interface ExtractedOption {
   text: string;
@@ -137,7 +139,11 @@ async function main() {
   console.log(`  skipped (diagram-based, never extracted): ${skippedDiagramTotal}`);
 }
 
-main()
+createPrismaAdapter()
+  .then((adapter) => {
+    db = new PrismaClient({ adapter });
+    return main();
+  })
   .catch((e) => {
     console.error(e);
     process.exit(1);

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { db } from "@/lib/db";
+import { getDb } from "@/lib/db";
 import { LOCAL_USER_ID } from "@/lib/constants";
 import { computeMcqScore } from "@/lib/mastery";
 
@@ -15,6 +15,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "questionId and selectedOptionId are required" }, { status: 400 });
   }
 
+  const db = await getDb();
   const question = await db.question.findUnique({
     where: { id: questionId },
     include: { options: true, topic: { select: { id: true, name: true } } },
