@@ -67,6 +67,11 @@ model Question {
   syllabusOutcome  String?
   isAiGenerated    Boolean        @default(false)
   isTestFixture    Boolean        @default(false)
+  // false when the correct-option flags came from AI reasoning rather than
+  // an official answer key in the source document (question text is still
+  // real past-paper content either way — see lib/prisma-adapter.ts sibling
+  // note in import-questions.ts for the distinction from isAiGenerated).
+  answerVerified   Boolean        @default(true)
   options          AnswerOption[]
   attempts         Attempt[]
   createdAt        DateTime       @default(now())

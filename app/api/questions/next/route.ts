@@ -64,6 +64,7 @@ export async function GET(request: NextRequest) {
       difficulty: full.difficulty,
       source: full.source,
       isAiGenerated: full.isAiGenerated,
+      answerVerified: full.answerVerified,
       options: full.options
         .map((o) => ({ id: o.id, text: o.text }))
         .sort(() => Math.random() - 0.5),

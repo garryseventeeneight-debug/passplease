@@ -66,6 +66,7 @@ export async function POST(request: NextRequest) {
     explanation: question.explanation,
     topicName: question.topic.name,
     source: question.source,
+    answerVerified: question.answerVerified,
     updatedMasteryScore: mcqScore,
   });
 }

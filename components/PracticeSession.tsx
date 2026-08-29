@@ -79,6 +79,7 @@ export function PracticeSession({
       explanation: data.explanation,
       topicName: data.topicName,
       source: data.source,
+      answerVerified: data.answerVerified,
       updatedMasteryScore: data.updatedMasteryScore,
     });
   }

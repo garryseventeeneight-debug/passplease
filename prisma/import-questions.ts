@@ -13,10 +13,17 @@ interface ExtractedOption {
   isCorrect: boolean;
 }
 
+type AnswerSource = "official_key" | "ai_solved" | "unknown";
+
 interface ExtractedQuestion {
   questionText: string;
   options: ExtractedOption[];
-  correctAnswerUnknown: boolean;
+  // "official_key": isCorrect came from an answer key/marking guide in the
+  // source document. "ai_solved": no key existed, so the correct option was
+  // determined by AI subject-matter reasoning instead — imported with
+  // answerVerified=false so the UI can flag it as unverified. "unknown":
+  // neither a key nor a confident AI answer exists — never imported.
+  answerSource: AnswerSource;
   explanation: string | null;
   topicName: string;
   subtopicName: string | null;
@@ -62,6 +69,7 @@ async function main() {
   }
 
   let imported = 0;
+  let importedAiSolved = 0;
   let skippedUnknownAnswer = 0;
   let skippedInvalid = 0;
   let skippedUnmatchedTopic = 0;
@@ -74,7 +82,7 @@ async function main() {
     skippedDiagramTotal += paper.skippedDiagramQuestions ?? 0;
 
     for (const q of paper.questions) {
-      if (q.correctAnswerUnknown) {
+      if (q.answerSource !== "official_key" && q.answerSource !== "ai_solved") {
         skippedUnknownAnswer += 1;
         continue;
       }
@@ -117,6 +125,7 @@ async function main() {
           sourcePaper: paper.sourcePaper,
           isAiGenerated: false,
           isTestFixture: false,
+          answerVerified: q.answerSource === "official_key",
           options: {
             create: q.options.map((o, i) => ({
               text: o.text,
@@ -127,11 +136,12 @@ async function main() {
         },
       });
       imported += 1;
+      if (q.answerSource === "ai_solved") importedAiSolved += 1;
     }
   }
 
   console.log(`\nImport complete for "${subjectSlug}" from ${files.length} file(s):`);
-  console.log(`  imported:                 ${imported}`);
+  console.log(`  imported:                 ${imported} (of which AI-solved: ${importedAiSolved})`);
   console.log(`  skipped (unknown answer): ${skippedUnknownAnswer}`);
   console.log(`  skipped (invalid shape):  ${skippedInvalid}`);
   console.log(`  skipped (unmatched topic):${skippedUnmatchedTopic}`);

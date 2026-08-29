@@ -14,6 +14,7 @@ export interface PracticeQuestion {
   difficulty: number;
   source: string;
   isAiGenerated: boolean;
+  answerVerified: boolean;
   options: QuestionOption[];
 }
 
@@ -36,11 +37,21 @@ export function QuestionCard({
     <div className="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
       <div className="mb-4 flex items-center justify-between text-xs text-neutral-500 dark:text-neutral-400">
         <span>{question.topicName}</span>
-        {question.isAiGenerated && (
-          <span className="rounded bg-purple-100 px-2 py-0.5 font-medium text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">
-            AI-generated
-          </span>
-        )}
+        <span className="flex gap-2">
+          {question.isAiGenerated && (
+            <span className="rounded bg-purple-100 px-2 py-0.5 font-medium text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">
+              AI-generated
+            </span>
+          )}
+          {!question.answerVerified && (
+            <span
+              className="rounded bg-amber-100 px-2 py-0.5 font-medium text-amber-800 dark:bg-amber-900/40 dark:text-amber-300"
+              title="This question is from a real past paper, but it had no answer key — the correct option was determined by AI, not an official source."
+            >
+              AI-solved answer
+            </span>
+          )}
+        </span>
       </div>
 
       <p className="mb-5 text-lg font-medium text-neutral-900 dark:text-neutral-100">

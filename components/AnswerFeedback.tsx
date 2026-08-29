@@ -7,6 +7,7 @@ export interface AttemptFeedback {
   explanation: string | null;
   topicName: string;
   source: string;
+  answerVerified: boolean;
   updatedMasteryScore: number;
 }
 
@@ -33,6 +34,14 @@ export function AnswerFeedback({
 
       {feedback.explanation && (
         <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">{feedback.explanation}</p>
+      )}
+
+      {!feedback.answerVerified && (
+        <p className="mt-2 text-xs text-amber-800 dark:text-amber-300">
+          This question is from a real past paper, but it had no answer key in the source — the
+          correct answer shown was determined by AI, not an official marking guide. Double-check
+          it if it surprises you.
+        </p>
       )}
 
       <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-1 text-xs text-neutral-500 dark:text-neutral-400">
