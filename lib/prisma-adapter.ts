@@ -11,7 +11,11 @@
 // production has no reason to depend on.
 export async function createPrismaAdapter() {
   if (process.env.TURSO_DATABASE_URL) {
-    const { PrismaLibSql } = await import("@prisma/adapter-libsql");
+    // The "/web" entrypoint uses libSQL's pure-HTTP client (no native
+    // binding), which is what a stateless serverless function needs —
+    // the default entrypoint requires a platform-specific native module
+    // that isn't guaranteed to match the function's runtime architecture.
+    const { PrismaLibSql } = await import("@prisma/adapter-libsql/web");
     return new PrismaLibSql({
       url: process.env.TURSO_DATABASE_URL,
       authToken: process.env.TURSO_AUTH_TOKEN,
