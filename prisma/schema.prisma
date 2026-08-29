@@ -1,0 +1,115 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+enum QuestionType {
+  MCQ
+  SHORT_ANSWER
+  EXTENDED_RESPONSE
+}
+
+model Subject {
+  id        String    @id @default(cuid())
+  name      String    @unique
+  slug      String    @unique
+  topics    Topic[]
+  questions Question[]
+  masteries Mastery[]
+  createdAt DateTime  @default(now())
+}
+
+model Topic {
+  id                String     @id @default(cuid())
+  subjectId         String
+  subject           Subject    @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  name              String
+  syllabusReference String?
+  order             Int        @default(0)
+  subtopics         Subtopic[]
+  questions         Question[]
+  masteries         Mastery[]
+
+  @@unique([subjectId, name])
+}
+
+model Subtopic {
+  id        String     @id @default(cuid())
+  topicId   String
+  topic     Topic      @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  name      String
+  order     Int        @default(0)
+  questions Question[]
+  masteries Mastery[]
+
+  @@unique([topicId, name])
+}
+
+model Question {
+  id               String         @id @default(cuid())
+  subjectId        String
+  subject          Subject        @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  topicId          String
+  topic            Topic          @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  subtopicId       String?
+  subtopic         Subtopic?      @relation(fields: [subtopicId], references: [id], onDelete: SetNull)
+  type             QuestionType   @default(MCQ)
+  difficulty       Int            @default(1)
+  questionText     String
+  explanation      String?
+  source           String
+  sourceUrl        String?
+  sourceYear       Int?
+  sourcePaper      String?
+  syllabusOutcome  String?
+  isAiGenerated    Boolean        @default(false)
+  isTestFixture    Boolean        @default(false)
+  options          AnswerOption[]
+  attempts         Attempt[]
+  createdAt        DateTime       @default(now())
+}
+
+model AnswerOption {
+  id         String     @id @default(cuid())
+  questionId String
+  question   Question   @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  text       String
+  isCorrect  Boolean    @default(false)
+  order      Int        @default(0)
+  attempts   Attempt[]
+}
+
+model Attempt {
+  id               String        @id @default(cuid())
+  userId           String
+  questionId       String
+  question         Question      @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  selectedOptionId String?
+  selectedOption   AnswerOption? @relation(fields: [selectedOptionId], references: [id], onDelete: SetNull)
+  correct          Boolean
+  responseTimeMs   Int?
+  timestamp        DateTime      @default(now())
+
+  @@index([userId, questionId])
+}
+
+model Mastery {
+  id                     String    @id @default(cuid())
+  userId                 String
+  subjectId              String
+  subject                Subject   @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  topicId                String
+  topic                  Topic     @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  subtopicId             String?
+  subtopic               Subtopic? @relation(fields: [subtopicId], references: [id], onDelete: SetNull)
+  mcqScore               Float     @default(0)
+  shortAnswerScore       Float     @default(0)
+  extendedResponseScore  Float     @default(0)
+  masteryScore           Float     @default(0)
+  updatedAt              DateTime  @updatedAt
+
+  @@unique([userId, topicId])
+}

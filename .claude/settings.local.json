@@ -1,7 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias \"@/*\" --no-turbopack --use-npm)"
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias \"@/*\" --no-turbopack --use-npm)",
+      "Bash(npm install *)",
+      "Bash(npm audit *)",
+      "Bash(npx prisma *)",
+      "Bash(npm ls *)",
+      "Bash(mkdir -p prisma lib components tests app/dashboard \"app/practice/[subjectSlug]\" app/api/attempts \"app/api/questions/next\")",
+      "Bash(npm view *)",
+      "WebFetch(domain:pris.ly)",
+      "WebFetch(domain:www.prisma.io)",
+      "Bash(npm run *)"
     ]
   }
 }
