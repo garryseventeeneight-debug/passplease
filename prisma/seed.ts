@@ -120,6 +120,309 @@ const SUBJECTS: {
       },
     ],
   },
+  {
+    name: "Mathematics Advanced",
+    slug: "mathematics-advanced",
+    topics: [
+      {
+        name: "Working with Functions",
+        syllabusReference: "Year 11, F1",
+        subtopics: ["Functions and relations", "Types of functions", "Graphing techniques"],
+      },
+      {
+        name: "Trigonometry and Measure of Angles",
+        syllabusReference: "Year 11, T1",
+        subtopics: ["Trigonometric ratios", "Radians", "Arc length and sector area"],
+      },
+      {
+        name: "Trigonometric Functions and Identities",
+        syllabusReference: "Year 11, T2",
+        subtopics: ["Trigonometric identities", "Graphs of trigonometric functions"],
+      },
+      {
+        name: "Introduction to Differentiation",
+        syllabusReference: "Year 11, C1",
+        subtopics: ["Gradient of a curve", "Differentiation from first principles", "Rules of differentiation"],
+      },
+      {
+        name: "Logarithms and Exponentials",
+        syllabusReference: "Year 11, E1",
+        subtopics: ["Indices and logarithms", "Exponential functions", "Laws of logarithms"],
+      },
+      {
+        name: "Probability and Discrete Probability Distributions",
+        syllabusReference: "Year 11, S1",
+        subtopics: ["Probability", "Discrete probability distributions"],
+      },
+      {
+        name: "Graphing Techniques",
+        syllabusReference: "Year 12, F2",
+        subtopics: ["Transformations of graphs", "Inverse functions"],
+      },
+      {
+        name: "Trigonometric Functions and Graphs",
+        syllabusReference: "Year 12, T3",
+        subtopics: ["Graphs of trigonometric functions", "Trigonometric equations"],
+      },
+      {
+        name: "Differential Calculus",
+        syllabusReference: "Year 12, C2",
+        subtopics: ["Rules of differentiation", "Applications of the derivative"],
+      },
+      {
+        name: "The Second Derivative",
+        syllabusReference: "Year 12, C3",
+        subtopics: ["Concavity and inflection", "Curve sketching"],
+      },
+      {
+        name: "Integral Calculus",
+        syllabusReference: "Year 12, C4",
+        subtopics: ["Anti-differentiation", "Definite integrals", "Areas under curves"],
+      },
+      {
+        name: "Exponential and Logarithmic Functions",
+        syllabusReference: "Year 12, E2",
+        subtopics: ["Calculus of exponential functions", "Calculus of logarithmic functions"],
+      },
+      {
+        name: "Descriptive Statistics and Bivariate Data Analysis",
+        syllabusReference: "Year 12, S2",
+        subtopics: ["Data collection and sampling", "Bivariate data analysis"],
+      },
+      {
+        name: "Random Variables",
+        syllabusReference: "Year 12, S3",
+        subtopics: ["Discrete random variables", "The normal distribution"],
+      },
+    ],
+  },
+  {
+    name: "Mathematics Extension 1",
+    slug: "mathematics-extension-1",
+    topics: [
+      {
+        name: "Further Work with Functions",
+        syllabusReference: "Year 11, ME-F1",
+        subtopics: ["Polynomials", "Further functions and relations"],
+      },
+      {
+        name: "Inverse Trigonometric Functions",
+        syllabusReference: "Year 11, ME-T1",
+        subtopics: ["Inverse trigonometric functions"],
+      },
+      {
+        name: "Working with Combinatorics",
+        syllabusReference: "Year 11, ME-A1",
+        subtopics: ["Permutations", "Combinations", "Pascal's triangle and binomial expansion"],
+      },
+      {
+        name: "Rates of Change",
+        syllabusReference: "Year 11, ME-C1",
+        subtopics: ["Related rates of change", "Exponential growth and decay"],
+      },
+      {
+        name: "Polynomials",
+        syllabusReference: "Year 12, ME-F2",
+        subtopics: ["Remainder and factor theorems", "Roots of polynomials"],
+      },
+      {
+        name: "Trigonometric Equations",
+        syllabusReference: "Year 12, ME-T2",
+        subtopics: ["Trigonometric equations and identities"],
+      },
+      {
+        name: "Further Trigonometric Identities",
+        syllabusReference: "Year 12, ME-T3",
+        subtopics: ["Compound angle formulae", "t-formulae"],
+      },
+      {
+        name: "Further Calculus Skills",
+        syllabusReference: "Year 12, ME-C2",
+        subtopics: ["Further differentiation", "Further integration"],
+      },
+      {
+        name: "Applications of Calculus",
+        syllabusReference: "Year 12, ME-C3",
+        subtopics: ["Rates of change", "Related rates", "Differential equations"],
+      },
+      {
+        name: "The Binomial Distribution",
+        syllabusReference: "Year 12, ME-S1",
+        subtopics: ["Bernoulli distribution", "Binomial distribution"],
+      },
+    ],
+  },
+  {
+    name: "Physics",
+    slug: "physics",
+    topics: [
+      {
+        name: "Kinematics",
+        syllabusReference: "Year 11, Module 1",
+        subtopics: ["Motion in a straight line", "Motion on a plane (vectors)"],
+      },
+      {
+        name: "Dynamics",
+        syllabusReference: "Year 11, Module 2",
+        subtopics: ["Forces", "Forces, acceleration and energy", "Momentum, energy and simple systems"],
+      },
+      {
+        name: "Waves and Thermodynamics",
+        syllabusReference: "Year 11, Module 3",
+        subtopics: ["Wave properties", "Sound waves", "Ray model of light", "Thermodynamics"],
+      },
+      {
+        name: "Electricity and Magnetism",
+        syllabusReference: "Year 11, Module 4",
+        subtopics: ["Electrostatics", "Electric circuits", "Magnetism"],
+      },
+      {
+        name: "Advanced Mechanics",
+        syllabusReference: "Year 12, Module 5",
+        subtopics: ["Projectile motion", "Circular motion", "Motion in gravitational fields"],
+      },
+      {
+        name: "Electromagnetism",
+        syllabusReference: "Year 12, Module 6",
+        subtopics: [
+          "Charged particles, conductors and fields",
+          "The motor effect",
+          "Electromagnetic induction",
+        ],
+      },
+      {
+        name: "The Nature of Light",
+        syllabusReference: "Year 12, Module 7",
+        subtopics: [
+          "Electromagnetic spectrum",
+          "Light: wave model",
+          "Light: quantum model",
+          "Light and special relativity",
+        ],
+      },
+      {
+        name: "From the Universe to the Atom",
+        syllabusReference: "Year 12, Module 8",
+        subtopics: [
+          "Origins of the elements",
+          "Structure of the atom",
+          "Quantum mechanical nature of the atom",
+          "Properties of the nucleus",
+          "Deep inside the atom",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Legal Studies",
+    slug: "legal-studies",
+    topics: [
+      {
+        name: "The Legal System",
+        syllabusReference: "Year 11, Preliminary Part I",
+        subtopics: ["Nature of law", "Legal systems", "Law reform and social values", "Rights and law reform"],
+      },
+      {
+        name: "The Individual and the Law",
+        syllabusReference: "Year 11, Preliminary Part II",
+        subtopics: ["Crime", "Family law", "Consumers"],
+      },
+      {
+        name: "Law in Practice",
+        syllabusReference: "Year 11, Preliminary Part III (focus study)",
+        subtopics: ["Investigation and evaluation of a contemporary legal issue"],
+      },
+      {
+        name: "Crime",
+        syllabusReference: "Year 12, HSC Core Part I",
+        subtopics: [
+          "The nature of crime",
+          "The criminal investigation process",
+          "Criminal trial process",
+          "Sentencing and punishment",
+          "Young offenders",
+          "International crime",
+        ],
+      },
+      {
+        name: "Human Rights",
+        syllabusReference: "Year 12, HSC Core Part II",
+        subtopics: [
+          "Meaning of human rights",
+          "Promoting and enforcing human rights",
+          "Investigation of a contemporary human rights issue",
+        ],
+      },
+      {
+        name: "World Order",
+        syllabusReference: "Year 12, HSC Option",
+        subtopics: ["Nature and development of world order", "Responses to world order"],
+      },
+      {
+        name: "Family Law",
+        syllabusReference: "Year 12, HSC Option",
+        subtopics: ["Nature of family law", "Responses to problems in family relationships"],
+      },
+      {
+        name: "Workplace",
+        syllabusReference: "Year 12, HSC Option",
+        subtopics: ["Nature of employment relationships", "Regulation of employment"],
+      },
+    ],
+  },
+  {
+    // English content is fundamentally text-specific (prescribed texts, essay
+    // notes, quotes) rather than generic-topic-based — see spec section on
+    // English workflow. This taxonomy captures the module structure only;
+    // real practice content requires the student's own prescribed texts and
+    // notes to be supplied (Phase 3). Uses the Advanced course's module
+    // names, since Standard largely mirrors it minus the more literary
+    // modules — differences can be reconciled once real content is added.
+    name: "English",
+    slug: "english",
+    topics: [
+      {
+        name: "Reading to Write: Transition to Senior English",
+        syllabusReference: "Year 11, Common Module",
+        subtopics: ["Prose fiction", "Poetry", "Nonfiction", "Film", "Media/digital texts"],
+      },
+      {
+        name: "Narratives that Shape our World",
+        syllabusReference: "Year 11, Advanced Module",
+        subtopics: ["Prescribed text study", "Related texts"],
+      },
+      {
+        name: "Critical Study of Literature",
+        syllabusReference: "Year 11, Advanced Module",
+        subtopics: ["Prescribed text study"],
+      },
+      {
+        name: "Language, Identity and Culture",
+        syllabusReference: "Year 11, Advanced Module",
+        subtopics: ["Prescribed text study", "Nonfiction/multimodal texts"],
+      },
+      {
+        name: "Texts and Human Experiences",
+        syllabusReference: "Year 12, HSC Common Module",
+        subtopics: ["Prescribed text study", "Related texts", "Essay writing"],
+      },
+      {
+        name: "Module A: Textual Conversations",
+        syllabusReference: "Year 12, HSC Advanced Module A",
+        subtopics: ["Comparative text study"],
+      },
+      {
+        name: "Module B: Critical Study of Literature",
+        syllabusReference: "Year 12, HSC Advanced Module B",
+        subtopics: ["Prescribed text study"],
+      },
+      {
+        name: "Module C: The Craft of Writing",
+        syllabusReference: "Year 12, HSC Advanced Module C",
+        subtopics: ["Imaginative writing", "Discursive writing", "Persuasive writing"],
+      },
+    ],
+  },
 ];
 
 async function main() {

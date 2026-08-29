@@ -91,7 +91,9 @@ async function main() {
         continue;
       }
       const subtopic = q.subtopicName
-        ? topic.subtopics.find((s) => s.name === q.subtopicName)
+        ? topic.subtopics.find(
+            (s) => s.name.toLowerCase() === q.subtopicName!.toLowerCase()
+          )
         : undefined;
 
       const existing = await db.question.findFirst({
