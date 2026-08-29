@@ -2,12 +2,9 @@ import "dotenv/config";
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { PrismaClient } from "@prisma/client";
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
+import { createPrismaAdapter } from "../lib/prisma-adapter";
 
-const adapter = new PrismaBetterSqlite3({
-  url: process.env.DATABASE_URL ?? "file:./dev.db",
-});
-const db = new PrismaClient({ adapter });
+const db = new PrismaClient({ adapter: createPrismaAdapter() });
 
 interface ExtractedOption {
   text: string;

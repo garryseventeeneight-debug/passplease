@@ -1,11 +1,8 @@
 import "dotenv/config";
 import { PrismaClient } from "@prisma/client";
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
+import { createPrismaAdapter } from "../lib/prisma-adapter";
 
-const adapter = new PrismaBetterSqlite3({
-  url: process.env.DATABASE_URL ?? "file:./dev.db",
-});
-const db = new PrismaClient({ adapter });
+const db = new PrismaClient({ adapter: createPrismaAdapter() });
 
 // Topic/subtopic titles are the publicly-published NESA HSC syllabus
 // structure (headings only) — not past-paper content, so no external
