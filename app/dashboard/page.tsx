@@ -34,6 +34,13 @@ export default async function DashboardPage() {
   });
   const topicsWithLearnContent = new Set(learnTopics.map((t) => t.topicId));
 
+  const subjectsWithContent = await db.question.findMany({
+    where: { isTestFixture: false, isScaffold: false },
+    distinct: ["subjectId"],
+    select: { subjectId: true },
+  });
+  const subjectIdsWithContent = new Set(subjectsWithContent.map((q) => q.subjectId));
+
   const attempts = await db.attempt.findMany({
     where: { userId },
     select: { correct: true, timestamp: true },
@@ -130,12 +137,22 @@ export default async function DashboardPage() {
                 <h2 className="text-lg font-medium text-neutral-900 dark:text-neutral-100">
                   {subject.name}
                 </h2>
-                <Link
-                  href={`/practice/${subject.slug}`}
-                  className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
-                >
-                  Practice
-                </Link>
+                <div className="flex shrink-0 gap-2">
+                  {subjectIdsWithContent.has(subject.id) && (
+                    <Link
+                      href={`/aptitude/${subject.slug}`}
+                      className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+                    >
+                      Aptitude Test
+                    </Link>
+                  )}
+                  <Link
+                    href={`/practice/${subject.slug}`}
+                    className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
+                  >
+                    Practice
+                  </Link>
+                </div>
               </div>
               <MasteryTable subjectSlug={subject.slug} rows={rows} />
             </section>
