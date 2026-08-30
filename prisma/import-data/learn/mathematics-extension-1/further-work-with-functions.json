@@ -1,0 +1,749 @@
+{
+  "topicName": "Further Work with Functions",
+  "chunks": [
+    {
+      "slug": "mathext1-inequation-meaning",
+      "subtopicName": "Further functions and relations",
+      "heading": "What does a < b really mean?",
+      "body": "Saying a is less than b means a sits to the left of b on the number line. It also means that b minus a is a positive number.",
+      "checkText": "If a < b, what can you say about b − a?",
+      "checkOptions": [
+        { "text": "It is positive", "isCorrect": true },
+        { "text": "It is negative", "isCorrect": false },
+        { "text": "It is zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-solving-linear-inequations",
+      "subtopicName": "Further functions and relations",
+      "heading": "Solving simple inequations",
+      "body": "Solve an inequation the same way as an equation: add, subtract, multiply, divide both sides. But flip the inequality sign whenever you multiply or divide by a negative number.",
+      "checkText": "When do you flip an inequality sign?",
+      "checkOptions": [
+        { "text": "When multiplying or dividing by a negative number", "isCorrect": true },
+        { "text": "When adding a positive number", "isCorrect": false },
+        { "text": "Never — the sign always stays the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-quadratic-inequation-graph",
+      "subtopicName": "Further functions and relations",
+      "heading": "Solving inequations with a parabola",
+      "body": "To solve a quadratic inequation, move everything to one side, then sketch the parabola. Read the solution straight from where the graph is above or below the x-axis.",
+      "checkText": "To solve a quadratic inequation by graphing, you first...",
+      "checkOptions": [
+        { "text": "Move all terms to one side", "isCorrect": true },
+        { "text": "Multiply both sides by x", "isCorrect": false },
+        { "text": "Ignore the x-intercepts", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-absolute-value-number-line",
+      "subtopicName": "Further functions and relations",
+      "heading": "Absolute value as distance",
+      "body": "|x − b| = a means the distance from x to b is a. You can solve absolute value equations and inequations by picturing this distance on a number line.",
+      "checkText": "|x − b| represents the...",
+      "checkOptions": [
+        { "text": "Distance from x to b", "isCorrect": true },
+        { "text": "Sum of x and b", "isCorrect": false },
+        { "text": "Value of b divided by x", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-inequation-denominator",
+      "subtopicName": "Further functions and relations",
+      "heading": "Inequations with x in the denominator",
+      "body": "Multiplying both sides by an unknown denominator is risky, because you don't know if it's positive or negative. Instead, multiply both sides by the square of the denominator, which is never negative.",
+      "checkText": "Why multiply by the square of the denominator, not the denominator itself?",
+      "checkOptions": [
+        { "text": "Because the square is never negative, so the inequality sign never flips", "isCorrect": true },
+        { "text": "Because it makes the equation shorter", "isCorrect": false },
+        { "text": "Because squaring removes all fractions instantly", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-function-sign-change",
+      "subtopicName": "Further functions and relations",
+      "heading": "Where can a function change sign?",
+      "body": "A function can only switch from positive to negative, or back, at a zero or at a discontinuity — a point where its graph breaks. Nowhere else.",
+      "checkText": "A function's sign can only change at a zero or a...",
+      "checkOptions": [
+        { "text": "Discontinuity", "isCorrect": true },
+        { "text": "Maximum value", "isCorrect": false },
+        { "text": "Multiple of ten", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-table-of-signs",
+      "subtopicName": "Further functions and relations",
+      "heading": "Building a table of signs",
+      "body": "List the zeroes and discontinuities of a function in order, then test a value between and around each one. Record whether the function is positive or negative at each test point.",
+      "checkText": "A table of signs uses test values that...",
+      "checkOptions": [
+        { "text": "Dodge around the zeroes and discontinuities", "isCorrect": true },
+        { "text": "Are always equal to zero", "isCorrect": false },
+        { "text": "Are chosen at random with no pattern", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-solving-with-table-of-signs",
+      "subtopicName": "Further functions and relations",
+      "heading": "Solving inequations using a table of signs",
+      "body": "Once a [[mathext1-table-of-signs|table of signs]] is built, reading off where the function is positive or negative directly solves the inequation — no graph needed.",
+      "checkText": "A table of signs lets you solve an inequation by...",
+      "checkOptions": [
+        { "text": "Reading off where the function is positive or negative", "isCorrect": true },
+        { "text": "Guessing the answer", "isCorrect": false },
+        { "text": "Always setting the function equal to zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-asymptote-basics",
+      "subtopicName": "Further functions and relations",
+      "heading": "Two rules about reciprocals",
+      "body": "The reciprocal of a very small number is very large, and the reciprocal of a very large number is very small. Also, the reciprocal of a positive number stays positive.",
+      "checkText": "The reciprocal of a very small positive number is...",
+      "checkOptions": [
+        { "text": "Very large", "isCorrect": true },
+        { "text": "Very small", "isCorrect": false },
+        { "text": "Always negative", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-vertical-asymptote-test",
+      "subtopicName": "Further functions and relations",
+      "heading": "Spotting a vertical asymptote",
+      "body": "If a function's denominator is zero at x = a, but its numerator isn't zero there, then x = a is a vertical asymptote.",
+      "checkText": "A vertical asymptote occurs where the...",
+      "checkOptions": [
+        { "text": "Denominator is zero but the numerator isn't", "isCorrect": true },
+        { "text": "Numerator is zero", "isCorrect": false },
+        { "text": "Function equals one", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-reciprocal-sign-same",
+      "subtopicName": "Further functions and relations",
+      "heading": "Reciprocal graphs keep the same sign",
+      "body": "The graph of 1/f(x) is positive wherever f(x) is positive, and negative wherever f(x) is negative. Taking a reciprocal never flips the sign.",
+      "checkText": "Where f(x) is negative, the reciprocal 1/f(x) is...",
+      "checkOptions": [
+        { "text": "Also negative", "isCorrect": true },
+        { "text": "Positive", "isCorrect": false },
+        { "text": "Always zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-reciprocal-zeros-asymptotes",
+      "subtopicName": "Further functions and relations",
+      "heading": "Zeroes swap with asymptotes",
+      "body": "Every zero of f(x) becomes a vertical asymptote of 1/f(x). Every vertical asymptote of f(x) becomes a zero of 1/f(x), with that point removed.",
+      "checkText": "A zero of f(x) becomes, in the graph of 1/f(x), a...",
+      "checkOptions": [
+        { "text": "Vertical asymptote", "isCorrect": true },
+        { "text": "Horizontal asymptote", "isCorrect": false },
+        { "text": "Turning point", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-reciprocal-horizontal-asymptote",
+      "subtopicName": "Further functions and relations",
+      "heading": "What happens far from the origin",
+      "body": "If f(x) grows towards infinity as x gets large, then 1/f(x) shrinks towards zero. This gives the reciprocal graph a horizontal asymptote.",
+      "checkText": "As f(x) → ∞, the reciprocal 1/f(x) tends towards...",
+      "checkOptions": [
+        { "text": "0", "isCorrect": true },
+        { "text": "Infinity", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-ordinate-meaning",
+      "subtopicName": "Further functions and relations",
+      "heading": "A shorter word for y-coordinate",
+      "body": "The ordinate of a point is just another name for its y-coordinate. It's a handy shorthand when combining graphs.",
+      "checkText": "The 'ordinate' of a point refers to its...",
+      "checkOptions": [
+        { "text": "y-coordinate", "isCorrect": true },
+        { "text": "x-coordinate", "isCorrect": false },
+        { "text": "Distance from the origin", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-sum-of-graphs",
+      "subtopicName": "Further functions and relations",
+      "heading": "Sketching the sum of two graphs",
+      "body": "To sketch y = f(x) + g(x), add the [[mathext1-ordinate-meaning|ordinates]] of the two graphs at each x-value. This is the key idea behind combining any two curves.",
+      "checkText": "To sketch the sum of two functions, at each x-value you...",
+      "checkOptions": [
+        { "text": "Add their y-values", "isCorrect": true },
+        { "text": "Multiply their y-values", "isCorrect": false },
+        { "text": "Subtract their y-values", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-sum-graphs-zero-crossing",
+      "subtopicName": "Further functions and relations",
+      "heading": "Where the sum meets the other curve",
+      "body": "If f(x) has a zero at x = a, then at that point the sum s(x) = f(x) + g(x) equals g(a). So the sum's graph meets g(x) exactly there.",
+      "checkText": "If f(a) = 0, then s(a) = f(a) + g(a) equals...",
+      "checkOptions": [
+        { "text": "g(a)", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "f(a)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-difference-of-graphs",
+      "subtopicName": "Further functions and relations",
+      "heading": "Sketching the difference of two graphs",
+      "body": "To sketch y = f(x) − g(x), subtract the ordinates of the two graphs at each x-value, the same way you would add them for a sum.",
+      "checkText": "To sketch the difference of two functions, at each x-value you...",
+      "checkOptions": [
+        { "text": "Subtract their y-values", "isCorrect": true },
+        { "text": "Add their y-values", "isCorrect": false },
+        { "text": "Divide their y-values", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-product-of-graphs",
+      "subtopicName": "Further functions and relations",
+      "heading": "Sketching the product of two graphs",
+      "body": "To sketch y = f(x) × g(x), multiply the ordinates of the two graphs at each x-value. The product has a zero wherever either original graph does.",
+      "checkText": "The product of two functions has a zero wherever...",
+      "checkOptions": [
+        { "text": "Either original function has a zero", "isCorrect": true },
+        { "text": "Both functions are positive", "isCorrect": false },
+        { "text": "Neither function has a zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-absolute-value-definition",
+      "subtopicName": "Further functions and relations",
+      "heading": "What absolute value means",
+      "body": "The absolute value |x| equals x when x is zero or positive, and equals −x when x is negative. It's always zero or positive, never negative.",
+      "checkText": "The absolute value of a number is...",
+      "checkOptions": [
+        { "text": "Never negative", "isCorrect": true },
+        { "text": "Always negative", "isCorrect": false },
+        { "text": "Always equal to the number itself", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-graph-abs-fx",
+      "subtopicName": "Further functions and relations",
+      "heading": "Sketching y = |f(x)|",
+      "body": "Keep every part of the graph that's already above the x-axis. Reflect any part below the x-axis upward, so nothing ends up negative.",
+      "checkText": "To sketch y = |f(x)| from y = f(x), you...",
+      "checkOptions": [
+        { "text": "Reflect the parts below the x-axis upward", "isCorrect": true },
+        { "text": "Reflect the whole graph in the y-axis", "isCorrect": false },
+        { "text": "Delete everything below the x-axis", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-graph-f-abs-x",
+      "subtopicName": "Further functions and relations",
+      "heading": "Sketching y = f(|x|)",
+      "body": "Keep the part of the graph to the right of the y-axis unchanged. Replace everything to the left with a mirror copy of the right-hand side.",
+      "checkText": "To sketch y = f(|x|), you replace the graph to the left of the y-axis with...",
+      "checkOptions": [
+        { "text": "A mirror copy of the right-hand side", "isCorrect": true },
+        { "text": "A mirror copy reflected in the x-axis", "isCorrect": false },
+        { "text": "Nothing — delete it entirely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-graph-abs-y-fx",
+      "subtopicName": "Further functions and relations",
+      "heading": "Sketching |y| = f(x)",
+      "body": "First delete any part of the graph below the x-axis, since |y| can't be negative. Then duplicate what remains by reflecting it below the x-axis too.",
+      "checkText": "To sketch |y| = f(x), you start by...",
+      "checkOptions": [
+        { "text": "Deleting everything below the x-axis", "isCorrect": true },
+        { "text": "Deleting everything left of the y-axis", "isCorrect": false },
+        { "text": "Doubling every y-value", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-graph-sqrt-fx",
+      "subtopicName": "Further functions and relations",
+      "heading": "Sketching y = √f(x)",
+      "body": "Delete any part of the graph below the x-axis, since square roots of negative numbers don't exist. Then take the square root of each remaining y-value.",
+      "checkText": "Before taking square roots to sketch y = √f(x), you first...",
+      "checkOptions": [
+        { "text": "Delete the part of the graph below the x-axis", "isCorrect": true },
+        { "text": "Reflect the graph in the y-axis", "isCorrect": false },
+        { "text": "Double every y-value", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-inverse-relation-definition",
+      "subtopicName": "Further functions and relations",
+      "heading": "What the inverse relation is",
+      "body": "The inverse relation of any relation is found by swapping the x and y in every ordered pair. Reversing the reversed pairs gets you back to the original.",
+      "checkText": "The inverse relation is formed by...",
+      "checkOptions": [
+        { "text": "Swapping x and y in every ordered pair", "isCorrect": true },
+        { "text": "Adding 1 to every y-value", "isCorrect": false },
+        { "text": "Multiplying every x-value by −1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-inverse-graph-reflection",
+      "subtopicName": "Further functions and relations",
+      "heading": "Graphing the inverse",
+      "body": "The graph of the [[mathext1-inverse-relation-definition|inverse relation]] is just the original graph reflected in the diagonal line y = x.",
+      "checkText": "The graph of the inverse relation is obtained by reflecting the original graph in...",
+      "checkOptions": [
+        { "text": "The line y = x", "isCorrect": true },
+        { "text": "The x-axis", "isCorrect": false },
+        { "text": "The y-axis", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-inverse-domain-range-swap",
+      "subtopicName": "Further functions and relations",
+      "heading": "Domain and range swap places",
+      "body": "Because the coordinates are swapped, the domain of the inverse relation is the range of the original. Likewise, the range of the inverse is the original's domain.",
+      "checkText": "The domain of the inverse relation equals the...",
+      "checkOptions": [
+        { "text": "Range of the original relation", "isCorrect": true },
+        { "text": "Domain of the original relation", "isCorrect": false },
+        { "text": "Set of all real numbers, always", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-inverse-equation-method",
+      "subtopicName": "Further functions and relations",
+      "heading": "Finding the inverse's equation",
+      "body": "To find the equation of an inverse relation, write x for y and y for x everywhere they appear, then solve for y if you can.",
+      "checkText": "To find the equation of the inverse relation, you...",
+      "checkOptions": [
+        { "text": "Swap x and y everywhere, then solve for y", "isCorrect": true },
+        { "text": "Multiply the whole equation by −1", "isCorrect": false },
+        { "text": "Add x and y together", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-horizontal-line-test",
+      "subtopicName": "Further functions and relations",
+      "heading": "Is the inverse a function?",
+      "body": "The inverse relation is a function only if every horizontal line crosses the original graph at most once. This is called the horizontal line test.",
+      "checkText": "The horizontal line test checks whether...",
+      "checkOptions": [
+        { "text": "The inverse relation is a function", "isCorrect": true },
+        { "text": "The original relation is a function", "isCorrect": false },
+        { "text": "A graph has any zeroes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-inverse-function-notation",
+      "subtopicName": "Further functions and relations",
+      "heading": "Writing the inverse function",
+      "body": "When a function's inverse is also a function, it's written f⁻¹(x). Be careful: this is not the same as 1/f(x), even though the notation looks similar.",
+      "checkText": "f⁻¹(x) means...",
+      "checkOptions": [
+        { "text": "The inverse function", "isCorrect": true },
+        { "text": "1 divided by f(x)", "isCorrect": false },
+        { "text": "The derivative of f(x)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-inverse-function-identity",
+      "subtopicName": "Further functions and relations",
+      "heading": "Undoing a function with its inverse",
+      "body": "Applying a function and then its inverse always gets you back to where you started: f⁻¹(f(x)) = x and f(f⁻¹(x)) = x.",
+      "checkText": "What does f⁻¹(f(x)) equal, for x in the domain of f?",
+      "checkOptions": [
+        { "text": "x", "isCorrect": true },
+        { "text": "f(x)", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-restricting-domain-for-inverse",
+      "subtopicName": "Further functions and relations",
+      "heading": "Restricting a domain to get an inverse",
+      "body": "A many-to-one function fails the [[mathext1-horizontal-line-test|horizontal line test]], so its inverse relation isn't a function. Restricting the domain can make the function one-to-one, giving it a genuine inverse function.",
+      "checkText": "Restricting the domain of a many-to-one function can...",
+      "checkOptions": [
+        { "text": "Make it one-to-one, so it has an inverse function", "isCorrect": true },
+        { "text": "Make its graph a straight line", "isCorrect": false },
+        { "text": "Remove all its zeroes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-parameter-definition",
+      "subtopicName": "Further functions and relations",
+      "heading": "What a parameter is",
+      "body": "A parameter is an extra variable, often called t, used to write both x and y as separate functions. Each value of t gives one point on the curve.",
+      "checkText": "In parametric equations, x and y are both written as functions of...",
+      "checkOptions": [
+        { "text": "A parameter, such as t", "isCorrect": true },
+        { "text": "Each other", "isCorrect": false },
+        { "text": "The origin", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-eliminating-parameter",
+      "subtopicName": "Further functions and relations",
+      "heading": "Turning parametric equations into one equation",
+      "body": "Eliminating the [[mathext1-parameter-definition|parameter]] means combining the two parametric equations to produce a single Cartesian equation relating x and y directly.",
+      "checkText": "Eliminating the parameter produces a single equation relating...",
+      "checkOptions": [
+        { "text": "x and y directly", "isCorrect": true },
+        { "text": "Only t", "isCorrect": false },
+        { "text": "Only the gradient of the curve", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-parametrising-circle",
+      "subtopicName": "Further functions and relations",
+      "heading": "Parametrising a circle",
+      "body": "The circle x² + y² = r² can be written as x = r cos θ and y = r sin θ. This works because cos²θ + sin²θ = 1.",
+      "checkText": "The parametric equations x = r cos θ, y = r sin θ describe a...",
+      "checkOptions": [
+        { "text": "Circle of radius r", "isCorrect": true },
+        { "text": "Straight line", "isCorrect": false },
+        { "text": "Parabola", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-polynomial-definition",
+      "subtopicName": "Polynomials",
+      "heading": "What is a polynomial?",
+      "body": "A polynomial is an expression made by adding whole-number powers of x, each multiplied by a constant. There are no square roots or fractional powers of x allowed.",
+      "checkText": "A polynomial can only contain...",
+      "checkOptions": [
+        { "text": "Whole-number powers of x", "isCorrect": true },
+        { "text": "Square roots of x", "isCorrect": false },
+        { "text": "Fractional powers of x, like x^(1/2)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-degree-leading-term",
+      "subtopicName": "Polynomials",
+      "heading": "Degree and leading term",
+      "body": "The term with the highest power of x is called the leading term, and its coefficient is the leading coefficient. The value of that highest power is the polynomial's degree.",
+      "checkText": "The degree of a polynomial is the...",
+      "checkOptions": [
+        { "text": "Highest power of x with a nonzero coefficient", "isCorrect": true },
+        { "text": "Number of terms", "isCorrect": false },
+        { "text": "Value of the constant term", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-monic-polynomial",
+      "subtopicName": "Polynomials",
+      "heading": "Monic polynomials",
+      "body": "A polynomial is called monic if its [[mathext1-degree-leading-term|leading coefficient]] is exactly 1. For example, x³ − 2x² + 4 is monic, but 3x² + 1 is not.",
+      "checkText": "A monic polynomial has a leading coefficient of...",
+      "checkOptions": [
+        { "text": "1", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "Any negative number", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-polynomial-names",
+      "subtopicName": "Polynomials",
+      "heading": "Names for low-degree polynomials",
+      "body": "A degree-1 polynomial is linear, degree-2 is quadratic, degree-3 is cubic, and degree-4 is quartic. These names describe the polynomial's degree.",
+      "checkText": "A polynomial of degree 3 is called a...",
+      "checkOptions": [
+        { "text": "Cubic", "isCorrect": true },
+        { "text": "Quadratic", "isCorrect": false },
+        { "text": "Quartic", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-identically-equal-polynomials",
+      "subtopicName": "Polynomials",
+      "heading": "When two polynomials are truly equal",
+      "body": "Two polynomials are identically equal if they give the same value for every possible x, not just some values. When this happens, their matching coefficients must also be equal.",
+      "checkText": "If two polynomials are identically equal, then their...",
+      "checkOptions": [
+        { "text": "Matching coefficients are equal", "isCorrect": true },
+        { "text": "Degrees must be different", "isCorrect": false },
+        { "text": "Constant terms must be zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-polynomial-end-behaviour",
+      "subtopicName": "Polynomials",
+      "heading": "How a polynomial behaves far out",
+      "body": "For very large or very negative x, a polynomial's graph is controlled entirely by its [[mathext1-degree-leading-term|leading term]]. Every other term becomes too small to matter.",
+      "checkText": "Far from the origin, a polynomial's graph is controlled by its...",
+      "checkOptions": [
+        { "text": "Leading term", "isCorrect": true },
+        { "text": "Constant term", "isCorrect": false },
+        { "text": "Smallest-degree term", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-odd-degree-has-zero",
+      "subtopicName": "Polynomials",
+      "heading": "Odd-degree polynomials always cross zero",
+      "body": "A polynomial of odd degree heads towards +∞ on one side and −∞ on the other. Because its graph is unbroken, it must cross the x-axis somewhere.",
+      "checkText": "Every polynomial of odd degree has at least one...",
+      "checkOptions": [
+        { "text": "Real zero", "isCorrect": true },
+        { "text": "Turning point", "isCorrect": false },
+        { "text": "Vertical asymptote", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-multiplicity-of-zero",
+      "subtopicName": "Polynomials",
+      "heading": "What multiplicity means",
+      "body": "If the factor (x − α) appears m times in a polynomial, then α is called a zero of multiplicity m. A repeated factor means a repeated zero.",
+      "checkText": "If (x − 3) appears twice in a factored polynomial, then 3 is a zero of multiplicity...",
+      "checkOptions": [
+        { "text": "2", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "3", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-zero-shape-turning-point",
+      "subtopicName": "Polynomials",
+      "heading": "Even multiplicity: a turning point",
+      "body": "At a zero with even [[mathext1-multiplicity-of-zero|multiplicity]], the curve touches the x-axis and turns back without crossing it. This point is called a turning point.",
+      "checkText": "At an even-multiplicity zero, the curve...",
+      "checkOptions": [
+        { "text": "Touches the x-axis and turns back", "isCorrect": true },
+        { "text": "Crosses straight through the x-axis", "isCorrect": false },
+        { "text": "Never reaches the x-axis", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-zero-shape-horizontal-inflection",
+      "subtopicName": "Polynomials",
+      "heading": "Odd multiplicity of 3 or more: horizontal inflection",
+      "body": "At a zero with odd multiplicity of 3 or higher, the curve flattens against the x-axis but still crosses it. This flat crossing is called a horizontal inflection.",
+      "checkText": "A horizontal inflection happens at a zero with...",
+      "checkOptions": [
+        { "text": "Odd multiplicity of 3 or more", "isCorrect": true },
+        { "text": "Multiplicity of exactly 1", "isCorrect": false },
+        { "text": "Even multiplicity", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-zero-shape-simple",
+      "subtopicName": "Polynomials",
+      "heading": "Simple zeroes: a clean crossing",
+      "body": "A zero of multiplicity 1 is called a simple zero. At a simple zero, the curve crosses the x-axis cleanly, with no flattening or turning.",
+      "checkText": "At a simple zero, the curve...",
+      "checkOptions": [
+        { "text": "Crosses the x-axis cleanly", "isCorrect": true },
+        { "text": "Touches the x-axis and turns back", "isCorrect": false },
+        { "text": "Flattens against the x-axis before crossing", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-polynomial-division-result",
+      "subtopicName": "Polynomials",
+      "heading": "The result of dividing polynomials",
+      "body": "Dividing one polynomial by another gives a quotient and a remainder, just like dividing whole numbers. This is written as dividend = divisor × quotient + remainder.",
+      "checkText": "Polynomial division can always be written as dividend equals divisor times quotient, plus...",
+      "checkOptions": [
+        { "text": "The remainder", "isCorrect": true },
+        { "text": "The degree", "isCorrect": false },
+        { "text": "Zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-remainder-degree-rule",
+      "subtopicName": "Polynomials",
+      "heading": "How big can the remainder be?",
+      "body": "After dividing polynomials, the remainder is either the zero polynomial, or it has a smaller degree than the divisor. The division can't continue any further than that.",
+      "checkText": "After polynomial division, the remainder's degree must be...",
+      "checkOptions": [
+        { "text": "Smaller than the divisor's degree, or the remainder is zero", "isCorrect": true },
+        { "text": "Always exactly 1", "isCorrect": false },
+        { "text": "Larger than the dividend's degree", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-long-division-method",
+      "subtopicName": "Polynomials",
+      "heading": "Long dividing polynomials",
+      "body": "Divide the leading term of what's left by the leading term of the divisor, multiply back, and subtract. Repeat this until nothing more can be divided.",
+      "checkText": "At each step of polynomial long division, you divide the leading term of the remainder by the leading term of the...",
+      "checkOptions": [
+        { "text": "Divisor", "isCorrect": true },
+        { "text": "Quotient", "isCorrect": false },
+        { "text": "Original dividend", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-remainder-theorem",
+      "subtopicName": "Polynomials",
+      "heading": "The remainder theorem",
+      "body": "The remainder theorem says that dividing a polynomial P(x) by (x − α) leaves a remainder equal to P(α). No long division is needed to find it.",
+      "checkText": "The remainder after dividing P(x) by (x − α) equals...",
+      "checkOptions": [
+        { "text": "P(α)", "isCorrect": true },
+        { "text": "P(0)", "isCorrect": false },
+        { "text": "The leading coefficient of P(x)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-factor-theorem",
+      "subtopicName": "Polynomials",
+      "heading": "The factor theorem",
+      "body": "The [[mathext1-remainder-theorem|remainder theorem]] tells us that (x − α) is a factor of P(x) exactly when P(α) = 0. This gives a quick test for factors.",
+      "checkText": "(x − α) is a factor of P(x) exactly when...",
+      "checkOptions": [
+        { "text": "P(α) = 0", "isCorrect": true },
+        { "text": "P(0) = α", "isCorrect": false },
+        { "text": "α is negative", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-integer-zero-test",
+      "subtopicName": "Polynomials",
+      "heading": "Testing for integer zeroes",
+      "body": "If every coefficient of a polynomial is a whole number, then any whole-number zero must be a divisor of the constant term. This narrows down what to test.",
+      "checkText": "If a polynomial has integer coefficients, any integer zero must divide the...",
+      "checkOptions": [
+        { "text": "Constant term", "isCorrect": true },
+        { "text": "Leading coefficient only", "isCorrect": false },
+        { "text": "Degree of the polynomial", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-factoring-with-factor-theorem",
+      "subtopicName": "Polynomials",
+      "heading": "Factoring using the factor theorem",
+      "body": "Test possible integer zeroes using the [[mathext1-integer-zero-test|constant term's divisors]]. Once a zero is found, use the [[mathext1-factor-theorem|factor theorem]] and long division to pull out that factor.",
+      "checkText": "After finding a zero using the factor theorem, the next step is usually to...",
+      "checkOptions": [
+        { "text": "Long divide to pull out that factor", "isCorrect": true },
+        { "text": "Stop, since factoring is already complete", "isCorrect": false },
+        { "text": "Multiply the polynomial by the zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-max-zeroes",
+      "subtopicName": "Polynomials",
+      "heading": "The most zeroes a polynomial can have",
+      "body": "A polynomial of degree n can have at most n zeroes. Having more than n would force it to be divisible by a polynomial of higher degree, which is impossible.",
+      "checkText": "A polynomial of degree 5 can have at most how many zeroes?",
+      "checkOptions": [
+        { "text": "5", "isCorrect": true },
+        { "text": "10", "isCorrect": false },
+        { "text": "Unlimited", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-multiple-zeroes-shortcut",
+      "subtopicName": "Polynomials",
+      "heading": "Finding several zeroes at once",
+      "body": "If several zeroes of a polynomial are found by trial and error, you can divide by the product of their factors in one step, instead of dividing repeatedly.",
+      "checkText": "Finding several zeroes first lets you avoid...",
+      "checkOptions": [
+        { "text": "Repeating long division multiple times", "isCorrect": true },
+        { "text": "Using the factor theorem at all", "isCorrect": false },
+        { "text": "Ever finding the degree of the polynomial", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-identically-equal-condition",
+      "subtopicName": "Polynomials",
+      "heading": "Proving two polynomials are equal",
+      "body": "If two polynomials, both of degree n, agree at n + 1 or more different x-values, they must be [[mathext1-identically-equal-polynomials|identically equal]] everywhere.",
+      "checkText": "Two degree-n polynomials that agree at n + 1 values must be...",
+      "checkOptions": [
+        { "text": "Identically equal everywhere", "isCorrect": true },
+        { "text": "Equal only at those points", "isCorrect": false },
+        { "text": "Different in degree", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-sum-product-quadratic-zeroes",
+      "subtopicName": "Polynomials",
+      "heading": "Sum and product of a quadratic's zeroes",
+      "body": "For ax² + bx + c with zeroes α and β, the sum α + β equals −b/a, and the product αβ equals c/a.",
+      "checkText": "For a quadratic ax² + bx + c, the sum of its zeroes equals...",
+      "checkOptions": [
+        { "text": "−b/a", "isCorrect": true },
+        { "text": "c/a", "isCorrect": false },
+        { "text": "b/a", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-sum-product-cubic-zeroes",
+      "subtopicName": "Polynomials",
+      "heading": "Sum and product of a cubic's zeroes",
+      "body": "For ax³ + bx² + cx + d with zeroes α, β, γ, the sum α + β + γ equals −b/a, and the product αβγ equals −d/a.",
+      "checkText": "For a cubic ax³ + bx² + cx + d, the product of its three zeroes equals...",
+      "checkOptions": [
+        { "text": "−d/a", "isCorrect": true },
+        { "text": "c/a", "isCorrect": false },
+        { "text": "−b/a", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-using-sum-product-to-factor",
+      "subtopicName": "Polynomials",
+      "heading": "Factoring with sum and product of zeroes",
+      "body": "Once one zero of a cubic is found, the [[mathext1-sum-product-cubic-zeroes|sum and product formulas]] can find the remaining zeroes directly, often avoiding long division altogether.",
+      "checkText": "After finding one zero of a cubic, sum and product formulas can help you...",
+      "checkOptions": [
+        { "text": "Find the remaining zeroes without long division", "isCorrect": true },
+        { "text": "Prove the polynomial has no zeroes", "isCorrect": false },
+        { "text": "Increase the polynomial's degree", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-multiple-zero-derivative-link",
+      "subtopicName": "Polynomials",
+      "heading": "Multiple zeroes and the derivative",
+      "body": "If α is a zero of [[mathext1-multiplicity-of-zero|multiplicity]] m in P(x), then α is a zero of multiplicity m − 1 in the derivative P'(x).",
+      "checkText": "If α is a triple zero of P(x), what is its multiplicity in P'(x)?",
+      "checkOptions": [
+        { "text": "2 (a double zero)", "isCorrect": true },
+        { "text": "3 (still a triple zero)", "isCorrect": false },
+        { "text": "0 (not a zero at all)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-checking-multiplicity",
+      "subtopicName": "Polynomials",
+      "heading": "Checking how many times a zero repeats",
+      "body": "After finding a zero of P(x), substitute it into P'(x). If that's also zero, it's at least a double zero — keep checking P''(x) to test further.",
+      "checkText": "To check whether a zero of P(x) is also a zero of higher multiplicity, you substitute it into...",
+      "checkOptions": [
+        { "text": "The derivative P'(x)", "isCorrect": true },
+        { "text": "The original polynomial again", "isCorrect": false },
+        { "text": "The constant term only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-tangent-as-double-root",
+      "subtopicName": "Polynomials",
+      "heading": "Tangents are double roots",
+      "body": "When a line meets a curve, solving them together gives an equation whose roots are the meeting points. If the line is a tangent, one of those roots is repeated.",
+      "checkText": "When a line is tangent to a curve, the intersection equation has...",
+      "checkOptions": [
+        { "text": "A repeated (double) root at the point of contact", "isCorrect": true },
+        { "text": "No roots at all", "isCorrect": false },
+        { "text": "Only irrational roots", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-midpoint-via-sum-of-roots",
+      "subtopicName": "Polynomials",
+      "heading": "Finding a midpoint from sum of roots",
+      "body": "If two curves meet at points with x-coordinates α and β, the midpoint's x-coordinate is just (α + β)/2 — found instantly using the [[mathext1-sum-product-quadratic-zeroes|sum of roots]].",
+      "checkText": "The x-coordinate of the midpoint between two intersection points equals...",
+      "checkOptions": [
+        { "text": "Half the sum of the x-coordinates", "isCorrect": true },
+        { "text": "The product of the x-coordinates", "isCorrect": false },
+        { "text": "The difference of the x-coordinates", "isCorrect": false }
+      ]
+    }
+  ]
+}

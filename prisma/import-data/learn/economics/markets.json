@@ -1,0 +1,869 @@
+{
+  "topicName": "Markets",
+  "chunks": [
+    {
+      "slug": "econ-demand-definition",
+      "subtopicName": "Demand",
+      "heading": "What is demand?",
+      "body": "Demand is the amount of something people are willing and able to buy, at a certain price, at a certain time.",
+      "checkText": "Demand means how much of something people are...",
+      "checkOptions": [
+        { "text": "Willing and able to buy", "isCorrect": true },
+        { "text": "Able to make", "isCorrect": false },
+        { "text": "Willing to sell", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-market-demand",
+      "subtopicName": "Demand",
+      "heading": "One buyer vs. everyone",
+      "body": "One person's [[econ-demand-definition|demand]] is called individual demand. Market demand adds up the demand of every buyer in the market.",
+      "checkText": "Market demand is found by...",
+      "checkOptions": [
+        { "text": "Adding up every buyer's demand", "isCorrect": true },
+        { "text": "Looking at just one buyer", "isCorrect": false },
+        { "text": "Only counting sellers", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-substitutes",
+      "subtopicName": "Demand",
+      "heading": "Goods that replace each other",
+      "body": "Substitutes are goods people swap for one another, like butter and margarine. If the price of one substitute rises, demand for the other tends to rise too.",
+      "checkText": "If margarine's price rises, what usually happens to demand for its substitute, butter?",
+      "checkOptions": [
+        { "text": "It rises", "isCorrect": true },
+        { "text": "It falls", "isCorrect": false },
+        { "text": "It stays exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-complements",
+      "subtopicName": "Demand",
+      "heading": "Goods used together",
+      "body": "Complements are goods people usually buy together, like a car and petrol. If the price of one complement rises, demand for the other tends to fall.",
+      "checkText": "Cars and petrol are an example of...",
+      "checkOptions": [
+        { "text": "Complementary goods", "isCorrect": true },
+        { "text": "Substitute goods", "isCorrect": false },
+        { "text": "Unrelated goods", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-expected-prices-demand",
+      "subtopicName": "Demand",
+      "heading": "Buying before prices rise",
+      "body": "If people expect a good's price to rise soon, they often buy more of it now. This pushes current demand up, even before the price actually changes.",
+      "checkText": "Expecting a future price rise tends to make people buy...",
+      "checkOptions": [
+        { "text": "More now", "isCorrect": true },
+        { "text": "Less now", "isCorrect": false },
+        { "text": "Nothing at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-tastes-demand",
+      "subtopicName": "Demand",
+      "heading": "When tastes change",
+      "body": "As people's tastes and preferences change over time, so does their demand. A new trend or new technology can make a product suddenly more or less wanted.",
+      "checkText": "A product becoming more fashionable tends to...",
+      "checkOptions": [
+        { "text": "Increase demand for it", "isCorrect": true },
+        { "text": "Decrease demand for it", "isCorrect": false },
+        { "text": "Have no effect on demand", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-income-demand",
+      "subtopicName": "Demand",
+      "heading": "Income and buying power",
+      "body": "As people earn more income, they can afford to buy more. Higher income usually increases demand, especially for goods that aren't everyday necessities.",
+      "checkText": "A rise in income usually causes demand to...",
+      "checkOptions": [
+        { "text": "Increase", "isCorrect": true },
+        { "text": "Decrease", "isCorrect": false },
+        { "text": "Disappear", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-population-demand",
+      "subtopicName": "Demand",
+      "heading": "More people, more demand",
+      "body": "A bigger population means more total demand for goods overall. The age mix within that population changes which particular goods are in demand.",
+      "checkText": "An ageing population would most likely increase demand for...",
+      "checkOptions": [
+        { "text": "Aged care services", "isCorrect": true },
+        { "text": "Baby products", "isCorrect": false },
+        { "text": "School supplies", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-ceteris-paribus",
+      "subtopicName": "Demand",
+      "heading": "Changing one thing at a time",
+      "body": "Economists study demand by changing one factor, like price, while assuming every other factor stays the same. This assumption is called ceteris paribus.",
+      "checkText": "Ceteris paribus means economists assume...",
+      "checkOptions": [
+        { "text": "All other factors stay the same", "isCorrect": true },
+        { "text": "Everything changes at once", "isCorrect": false },
+        { "text": "Nothing can ever change", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-law-of-demand",
+      "subtopicName": "Demand",
+      "heading": "The law of demand",
+      "body": "The law of demand says that when a good's price falls, [[econ-ceteris-paribus|all else equal]], the quantity people demand rises.",
+      "checkText": "According to the law of demand, a price rise causes quantity demanded to...",
+      "checkOptions": [
+        { "text": "Fall", "isCorrect": true },
+        { "text": "Rise", "isCorrect": false },
+        { "text": "Stay exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-demand-curve",
+      "subtopicName": "Demand",
+      "heading": "Drawing demand as a curve",
+      "body": "Plotting price against quantity demanded gives the demand curve. Because of the [[econ-law-of-demand|law of demand]], it slopes downward from left to right.",
+      "checkText": "A typical demand curve slopes...",
+      "checkOptions": [
+        { "text": "Downward, left to right", "isCorrect": true },
+        { "text": "Upward, left to right", "isCorrect": false },
+        { "text": "Straight across, flat", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-expansion-demand",
+      "subtopicName": "Demand",
+      "heading": "Expansion: sliding down the curve",
+      "body": "When a lower price causes quantity demanded to rise, that's an expansion in demand. It's just movement down along the [[econ-demand-curve|demand curve]] itself.",
+      "checkText": "An expansion in demand happens when...",
+      "checkOptions": [
+        { "text": "Price falls and quantity demanded rises", "isCorrect": true },
+        { "text": "Price rises and quantity demanded rises", "isCorrect": false },
+        { "text": "Tastes change", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-contraction-demand",
+      "subtopicName": "Demand",
+      "heading": "Contraction: sliding up the curve",
+      "body": "When a higher price causes quantity demanded to fall, that's a contraction in demand. Like an [[econ-expansion-demand|expansion]], it's movement along the same curve.",
+      "checkText": "A contraction in demand happens when...",
+      "checkOptions": [
+        { "text": "Price rises and quantity demanded falls", "isCorrect": true },
+        { "text": "Price falls and quantity demanded falls", "isCorrect": false },
+        { "text": "Income rises", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-increase-demand",
+      "subtopicName": "Demand",
+      "heading": "Increase: the whole curve moves",
+      "body": "When something other than price makes people want more of a good, the whole [[econ-demand-curve|demand curve]] shifts right. This is an increase in demand.",
+      "checkText": "An increase in demand shifts the demand curve...",
+      "checkOptions": [
+        { "text": "To the right", "isCorrect": true },
+        { "text": "To the left", "isCorrect": false },
+        { "text": "It doesn't shift, it just moves along the curve", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-decrease-demand",
+      "subtopicName": "Demand",
+      "heading": "Decrease: the whole curve moves back",
+      "body": "When a non-price factor makes people want less of a good, the whole demand curve shifts left. This is the opposite of an [[econ-increase-demand|increase in demand]].",
+      "checkText": "A decrease in demand shifts the demand curve...",
+      "checkOptions": [
+        { "text": "To the left", "isCorrect": true },
+        { "text": "To the right", "isCorrect": false },
+        { "text": "Upward only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-ped-definition",
+      "subtopicName": "Demand",
+      "heading": "How sensitive is demand to price?",
+      "body": "Price elasticity of demand measures how much quantity demanded changes when price changes. It shows how strongly buyers react to a price change.",
+      "checkText": "Price elasticity of demand measures...",
+      "checkOptions": [
+        { "text": "How much quantity demanded responds to a price change", "isCorrect": true },
+        { "text": "How much a good costs to make", "isCorrect": false },
+        { "text": "How many sellers exist", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-elastic-inelastic-demand",
+      "subtopicName": "Demand",
+      "heading": "Elastic vs inelastic demand",
+      "body": "Demand is elastic when quantity demanded changes a lot for a small price change. It's inelastic when quantity demanded barely changes at all.",
+      "checkText": "If a small price rise causes a big drop in quantity demanded, demand is...",
+      "checkOptions": [
+        { "text": "Elastic", "isCorrect": true },
+        { "text": "Inelastic", "isCorrect": false },
+        { "text": "Perfectly fixed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-total-outlay-method",
+      "subtopicName": "Demand",
+      "heading": "Spotting elasticity from spending",
+      "body": "The total outlay method checks total spending after a price change. If spending moves opposite to price, demand is [[econ-elastic-inelastic-demand|elastic]]; if it moves the same way, demand is inelastic.",
+      "checkText": "If a price rise causes total spending to fall, demand is...",
+      "checkOptions": [
+        { "text": "Elastic", "isCorrect": true },
+        { "text": "Inelastic", "isCorrect": false },
+        { "text": "Unrelated to price", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-perfectly-elastic-demand",
+      "subtopicName": "Demand",
+      "heading": "Perfectly elastic: a flat line",
+      "body": "Perfectly elastic demand means buyers will buy an unlimited amount at one price, but none at all above it. This is shown as a flat, horizontal line.",
+      "checkText": "A perfectly elastic demand curve is drawn as a...",
+      "checkOptions": [
+        { "text": "Horizontal line", "isCorrect": true },
+        { "text": "Vertical line", "isCorrect": false },
+        { "text": "Diagonal line", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-perfectly-inelastic-demand",
+      "subtopicName": "Demand",
+      "heading": "Perfectly inelastic: a straight-up line",
+      "body": "Perfectly inelastic demand means buyers will pay any price to get a fixed amount of a good. This is shown as a vertical line.",
+      "checkText": "A perfectly inelastic demand curve is drawn as a...",
+      "checkOptions": [
+        { "text": "Vertical line", "isCorrect": true },
+        { "text": "Horizontal line", "isCorrect": false },
+        { "text": "Curved line", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-necessity-luxury-elasticity",
+      "subtopicName": "Demand",
+      "heading": "Necessities vs luxuries",
+      "body": "Necessities, like bread, have inelastic demand because people keep buying them even if the price rises. Luxuries have more elastic demand, since people can easily go without them.",
+      "checkText": "Demand for a necessity like bread tends to be...",
+      "checkOptions": [
+        { "text": "Inelastic", "isCorrect": true },
+        { "text": "Elastic", "isCorrect": false },
+        { "text": "Perfectly elastic", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-substitutes-elasticity",
+      "subtopicName": "Demand",
+      "heading": "More substitutes, more elastic",
+      "body": "A good with many close [[econ-substitutes|substitutes]] has elastic demand, since buyers can easily switch away if its price rises. Few substitutes means more inelastic demand.",
+      "checkText": "A good with lots of close substitutes tends to have...",
+      "checkOptions": [
+        { "text": "Elastic demand", "isCorrect": true },
+        { "text": "Inelastic demand", "isCorrect": false },
+        { "text": "No demand at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-income-share-elasticity",
+      "subtopicName": "Demand",
+      "heading": "Cheap items barely matter",
+      "body": "Goods that use only a tiny share of someone's income, like chewing gum, have inelastic demand. Expensive goods that take up a big share of income tend to be more elastic.",
+      "checkText": "A cheap item that takes up a small share of income usually has...",
+      "checkOptions": [
+        { "text": "Inelastic demand", "isCorrect": true },
+        { "text": "Elastic demand", "isCorrect": false },
+        { "text": "Perfectly elastic demand", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-time-elasticity-demand",
+      "subtopicName": "Demand",
+      "heading": "Demand gets more elastic over time",
+      "body": "Right after a price change, buyers may not react much because they need time to find alternatives. The longer the time that passes, the more elastic demand becomes.",
+      "checkText": "Over a longer period after a price rise, demand tends to become...",
+      "checkOptions": [
+        { "text": "More elastic", "isCorrect": true },
+        { "text": "More inelastic", "isCorrect": false },
+        { "text": "Impossible to measure", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-supply-definition",
+      "subtopicName": "Supply",
+      "heading": "What is supply?",
+      "body": "Supply is the amount of a good or service that sellers are willing and able to offer for sale, at a certain price and time.",
+      "checkText": "Supply describes how much sellers are...",
+      "checkOptions": [
+        { "text": "Willing and able to sell", "isCorrect": true },
+        { "text": "Willing and able to buy", "isCorrect": false },
+        { "text": "Forced to produce", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-market-supply",
+      "subtopicName": "Supply",
+      "heading": "Adding up every seller",
+      "body": "One firm's supply is called individual supply. Market supply adds together the supply of every firm selling that good in the market.",
+      "checkText": "Market supply is found by...",
+      "checkOptions": [
+        { "text": "Adding up every firm's supply", "isCorrect": true },
+        { "text": "Looking at just one firm", "isCorrect": false },
+        { "text": "Counting only buyers", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-supply-other-goods",
+      "subtopicName": "Supply",
+      "heading": "Switching what you make",
+      "body": "If the price of one good rises, firms able to make either good may switch toward it. This can lower supply of the other good, since it's now less profitable.",
+      "checkText": "If yoghurt becomes more profitable than cheese, dairy firms may...",
+      "checkOptions": [
+        { "text": "Supply less cheese and more yoghurt", "isCorrect": true },
+        { "text": "Supply more of both", "isCorrect": false },
+        { "text": "Stop selling anything", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-expected-prices-supply",
+      "subtopicName": "Supply",
+      "heading": "Waiting for a better price",
+      "body": "If sellers expect a good's price to rise soon, they may hold back stock now and sell it later instead, once they can charge more.",
+      "checkText": "Expecting a future price rise might cause a seller to...",
+      "checkOptions": [
+        { "text": "Hold back some supply now", "isCorrect": true },
+        { "text": "Sell everything immediately at a loss", "isCorrect": false },
+        { "text": "Stop producing forever", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-technology-supply",
+      "subtopicName": "Supply",
+      "heading": "Better technology, more supply",
+      "body": "Improved technology lowers the cost of producing a good. Lower costs let firms supply more of that good at the same price.",
+      "checkText": "Better technology tends to make firms supply...",
+      "checkOptions": [
+        { "text": "More, at the same price", "isCorrect": true },
+        { "text": "Less, at the same price", "isCorrect": false },
+        { "text": "The exact same amount", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-cost-of-production-supply",
+      "subtopicName": "Supply",
+      "heading": "The cost of making it",
+      "body": "When the cost of materials, labour, or other inputs rises, it becomes harder for firms to profitably supply a good, so supply tends to fall.",
+      "checkText": "A rise in the cost of production tends to make supply...",
+      "checkOptions": [
+        { "text": "Fall", "isCorrect": true },
+        { "text": "Rise", "isCorrect": false },
+        { "text": "Stay exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-quantity-available-supply",
+      "subtopicName": "Supply",
+      "heading": "Limited by what's out there",
+      "body": "Some goods are supply-limited simply because there's only so much available, like rare art. More firms entering an industry also raises overall supply.",
+      "checkText": "The supply of a rare resource is limited mainly by...",
+      "checkOptions": [
+        { "text": "How much of it actually exists", "isCorrect": true },
+        { "text": "How much people want to buy", "isCorrect": false },
+        { "text": "The weather", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-climate-supply",
+      "subtopicName": "Supply",
+      "heading": "Weather and farming",
+      "body": "Farming and other agricultural supply depend heavily on weather and the seasons. A drought, for example, can sharply reduce the supply of crops.",
+      "checkText": "A severe drought would most likely cause crop supply to...",
+      "checkOptions": [
+        { "text": "Fall", "isCorrect": true },
+        { "text": "Rise", "isCorrect": false },
+        { "text": "Stay the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-law-of-supply",
+      "subtopicName": "Supply",
+      "heading": "The law of supply",
+      "body": "The law of supply says that as a good's price rises, [[econ-ceteris-paribus|all else equal]], the quantity supplied rises too, since selling becomes more profitable.",
+      "checkText": "According to the law of supply, a price rise causes quantity supplied to...",
+      "checkOptions": [
+        { "text": "Rise", "isCorrect": true },
+        { "text": "Fall", "isCorrect": false },
+        { "text": "Stay exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-supply-curve",
+      "subtopicName": "Supply",
+      "heading": "Drawing supply as a curve",
+      "body": "Plotting price against quantity supplied gives the supply curve. Because of the [[econ-law-of-supply|law of supply]], it slopes upward from left to right.",
+      "checkText": "A typical supply curve slopes...",
+      "checkOptions": [
+        { "text": "Upward, left to right", "isCorrect": true },
+        { "text": "Downward, left to right", "isCorrect": false },
+        { "text": "Straight across, flat", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-expansion-supply",
+      "subtopicName": "Supply",
+      "heading": "Expansion: sliding up the curve",
+      "body": "When a higher price causes quantity supplied to rise, that's an expansion in supply. It's just movement along the same [[econ-supply-curve|supply curve]].",
+      "checkText": "An expansion in supply happens when...",
+      "checkOptions": [
+        { "text": "Price rises and quantity supplied rises", "isCorrect": true },
+        { "text": "Price falls and quantity supplied rises", "isCorrect": false },
+        { "text": "Technology improves", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-contraction-supply",
+      "subtopicName": "Supply",
+      "heading": "Contraction: sliding down the curve",
+      "body": "When a lower price causes quantity supplied to fall, that's a contraction in supply. Like an [[econ-expansion-supply|expansion]], it's movement along the same curve.",
+      "checkText": "A contraction in supply happens when...",
+      "checkOptions": [
+        { "text": "Price falls and quantity supplied falls", "isCorrect": true },
+        { "text": "Price rises and quantity supplied falls", "isCorrect": false },
+        { "text": "Costs rise", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-increase-supply",
+      "subtopicName": "Supply",
+      "heading": "Increase: the whole curve moves",
+      "body": "When something other than price lets firms supply more, like cheaper costs, the whole [[econ-supply-curve|supply curve]] shifts right. This is an increase in supply.",
+      "checkText": "An increase in supply shifts the supply curve...",
+      "checkOptions": [
+        { "text": "To the right", "isCorrect": true },
+        { "text": "To the left", "isCorrect": false },
+        { "text": "It stays exactly where it is", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-decrease-supply",
+      "subtopicName": "Supply",
+      "heading": "Decrease: the whole curve moves back",
+      "body": "When a non-price factor makes firms supply less, the whole supply curve shifts left. This is the opposite of an [[econ-increase-supply|increase in supply]].",
+      "checkText": "A decrease in supply shifts the supply curve...",
+      "checkOptions": [
+        { "text": "To the left", "isCorrect": true },
+        { "text": "To the right", "isCorrect": false },
+        { "text": "Upward only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-pes-definition",
+      "subtopicName": "Supply",
+      "heading": "How sensitive is supply to price?",
+      "body": "Price elasticity of supply measures how much quantity supplied changes when price changes. It shows how strongly sellers react to a price change.",
+      "checkText": "Price elasticity of supply measures...",
+      "checkOptions": [
+        { "text": "How much quantity supplied responds to a price change", "isCorrect": true },
+        { "text": "How much a good costs to buy", "isCorrect": false },
+        { "text": "How many buyers exist", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-perfectly-elastic-supply",
+      "subtopicName": "Supply",
+      "heading": "Perfectly elastic: a flat line",
+      "body": "Perfectly elastic supply means firms will supply an unlimited amount at one price, but nothing at all below it. This is shown as a flat, horizontal line.",
+      "checkText": "A perfectly elastic supply curve is drawn as a...",
+      "checkOptions": [
+        { "text": "Horizontal line", "isCorrect": true },
+        { "text": "Vertical line", "isCorrect": false },
+        { "text": "Diagonal line", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-perfectly-inelastic-supply",
+      "subtopicName": "Supply",
+      "heading": "Perfectly inelastic: a straight-up line",
+      "body": "Perfectly inelastic supply means the quantity supplied stays fixed no matter the price, like a one-of-a-kind artwork. This is shown as a vertical line.",
+      "checkText": "A perfectly inelastic supply curve is drawn as a...",
+      "checkOptions": [
+        { "text": "Vertical line", "isCorrect": true },
+        { "text": "Horizontal line", "isCorrect": false },
+        { "text": "Curved line", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-time-elasticity-supply",
+      "subtopicName": "Supply",
+      "heading": "Supply gets more elastic over time",
+      "body": "Right after a price rise, firms can't quickly increase production, so supply is inelastic. Given more time, firms can adjust and supply becomes more elastic.",
+      "checkText": "Given more time to respond to a price change, supply tends to become...",
+      "checkOptions": [
+        { "text": "More elastic", "isCorrect": true },
+        { "text": "More inelastic", "isCorrect": false },
+        { "text": "Impossible to measure", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-inventory-elasticity-supply",
+      "subtopicName": "Supply",
+      "heading": "Stockpiling makes supply flexible",
+      "body": "Goods that can be stored, like furniture, let firms hold stock back and release it later. This ability to store stock makes supply more elastic.",
+      "checkText": "A good that is easy to store tends to have...",
+      "checkOptions": [
+        { "text": "More elastic supply", "isCorrect": true },
+        { "text": "More inelastic supply", "isCorrect": false },
+        { "text": "Zero supply", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-excess-capacity-supply",
+      "subtopicName": "Supply",
+      "heading": "Spare capacity means quick supply",
+      "body": "A firm with spare, unused capacity can quickly ramp up production when price rises. This spare capacity makes supply more elastic.",
+      "checkText": "A firm operating with lots of spare capacity would have...",
+      "checkOptions": [
+        { "text": "More elastic supply", "isCorrect": true },
+        { "text": "More inelastic supply", "isCorrect": false },
+        { "text": "No ability to respond to price", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-price-mechanism",
+      "subtopicName": "Market equilibrium",
+      "heading": "The price mechanism",
+      "body": "The price mechanism is how [[econ-market-demand|demand]] and [[econ-market-supply|supply]] interact to set the market price and the quantity bought and sold.",
+      "checkText": "The price mechanism is the interaction between...",
+      "checkOptions": [
+        { "text": "Demand and supply", "isCorrect": true },
+        { "text": "Government and taxes", "isCorrect": false },
+        { "text": "Two competing firms only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-market-equilibrium-definition",
+      "subtopicName": "Market equilibrium",
+      "heading": "What is market equilibrium?",
+      "body": "Market equilibrium is the price where quantity demanded exactly equals quantity supplied. At this price, the market clears and there's no pressure for price to change.",
+      "checkText": "At market equilibrium, quantity demanded and quantity supplied are...",
+      "checkOptions": [
+        { "text": "Equal", "isCorrect": true },
+        { "text": "Always unequal", "isCorrect": false },
+        { "text": "Both zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-excess-demand",
+      "subtopicName": "Market equilibrium",
+      "heading": "Excess demand",
+      "body": "If price is set below equilibrium, quantity demanded is greater than quantity supplied. This gap, called excess demand, pushes the price back up.",
+      "checkText": "Excess demand happens when price is...",
+      "checkOptions": [
+        { "text": "Below equilibrium", "isCorrect": true },
+        { "text": "Above equilibrium", "isCorrect": false },
+        { "text": "Exactly at equilibrium", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-excess-supply",
+      "subtopicName": "Market equilibrium",
+      "heading": "Excess supply",
+      "body": "If price is set above equilibrium, quantity supplied is greater than quantity demanded. This gap, called excess supply, pushes the price back down.",
+      "checkText": "Excess supply happens when price is...",
+      "checkOptions": [
+        { "text": "Above equilibrium", "isCorrect": true },
+        { "text": "Below equilibrium", "isCorrect": false },
+        { "text": "Exactly at equilibrium", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-how-equilibrium-reached",
+      "subtopicName": "Market equilibrium",
+      "heading": "How the market settles",
+      "body": "[[econ-excess-demand|Excess demand]] and [[econ-excess-supply|excess supply]] both push price toward equilibrium, where the market finally clears with no shortage or surplus left.",
+      "checkText": "A market with excess demand or excess supply keeps changing price until it reaches...",
+      "checkOptions": [
+        { "text": "Equilibrium", "isCorrect": true },
+        { "text": "Zero", "isCorrect": false },
+        { "text": "Its highest possible level", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-increase-demand-equilibrium",
+      "subtopicName": "Market equilibrium",
+      "heading": "More demand changes equilibrium",
+      "body": "An [[econ-increase-demand|increase in demand]] shifts the demand curve right, raising both the equilibrium price and the equilibrium quantity.",
+      "checkText": "An increase in demand raises equilibrium price and...",
+      "checkOptions": [
+        { "text": "Raises equilibrium quantity too", "isCorrect": true },
+        { "text": "Lowers equilibrium quantity", "isCorrect": false },
+        { "text": "Leaves quantity unchanged", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-decrease-demand-equilibrium",
+      "subtopicName": "Market equilibrium",
+      "heading": "Less demand changes equilibrium",
+      "body": "A [[econ-decrease-demand|decrease in demand]] shifts the demand curve left, lowering both the equilibrium price and the equilibrium quantity.",
+      "checkText": "A decrease in demand lowers equilibrium price and...",
+      "checkOptions": [
+        { "text": "Lowers equilibrium quantity too", "isCorrect": true },
+        { "text": "Raises equilibrium quantity", "isCorrect": false },
+        { "text": "Leaves quantity unchanged", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-increase-supply-equilibrium",
+      "subtopicName": "Market equilibrium",
+      "heading": "More supply changes equilibrium",
+      "body": "An [[econ-increase-supply|increase in supply]] shifts the supply curve right, lowering the equilibrium price but raising the equilibrium quantity.",
+      "checkText": "An increase in supply lowers equilibrium price and...",
+      "checkOptions": [
+        { "text": "Raises equilibrium quantity", "isCorrect": true },
+        { "text": "Lowers equilibrium quantity", "isCorrect": false },
+        { "text": "Leaves quantity unchanged", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-decrease-supply-equilibrium",
+      "subtopicName": "Market equilibrium",
+      "heading": "Less supply changes equilibrium",
+      "body": "A [[econ-decrease-supply|decrease in supply]] shifts the supply curve left, raising the equilibrium price but lowering the equilibrium quantity.",
+      "checkText": "A decrease in supply raises equilibrium price and...",
+      "checkOptions": [
+        { "text": "Lowers equilibrium quantity", "isCorrect": true },
+        { "text": "Raises equilibrium quantity", "isCorrect": false },
+        { "text": "Leaves quantity unchanged", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-allocative-efficiency",
+      "subtopicName": "Market equilibrium",
+      "heading": "The market's best trick",
+      "body": "Allocative efficiency means resources go toward producing what consumers actually want. At [[econ-market-equilibrium-definition|equilibrium]], the market achieves this without anyone planning it centrally.",
+      "checkText": "Allocative efficiency means resources are used to produce...",
+      "checkOptions": [
+        { "text": "What consumers actually want", "isCorrect": true },
+        { "text": "Whatever costs the least to make", "isCorrect": false },
+        { "text": "Only luxury goods", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-product-market",
+      "subtopicName": "Market equilibrium",
+      "heading": "Markets for things you buy",
+      "body": "A product market is where the demand for and supply of finished goods and services, like shoes or haircuts, meet to set a price.",
+      "checkText": "A product market determines the price of...",
+      "checkOptions": [
+        { "text": "Finished goods and services", "isCorrect": true },
+        { "text": "Workers' wages", "isCorrect": false },
+        { "text": "Government taxes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-factor-market",
+      "subtopicName": "Market equilibrium",
+      "heading": "Markets for what makes things",
+      "body": "A factor market is where the demand for and supply of production inputs, like labour or capital, meet to set a price, such as a wage.",
+      "checkText": "A factor market sets the price of...",
+      "checkOptions": [
+        { "text": "Inputs used to make goods, like labour", "isCorrect": true },
+        { "text": "Finished consumer products", "isCorrect": false },
+        { "text": "Only imported goods", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-market-structure",
+      "subtopicName": "Market equilibrium",
+      "heading": "Four ways a market can look",
+      "body": "Market structure describes how many firms are in an industry and how much power each has over price. There are four main market structures.",
+      "checkText": "Market structure mainly describes...",
+      "checkOptions": [
+        { "text": "How many firms compete and their pricing power", "isCorrect": true },
+        { "text": "How many customers exist", "isCorrect": false },
+        { "text": "The weather conditions", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-pure-competition",
+      "subtopicName": "Market equilibrium",
+      "heading": "Pure competition: no one has power",
+      "body": "In pure competition, many small firms sell an identical product, so no single firm can influence the price. Each firm is a price taker.",
+      "checkText": "In pure competition, an individual firm can...",
+      "checkOptions": [
+        { "text": "Only accept the market price", "isCorrect": true },
+        { "text": "Set its own price freely", "isCorrect": false },
+        { "text": "Block new firms from entering", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-monopoly",
+      "subtopicName": "Market equilibrium",
+      "heading": "Monopoly: total control",
+      "body": "A monopoly is a market with only one seller, no close substitutes, and high barriers stopping others entering. This single firm can set its own price.",
+      "checkText": "In a monopoly, how many firms sell the product?",
+      "checkOptions": [
+        { "text": "Just one", "isCorrect": true },
+        { "text": "A large number", "isCorrect": false },
+        { "text": "Exactly two", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-monopolistic-competition",
+      "subtopicName": "Market equilibrium",
+      "heading": "Monopolistic competition: many, but different",
+      "body": "Monopolistic competition has many small firms selling similar but not identical products, like restaurants. Each has some pricing power through [[econ-product-differentiation|product differentiation]].",
+      "checkText": "Monopolistic competition involves many firms selling products that are...",
+      "checkOptions": [
+        { "text": "Similar but not identical", "isCorrect": true },
+        { "text": "Exactly identical", "isCorrect": false },
+        { "text": "Made by only one firm", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-product-differentiation",
+      "subtopicName": "Market equilibrium",
+      "heading": "Making your product stand out",
+      "body": "Product differentiation is when a firm makes its good or service seem different from rivals, such as through packaging or branding, to build customer loyalty.",
+      "checkText": "Product differentiation helps a firm gain...",
+      "checkOptions": [
+        { "text": "Some pricing power and loyal customers", "isCorrect": true },
+        { "text": "Zero customers", "isCorrect": false },
+        { "text": "A government monopoly", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-oligopoly",
+      "subtopicName": "Market equilibrium",
+      "heading": "Oligopoly: a few big players",
+      "body": "An oligopoly is a market dominated by just a few large firms, like supermarkets or airlines. High barriers to entry keep new competitors out.",
+      "checkText": "An oligopoly is a market dominated by...",
+      "checkOptions": [
+        { "text": "A few large firms", "isCorrect": true },
+        { "text": "Countless tiny firms", "isCorrect": false },
+        { "text": "One single firm", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-market-failure",
+      "subtopicName": "Government intervention in markets",
+      "heading": "When markets get it wrong",
+      "body": "Market failure happens when the free market doesn't produce the best outcome for society, often because it ignores costs or benefits that fall on people outside the deal.",
+      "checkText": "Market failure occurs when the market...",
+      "checkOptions": [
+        { "text": "Fails to produce the best outcome for society", "isCorrect": true },
+        { "text": "Always sets the perfect price", "isCorrect": false },
+        { "text": "Has too many buyers", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-price-ceiling",
+      "subtopicName": "Government intervention in markets",
+      "heading": "Price ceiling: a legal maximum",
+      "body": "A price ceiling is the highest price the government allows sellers to charge, used when it thinks the market price is too high. It can cause a shortage.",
+      "checkText": "A price ceiling sets a legal...",
+      "checkOptions": [
+        { "text": "Maximum price", "isCorrect": true },
+        { "text": "Minimum price", "isCorrect": false },
+        { "text": "Fixed quantity", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-price-floor",
+      "subtopicName": "Government intervention in markets",
+      "heading": "Price floor: a legal minimum",
+      "body": "A price floor is the lowest price the government allows sellers to charge, used when it thinks the market price is too low. It can cause a surplus.",
+      "checkText": "A price floor sets a legal...",
+      "checkOptions": [
+        { "text": "Minimum price", "isCorrect": true },
+        { "text": "Maximum price", "isCorrect": false },
+        { "text": "Fixed quantity", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-externalities",
+      "subtopicName": "Government intervention in markets",
+      "heading": "Costs and benefits beyond the deal",
+      "body": "Externalities are costs or benefits from producing or using a good that spill over onto other people, who weren't part of the original buying and selling.",
+      "checkText": "An externality affects...",
+      "checkOptions": [
+        { "text": "People outside the original transaction", "isCorrect": true },
+        { "text": "Only the buyer", "isCorrect": false },
+        { "text": "Only the seller", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-negative-externalities",
+      "subtopicName": "Government intervention in markets",
+      "heading": "Spillover costs",
+      "body": "A negative [[econ-externalities|externality]] is a cost that falls on someone else, like pollution harming nearby residents. Left alone, the market tends to overproduce these goods.",
+      "checkText": "A negative externality is a cost that falls on...",
+      "checkOptions": [
+        { "text": "Someone outside the transaction", "isCorrect": true },
+        { "text": "Only the producing firm", "isCorrect": false },
+        { "text": "Only the government", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-positive-externalities",
+      "subtopicName": "Government intervention in markets",
+      "heading": "Spillover benefits",
+      "body": "A positive [[econ-externalities|externality]] is a benefit that goes to someone else, beyond the buyer and seller. Left alone, the market tends to underproduce these goods.",
+      "checkText": "A positive externality is a benefit that goes to...",
+      "checkOptions": [
+        { "text": "Someone outside the transaction", "isCorrect": true },
+        { "text": "Only the buyer", "isCorrect": false },
+        { "text": "Nobody at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-merit-goods",
+      "subtopicName": "Government intervention in markets",
+      "heading": "Goods worth encouraging",
+      "body": "Merit goods, like education and healthcare, come with [[econ-positive-externalities|positive externalities]] that buyers don't fully value. Governments often subsidise them so more gets produced and used.",
+      "checkText": "Merit goods are often subsidised by government because they have...",
+      "checkOptions": [
+        { "text": "Positive externalities", "isCorrect": true },
+        { "text": "Negative externalities", "isCorrect": false },
+        { "text": "No value to society", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-public-goods",
+      "subtopicName": "Government intervention in markets",
+      "heading": "Goods the market won't make",
+      "body": "Public goods, like national defence, wouldn't be supplied by private firms at all, since they can't stop people who don't pay from still benefiting. Government provides these instead.",
+      "checkText": "Public goods are usually provided by the government because private firms...",
+      "checkOptions": [
+        { "text": "Can't stop non-payers from benefiting", "isCorrect": true },
+        { "text": "Make too much profit from them", "isCorrect": false },
+        { "text": "Are legally banned from selling them", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-taxes-negative-externalities",
+      "subtopicName": "Government intervention in markets",
+      "heading": "Taxing away the harm",
+      "body": "Governments can tax goods with [[econ-negative-externalities|negative externalities]], like pollution-causing products. The tax raises firms' costs, reducing the quantity supplied toward a better level for society.",
+      "checkText": "A tax on a good with negative externalities is meant to...",
+      "checkOptions": [
+        { "text": "Reduce the quantity produced", "isCorrect": true },
+        { "text": "Increase the quantity produced", "isCorrect": false },
+        { "text": "Make the good completely free", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-subsidies-positive-externalities",
+      "subtopicName": "Government intervention in markets",
+      "heading": "Subsidising the good stuff",
+      "body": "Governments can give subsidies to producers or consumers of [[econ-merit-goods|merit goods]]. A subsidy lowers the price and encourages more of the good to be produced and used.",
+      "checkText": "A subsidy for a merit good is meant to...",
+      "checkOptions": [
+        { "text": "Increase the quantity produced and consumed", "isCorrect": true },
+        { "text": "Decrease the quantity produced", "isCorrect": false },
+        { "text": "Ban the good entirely", "isCorrect": false }
+      ]
+    }
+  ]
+}
