@@ -18,7 +18,10 @@ export default async function DashboardPage() {
   const subjects = await db.subject.findMany({
     orderBy: { name: "asc" },
     include: {
-      topics: { orderBy: { order: "asc" } },
+      topics: {
+        orderBy: { order: "asc" },
+        include: { subtopics: { orderBy: { order: "asc" } } },
+      },
     },
   });
 
@@ -111,6 +114,7 @@ export default async function DashboardPage() {
               topicName: topic.name,
               mcqScore: m?.mcqScore ?? null,
               masteryScore: m?.masteryScore ?? null,
+              subtopics: topic.subtopics.map((s) => ({ id: s.id, name: s.name })),
             };
           });
           return (
@@ -126,7 +130,7 @@ export default async function DashboardPage() {
                   Practice
                 </Link>
               </div>
-              <MasteryTable rows={rows} />
+              <MasteryTable subjectSlug={subject.slug} rows={rows} />
             </section>
           );
         })}
