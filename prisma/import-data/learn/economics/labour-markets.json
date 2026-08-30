@@ -1,0 +1,749 @@
+{
+  "topicName": "Labour Markets",
+  "chunks": [
+    {
+      "slug": "econ-labour-market",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "What is a labour market?",
+      "body": "A labour market is where people who want jobs meet employers who want workers. Workers offer their labour, and employers offer wages in return.",
+      "checkText": "In a labour market, who is offering labour?",
+      "checkOptions": [
+        { "text": "Workers", "isCorrect": true },
+        { "text": "Employers", "isCorrect": false },
+        { "text": "The government", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-derived-demand",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "Why firms want workers",
+      "body": "Firms don't want labour for its own sake. They demand workers only because they need them to make the goods and services that customers want.",
+      "checkText": "Demand for labour comes from demand for...",
+      "checkOptions": [
+        { "text": "Goods and services", "isCorrect": true },
+        { "text": "Leisure time", "isCorrect": false },
+        { "text": "Government spending only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-labour-demand-curve",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "Cheaper labour, more workers hired",
+      "body": "The demand curve for labour slopes downward. As wages fall, firms are willing to hire more workers, just like a normal demand curve.",
+      "checkText": "As wages fall, firms tend to...",
+      "checkOptions": [
+        { "text": "Hire more workers", "isCorrect": true },
+        { "text": "Hire fewer workers", "isCorrect": false },
+        { "text": "Hire exactly the same number", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-aggregate-demand-labour",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "A booming economy needs more workers",
+      "body": "When the whole economy grows strongly, businesses sell more and need more staff. This links [[econ-derived-demand|derived demand]] for labour to the wider economy.",
+      "checkText": "When the economy grows strongly, firms usually...",
+      "checkOptions": [
+        { "text": "Increase their demand for labour", "isCorrect": true },
+        { "text": "Decrease their demand for labour", "isCorrect": false },
+        { "text": "Stop hiring completely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-industry-demand-labour",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "Some industries grow, others shrink",
+      "body": "When people want more of an industry's products, that industry hires more workers. When demand for its products falls, it hires fewer.",
+      "checkText": "An industry facing rising demand for its products will likely...",
+      "checkOptions": [
+        { "text": "Increase its demand for labour", "isCorrect": true },
+        { "text": "Decrease its demand for labour", "isCorrect": false },
+        { "text": "Not change its hiring at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-labour-productivity",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "Measuring how much each worker produces",
+      "body": "Labour productivity is the amount of output produced per worker in a set time. It's calculated as total output divided by labour input.",
+      "checkText": "Labour productivity is calculated as...",
+      "checkOptions": [
+        { "text": "Total output divided by labour input", "isCorrect": true },
+        { "text": "Total wages divided by hours worked", "isCorrect": false },
+        { "text": "Total profit divided by number of firms", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-productivity-labour-demand-link",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "When productivity rises, demand for labour can fall",
+      "body": "If [[econ-labour-productivity|productivity]] rises but sales stay the same, a firm can produce the same amount with fewer workers, so it may need less labour.",
+      "checkText": "If productivity rises but sales don't grow, a firm's demand for labour will likely...",
+      "checkOptions": [
+        { "text": "Fall", "isCorrect": true },
+        { "text": "Rise", "isCorrect": false },
+        { "text": "Always stay exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-cost-of-capital",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "The price of machines matters too",
+      "body": "Firms also weigh up the cost of using machines and technology, called capital, against the cost of labour when deciding how to produce.",
+      "checkText": "Capital refers to...",
+      "checkOptions": [
+        { "text": "Machines and technology used in production", "isCorrect": true },
+        { "text": "Wages paid to workers", "isCorrect": false },
+        { "text": "Money kept in a savings account", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-labour-capital-substitution",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "Swapping workers for machines",
+      "body": "If [[econ-cost-of-capital|capital]] becomes cheaper than labour, firms may use more machines and hire fewer workers. If labour becomes cheaper, they may hire more workers instead.",
+      "checkText": "If the cost of capital falls compared to labour, firms are more likely to...",
+      "checkOptions": [
+        { "text": "Use more machines and less labour", "isCorrect": true },
+        { "text": "Hire more workers and use fewer machines", "isCorrect": false },
+        { "text": "Close down completely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-labour-oncosts",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "Wages aren't the only cost of a worker",
+      "body": "Employing someone costs more than just their wage. Employers also pay extra costs like superannuation and leave, known as labour on-costs.",
+      "checkText": "Labour on-costs include extra costs such as...",
+      "checkOptions": [
+        { "text": "Superannuation and leave entitlements", "isCorrect": true },
+        { "text": "Only the worker's wage", "isCorrect": false },
+        { "text": "Rent for the office building", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-labour-supply-curve",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "Higher pay, more people willing to work",
+      "body": "The supply curve for labour slopes upward. As wages rise, more people are willing to give up their free time and offer their labour.",
+      "checkText": "As wages rise, the supply of labour tends to...",
+      "checkOptions": [
+        { "text": "Increase", "isCorrect": true },
+        { "text": "Decrease", "isCorrect": false },
+        { "text": "Stay completely fixed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-human-capital",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "The skills a worker brings",
+      "body": "Human capital is a worker's combined knowledge, skills, training and experience. Jobs needing more human capital are harder to fill quickly.",
+      "checkText": "Human capital refers to a worker's...",
+      "checkOptions": [
+        { "text": "Knowledge, skills, training and experience", "isCorrect": true },
+        { "text": "Salary and bonus payments", "isCorrect": false },
+        { "text": "Physical strength only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-occupational-mobility",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "Moving between different jobs",
+      "body": "Occupational mobility is how easily a worker can switch to a different type of job. Jobs needing long training have low occupational mobility.",
+      "checkText": "Occupational mobility describes how easily a worker can...",
+      "checkOptions": [
+        { "text": "Switch to a different occupation", "isCorrect": true },
+        { "text": "Move to a different city", "isCorrect": false },
+        { "text": "Retire early", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-geographic-mobility",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "Moving to where the jobs are",
+      "body": "Geographic mobility is how easily a worker can move to a different location for work. Moving costs and family ties can make this harder.",
+      "checkText": "Geographic mobility describes a worker's ability to...",
+      "checkOptions": [
+        { "text": "Move to a different location for work", "isCorrect": true },
+        { "text": "Learn a brand new skill", "isCorrect": false },
+        { "text": "Change occupation", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-participation-rate",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "How many people are in the workforce?",
+      "body": "The labour force participation rate is the percentage of the population aged 15 and over who are working or actively looking for work.",
+      "checkText": "The participation rate measures the percentage of people who are...",
+      "checkOptions": [
+        { "text": "Working or actively seeking work", "isCorrect": true },
+        { "text": "Currently unemployed only", "isCorrect": false },
+        { "text": "Retired", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-participation-factors",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "What changes the participation rate",
+      "body": "More people join the workforce when the economy is strong and jobs seem easy to find, changing the [[econ-participation-rate|participation rate]]. Fewer join during downturns.",
+      "checkText": "During a strong economy, the participation rate tends to...",
+      "checkOptions": [
+        { "text": "Rise, as more people look for work", "isCorrect": true },
+        { "text": "Fall, as people give up looking", "isCorrect": false },
+        { "text": "Stay completely fixed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-workforce-definition",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "Who counts as part of the workforce?",
+      "body": "The workforce includes everyone aged 15 or over who is either employed, or unemployed and actively looking for work. Students and retirees are not counted.",
+      "checkText": "The workforce includes people who are...",
+      "checkOptions": [
+        { "text": "Employed, or unemployed and looking for work", "isCorrect": true },
+        { "text": "Only those with a full-time job", "isCorrect": false },
+        { "text": "Anyone over the age of 15", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-population-growth-workforce",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "A bigger population, a bigger workforce",
+      "body": "The size of the population sets a limit on how big the workforce can be. Population grows through more births than deaths, and through migration.",
+      "checkText": "Population growth comes from more births than deaths, plus...",
+      "checkOptions": [
+        { "text": "Migration into the country", "isCorrect": true },
+        { "text": "Higher wages", "isCorrect": false },
+        { "text": "Lower unemployment", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-ageing-population",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "An older population, a smaller workforce",
+      "body": "As a population ages, a smaller share of people are of working age. This can shrink the workforce over time unless other factors offset it.",
+      "checkText": "An ageing population tends to...",
+      "checkOptions": [
+        { "text": "Shrink the share of people who can work", "isCorrect": true },
+        { "text": "Automatically raise wages for everyone", "isCorrect": false },
+        { "text": "Have no effect on the workforce", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-labour-market-equilibrium",
+      "subtopicName": "Demand for and supply of labour",
+      "heading": "Where wages settle",
+      "body": "Labour market equilibrium happens where the [[econ-labour-supply-curve|supply]] of workers matches the [[econ-labour-demand-curve|demand]] from firms. At this wage, everyone willing to work finds a job.",
+      "checkText": "Labour market equilibrium happens where...",
+      "checkOptions": [
+        { "text": "Quantity of labour supplied equals quantity demanded", "isCorrect": true },
+        { "text": "Wages are at their highest possible level", "isCorrect": false },
+        { "text": "All workers earn exactly the same wage", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-wage-outcomes",
+      "subtopicName": "Wage determination",
+      "heading": "What the labour market delivers",
+      "body": "Just like other markets produce a price and a quantity, the labour market produces two outcomes: wage levels and how many people are employed.",
+      "checkText": "The two main outcomes of the labour market are wages and...",
+      "checkOptions": [
+        { "text": "Employment levels", "isCorrect": true },
+        { "text": "Interest rates", "isCorrect": false },
+        { "text": "Company profits", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-average-weekly-earnings",
+      "subtopicName": "Wage determination",
+      "heading": "Tracking the economy's overall pay",
+      "body": "Average weekly earnings is the typical amount all employees are paid before tax each week. It's a simple way to track wage trends over time.",
+      "checkText": "Average weekly earnings measures pay...",
+      "checkOptions": [
+        { "text": "Before tax, across all employees", "isCorrect": true },
+        { "text": "After tax, for managers only", "isCorrect": false },
+        { "text": "For unemployed people", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-nominal-wage",
+      "subtopicName": "Wage determination",
+      "heading": "Wages in raw dollar terms",
+      "body": "A nominal wage is the dollar amount a worker is paid, without adjusting for rising prices. It's just the number on the pay slip.",
+      "checkText": "A nominal wage is measured...",
+      "checkOptions": [
+        { "text": "In raw dollar terms, not adjusted for prices", "isCorrect": true },
+        { "text": "As a percentage of company profit", "isCorrect": false },
+        { "text": "After removing the effect of inflation", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-real-wage",
+      "subtopicName": "Wage determination",
+      "heading": "What your wage can actually buy",
+      "body": "A real wage adjusts the [[econ-nominal-wage|nominal wage]] for inflation. It shows whether your pay can actually buy more or less than before.",
+      "checkText": "A real wage tells you...",
+      "checkOptions": [
+        { "text": "What your pay can actually buy", "isCorrect": true },
+        { "text": "Only the dollar figure on your pay slip", "isCorrect": false },
+        { "text": "How many hours you worked", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-real-labour-costs",
+      "subtopicName": "Wage determination",
+      "heading": "When wages outpace productivity",
+      "body": "If wages grow faster than prices and productivity combined, the real cost of labour rises for employers, which can squeeze their profits.",
+      "checkText": "Real labour costs rise when wage growth is...",
+      "checkOptions": [
+        { "text": "Faster than inflation and productivity combined", "isCorrect": true },
+        { "text": "Slower than inflation alone", "isCorrect": false },
+        { "text": "Exactly equal to productivity growth", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-wage-differentials-occupation",
+      "subtopicName": "Wage determination",
+      "heading": "Why some jobs pay more than others",
+      "body": "Jobs that need more skill or years of training usually pay more. Jobs that are easy to enter, with many available workers, tend to pay less.",
+      "checkText": "Jobs requiring long training and rare skills tend to pay...",
+      "checkOptions": [
+        { "text": "More, because fewer people can do them", "isCorrect": true },
+        { "text": "Less, because they are risky", "isCorrect": false },
+        { "text": "The same as every other job", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-wage-differentials-within-occupation",
+      "subtopicName": "Wage determination",
+      "heading": "Why pay differs within the same job",
+      "body": "Even within the same occupation, wages can differ. More experienced workers, or those in isolated locations needing extra incentive, are often paid more.",
+      "checkText": "Within the same occupation, more experienced workers usually earn...",
+      "checkOptions": [
+        { "text": "More than less experienced workers", "isCorrect": true },
+        { "text": "Exactly the same as everyone else", "isCorrect": false },
+        { "text": "Less, because they cost more to train", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-gender-pay-gap",
+      "subtopicName": "Wage determination",
+      "heading": "The difference between men's and women's pay",
+      "body": "The gender pay gap is the difference between the average earnings of men and women. In Australia, this gap has shrunk but hasn't closed completely.",
+      "checkText": "The gender pay gap measures the difference in average earnings between...",
+      "checkOptions": [
+        { "text": "Men and women", "isCorrect": true },
+        { "text": "Different states", "isCorrect": false },
+        { "text": "Different age groups", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-migrant-wage-outcomes",
+      "subtopicName": "Wage determination",
+      "heading": "Wages for workers born overseas",
+      "body": "Workers who migrate to Australia often earn less than average when they first arrive. Over time, their earnings tend to move closer to typical levels.",
+      "checkText": "When migrants first arrive in Australia, their wages tend to be...",
+      "checkOptions": [
+        { "text": "Lower than average, but rising over time", "isCorrect": true },
+        { "text": "Always higher than average immediately", "isCorrect": false },
+        { "text": "Fixed and unable to change", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-indigenous-wage-outcomes",
+      "subtopicName": "Wage determination",
+      "heading": "A long-standing income gap",
+      "body": "Indigenous Australians have, on average, lower incomes than non-Indigenous Australians. This gap has lasted much longer than gaps faced by many other groups.",
+      "checkText": "Compared to non-Indigenous Australians, Indigenous Australians on average have...",
+      "checkOptions": [
+        { "text": "Lower incomes", "isCorrect": true },
+        { "text": "Higher incomes", "isCorrect": false },
+        { "text": "Identical incomes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-award-vs-enterprise-bargaining",
+      "subtopicName": "Wage determination",
+      "heading": "From one set wage to workplace deals",
+      "body": "Wages used to be set centrally by a tribunal for whole industries. Now, most wages are negotiated at each individual workplace, called enterprise bargaining.",
+      "checkText": "Enterprise bargaining means wages are mainly negotiated...",
+      "checkOptions": [
+        { "text": "At each individual workplace", "isCorrect": true },
+        { "text": "By one central tribunal for every industry", "isCorrect": false },
+        { "text": "By the Prime Minister", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-income-distribution-quintiles",
+      "subtopicName": "Wage determination",
+      "heading": "Splitting incomes into five groups",
+      "body": "Economists often divide all income earners into five equal-sized groups, called quintiles, from lowest to highest, to see how income is shared out.",
+      "checkText": "A quintile divides income earners into...",
+      "checkOptions": [
+        { "text": "Five equal-sized groups", "isCorrect": true },
+        { "text": "Two groups: rich and poor", "isCorrect": false },
+        { "text": "Ten equal-sized groups", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-non-wage-outcomes",
+      "subtopicName": "Wage determination",
+      "heading": "Benefits beyond the pay packet",
+      "body": "Non-wage outcomes are job benefits other than the wage itself, such as bonuses, extra superannuation, or flexible hours to work from home.",
+      "checkText": "Non-wage outcomes include benefits such as...",
+      "checkOptions": [
+        { "text": "Flexible working hours", "isCorrect": true },
+        { "text": "The base hourly wage rate", "isCorrect": false },
+        { "text": "Overtime pay only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-inequality-economic-benefits",
+      "subtopicName": "Wage determination",
+      "heading": "Can unequal pay push people to try harder?",
+      "body": "Some economists argue that unequal pay motivates people to study, train and work harder, since bigger rewards are on offer for extra effort.",
+      "checkText": "One argued benefit of income inequality is that it can...",
+      "checkOptions": [
+        { "text": "Motivate people to work and study harder", "isCorrect": true },
+        { "text": "Guarantee everyone earns the same amount", "isCorrect": false },
+        { "text": "Eliminate the need for education", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-inequality-economic-costs",
+      "subtopicName": "Wage determination",
+      "heading": "The downside of a big income gap",
+      "body": "A wide income gap can slow economic growth, because poorer families often can't afford good education, which limits how skilled the future workforce becomes.",
+      "checkText": "A large income gap can slow economic growth partly because it...",
+      "checkOptions": [
+        { "text": "Limits access to good education for poorer families", "isCorrect": true },
+        { "text": "Always increases everyone's savings", "isCorrect": false },
+        { "text": "Automatically raises all wages", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-inequality-of-opportunity",
+      "subtopicName": "Wage determination",
+      "heading": "Not everyone starts at the same line",
+      "body": "Inequality of opportunity means some people have far less access to good education or useful connections than others, before they even start working.",
+      "checkText": "Inequality of opportunity mainly refers to unequal access to things like...",
+      "checkOptions": [
+        { "text": "Education and useful connections", "isCorrect": true },
+        { "text": "Weather conditions", "isCorrect": false },
+        { "text": "Interest rates", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-unemployment-definition",
+      "subtopicName": "Labour market trends",
+      "heading": "Who counts as unemployed?",
+      "body": "A person is unemployed if they are over 15, don't have a job, and are actively looking for full-time or part-time work.",
+      "checkText": "To count as unemployed, a person must be actively...",
+      "checkOptions": [
+        { "text": "Looking for work", "isCorrect": true },
+        { "text": "Studying full-time", "isCorrect": false },
+        { "text": "Retired", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-unemployment-rate-formula",
+      "subtopicName": "Labour market trends",
+      "heading": "Turning unemployment into a percentage",
+      "body": "The unemployment rate is the number of unemployed people divided by the total labour force, then multiplied by 100 to get a percentage.",
+      "checkText": "The unemployment rate is calculated as unemployed people divided by...",
+      "checkOptions": [
+        { "text": "The total labour force", "isCorrect": true },
+        { "text": "The total population", "isCorrect": false },
+        { "text": "The number of employed people only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-cyclical-unemployment",
+      "subtopicName": "Labour market trends",
+      "heading": "Unemployment that rises and falls with the economy",
+      "body": "Cyclical unemployment happens when the economy slows down, sales fall, and firms lay off workers because they no longer need them.",
+      "checkText": "Cyclical unemployment is caused mainly by...",
+      "checkOptions": [
+        { "text": "A downturn in the business cycle", "isCorrect": true },
+        { "text": "Workers changing jobs voluntarily", "isCorrect": false },
+        { "text": "The change of seasons", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-structural-unemployment",
+      "subtopicName": "Labour market trends",
+      "heading": "When skills don't match the jobs available",
+      "body": "Structural unemployment happens when workers' skills no longer match what employers need, often because old industries shrink and new ones grow.",
+      "checkText": "Structural unemployment happens when there is a mismatch between...",
+      "checkOptions": [
+        { "text": "Workers' skills and the skills employers need", "isCorrect": true },
+        { "text": "Summer and winter demand for labour", "isCorrect": false },
+        { "text": "Two workers applying for the same job", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-long-term-unemployment",
+      "subtopicName": "Labour market trends",
+      "heading": "Stuck without work for a long time",
+      "body": "Someone is long-term unemployed if they've been out of work for 12 months or more. The longer this lasts, the harder it becomes to find a job.",
+      "checkText": "A person is classified as long-term unemployed after being out of work for...",
+      "checkOptions": [
+        { "text": "12 months or more", "isCorrect": true },
+        { "text": "One week", "isCorrect": false },
+        { "text": "A single day", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-seasonal-unemployment",
+      "subtopicName": "Labour market trends",
+      "heading": "Jobs that come and go with the calendar",
+      "body": "Seasonal unemployment happens because some jobs, like beachside tourism work, are only needed at certain times of the year.",
+      "checkText": "Seasonal unemployment is linked to...",
+      "checkOptions": [
+        { "text": "The time of year", "isCorrect": true },
+        { "text": "Ageing workers retiring", "isCorrect": false },
+        { "text": "Falling wages across the whole economy", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-frictional-unemployment",
+      "subtopicName": "Labour market trends",
+      "heading": "The short gap between jobs",
+      "body": "Frictional unemployment is the short period someone spends unemployed while moving from one job to another, such as during interviews.",
+      "checkText": "Frictional unemployment describes the time spent...",
+      "checkOptions": [
+        { "text": "Moving between one job and another", "isCorrect": true },
+        { "text": "Permanently out of the workforce", "isCorrect": false },
+        { "text": "Working two jobs at once", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-hard-core-unemployment",
+      "subtopicName": "Labour market trends",
+      "heading": "When personal barriers block work",
+      "body": "Hard-core unemployment describes people who find it very difficult to work due to serious personal barriers, such as significant illness or disability.",
+      "checkText": "Hard-core unemployment is mainly linked to...",
+      "checkOptions": [
+        { "text": "Serious personal barriers to working", "isCorrect": true },
+        { "text": "Seasonal changes in industries", "isCorrect": false },
+        { "text": "A booming economy", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-hidden-unemployment",
+      "subtopicName": "Labour market trends",
+      "heading": "The workers who stopped looking",
+      "body": "Hidden unemployment refers to people who want a job but have given up actively searching, so they aren't counted in the official unemployment figures.",
+      "checkText": "Hidden unemployment refers to people who...",
+      "checkOptions": [
+        { "text": "Have given up actively searching for work", "isCorrect": true },
+        { "text": "Are working part-time but want more hours", "isCorrect": false },
+        { "text": "Just started a brand new job", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-underemployment",
+      "subtopicName": "Labour market trends",
+      "heading": "Working, but not enough",
+      "body": "Underemployment describes people with a part-time or casual job who want more hours but can't find them. They are still counted as employed.",
+      "checkText": "An underemployed person is someone who...",
+      "checkOptions": [
+        { "text": "Wants more hours than they currently get", "isCorrect": true },
+        { "text": "Has no job at all", "isCorrect": false },
+        { "text": "Works full-time and is satisfied", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-unemployment-trends",
+      "subtopicName": "Labour market trends",
+      "heading": "Australia's unemployment rate over time",
+      "body": "Australia's unemployment rate has generally trended down since the high levels of the early 1990s recession, though it still rises during major downturns.",
+      "checkText": "Since the early 1990s recession, Australia's unemployment rate has generally...",
+      "checkOptions": [
+        { "text": "Trended downward over time", "isCorrect": true },
+        { "text": "Stayed exactly the same every year", "isCorrect": false },
+        { "text": "Trended sharply upward every year", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-unemployment-geography",
+      "subtopicName": "Labour market trends",
+      "heading": "Unemployment differs by location",
+      "body": "Unemployment rates are not the same everywhere. Some states, regions and cities have higher or lower rates than others at any given time.",
+      "checkText": "Unemployment rates across Australia are...",
+      "checkOptions": [
+        { "text": "Different between states and regions", "isCorrect": true },
+        { "text": "Exactly the same in every state", "isCorrect": false },
+        { "text": "Only ever measured in capital cities", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-part-time-casual-employment",
+      "subtopicName": "Labour market trends",
+      "heading": "Two ways of working less than full-time",
+      "body": "Part-time work means regularly working fewer than 35 hours a week. Casual work means working occasional hours with no set, guaranteed pattern.",
+      "checkText": "Casual work is different from part-time work because casual work has...",
+      "checkOptions": [
+        { "text": "No set, guaranteed pattern of hours", "isCorrect": true },
+        { "text": "More job security", "isCorrect": false },
+        { "text": "Always more than 35 hours a week", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-casualisation",
+      "subtopicName": "Labour market trends",
+      "heading": "More casual jobs over time",
+      "body": "Casualisation is the growing share of casual jobs compared to secure, full-time permanent jobs across the whole workforce.",
+      "checkText": "Casualisation refers to a rise in the share of...",
+      "checkOptions": [
+        { "text": "Casual jobs in the workforce", "isCorrect": true },
+        { "text": "Full-time permanent jobs", "isCorrect": false },
+        { "text": "Unemployed people", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-contractors-outsourcing",
+      "subtopicName": "Labour market trends",
+      "heading": "Paying someone else to do the work",
+      "body": "Outsourcing happens when a business pays another company to do a task instead of hiring its own staff to do it directly.",
+      "checkText": "Outsourcing means a business...",
+      "checkOptions": [
+        { "text": "Pays another company to do a task", "isCorrect": true },
+        { "text": "Hires more of its own permanent staff", "isCorrect": false },
+        { "text": "Closes down completely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-gig-economy",
+      "subtopicName": "Labour market trends",
+      "heading": "Working job to job through an app",
+      "body": "Gig economy workers complete short, individual tasks, often booked through an app, rather than holding one ongoing job with a single employer.",
+      "checkText": "Gig economy work typically involves...",
+      "checkOptions": [
+        { "text": "Short, individual tasks often booked through an app", "isCorrect": true },
+        { "text": "One long-term job with a single employer", "isCorrect": false },
+        { "text": "Guaranteed full-time hours", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-trade-unions",
+      "subtopicName": "Labour market trends",
+      "heading": "Workers joining together",
+      "body": "A trade union is a group of workers who join together so they can negotiate better wages and working conditions with employers.",
+      "checkText": "The main purpose of a trade union is to...",
+      "checkOptions": [
+        { "text": "Negotiate better wages and conditions for members", "isCorrect": true },
+        { "text": "Set government tax rates", "isCorrect": false },
+        { "text": "Replace the Fair Work Commission", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-union-membership-decline",
+      "subtopicName": "Labour market trends",
+      "heading": "Fewer workers joining unions",
+      "body": "The share of Australian workers who belong to a [[econ-trade-unions|trade union]] has fallen sharply over recent decades, partly due to the shift toward workplace-level bargaining.",
+      "checkText": "Over recent decades, trade union membership in Australia has...",
+      "checkOptions": [
+        { "text": "Fallen sharply", "isCorrect": true },
+        { "text": "Risen sharply", "isCorrect": false },
+        { "text": "Stayed exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-union-bargaining-power",
+      "subtopicName": "Labour market trends",
+      "heading": "Strength in numbers",
+      "body": "By acting together, union members have more bargaining power than a single worker negotiating alone, which can help them win higher wages.",
+      "checkText": "Unions gain bargaining power mainly by...",
+      "checkOptions": [
+        { "text": "Acting together instead of negotiating alone", "isCorrect": true },
+        { "text": "Working fewer hours", "isCorrect": false },
+        { "text": "Reducing the number of members", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-employer-associations",
+      "subtopicName": "Labour market trends",
+      "heading": "Employers organise too",
+      "body": "Employer associations represent the interests of businesses, such as by lobbying government on workplace rules or helping employers deal with unions.",
+      "checkText": "Employer associations mainly represent the interests of...",
+      "checkOptions": [
+        { "text": "Businesses and employers", "isCorrect": true },
+        { "text": "Individual customers", "isCorrect": false },
+        { "text": "Trade unions", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-workplace-relations-system",
+      "subtopicName": "Labour market trends",
+      "heading": "The rules behind pay and conditions",
+      "body": "The workplace relations system is the set of laws and institutions that manage pay, conditions, and disputes between employers and employees.",
+      "checkText": "The workplace relations system mainly manages...",
+      "checkOptions": [
+        { "text": "Pay, conditions and disputes between employers and employees", "isCorrect": true },
+        { "text": "Interest rates set by the Reserve Bank", "isCorrect": false },
+        { "text": "Trade agreements between countries", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-fair-work-commission",
+      "subtopicName": "Labour market trends",
+      "heading": "The umpire of the labour market",
+      "body": "The Fair Work Commission is the government body that sets minimum wages and helps resolve disputes between employers and employees.",
+      "checkText": "The Fair Work Commission is responsible for...",
+      "checkOptions": [
+        { "text": "Setting minimum wages and resolving disputes", "isCorrect": true },
+        { "text": "Collecting income tax", "isCorrect": false },
+        { "text": "Running elections", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-awards",
+      "subtopicName": "Labour market trends",
+      "heading": "A safety net for pay in each job",
+      "body": "An award sets the minimum pay and conditions for a particular job or industry. Employers can pay more, but never less than the award.",
+      "checkText": "An award sets out the...",
+      "checkOptions": [
+        { "text": "Minimum pay and conditions for a job or industry", "isCorrect": true },
+        { "text": "Maximum profit a business can make", "isCorrect": false },
+        { "text": "Exact wage every worker must be paid", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-enterprise-agreements",
+      "subtopicName": "Labour market trends",
+      "heading": "Deals made at one workplace",
+      "body": "An enterprise agreement is a pay and conditions deal negotiated between one employer and its employees, usually through their union.",
+      "checkText": "An enterprise agreement is negotiated between...",
+      "checkOptions": [
+        { "text": "One employer and its own employees", "isCorrect": true },
+        { "text": "The Prime Minister and all workers nationally", "isCorrect": false },
+        { "text": "Two competing businesses", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-national-employment-standards",
+      "subtopicName": "Labour market trends",
+      "heading": "The basic guarantees every worker gets",
+      "body": "The National Employment Standards are a set of minimum legal entitlements, like leave and maximum hours, that apply to almost every Australian employee.",
+      "checkText": "The National Employment Standards guarantee things like...",
+      "checkOptions": [
+        { "text": "Minimum leave and maximum working hours", "isCorrect": true },
+        { "text": "A guaranteed annual bonus", "isCorrect": false },
+        { "text": "Free travel to work", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-minimum-wage",
+      "subtopicName": "Labour market trends",
+      "heading": "The lowest legal pay rate",
+      "body": "The national minimum wage is the lowest amount an employer can legally pay a worker who isn't covered by an [[econ-awards|award]] or agreement.",
+      "checkText": "The national minimum wage applies to workers who...",
+      "checkOptions": [
+        { "text": "Aren't covered by an award or agreement", "isCorrect": true },
+        { "text": "Are managers of large companies", "isCorrect": false },
+        { "text": "Work in the gig economy only", "isCorrect": false }
+      ]
+    }
+  ]
+}

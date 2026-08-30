@@ -1,0 +1,1109 @@
+{
+  "topicName": "The Legal System",
+  "chunks": [
+    {
+      "slug": "legal-sovereign-power",
+      "subtopicName": "Nature of law",
+      "heading": "Who has the power to make laws?",
+      "body": "Sovereign power is the authority to make laws for a country. In Australia, that power belongs to Parliament.",
+      "checkText": "Sovereign power is the authority to...",
+      "checkOptions": [
+        { "text": "Make laws for a country", "isCorrect": true },
+        { "text": "Enforce laws only", "isCorrect": false },
+        { "text": "Vote in elections", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-meaning-of-law",
+      "subtopicName": "Nature of law",
+      "heading": "What makes something a law?",
+      "body": "A law is a rule made by a person or body with [[legal-sovereign-power|sovereign power]]. Laws apply to everyone, all the time.",
+      "checkText": "A key feature of law is that it...",
+      "checkOptions": [
+        { "text": "Applies to everyone at all times", "isCorrect": true },
+        { "text": "Only applies to some people", "isCorrect": false },
+        { "text": "Can be ignored if inconvenient", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-customs",
+      "subtopicName": "Nature of law",
+      "heading": "Customs: unwritten rules",
+      "body": "A custom is a way of behaving that becomes expected after long tradition. Customs aren't written down — they're enforced by social pressure, not police.",
+      "checkText": "How are customs mainly enforced?",
+      "checkOptions": [
+        { "text": "Social pressure", "isCorrect": true },
+        { "text": "Police and courts", "isCorrect": false },
+        { "text": "Written fines", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-rules",
+      "subtopicName": "Nature of law",
+      "heading": "Rules: laws on a smaller scale",
+      "body": "A rule, like a school rule, only applies to certain people at certain times. Unlike [[legal-meaning-of-law|law]], a rule doesn't apply to all of society.",
+      "checkText": "Compared to law, a rule...",
+      "checkOptions": [
+        { "text": "Only applies to specific people or situations", "isCorrect": true },
+        { "text": "Applies to everyone, always", "isCorrect": false },
+        { "text": "Is never written down", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-values",
+      "subtopicName": "Nature of law",
+      "heading": "Law reflects what a society values",
+      "body": "A society's values are the things it considers important. Laws often exist to protect those values, such as laws protecting private property.",
+      "checkText": "Laws often exist to...",
+      "checkOptions": [
+        { "text": "Protect what a society values", "isCorrect": true },
+        { "text": "Ignore what people care about", "isCorrect": false },
+        { "text": "Copy other countries' laws", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-ethics",
+      "subtopicName": "Nature of law",
+      "heading": "Ethics: right and wrong",
+      "body": "Ethics are a society's ideas about what is right and wrong. As ethics and [[legal-values|values]] shift over time, laws need to change too.",
+      "checkText": "Ethics are best described as...",
+      "checkOptions": [
+        { "text": "Ideas about right and wrong", "isCorrect": true },
+        { "text": "Rules written by parliament", "isCorrect": false },
+        { "text": "Punishments for crimes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-just-law-equal",
+      "subtopicName": "Nature of law",
+      "heading": "A just law treats everyone equally",
+      "body": "One feature of a just law is equality — it applies the same way to every person, regardless of their wealth or status.",
+      "checkText": "A just law that is equal means it...",
+      "checkOptions": [
+        { "text": "Applies the same way to everyone", "isCorrect": true },
+        { "text": "Gives richer people lighter penalties", "isCorrect": false },
+        { "text": "Only applies to some groups", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-just-law-values",
+      "subtopicName": "Nature of law",
+      "heading": "A just law reflects society's values",
+      "body": "A just law is also based on the widely held [[legal-values|values]] of society, not just the opinions of a small group.",
+      "checkText": "A just law should be based on...",
+      "checkOptions": [
+        { "text": "Values widely held across society", "isCorrect": true },
+        { "text": "The opinion of one leader", "isCorrect": false },
+        { "text": "Values from a different country", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-utilitarianism",
+      "subtopicName": "Nature of law",
+      "heading": "Utilitarianism: the greatest good",
+      "body": "Utilitarianism is the idea that a law should achieve the greatest good for the greatest number of people, even if it disadvantages a few.",
+      "checkText": "Utilitarianism aims to benefit...",
+      "checkOptions": [
+        { "text": "The greatest number of people", "isCorrect": true },
+        { "text": "Only the lawmakers", "isCorrect": false },
+        { "text": "Only the wealthy", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-just-law-retrospective",
+      "subtopicName": "Nature of law",
+      "heading": "A just law isn't retrospective",
+      "body": "A retrospective law changes the legal status of something that already happened. This is considered unjust, so just laws apply only to the future.",
+      "checkText": "A retrospective law is unfair because it...",
+      "checkOptions": [
+        { "text": "Changes the legal status of a past action", "isCorrect": true },
+        { "text": "Only affects future actions", "isCorrect": false },
+        { "text": "Applies equally to everyone", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-just-law-known",
+      "subtopicName": "Nature of law",
+      "heading": "A just law must be known",
+      "body": "People can't follow a law if they don't know it exists. A just law is publicised, for example through government notices, so it can be discovered.",
+      "checkText": "Why must a just law be known?",
+      "checkOptions": [
+        { "text": "So people are able to follow it", "isCorrect": true },
+        { "text": "So it can be kept secret", "isCorrect": false },
+        { "text": "So it never needs to change", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-nature-of-justice",
+      "subtopicName": "Nature of law",
+      "heading": "What is justice made of?",
+      "body": "Justice is often described as a combination of three things: [[legal-equality|equality]], [[legal-fairness|fairness]] and [[legal-access|access]] to the legal system.",
+      "checkText": "Justice is commonly described as a combination of equality, fairness and...",
+      "checkOptions": [
+        { "text": "Access", "isCorrect": true },
+        { "text": "Wealth", "isCorrect": false },
+        { "text": "Punishment", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-equality",
+      "subtopicName": "Nature of law",
+      "heading": "Equality: the same rules for everyone",
+      "body": "Equality means laws don't discriminate, and they're applied the same way to every person by police and courts.",
+      "checkText": "Equality in the legal system means laws are...",
+      "checkOptions": [
+        { "text": "Applied the same way to everyone", "isCorrect": true },
+        { "text": "Different for each person", "isCorrect": false },
+        { "text": "Only for citizens", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-fairness",
+      "subtopicName": "Nature of law",
+      "heading": "Fairness: a reasonable outcome",
+      "body": "Fairness means a law shouldn't have an unreasonably harsh effect on a person, and that person should usually have the right to appeal a decision.",
+      "checkText": "Which right is closely linked to fairness?",
+      "checkOptions": [
+        { "text": "The right to appeal a decision", "isCorrect": true },
+        { "text": "The right to ignore a law", "isCorrect": false },
+        { "text": "The right to change the constitution", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-access",
+      "subtopicName": "Nature of law",
+      "heading": "Access: being able to use the law",
+      "body": "Access means people can actually reach and use the legal system — understanding it, getting legal help, and affording it.",
+      "checkText": "Access to justice mainly refers to a person's ability to...",
+      "checkOptions": [
+        { "text": "Reach and use the legal system", "isCorrect": true },
+        { "text": "Change the law themselves", "isCorrect": false },
+        { "text": "Avoid going to court", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-procedural-fairness",
+      "subtopicName": "Nature of law",
+      "heading": "Procedural fairness, or natural justice",
+      "body": "Procedural fairness, also called natural justice, means every person is treated fairly during a legal process, no matter the outcome.",
+      "checkText": "Another name for procedural fairness is...",
+      "checkOptions": [
+        { "text": "Natural justice", "isCorrect": true },
+        { "text": "Sovereign power", "isCorrect": false },
+        { "text": "Delegated legislation", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-defendant",
+      "subtopicName": "Nature of law",
+      "heading": "Who is the defendant?",
+      "body": "The defendant is the person accused of wrongdoing in a legal case, whether it's a criminal charge or a civil dispute.",
+      "checkText": "The defendant in a case is the person who is...",
+      "checkOptions": [
+        { "text": "Accused of wrongdoing", "isCorrect": true },
+        { "text": "Bringing the case forward", "isCorrect": false },
+        { "text": "Deciding the verdict", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-right-to-hearing",
+      "subtopicName": "Nature of law",
+      "heading": "The right to a fair hearing",
+      "body": "Under [[legal-procedural-fairness|procedural fairness]], a [[legal-defendant|defendant]] has the right to know the accusation against them and to present their own evidence at a hearing.",
+      "checkText": "Procedural fairness gives a defendant the right to...",
+      "checkOptions": [
+        { "text": "Know the accusation and present evidence", "isCorrect": true },
+        { "text": "Skip the trial entirely", "isCorrect": false },
+        { "text": "Choose their own judge", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-cross-examination",
+      "subtopicName": "Nature of law",
+      "heading": "Testing the other side's evidence",
+      "body": "Cross-examination is when one side questions the witnesses called by the opposing side, to test whether their evidence can be trusted.",
+      "checkText": "Cross-examination is used to...",
+      "checkOptions": [
+        { "text": "Test the evidence given by the other side", "isCorrect": true },
+        { "text": "Skip calling any witnesses", "isCorrect": false },
+        { "text": "Decide the final sentence", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-rule-of-law",
+      "subtopicName": "Nature of law",
+      "heading": "The rule of law",
+      "body": "The rule of law means no one, no matter how powerful, is above the law. It stops the unrestrained, arbitrary use of power.",
+      "checkText": "The rule of law means that...",
+      "checkOptions": [
+        { "text": "No one is above the law", "isCorrect": true },
+        { "text": "Only the government must obey laws", "isCorrect": false },
+        { "text": "Judges can ignore the constitution", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-anarchy",
+      "subtopicName": "Nature of law",
+      "heading": "Anarchy: no one enforcing the law",
+      "body": "Anarchy happens when a society has no effective legal system — courts, police and government have all stopped functioning.",
+      "checkText": "Anarchy occurs when a society has...",
+      "checkOptions": [
+        { "text": "No effective legal system", "isCorrect": true },
+        { "text": "Too many laws", "isCorrect": false },
+        { "text": "A very strict government", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-tyranny",
+      "subtopicName": "Nature of law",
+      "heading": "Tyranny: unchecked power",
+      "body": "Tyranny is the opposite of [[legal-anarchy|anarchy]]. It happens when there's no check on the power of lawmakers and enforcers, so the [[legal-rule-of-law|rule of law]] disappears.",
+      "checkText": "Tyranny occurs when there is...",
+      "checkOptions": [
+        { "text": "No check on the power of rulers", "isCorrect": true },
+        { "text": "No government at all", "isCorrect": false },
+        { "text": "Too much procedural fairness", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-common-law",
+      "subtopicName": "Legal systems",
+      "heading": "Common law: judge-made law",
+      "body": "Common law is law made through judges' decisions in court. It developed first in England and was carried to Australia by British settlers.",
+      "checkText": "Common law is created by...",
+      "checkOptions": [
+        { "text": "Judges' decisions in court", "isCorrect": true },
+        { "text": "Parliament passing bills", "isCorrect": false },
+        { "text": "Local council votes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-statute-law",
+      "subtopicName": "Legal systems",
+      "heading": "Statute law: parliament-made law",
+      "body": "Statute law is law made by parliament. Judges must obey statute law, and only rely on [[legal-common-law|common law]] when no statute covers the issue.",
+      "checkText": "Statute law is law made by...",
+      "checkOptions": [
+        { "text": "Parliament", "isCorrect": true },
+        { "text": "Judges", "isCorrect": false },
+        { "text": "The police", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-statute-beats-common",
+      "subtopicName": "Legal systems",
+      "heading": "Statute law wins over common law",
+      "body": "When [[legal-statute-law|statute law]] and [[legal-common-law|common law]] cover the same issue and conflict, statute law always takes priority.",
+      "checkText": "If statute law and common law conflict, which one applies?",
+      "checkOptions": [
+        { "text": "Statute law", "isCorrect": true },
+        { "text": "Common law", "isCorrect": false },
+        { "text": "Neither applies", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-equity",
+      "subtopicName": "Legal systems",
+      "heading": "Equity: a fairer alternative",
+      "body": "Equity is a set of legal principles that developed when common law couldn't give a fair result. English kings and their Chancellors created these fairness-based rules.",
+      "checkText": "Equity developed because common law was sometimes...",
+      "checkOptions": [
+        { "text": "Unable to give a fair result", "isCorrect": true },
+        { "text": "Too fair to everyone", "isCorrect": false },
+        { "text": "Made by parliament", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-equity-remedies",
+      "subtopicName": "Legal systems",
+      "heading": "What equity can offer that common law can't",
+      "body": "Common law usually only orders money as compensation. [[legal-equity|Equity]] can order other remedies too, like stopping someone from doing something.",
+      "checkText": "A remedy unique to equity, not common law, is...",
+      "checkOptions": [
+        { "text": "An order stopping an action", "isCorrect": true },
+        { "text": "A money payment", "isCorrect": false },
+        { "text": "A prison sentence", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-precedent",
+      "subtopicName": "Legal systems",
+      "heading": "Precedent: following past decisions",
+      "body": "A precedent is a court judgment that sets a rule for future, similar cases. Judges use it to decide disputes with no clear statute law.",
+      "checkText": "A precedent is created by a...",
+      "checkOptions": [
+        { "text": "Court judgment", "isCorrect": true },
+        { "text": "New Act of Parliament", "isCorrect": false },
+        { "text": "Public vote", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-stare-decisis",
+      "subtopicName": "Legal systems",
+      "heading": "Standing by past decisions",
+      "body": "Stare decisis is the principle of following [[legal-precedent|precedent]] — literally, 'to stand by a decision' that a court has already made.",
+      "checkText": "Stare decisis means a court should...",
+      "checkOptions": [
+        { "text": "Stand by an earlier decision", "isCorrect": true },
+        { "text": "Ignore all past cases", "isCorrect": false },
+        { "text": "Only follow parliament", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-binding-precedent",
+      "subtopicName": "Legal systems",
+      "heading": "Binding precedent: you must follow it",
+      "body": "A binding [[legal-precedent|precedent]] must be followed by a court, because it was set by a higher court in the same court system.",
+      "checkText": "A binding precedent must be followed because it...",
+      "checkOptions": [
+        { "text": "Was set by a higher court in the same system", "isCorrect": true },
+        { "text": "Was set overseas", "isCorrect": false },
+        { "text": "Was suggested by a witness", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-persuasive-precedent",
+      "subtopicName": "Legal systems",
+      "heading": "Persuasive precedent: you can consider it",
+      "body": "A persuasive [[legal-precedent|precedent]] might influence a judge's decision, but the court isn't required to follow it — for example, a ruling from another country.",
+      "checkText": "A persuasive precedent is one that a court...",
+      "checkOptions": [
+        { "text": "May consider but doesn't have to follow", "isCorrect": true },
+        { "text": "Must always follow", "isCorrect": false },
+        { "text": "Is legally forced to ignore", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-ratio-decidendi",
+      "subtopicName": "Legal systems",
+      "heading": "The reason behind the decision",
+      "body": "The ratio decidendi is the judge's stated reason for their decision. It's the part of a ruling that creates a [[legal-precedent|precedent]] for lower courts.",
+      "checkText": "The ratio decidendi is...",
+      "checkOptions": [
+        { "text": "The judge's reason for the decision", "isCorrect": true },
+        { "text": "The final court fee", "isCorrect": false },
+        { "text": "The jury's opinion", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-obiter-dicta",
+      "subtopicName": "Legal systems",
+      "heading": "Extra comments that don't bind",
+      "body": "Obiter dicta are other comments a judge makes that aren't part of the [[legal-ratio-decidendi|ratio decidendi]]. They don't create precedent, but future courts can consider them.",
+      "checkText": "Obiter dicta are judges' comments that...",
+      "checkOptions": [
+        { "text": "Don't create a binding precedent", "isCorrect": true },
+        { "text": "Always create a binding precedent", "isCorrect": false },
+        { "text": "Are said by the jury", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-adversary-system",
+      "subtopicName": "Legal systems",
+      "heading": "The adversary system: two sides, one judge",
+      "body": "In the adversary system, two opposing sides argue their case in front of a neutral judge, who decides which side's evidence to believe.",
+      "checkText": "In the adversary system, who decides which evidence to believe?",
+      "checkOptions": [
+        { "text": "A neutral judge or jury", "isCorrect": true },
+        { "text": "Both sides together", "isCorrect": false },
+        { "text": "The witnesses", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-court-hierarchy",
+      "subtopicName": "Legal systems",
+      "heading": "Courts are ranked",
+      "body": "The court hierarchy ranks courts from lowest to highest. A court's position determines how serious the cases are that it can hear.",
+      "checkText": "A court's position in the hierarchy determines...",
+      "checkOptions": [
+        { "text": "How serious a case it can hear", "isCorrect": true },
+        { "text": "How many judges it has", "isCorrect": false },
+        { "text": "Its opening hours", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-original-jurisdiction",
+      "subtopicName": "Legal systems",
+      "heading": "Hearing a case for the first time",
+      "body": "Original jurisdiction is a court's power to hear a case for the first time, before any appeal takes place.",
+      "checkText": "Original jurisdiction means a court can...",
+      "checkOptions": [
+        { "text": "Hear a case for the first time", "isCorrect": true },
+        { "text": "Only hear appeals", "isCorrect": false },
+        { "text": "Make new statute laws", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-appellate-jurisdiction",
+      "subtopicName": "Legal systems",
+      "heading": "Hearing an appeal",
+      "body": "Appellate jurisdiction is a court's power to hear a case that was already decided by a lower court, but is now being appealed.",
+      "checkText": "A court using appellate jurisdiction is...",
+      "checkOptions": [
+        { "text": "Reviewing a lower court's decision", "isCorrect": true },
+        { "text": "Hearing a brand-new case", "isCorrect": false },
+        { "text": "Writing new legislation", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-local-court",
+      "subtopicName": "Legal systems",
+      "heading": "The Local Court: the starting point",
+      "body": "The Local Court is the lowest court in New South Wales. It deals with minor criminal offences and small civil disputes, cheaply and quickly.",
+      "checkText": "The Local Court mainly deals with...",
+      "checkOptions": [
+        { "text": "Minor criminal and small civil matters", "isCorrect": true },
+        { "text": "The most serious crimes", "isCorrect": false },
+        { "text": "Constitutional disputes only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-district-court",
+      "subtopicName": "Legal systems",
+      "heading": "The District Court: a step up",
+      "body": "The District Court handles more serious matters than the [[legal-local-court|Local Court]]. A judge presides, and a jury usually decides guilt in criminal cases.",
+      "checkText": "In the District Court, who usually decides guilt in a criminal case?",
+      "checkOptions": [
+        { "text": "A jury", "isCorrect": true },
+        { "text": "The judge alone", "isCorrect": false },
+        { "text": "The police", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-supreme-court-nsw",
+      "subtopicName": "Legal systems",
+      "heading": "The Supreme Court: the top of the state",
+      "body": "The Supreme Court is the highest court in New South Wales. It hears the most serious cases, and its decisions set [[legal-precedent|precedent]] for lower courts.",
+      "checkText": "The Supreme Court's decisions are important because they...",
+      "checkOptions": [
+        { "text": "Set precedent for lower courts to follow", "isCorrect": true },
+        { "text": "Only apply to that one case", "isCorrect": false },
+        { "text": "Cannot be reported", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-parliamentary-democracy",
+      "subtopicName": "Legal systems",
+      "heading": "Voters choose the lawmakers",
+      "body": "In a parliamentary democracy like Australia, people elect representatives who make laws and decisions on their behalf.",
+      "checkText": "In a parliamentary democracy, who makes the laws?",
+      "checkOptions": [
+        { "text": "Elected representatives", "isCorrect": true },
+        { "text": "Judges only", "isCorrect": false },
+        { "text": "Police", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-bicameral-parliament",
+      "subtopicName": "Legal systems",
+      "heading": "Two houses of parliament",
+      "body": "A bicameral parliament has two houses that both need to approve a law. The federal parliament and most state parliaments are bicameral.",
+      "checkText": "A bicameral parliament has how many houses?",
+      "checkOptions": [
+        { "text": "Two", "isCorrect": true },
+        { "text": "One", "isCorrect": false },
+        { "text": "Three", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-house-of-representatives",
+      "subtopicName": "Legal systems",
+      "heading": "The House of Representatives",
+      "body": "The House of Representatives is the lower house of the federal parliament. The party with the most seats there forms government.",
+      "checkText": "Which party forms government in the federal parliament?",
+      "checkOptions": [
+        { "text": "The one with the most seats in the House of Representatives", "isCorrect": true },
+        { "text": "The one with the most senators", "isCorrect": false },
+        { "text": "Whichever party is oldest", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-senate",
+      "subtopicName": "Legal systems",
+      "heading": "The Senate: the states' house",
+      "body": "The Senate is the upper house of federal parliament. Each state elects the same number of senators, so it represents the states equally.",
+      "checkText": "The Senate is designed to represent...",
+      "checkOptions": [
+        { "text": "Each state equally", "isCorrect": true },
+        { "text": "Only the largest cities", "isCorrect": false },
+        { "text": "Only the government party", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-bill",
+      "subtopicName": "Legal systems",
+      "heading": "A bill: a law in the making",
+      "body": "A bill is a piece of proposed legislation. It only becomes law once it has passed through parliament and received approval.",
+      "checkText": "A bill is best described as...",
+      "checkOptions": [
+        { "text": "Proposed legislation, not yet law", "isCorrect": true },
+        { "text": "A completed Act of Parliament", "isCorrect": false },
+        { "text": "A court judgment", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-first-reading",
+      "subtopicName": "Legal systems",
+      "heading": "First reading: introducing the bill",
+      "body": "At the first reading, a [[legal-bill|bill]] is formally introduced to parliament and copies are given to members to read.",
+      "checkText": "At the first reading of a bill, members mainly...",
+      "checkOptions": [
+        { "text": "Receive the bill to read", "isCorrect": true },
+        { "text": "Vote on the final version", "isCorrect": false },
+        { "text": "Debate every clause", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-second-reading",
+      "subtopicName": "Legal systems",
+      "heading": "Second reading: the debate begins",
+      "body": "At the second reading, parliament debates the [[legal-bill|bill]], and members get the chance to give their opinion on it.",
+      "checkText": "The second reading of a bill is mainly for...",
+      "checkOptions": [
+        { "text": "Debating the bill", "isCorrect": true },
+        { "text": "Introducing it for the first time", "isCorrect": false },
+        { "text": "Sending it for Royal Assent", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-third-reading",
+      "subtopicName": "Legal systems",
+      "heading": "Third reading: the final vote",
+      "body": "At the third reading, the House votes on whether to pass the [[legal-bill|bill]]. If it passes, it moves to the other house.",
+      "checkText": "What happens at the third reading?",
+      "checkOptions": [
+        { "text": "The House votes on the bill", "isCorrect": true },
+        { "text": "The bill is first introduced", "isCorrect": false },
+        { "text": "The Governor-General signs the bill", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-royal-assent",
+      "subtopicName": "Legal systems",
+      "heading": "Royal Assent: the final step",
+      "body": "Once both houses pass a [[legal-bill|bill]], it goes to the Governor-General or Governor for Royal Assent. After that, it becomes an Act of Parliament.",
+      "checkText": "A bill becomes an Act of Parliament after...",
+      "checkOptions": [
+        { "text": "Receiving Royal Assent", "isCorrect": true },
+        { "text": "The first reading", "isCorrect": false },
+        { "text": "Being debated once", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-delegated-legislation",
+      "subtopicName": "Legal systems",
+      "heading": "Delegated legislation: other bodies make laws too",
+      "body": "Delegated legislation is law made by a body other than parliament, such as a local council, under powers granted by an enabling Act.",
+      "checkText": "Delegated legislation is law made by...",
+      "checkOptions": [
+        { "text": "A body other than parliament, under an enabling Act", "isCorrect": true },
+        { "text": "Parliament directly", "isCorrect": false },
+        { "text": "The High Court", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-delegated-legislation-types",
+      "subtopicName": "Legal systems",
+      "heading": "Four kinds of delegated legislation",
+      "body": "The four main types of [[legal-delegated-legislation|delegated legislation]] are regulations, ordinances, rules and by-laws — each made by a different kind of body.",
+      "checkText": "Which of these is a type of delegated legislation?",
+      "checkOptions": [
+        { "text": "By-laws", "isCorrect": true },
+        { "text": "Bills", "isCorrect": false },
+        { "text": "Precedents", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-constitution",
+      "subtopicName": "Legal systems",
+      "heading": "What is a constitution?",
+      "body": "A constitution is a document that sets out the rules for how a country or state is governed, including the powers of its parliament.",
+      "checkText": "A constitution mainly sets out...",
+      "checkOptions": [
+        { "text": "The rules for how a country is governed", "isCorrect": true },
+        { "text": "A list of current court cases", "isCorrect": false },
+        { "text": "The results of the last election", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-federation",
+      "subtopicName": "Legal systems",
+      "heading": "Federation: sharing power between governments",
+      "body": "Australia is a federation, meaning power is shared between a central Commonwealth government and separate state governments.",
+      "checkText": "In a federation, power is shared between...",
+      "checkOptions": [
+        { "text": "A central government and state governments", "isCorrect": true },
+        { "text": "Two houses of the same parliament", "isCorrect": false },
+        { "text": "Judges and juries", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-exclusive-powers",
+      "subtopicName": "Legal systems",
+      "heading": "Exclusive powers: only for the Commonwealth",
+      "body": "Exclusive powers are law-making powers that belong only to the Commonwealth Parliament, such as defence, trade and foreign relations.",
+      "checkText": "Exclusive powers can only be used by...",
+      "checkOptions": [
+        { "text": "The Commonwealth Parliament", "isCorrect": true },
+        { "text": "State parliaments", "isCorrect": false },
+        { "text": "Local councils", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-residual-powers",
+      "subtopicName": "Legal systems",
+      "heading": "Residual powers: kept by the states",
+      "body": "Residual powers are the powers state parliaments kept after [[legal-federation|federation]], covering areas like health, education and law and order.",
+      "checkText": "Residual powers are held by...",
+      "checkOptions": [
+        { "text": "State parliaments", "isCorrect": true },
+        { "text": "The Commonwealth Parliament only", "isCorrect": false },
+        { "text": "The High Court", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-concurrent-powers",
+      "subtopicName": "Legal systems",
+      "heading": "Concurrent powers: shared powers",
+      "body": "Concurrent powers are shared between the Commonwealth and the states. If their laws conflict on the same issue, the Commonwealth law wins.",
+      "checkText": "When Commonwealth and state laws conflict on a concurrent power...",
+      "checkOptions": [
+        { "text": "The Commonwealth law wins", "isCorrect": true },
+        { "text": "The state law wins", "isCorrect": false },
+        { "text": "Neither law applies", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-separation-of-powers",
+      "subtopicName": "Legal systems",
+      "heading": "Splitting up government power",
+      "body": "The separation of powers divides government authority between three separate groups, so no single group can dominate the others.",
+      "checkText": "The purpose of the separation of powers is to...",
+      "checkOptions": [
+        { "text": "Stop one group from dominating government", "isCorrect": true },
+        { "text": "Give parliament all the power", "isCorrect": false },
+        { "text": "Remove the need for courts", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-three-branches",
+      "subtopicName": "Legal systems",
+      "heading": "The three branches of government",
+      "body": "The three branches under the [[legal-separation-of-powers|separation of powers]] are the parliament, which makes laws; the executive, which runs the government; and the judiciary, which applies the law.",
+      "checkText": "Which branch of government makes laws?",
+      "checkOptions": [
+        { "text": "The parliament", "isCorrect": true },
+        { "text": "The executive", "isCorrect": false },
+        { "text": "The judiciary", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-high-court",
+      "subtopicName": "Legal systems",
+      "heading": "The High Court: guardian of the Constitution",
+      "body": "The High Court is Australia's highest court. It protects the [[legal-constitution|Constitution]] and acts as the final court of appeal for the whole country.",
+      "checkText": "One of the High Court's main roles is to...",
+      "checkOptions": [
+        { "text": "Protect the Constitution", "isCorrect": true },
+        { "text": "Write new legislation", "isCorrect": false },
+        { "text": "Run local councils", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-public-law",
+      "subtopicName": "Legal systems",
+      "heading": "Public law: rules for everyone",
+      "body": "Public law sets the general standards of behaviour expected across society. It includes criminal, administrative and constitutional law.",
+      "checkText": "Public law is best described as law that...",
+      "checkOptions": [
+        { "text": "Sets standards of behaviour for society", "isCorrect": true },
+        { "text": "Only affects two private parties", "isCorrect": false },
+        { "text": "Applies only to businesses", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-private-law",
+      "subtopicName": "Legal systems",
+      "heading": "Private law: disputes between people",
+      "body": "Private law, also called civil law, deals with legal disputes between individuals or organisations, rather than between a person and the state.",
+      "checkText": "Private law mainly deals with disputes between...",
+      "checkOptions": [
+        { "text": "Individuals or organisations", "isCorrect": true },
+        { "text": "A person and the state", "isCorrect": false },
+        { "text": "Countries at war", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-criminal-law",
+      "subtopicName": "Legal systems",
+      "heading": "Criminal law: wrongs against society",
+      "body": "Criminal law deals with acts considered harmful to all of society, so the case is brought by the state, not by an individual victim.",
+      "checkText": "In criminal law, who brings the case against the accused?",
+      "checkOptions": [
+        { "text": "The state", "isCorrect": true },
+        { "text": "The individual victim", "isCorrect": false },
+        { "text": "A jury", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-plaintiff",
+      "subtopicName": "Legal systems",
+      "heading": "Who is the plaintiff?",
+      "body": "The plaintiff is the person who brings a civil case, accusing the [[legal-defendant|defendant]] of causing them harm or breaching an agreement.",
+      "checkText": "The plaintiff in a civil case is the person who...",
+      "checkOptions": [
+        { "text": "Brings the case", "isCorrect": true },
+        { "text": "Is accused of wrongdoing", "isCorrect": false },
+        { "text": "Decides the verdict", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-contract",
+      "subtopicName": "Legal systems",
+      "heading": "A contract: a promise the law protects",
+      "body": "A contract is a legally binding agreement between two or more parties. If one party breaks it, the other can take legal action.",
+      "checkText": "A contract is described as a legally binding...",
+      "checkOptions": [
+        { "text": "Agreement between parties", "isCorrect": true },
+        { "text": "Court judgment", "isCorrect": false },
+        { "text": "Type of statute law", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-tort",
+      "subtopicName": "Legal systems",
+      "heading": "Tort: a civil wrong",
+      "body": "A tort is a civil wrong, such as one person's actions harming or inconveniencing another. Torts aren't crimes, but they can lead to a civil case.",
+      "checkText": "A tort is best described as a...",
+      "checkOptions": [
+        { "text": "Civil wrong", "isCorrect": true },
+        { "text": "Type of contract", "isCorrect": false },
+        { "text": "Criminal offence", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-negligence",
+      "subtopicName": "Legal systems",
+      "heading": "Negligence: a broken duty of care",
+      "body": "Negligence is a [[legal-tort|tort]] based on duty of care — the idea that everyone must take reasonable care not to harm others or their property.",
+      "checkText": "Negligence is based on the idea of a...",
+      "checkOptions": [
+        { "text": "Duty of care", "isCorrect": true },
+        { "text": "Signed contract", "isCorrect": false },
+        { "text": "Criminal charge", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-defamation",
+      "subtopicName": "Legal systems",
+      "heading": "Defamation: damaging a reputation",
+      "body": "Defamation happens when false or misleading information about a person is published or broadcast, damaging that person's reputation.",
+      "checkText": "Defamation involves damaging someone's reputation through...",
+      "checkOptions": [
+        { "text": "False or misleading published information", "isCorrect": true },
+        { "text": "Accurate news reporting", "isCorrect": false },
+        { "text": "A broken contract", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-standard-of-proof",
+      "subtopicName": "Legal systems",
+      "heading": "How convincing must the evidence be?",
+      "body": "The standard of proof is the level of proof needed to win a case. It's different in criminal and civil matters.",
+      "checkText": "The standard of proof refers to...",
+      "checkOptions": [
+        { "text": "How convincing the evidence must be to win", "isCorrect": true },
+        { "text": "Who has to prove the case", "isCorrect": false },
+        { "text": "How long a trial takes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-burden-of-proof",
+      "subtopicName": "Legal systems",
+      "heading": "Who has to prove it?",
+      "body": "The burden of proof is which side of a case must prove their claim — usually the prosecution in criminal law, or the [[legal-plaintiff|plaintiff]] in civil law.",
+      "checkText": "The burden of proof refers to...",
+      "checkOptions": [
+        { "text": "Which side must prove the case", "isCorrect": true },
+        { "text": "How strong the evidence must be", "isCorrect": false },
+        { "text": "Which judge hears the case", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-beyond-reasonable-doubt",
+      "subtopicName": "Legal systems",
+      "heading": "Beyond reasonable doubt",
+      "body": "In a criminal case, the [[legal-standard-of-proof|standard of proof]] is beyond reasonable doubt — the jury must be almost completely certain of guilt to convict.",
+      "checkText": "In a criminal trial, the jury must be convinced...",
+      "checkOptions": [
+        { "text": "Beyond reasonable doubt", "isCorrect": true },
+        { "text": "On the balance of probabilities", "isCorrect": false },
+        { "text": "By a simple majority vote", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-balance-of-probabilities",
+      "subtopicName": "Legal systems",
+      "heading": "Balance of probabilities",
+      "body": "In a civil case, the [[legal-standard-of-proof|standard of proof]] is the balance of probabilities — whichever side's story is more likely to be true wins.",
+      "checkText": "The balance of probabilities is the standard of proof used in...",
+      "checkOptions": [
+        { "text": "Civil cases", "isCorrect": true },
+        { "text": "Criminal cases", "isCorrect": false },
+        { "text": "Constitutional cases", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-judge-role",
+      "subtopicName": "Legal systems",
+      "heading": "What does a judge do?",
+      "body": "A judge presides over intermediate and superior courts, deciding points of law, guiding the jury, and issuing sentences or rulings.",
+      "checkText": "A judge's role includes deciding...",
+      "checkOptions": [
+        { "text": "Points of law", "isCorrect": true },
+        { "text": "Which witnesses exist", "isCorrect": false },
+        { "text": "Who wins an election", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-magistrate-role",
+      "subtopicName": "Legal systems",
+      "heading": "What does a magistrate do?",
+      "body": "A magistrate sits in the [[legal-local-court|Local Court]] without a jury, deciding both the verdict and the sentence in a case.",
+      "checkText": "A magistrate decides both the verdict and the...",
+      "checkOptions": [
+        { "text": "Sentence", "isCorrect": true },
+        { "text": "Precedent for the High Court", "isCorrect": false },
+        { "text": "Contents of a bill", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-jury-role",
+      "subtopicName": "Legal systems",
+      "heading": "What does a jury do?",
+      "body": "A jury's role is to weigh the evidence in a trial and decide whether the [[legal-defendant|defendant]] is guilty or not guilty.",
+      "checkText": "The main role of a jury is to decide...",
+      "checkOptions": [
+        { "text": "Guilt or innocence", "isCorrect": true },
+        { "text": "The length of a sentence", "isCorrect": false },
+        { "text": "Which laws parliament should pass", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-barrister-role",
+      "subtopicName": "Legal systems",
+      "heading": "What does a barrister do?",
+      "body": "A barrister gives legal advice and presents a client's case in court. Barristers usually only take cases sent to them by a solicitor.",
+      "checkText": "A barrister's main role is to...",
+      "checkOptions": [
+        { "text": "Present a client's case in court", "isCorrect": true },
+        { "text": "Prepare wills and contracts only", "isCorrect": false },
+        { "text": "Decide the sentence", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-solicitor-role",
+      "subtopicName": "Legal systems",
+      "heading": "What does a solicitor do?",
+      "body": "A solicitor is usually the first person someone contacts for legal help. They prepare documents and cases, often passing court work to a [[legal-barrister-role|barrister]].",
+      "checkText": "A solicitor's main role includes...",
+      "checkOptions": [
+        { "text": "Preparing legal documents and cases", "isCorrect": true },
+        { "text": "Always representing clients in court", "isCorrect": false },
+        { "text": "Deciding a jury's verdict", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-inquisitorial-vs-adversarial",
+      "subtopicName": "Legal systems",
+      "heading": "Two different court systems",
+      "body": "In a civil law system, judges investigate the case themselves — this is called inquisitorial. Australia's [[legal-adversary-system|adversary system]] instead relies on both sides presenting evidence.",
+      "checkText": "In an inquisitorial system, who investigates the case?",
+      "checkOptions": [
+        { "text": "The judge", "isCorrect": true },
+        { "text": "The jury", "isCorrect": false },
+        { "text": "Both opposing sides equally", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-law-reform",
+      "subtopicName": "Law reform and social values",
+      "heading": "What is law reform?",
+      "body": "Law reform is the process of reviewing existing laws and recommending or making changes to them, usually to improve justice or fairness.",
+      "checkText": "Law reform is the process of...",
+      "checkOptions": [
+        { "text": "Reviewing and changing existing laws", "isCorrect": true },
+        { "text": "Writing a country's first constitution", "isCorrect": false },
+        { "text": "Electing new judges", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-obsolete-laws",
+      "subtopicName": "Law reform and social values",
+      "heading": "When laws become outdated",
+      "body": "A law can become obsolete when it no longer fits how society lives or thinks. Obsolete laws are often repealed, or removed, through [[legal-law-reform|law reform]].",
+      "checkText": "An obsolete law is one that...",
+      "checkOptions": [
+        { "text": "No longer fits society and needs removing", "isCorrect": true },
+        { "text": "Was just passed by parliament", "isCorrect": false },
+        { "text": "Applies to future events only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-international-law-influence",
+      "subtopicName": "Law reform and social values",
+      "heading": "International agreements can drive reform",
+      "body": "Australia sometimes joins international agreements, but they only apply here once parliament passes legislation putting their ideas into Australian law.",
+      "checkText": "For an international agreement to apply in Australia, parliament must...",
+      "checkOptions": [
+        { "text": "Pass legislation based on it", "isCorrect": true },
+        { "text": "Sign it and do nothing else", "isCorrect": false },
+        { "text": "Ask the United Nations for permission", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-changing-values-reform",
+      "subtopicName": "Law reform and social values",
+      "heading": "Changing values drive law reform",
+      "body": "As society's [[legal-values|values]] shift, laws often change to match — for example, Australia abolished the death penalty as attitudes changed.",
+      "checkText": "Law reform is often driven by...",
+      "checkOptions": [
+        { "text": "Changes in society's values", "isCorrect": true },
+        { "text": "Random decisions by judges", "isCorrect": false },
+        { "text": "Laws staying exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-new-technology-reform",
+      "subtopicName": "Law reform and social values",
+      "heading": "New technology needs new laws",
+      "body": "New technology, like DNA testing or the internet, can create situations existing laws never anticipated, so laws must be reviewed and updated.",
+      "checkText": "New technology can create a need for law reform because it...",
+      "checkOptions": [
+        { "text": "Raises issues existing laws didn't anticipate", "isCorrect": true },
+        { "text": "Automatically writes new laws", "isCorrect": false },
+        { "text": "Removes the need for courts", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-alrc",
+      "subtopicName": "Law reform and social values",
+      "heading": "The Australian Law Reform Commission",
+      "body": "The Australian Law Reform Commission (ALRC) is a permanent body that investigates areas of law and reports recommendations back to the government.",
+      "checkText": "The ALRC's main job is to...",
+      "checkOptions": [
+        { "text": "Investigate law and recommend reforms", "isCorrect": true },
+        { "text": "Pass new Acts of Parliament", "isCorrect": false },
+        { "text": "Hear criminal trials", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-alrc-process",
+      "subtopicName": "Law reform and social values",
+      "heading": "How the ALRC reviews a law",
+      "body": "The [[legal-alrc|ALRC]] usually publishes an issues paper, then a discussion paper, before presenting a final report with its recommendations to government.",
+      "checkText": "Which document does the ALRC usually publish first?",
+      "checkOptions": [
+        { "text": "An issues paper", "isCorrect": true },
+        { "text": "A final report", "isCorrect": false },
+        { "text": "An Act of Parliament", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-nswlrc",
+      "subtopicName": "Law reform and social values",
+      "heading": "New South Wales has its own reform body",
+      "body": "The Law Reform Commission of New South Wales reviews state laws, working much like the [[legal-alrc|ALRC]] but focused only on New South Wales.",
+      "checkText": "The Law Reform Commission of New South Wales focuses on...",
+      "checkOptions": [
+        { "text": "State laws in New South Wales", "isCorrect": true },
+        { "text": "Federal laws only", "isCorrect": false },
+        { "text": "International treaties", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-parliamentary-committees",
+      "subtopicName": "Law reform and social values",
+      "heading": "Parliamentary committees investigate issues",
+      "body": "Parliamentary committees look into specific concerns, like road safety, and suggest changes to the law based on what they find.",
+      "checkText": "Parliamentary committees are used to...",
+      "checkOptions": [
+        { "text": "Investigate issues and suggest law changes", "isCorrect": true },
+        { "text": "Replace the High Court", "isCorrect": false },
+        { "text": "Sign international treaties", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-royal-commission",
+      "subtopicName": "Law reform and social values",
+      "heading": "Royal commissions: investigating serious issues",
+      "body": "A royal commission is set up by government to investigate a specific, serious area of concern, such as corruption within an organisation.",
+      "checkText": "A royal commission is set up to investigate...",
+      "checkOptions": [
+        { "text": "A specific, serious area of concern", "isCorrect": true },
+        { "text": "Minor traffic offences", "isCorrect": false },
+        { "text": "Everyday contract disputes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-media-ngo-reform",
+      "subtopicName": "Law reform and social values",
+      "heading": "Media and community groups push for reform",
+      "body": "The media and non-government organisations can raise public awareness of an issue and pressure government to consider [[legal-law-reform|law reform]].",
+      "checkText": "Non-government organisations can influence law reform by...",
+      "checkOptions": [
+        { "text": "Raising public awareness and pressure", "isCorrect": true },
+        { "text": "Passing legislation themselves", "isCorrect": false },
+        { "text": "Sitting as judges", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-courts-reform-role",
+      "subtopicName": "Law reform and social values",
+      "heading": "Courts can reform law too",
+      "body": "Courts help reform the law through their rulings, but only in small, case-by-case ways — they can't research or plan reform like [[legal-alrc|the ALRC]] can.",
+      "checkText": "Courts reform the law mainly through their...",
+      "checkOptions": [
+        { "text": "Rulings on individual cases", "isCorrect": true },
+        { "text": "Power to pass new Acts", "isCorrect": false },
+        { "text": "Ability to plan reform in advance", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-judicial-activism",
+      "subtopicName": "Law reform and social values",
+      "heading": "Judicial activism: a criticism of judges",
+      "body": "Judicial activism is the claim that some judges let their personal opinions shape their rulings, instead of just applying the law as it stands.",
+      "checkText": "Judicial activism describes judges who are accused of...",
+      "checkOptions": [
+        { "text": "Letting personal opinions shape their rulings", "isCorrect": true },
+        { "text": "Always following precedent exactly", "isCorrect": false },
+        { "text": "Refusing to hear any cases", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-parliament-reform-role",
+      "subtopicName": "Law reform and social values",
+      "heading": "Parliament: the main reformer",
+      "body": "Parliament is the supreme law-making body in Australia, and passing new or amended legislation is the main way [[legal-law-reform|law reform]] actually happens.",
+      "checkText": "The main way law reform actually happens is through...",
+      "checkOptions": [
+        { "text": "Parliament passing legislation", "isCorrect": true },
+        { "text": "Judges' personal opinions", "isCorrect": false },
+        { "text": "Newspaper articles", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "legal-igo",
+      "subtopicName": "Law reform and social values",
+      "heading": "Intergovernmental organisations",
+      "body": "An intergovernmental organisation, like the United Nations, has countries as its members and works to encourage cooperation and resolve disputes between them.",
+      "checkText": "An intergovernmental organisation is made up of...",
+      "checkOptions": [
+        { "text": "Countries as members", "isCorrect": true },
+        { "text": "Individual citizens only", "isCorrect": false },
+        { "text": "Judges from one country", "isCorrect": false }
+      ]
+    }
+  ]
+}

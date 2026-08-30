@@ -1,0 +1,833 @@
+{
+  "topicName": "Consumers and Business",
+  "chunks": [
+    {
+      "slug": "econ-sovereignty-drives-production",
+      "subtopicName": "Consumer choice",
+      "heading": "Consumers call the shots",
+      "body": "In a market economy, consumers decide what gets made just by choosing what they buy. This power to control production is called consumer sovereignty.",
+      "checkText": "Consumer sovereignty means production is mainly controlled by...",
+      "checkOptions": [
+        { "text": "Consumers' own buying choices", "isCorrect": true },
+        { "text": "The government", "isCorrect": false },
+        { "text": "Factory workers", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-price-signals",
+      "subtopicName": "Consumer choice",
+      "heading": "How buying choices reach producers",
+      "body": "When consumers want more of something, its price rises. Producers notice the bigger profits and shift resources into making more of it, guided by [[econ-sovereignty-drives-production|consumer sovereignty]].",
+      "checkText": "Rising demand for a good usually leads to...",
+      "checkOptions": [
+        { "text": "A higher price and more of it being made", "isCorrect": true },
+        { "text": "A lower price and less being made", "isCorrect": false },
+        { "text": "No change at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-marketing-influence",
+      "subtopicName": "Consumer choice",
+      "heading": "Ads can steer what we want",
+      "body": "Marketing can change people's tastes so strongly that it weakens [[econ-sovereignty-drives-production|consumer sovereignty]]. Businesses study what people fear and desire, then use ads to shape buying habits.",
+      "checkText": "Heavy marketing can weaken consumer sovereignty because it...",
+      "checkOptions": [
+        { "text": "Changes what people want to buy", "isCorrect": true },
+        { "text": "Lowers all prices automatically", "isCorrect": false },
+        { "text": "Increases competition automatically", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-misleading-conduct",
+      "subtopicName": "Consumer choice",
+      "heading": "Being tricked by false claims",
+      "body": "Sometimes a business makes false or exaggerated claims about a product, so people pay for something that doesn't actually work as promised.",
+      "checkText": "Misleading conduct happens when a business...",
+      "checkOptions": [
+        { "text": "Makes false claims about what a product does", "isCorrect": true },
+        { "text": "Lowers its prices", "isCorrect": false },
+        { "text": "Copies a competitor's product", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-planned-obsolescence",
+      "subtopicName": "Consumer choice",
+      "heading": "Made to wear out fast",
+      "body": "Planned obsolescence is when a firm designs a product to break or go out of date quickly, so customers have to buy a replacement sooner.",
+      "checkText": "Planned obsolescence encourages consumers to...",
+      "checkOptions": [
+        { "text": "Buy replacement products more often", "isCorrect": true },
+        { "text": "Keep products for much longer", "isCorrect": false },
+        { "text": "Stop buying that brand entirely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-anticompetitive-behaviour",
+      "subtopicName": "Consumer choice",
+      "heading": "When few sellers limit choice",
+      "body": "In a market with very few sellers, a business can restrict choice, such as only letting its own accessories work with its product, pushing customers to buy more from them.",
+      "checkText": "Anti-competitive behaviour can reduce consumer sovereignty by...",
+      "checkOptions": [
+        { "text": "Limiting the real choices available to buyers", "isCorrect": true },
+        { "text": "Making every seller compete harder", "isCorrect": false },
+        { "text": "Lowering prices for everyone", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-spend-or-save-equation",
+      "subtopicName": "Consumer choice",
+      "heading": "Income becomes spending or saving",
+      "body": "After tax, every dollar of income is either spent or saved. This is written as Y = C + S, where Y is income, C is spending and S is saving.",
+      "checkText": "According to Y = C + S, income that isn't spent is...",
+      "checkOptions": [
+        { "text": "Saved", "isCorrect": true },
+        { "text": "Lost", "isCorrect": false },
+        { "text": "Taxed a second time", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-average-propensity-consume",
+      "subtopicName": "Consumer choice",
+      "heading": "How much of income gets spent",
+      "body": "Average propensity to consume (APC) is the share of a person's total income that they spend, out of the [[econ-spend-or-save-equation|split between spending and saving]].",
+      "checkText": "Average propensity to consume measures the share of income that is...",
+      "checkOptions": [
+        { "text": "Spent", "isCorrect": true },
+        { "text": "Saved", "isCorrect": false },
+        { "text": "Earned from wages only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-average-propensity-save",
+      "subtopicName": "Consumer choice",
+      "heading": "How much of income gets saved",
+      "body": "Average propensity to save (APS) is the share of income that's saved rather than spent. Since every dollar is one or the other, [[econ-average-propensity-consume|APC]] and APS always add up to 1.",
+      "checkText": "APC and APS always add up to...",
+      "checkOptions": [
+        { "text": "1", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "100", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-marginal-propensity-consume",
+      "subtopicName": "Consumer choice",
+      "heading": "Spending from your next dollar",
+      "body": "Marginal propensity to consume (MPC) is the share of one extra dollar of income that a person spends, rather than saves.",
+      "checkText": "Marginal propensity to consume looks at what happens to...",
+      "checkOptions": [
+        { "text": "One extra dollar of income", "isCorrect": true },
+        { "text": "A person's entire income", "isCorrect": false },
+        { "text": "A person's total savings balance", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-marginal-propensity-save",
+      "subtopicName": "Consumer choice",
+      "heading": "Saving from your next dollar",
+      "body": "Marginal propensity to save (MPS) is the share of one extra dollar of income that gets saved. Like APC and APS, [[econ-marginal-propensity-consume|MPC]] and MPS always add up to 1.",
+      "checkText": "MPC and MPS together always equal...",
+      "checkOptions": [
+        { "text": "1", "isCorrect": true },
+        { "text": "2", "isCorrect": false },
+        { "text": "0.5", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-consumption-function",
+      "subtopicName": "Consumer choice",
+      "heading": "Graphing income against spending",
+      "body": "The consumption function is a graph showing how spending changes as income changes. Its slope is the [[econ-marginal-propensity-consume|marginal propensity to consume]].",
+      "checkText": "The slope of the consumption function shows the...",
+      "checkOptions": [
+        { "text": "Marginal propensity to consume", "isCorrect": true },
+        { "text": "Average propensity to save", "isCorrect": false },
+        { "text": "Total tax paid", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-income-and-saving",
+      "subtopicName": "Consumer choice",
+      "heading": "Richer people save a bigger share",
+      "body": "As income rises, people tend to save a larger share of it and spend a smaller share. So [[econ-average-propensity-save|APS]] rises while [[econ-average-propensity-consume|APC]] falls.",
+      "checkText": "As a person's income rises, their average propensity to save usually...",
+      "checkOptions": [
+        { "text": "Rises", "isCorrect": true },
+        { "text": "Falls", "isCorrect": false },
+        { "text": "Stays exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-life-cycle-saving",
+      "subtopicName": "Consumer choice",
+      "heading": "Saving shifts across a lifetime",
+      "body": "Young people often spend more than they earn while studying. In their working years they save more, then in retirement they live off those savings again.",
+      "checkText": "According to this pattern, people typically save the most during...",
+      "checkOptions": [
+        { "text": "Their working years", "isCorrect": true },
+        { "text": "Childhood", "isCorrect": false },
+        { "text": "Retirement", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-saving-other-factors",
+      "subtopicName": "Consumer choice",
+      "heading": "Confidence and culture affect saving too",
+      "body": "Besides income and age, people save more when they feel unsure about the future, when credit is hard to get, or when their culture favours caution.",
+      "checkText": "Feeling uncertain about the future tends to make people...",
+      "checkOptions": [
+        { "text": "Save more as a precaution", "isCorrect": true },
+        { "text": "Spend all their income immediately", "isCorrect": false },
+        { "text": "Stop earning income", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-utility",
+      "subtopicName": "Consumer choice",
+      "heading": "Chasing satisfaction",
+      "body": "Economists assume consumers try to maximise their utility, which is the satisfaction or pleasure they get from consuming goods and services.",
+      "checkText": "Utility refers to a consumer's...",
+      "checkOptions": [
+        { "text": "Satisfaction from consuming goods and services", "isCorrect": true },
+        { "text": "Total income for the year", "isCorrect": false },
+        { "text": "Amount of savings", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-market-demand",
+      "subtopicName": "Consumer choice",
+      "heading": "One buyer versus everyone buying",
+      "body": "Individual demand is how much one consumer wants at a given price. Market demand adds up every consumer's [[econ-utility|desire for satisfaction]] into one total for the whole economy.",
+      "checkText": "Market demand is the total demand of...",
+      "checkOptions": [
+        { "text": "All consumers combined", "isCorrect": true },
+        { "text": "Just one shopper", "isCorrect": false },
+        { "text": "Only the government", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-income-level-choice",
+      "subtopicName": "Consumer choice",
+      "heading": "Bigger pay packet, bigger choices",
+      "body": "As people earn higher incomes, they tend to buy more items and often choose higher-quality versions, changing what gives them the most [[econ-utility|utility]].",
+      "checkText": "As income rises, consumers tend to...",
+      "checkOptions": [
+        { "text": "Buy more and choose higher quality", "isCorrect": true },
+        { "text": "Buy exactly the same things", "isCorrect": false },
+        { "text": "Stop buying anything at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-wealth-effect",
+      "subtopicName": "Consumer choice",
+      "heading": "Feeling richer from rising house prices",
+      "body": "When house prices rise, homeowners feel wealthier even though they haven't earned more income. This wealth effect makes them more likely to spend.",
+      "checkText": "The wealth effect describes how people spend more when...",
+      "checkOptions": [
+        { "text": "Their house's value rises", "isCorrect": true },
+        { "text": "Their wages are cut", "isCorrect": false },
+        { "text": "Interest rates rise sharply", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-necessities-vs-luxuries",
+      "subtopicName": "Consumer choice",
+      "heading": "Needs don't change much with price",
+      "body": "People keep buying necessities, like basic food, even when the price rises, because they need them to live. Luxuries get cut back much more easily.",
+      "checkText": "When the price of a necessity rises, demand for it usually...",
+      "checkOptions": [
+        { "text": "Falls only a little", "isCorrect": true },
+        { "text": "Falls a lot", "isCorrect": false },
+        { "text": "Disappears completely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-substitute-goods",
+      "subtopicName": "Consumer choice",
+      "heading": "Swapping one good for another",
+      "body": "A substitute is a good that can replace another in use, like two brands of cooking oil. If one gets more expensive, buyers switch to its substitute instead.",
+      "checkText": "If the price of one good rises, demand for its substitute tends to...",
+      "checkOptions": [
+        { "text": "Increase", "isCorrect": true },
+        { "text": "Decrease", "isCorrect": false },
+        { "text": "Stay exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-complement-goods",
+      "subtopicName": "Consumer choice",
+      "heading": "Goods that go together",
+      "body": "A complement is a good used together with another, like a games console and its controllers. Unlike a [[econ-substitute-goods|substitute]], demand for both complements tends to move the same way.",
+      "checkText": "A complement good is one that is...",
+      "checkOptions": [
+        { "text": "Used together with another good", "isCorrect": true },
+        { "text": "Used instead of another good", "isCorrect": false },
+        { "text": "Unrelated to any other good", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-tastes-preferences",
+      "subtopicName": "Consumer choice",
+      "heading": "What we like shapes what we buy",
+      "body": "Consumer tastes and preferences change over time, and demand for a good rises when it becomes more fashionable or falls when it goes out of style.",
+      "checkText": "When a product becomes more fashionable, demand for it usually...",
+      "checkOptions": [
+        { "text": "Rises", "isCorrect": true },
+        { "text": "Falls", "isCorrect": false },
+        { "text": "Has no effect on sales", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-advertising-and-demand",
+      "subtopicName": "Consumer choice",
+      "heading": "Advertising creates new wants",
+      "body": "Advertising can build demand for a product that barely existed before, by shaping [[econ-tastes-preferences|consumer tastes]] in the same way that [[econ-marketing-influence|marketing]] can weaken true consumer sovereignty.",
+      "checkText": "Advertising can influence consumer choice by...",
+      "checkOptions": [
+        { "text": "Creating demand where little existed before", "isCorrect": true },
+        { "text": "Guaranteeing lower prices for everyone", "isCorrect": false },
+        { "text": "Removing the need for production", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-factors-of-production-income",
+      "subtopicName": "Consumer choice",
+      "heading": "Where income really comes from",
+      "body": "Consumers earn income by supplying the factors of production: labour, land, capital and entrepreneurial skill. Each factor earns its own kind of payment.",
+      "checkText": "Consumer income is mainly earned by supplying...",
+      "checkOptions": [
+        { "text": "The factors of production", "isCorrect": true },
+        { "text": "Government welfare only", "isCorrect": false },
+        { "text": "Interest paid by other households", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-wages-labour",
+      "subtopicName": "Consumer choice",
+      "heading": "Pay for work: wages",
+      "body": "Wages and salaries are payments for labour, and are the main source of income for most people, one of the [[econ-factors-of-production-income|factors of production]] paid.",
+      "checkText": "The main source of income for most consumers is...",
+      "checkOptions": [
+        { "text": "Wages and salaries from labour", "isCorrect": true },
+        { "text": "Rent from owning land", "isCorrect": false },
+        { "text": "Profit from running a business", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-rent-land",
+      "subtopicName": "Consumer choice",
+      "heading": "Payment for land: rent",
+      "body": "Rent is the income earned from owning land, such as a person who owns a rental property and collects payments from tenants.",
+      "checkText": "Rent is income earned from owning...",
+      "checkOptions": [
+        { "text": "Land or property", "isCorrect": true },
+        { "text": "Shares in a company", "isCorrect": false },
+        { "text": "A person's own labour", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-interest-capital",
+      "subtopicName": "Consumer choice",
+      "heading": "Return on capital: interest",
+      "body": "Interest is income earned from owning capital, like money kept in a savings account or invested through superannuation.",
+      "checkText": "Interest is a payment earned from owning...",
+      "checkOptions": [
+        { "text": "Capital", "isCorrect": true },
+        { "text": "Labour", "isCorrect": false },
+        { "text": "Land", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-profit-entrepreneurship",
+      "subtopicName": "Consumer choice",
+      "heading": "Reward for risk-taking: profit",
+      "body": "Profit is the income earned by entrepreneurs who take the risk of running a business. If the business succeeds, this reward is theirs to keep.",
+      "checkText": "Profit is the reward earned for...",
+      "checkOptions": [
+        { "text": "Taking the risk of running a business", "isCorrect": true },
+        { "text": "Working a fixed number of hours", "isCorrect": false },
+        { "text": "Owning land that is rented out", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-transfer-payments",
+      "subtopicName": "Consumer choice",
+      "heading": "Money the government hands out",
+      "body": "Transfer payments, like the age pension or unemployment benefits, are money collected through tax and given to individuals by the government. This income is called social welfare.",
+      "checkText": "Transfer payments are funded through...",
+      "checkOptions": [
+        { "text": "Money collected by the government through tax", "isCorrect": true },
+        { "text": "Profits earned by private businesses", "isCorrect": false },
+        { "text": "Interest paid by banks", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-social-welfare-purpose",
+      "subtopicName": "Consumer choice",
+      "heading": "Why welfare exists",
+      "body": "The purpose of [[econ-transfer-payments|social welfare]] is to give people with low or no income enough money to afford life's basic necessities.",
+      "checkText": "The main purpose of social welfare is to...",
+      "checkOptions": [
+        { "text": "Give people enough for life's basic needs", "isCorrect": true },
+        { "text": "Replace wages for every worker", "isCorrect": false },
+        { "text": "Reward successful entrepreneurs", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-business-firm",
+      "subtopicName": "Business behaviour",
+      "heading": "What is a business firm?",
+      "body": "A business firm is an organisation that uses entrepreneurial skill to combine resources and produce a good or service for sale.",
+      "checkText": "A business firm exists mainly to...",
+      "checkOptions": [
+        { "text": "Combine resources to produce goods or services for sale", "isCorrect": true },
+        { "text": "Collect taxes from consumers", "isCorrect": false },
+        { "text": "Set laws for an industry", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-industry",
+      "subtopicName": "Business behaviour",
+      "heading": "Firms that compete together",
+      "body": "An industry is a group of [[econ-business-firm|firms]] that make a similar range of products and usually compete with each other, like all the phone companies in a country.",
+      "checkText": "An industry is best described as...",
+      "checkOptions": [
+        { "text": "A group of firms making similar products", "isCorrect": true },
+        { "text": "A single very large company", "isCorrect": false },
+        { "text": "A government department", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-what-to-produce",
+      "subtopicName": "Business behaviour",
+      "heading": "Deciding what to make",
+      "body": "A new business owner is more likely to succeed making something they already know well, or something many people clearly want to buy.",
+      "checkText": "A business owner is more likely to succeed in an industry where they...",
+      "checkOptions": [
+        { "text": "Already have skills and experience", "isCorrect": true },
+        { "text": "Have never worked before", "isCorrect": false },
+        { "text": "Know nothing about the product", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-niche-market",
+      "subtopicName": "Business behaviour",
+      "heading": "Finding a small, specific market",
+      "body": "A niche market is a small, specific group of customers with particular tastes, like people who only want handmade wooden toys.",
+      "checkText": "A niche market is a segment of buyers defined by their...",
+      "checkOptions": [
+        { "text": "Specific tastes or characteristics", "isCorrect": true },
+        { "text": "Total national population", "isCorrect": false },
+        { "text": "Government regulations", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-how-much-to-produce",
+      "subtopicName": "Business behaviour",
+      "heading": "Deciding how much to make",
+      "body": "Producing too much can leave unsold goods that cost money to store, while producing too little means missing out on sales to willing buyers.",
+      "checkText": "Producing more than consumers want to buy usually results in...",
+      "checkOptions": [
+        { "text": "Unsold goods and wasted cost", "isCorrect": true },
+        { "text": "Higher profit for the firm", "isCorrect": false },
+        { "text": "Lower production costs", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-natural-resources-factor",
+      "subtopicName": "Business behaviour",
+      "heading": "Natural resources can grow or shrink",
+      "body": "New technology can help find more natural resources, but overusing them, such as through overfishing, can permanently reduce what's available.",
+      "checkText": "Overusing a natural resource, like overfishing, tends to...",
+      "checkOptions": [
+        { "text": "Permanently reduce how much is available", "isCorrect": true },
+        { "text": "Automatically create more of it", "isCorrect": false },
+        { "text": "Have no effect on future supply", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-labour-factor",
+      "subtopicName": "Business behaviour",
+      "heading": "The workforce as a resource",
+      "body": "Training and education make workers more productive, but an ageing population with fewer young workers can shrink the labour force available to businesses.",
+      "checkText": "Investing in education and training tends to make the workforce...",
+      "checkOptions": [
+        { "text": "More productive", "isCorrect": true },
+        { "text": "Smaller in number", "isCorrect": false },
+        { "text": "Unable to work", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-capital-factor",
+      "subtopicName": "Business behaviour",
+      "heading": "Capital: the tools of production",
+      "body": "Capital is the equipment and machinery firms use to produce, like tractors or computers. Old capital wears out over time, which is called depreciation.",
+      "checkText": "Depreciation refers to capital that has...",
+      "checkOptions": [
+        { "text": "Worn out and become obsolete over time", "isCorrect": true },
+        { "text": "Just been purchased brand new", "isCorrect": false },
+        { "text": "Been rented instead of bought", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-enterprise-factor",
+      "subtopicName": "Business behaviour",
+      "heading": "Entrepreneurs and enterprise",
+      "body": "Enterprise is the willingness of entrepreneurs to take risks and start new businesses. More people take this risk when conditions look favourable and profits look likely.",
+      "checkText": "Enterprise as a factor of production refers to...",
+      "checkOptions": [
+        { "text": "Entrepreneurs taking risks to start businesses", "isCorrect": true },
+        { "text": "Workers doing physical labour", "isCorrect": false },
+        { "text": "Banks lending out savings", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-digital-platforms",
+      "subtopicName": "Business behaviour",
+      "heading": "A new way to produce: digital platforms",
+      "body": "Digital platforms connect people who own an asset, like a spare room, with people who want to use it, offering a new answer to how to produce.",
+      "checkText": "A digital platform business typically works by...",
+      "checkOptions": [
+        { "text": "Connecting owners of assets with people who want to use them", "isCorrect": true },
+        { "text": "Manufacturing all of its own products", "isCorrect": false },
+        { "text": "Only selling through physical stores", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-economic-growth-firms",
+      "subtopicName": "Business behaviour",
+      "heading": "Growing firms grow the economy",
+      "body": "When private businesses grow and perform well, the whole economy tends to grow faster, and governments collect more revenue to fund services.",
+      "checkText": "A healthy, growing private sector tends to lead to...",
+      "checkOptions": [
+        { "text": "Faster economic growth", "isCorrect": true },
+        { "text": "Slower economic growth", "isCorrect": false },
+        { "text": "No change in government revenue", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-firms-reduce-unemployment",
+      "subtopicName": "Business behaviour",
+      "heading": "More business, more jobs",
+      "body": "As businesses grow and hire more staff, fewer people are left looking for work, which lowers the unemployment rate.",
+      "checkText": "Business growth tends to affect unemployment by...",
+      "checkOptions": [
+        { "text": "Lowering it, as more jobs are created", "isCorrect": true },
+        { "text": "Raising it, as jobs are cut", "isCorrect": false },
+        { "text": "Having no effect on it at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-regional-development",
+      "subtopicName": "Business behaviour",
+      "heading": "Business builds regional areas",
+      "body": "Businesses in industries like tourism or food processing can bring jobs and better infrastructure to regional areas outside major cities.",
+      "checkText": "Businesses operating in regional areas can contribute to...",
+      "checkOptions": [
+        { "text": "Better infrastructure and more local jobs", "isCorrect": true },
+        { "text": "The disappearance of regional towns", "isCorrect": false },
+        { "text": "Higher unemployment in cities only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-productive-capacity",
+      "subtopicName": "Business behaviour",
+      "heading": "Growing the economy's total capacity",
+      "body": "When businesses invest and expand, the whole economy becomes able to produce more goods and services than before. This is called an increase in productive capacity.",
+      "checkText": "An increase in productive capacity means an economy can...",
+      "checkOptions": [
+        { "text": "Produce more goods and services than before", "isCorrect": true },
+        { "text": "Produce exactly the same as before", "isCorrect": false },
+        { "text": "No longer produce capital goods", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-government-business-assistance",
+      "subtopicName": "Business behaviour",
+      "heading": "Government help for new businesses",
+      "body": "Governments often support new and growing businesses with grants, rebates and training programs, because successful firms benefit the whole economy.",
+      "checkText": "Governments support businesses with grants and training mainly because...",
+      "checkOptions": [
+        { "text": "Successful firms benefit the whole economy", "isCorrect": true },
+        { "text": "It is required by international law", "isCorrect": false },
+        { "text": "It guarantees every business will succeed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-profit-maximisation",
+      "subtopicName": "Market structures",
+      "heading": "Aiming for the biggest profit",
+      "body": "Profit maximisation, making the largest possible profit, is seen as the main goal that guides how most business firms behave.",
+      "checkText": "Profit maximisation means a firm is trying to achieve the...",
+      "checkOptions": [
+        { "text": "Largest possible profit", "isCorrect": true },
+        { "text": "Largest possible workforce", "isCorrect": false },
+        { "text": "Lowest possible prices", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-growth-maximisation",
+      "subtopicName": "Market structures",
+      "heading": "Aiming to grow bigger",
+      "body": "Some firms focus on growing their total size and assets rather than current profit, hoping a bigger firm will earn even more in future.",
+      "checkText": "A firm pursuing growth maximisation is mainly focused on...",
+      "checkOptions": [
+        { "text": "Expanding its size and assets", "isCorrect": true },
+        { "text": "Shrinking to cut costs", "isCorrect": false },
+        { "text": "Paying the highest possible wages", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-satisficing-behaviour",
+      "subtopicName": "Market structures",
+      "heading": "Good enough, not the most",
+      "body": "Satisficing behaviour is when a firm aims for an acceptable result in each of its goals, rather than trying to maximise any single one.",
+      "checkText": "A firm showing satisficing behaviour aims for...",
+      "checkOptions": [
+        { "text": "An acceptable outcome, not the maximum possible", "isCorrect": true },
+        { "text": "The highest possible profit no matter what", "isCorrect": false },
+        { "text": "Bankruptcy as quickly as possible", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-market-share-goal",
+      "subtopicName": "Market structures",
+      "heading": "Winning a bigger slice of the market",
+      "body": "Market share is the percentage of total sales in a market that one firm makes. Some firms aim to grow their market share rather than just their profit.",
+      "checkText": "Market share measures a firm's...",
+      "checkOptions": [
+        { "text": "Percentage of total sales in its market", "isCorrect": true },
+        { "text": "Total number of employees", "isCorrect": false },
+        { "text": "Total government tax paid", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-shareholder-expectations",
+      "subtopicName": "Market structures",
+      "heading": "Keeping shareholders on side",
+      "body": "Company directors must balance the expectations of shareholders, who can vote to change management if they're unhappy with how the firm is run.",
+      "checkText": "Shareholders can influence a firm's direction by...",
+      "checkOptions": [
+        { "text": "Voting to change its management", "isCorrect": true },
+        { "text": "Setting national interest rates", "isCorrect": false },
+        { "text": "Writing its production laws", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-productivity-defined",
+      "subtopicName": "Business behaviour",
+      "heading": "Getting more from the same",
+      "body": "Productivity is how much output a firm produces from a given amount of input. It's different from production, which is just the total amount made.",
+      "checkText": "Productivity measures output compared to...",
+      "checkOptions": [
+        { "text": "The amount of input used", "isCorrect": true },
+        { "text": "The number of customers", "isCorrect": false },
+        { "text": "The price charged", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-productivity-benefits",
+      "subtopicName": "Business behaviour",
+      "heading": "Why productivity matters",
+      "body": "Higher [[econ-productivity-defined|productivity]] means lower costs, which can lead to higher profits, higher wages and lower prices for everyone.",
+      "checkText": "An increase in productivity tends to lead to...",
+      "checkOptions": [
+        { "text": "Lower production costs", "isCorrect": true },
+        { "text": "Higher production costs", "isCorrect": false },
+        { "text": "No change to costs", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-specialisation",
+      "subtopicName": "Business behaviour",
+      "heading": "Doing one thing well",
+      "body": "Specialisation happens when a factor of production is used more intensely on a narrower set of tasks, which usually boosts productivity.",
+      "checkText": "Specialisation generally leads to an increase in...",
+      "checkOptions": [
+        { "text": "Productivity", "isCorrect": true },
+        { "text": "The total number of factors of production", "isCorrect": false },
+        { "text": "The price of raw materials", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-division-of-labour",
+      "subtopicName": "Business behaviour",
+      "heading": "Breaking a job into small tasks",
+      "body": "Division of labour is a type of [[econ-specialisation|specialisation]] where a job is split into smaller tasks, so each worker becomes very skilled at just one part.",
+      "checkText": "Division of labour involves splitting a job into...",
+      "checkOptions": [
+        { "text": "Smaller tasks for different workers", "isCorrect": true },
+        { "text": "One huge task for one worker", "isCorrect": false },
+        { "text": "Tasks done only by machines", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-location-of-industry",
+      "subtopicName": "Business behaviour",
+      "heading": "Firms clustering together",
+      "body": "When many similar businesses gather in the same area, they can share infrastructure and skilled workers, a form of [[econ-specialisation|specialisation]] of natural resources.",
+      "checkText": "Firms clustering together in one area can reduce costs by sharing...",
+      "checkOptions": [
+        { "text": "Infrastructure and skilled workers", "isCorrect": true },
+        { "text": "Each other's customers only", "isCorrect": false },
+        { "text": "Government subsidies exclusively", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-large-scale-production",
+      "subtopicName": "Business behaviour",
+      "heading": "Bigger firms, specialised machines",
+      "body": "When firms grow large enough, they can afford highly specialised machinery a small firm couldn't justify buying, a form of [[econ-specialisation|specialisation]] of capital.",
+      "checkText": "Large-scale production allows a firm to use...",
+      "checkOptions": [
+        { "text": "Highly specialised machinery", "isCorrect": true },
+        { "text": "Only basic hand tools", "isCorrect": false },
+        { "text": "Fewer natural resources than before", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-internal-economies-of-scale",
+      "subtopicName": "Business behaviour",
+      "heading": "Cheaper per unit as firms grow",
+      "body": "Internal economies of scale happen when a firm's cost per unit falls as it produces more, often because it can specialise or buy materials in bulk.",
+      "checkText": "Internal economies of scale mean that as output grows, cost per unit...",
+      "checkOptions": [
+        { "text": "Falls", "isCorrect": true },
+        { "text": "Rises", "isCorrect": false },
+        { "text": "Stays exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-internal-diseconomies-of-scale",
+      "subtopicName": "Business behaviour",
+      "heading": "When growing makes firms clumsy",
+      "body": "Past a certain size, a firm can grow too big to manage well, and cost per unit starts rising again, the opposite of [[econ-internal-economies-of-scale|internal economies of scale]].",
+      "checkText": "Internal diseconomies of scale occur when a firm becomes...",
+      "checkOptions": [
+        { "text": "Too large to manage efficiently", "isCorrect": true },
+        { "text": "Too small to survive", "isCorrect": false },
+        { "text": "Too profitable to grow further", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-technical-optimum",
+      "subtopicName": "Business behaviour",
+      "heading": "The size where costs are lowest",
+      "body": "The technical optimum is the output level where a firm's cost per unit is lowest, sitting right between [[econ-internal-economies-of-scale|falling]] and [[econ-internal-diseconomies-of-scale|rising]] costs.",
+      "checkText": "At the technical optimum, a firm's cost per unit is at its...",
+      "checkOptions": [
+        { "text": "Lowest possible level", "isCorrect": true },
+        { "text": "Highest possible level", "isCorrect": false },
+        { "text": "Exact starting level", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-external-economies-of-scale",
+      "subtopicName": "Business behaviour",
+      "heading": "Perks from a growing industry",
+      "body": "External economies of scale are cost advantages a firm gets just from its whole industry growing nearby, like access to a bigger pool of skilled workers.",
+      "checkText": "External economies of scale come from the growth of a firm's...",
+      "checkOptions": [
+        { "text": "Whole industry, not just itself", "isCorrect": true },
+        { "text": "Own factory alone", "isCorrect": false },
+        { "text": "Competitor's profits", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-external-diseconomies-of-scale",
+      "subtopicName": "Business behaviour",
+      "heading": "Costs from a growing industry",
+      "body": "External diseconomies of scale are cost increases a firm faces because its whole industry has grown, such as raw material prices rising with high demand.",
+      "checkText": "External diseconomies of scale are caused by growth in a firm's...",
+      "checkOptions": [
+        { "text": "Entire industry", "isCorrect": true },
+        { "text": "Own workforce only", "isCorrect": false },
+        { "text": "Government tax rate", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-technological-change-production",
+      "subtopicName": "Business behaviour",
+      "heading": "New tech changes how things are made",
+      "body": "New technology lets firms produce goods using existing resources more efficiently, often lowering costs and changing the methods used to make things.",
+      "checkText": "Technological change in production methods often results in...",
+      "checkOptions": [
+        { "text": "Lower costs and more efficient production", "isCorrect": true },
+        { "text": "Higher costs with no other change", "isCorrect": false },
+        { "text": "The same methods being used forever", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-ethical-decision-making",
+      "subtopicName": "Business behaviour",
+      "heading": "Weighing more than just profit",
+      "body": "Ethical decision making means a business considers its impact on society and the environment, not just how to maximise profit.",
+      "checkText": "Ethical decision making means a business also considers...",
+      "checkOptions": [
+        { "text": "Its impact on society and the environment", "isCorrect": true },
+        { "text": "Only its short-term profit", "isCorrect": false },
+        { "text": "Only its competitors' prices", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-technology-prices-profits",
+      "subtopicName": "Business behaviour",
+      "heading": "Better tech, sharper prices",
+      "body": "Websites that compare prices make it easy for shoppers to find the cheapest option, pushing firms to lower prices and invest in [[econ-technological-change-production|better technology]] to stay competitive.",
+      "checkText": "Price comparison websites tend to push firms to...",
+      "checkOptions": [
+        { "text": "Lower their prices to compete", "isCorrect": true },
+        { "text": "Raise prices freely", "isCorrect": false },
+        { "text": "Stop advertising altogether", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-technology-employment",
+      "subtopicName": "Business behaviour",
+      "heading": "Tech creates and destroys jobs",
+      "body": "Automation can make some jobs disappear, while new technology also creates brand new kinds of jobs that didn't exist before.",
+      "checkText": "New technology tends to have which effect on employment?",
+      "checkOptions": [
+        { "text": "It destroys some jobs while creating others", "isCorrect": true },
+        { "text": "It always destroys every job", "isCorrect": false },
+        { "text": "It never affects jobs at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-globalisation-technology",
+      "subtopicName": "Business behaviour",
+      "heading": "Technology connects the world's markets",
+      "body": "Cheap, fast communication lets businesses find customers and investors overseas, connecting national markets into one global economy.",
+      "checkText": "Globalisation is helped by technology mainly through...",
+      "checkOptions": [
+        { "text": "Cheap, fast communication across countries", "isCorrect": true },
+        { "text": "Higher shipping costs everywhere", "isCorrect": false },
+        { "text": "Fewer computer networks", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-globalisation-ethics",
+      "subtopicName": "Business behaviour",
+      "heading": "Cheap goods can hide a cost",
+      "body": "Buying goods made overseas can be cheaper, but sometimes those goods were made with very low wages or unsafe working conditions, raising an ethical concern.",
+      "checkText": "Sourcing goods from overseas can raise ethical concerns when...",
+      "checkOptions": [
+        { "text": "Workers there face very low wages or unsafe conditions", "isCorrect": true },
+        { "text": "The goods become more expensive", "isCorrect": false },
+        { "text": "Local firms make more profit instead", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-environmental-sustainability-business",
+      "subtopicName": "Business behaviour",
+      "heading": "Business going green",
+      "body": "Environmental sustainability means a business tries to cut pollution and waste and use more renewable resources, often because customers and regulators expect it.",
+      "checkText": "A business focused on environmental sustainability aims to...",
+      "checkOptions": [
+        { "text": "Reduce pollution and waste", "isCorrect": true },
+        { "text": "Maximise pollution to cut costs", "isCorrect": false },
+        { "text": "Ignore all customer expectations", "isCorrect": false }
+      ]
+    }
+  ]
+}
