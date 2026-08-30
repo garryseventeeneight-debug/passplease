@@ -1,6 +1,7 @@
 "use client";
 
 import { masteryLevelFor } from "@/lib/mastery";
+import { MathText } from "./MathText";
 
 export interface AttemptFeedback {
   correct: boolean;
@@ -34,7 +35,9 @@ export function AnswerFeedback({
       </p>
 
       {feedback.explanation && (
-        <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">{feedback.explanation}</p>
+        <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
+          <MathText text={feedback.explanation} />
+        </p>
       )}
 
       {!feedback.answerVerified && (

@@ -1,5 +1,7 @@
 "use client";
 
+import { MathText } from "./MathText";
+
 const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
 export interface QuestionOption {
@@ -61,7 +63,7 @@ export function QuestionCard({
       </div>
 
       <p className="mb-5 text-lg font-medium text-neutral-900 dark:text-neutral-100">
-        {question.questionText}
+        <MathText text={question.questionText} />
       </p>
 
       {question.imageData && (
@@ -101,7 +103,9 @@ export function QuestionCard({
               <span className="font-semibold text-neutral-500 dark:text-neutral-400">
                 {LETTERS[i]}
               </span>
-              <span className="text-neutral-800 dark:text-neutral-200">{option.text}</span>
+              <span className="text-neutral-800 dark:text-neutral-200">
+                <MathText text={option.text} />
+              </span>
             </button>
           );
         })}

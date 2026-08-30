@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { MathText } from "./MathText";
 
 const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
@@ -70,7 +71,7 @@ export function QuestionDetail({ question }: { question: QuestionDetailData }) {
       </div>
 
       <p className="mb-5 text-lg font-medium text-neutral-900 dark:text-neutral-100">
-        {question.questionText}
+        <MathText text={question.questionText} />
       </p>
 
       {question.imageData && (
@@ -94,7 +95,9 @@ export function QuestionDetail({ question }: { question: QuestionDetailData }) {
             ].join(" ")}
           >
             <span className="font-semibold text-neutral-500 dark:text-neutral-400">{LETTERS[i]}</span>
-            <span className="text-neutral-800 dark:text-neutral-200">{option.text}</span>
+            <span className="text-neutral-800 dark:text-neutral-200">
+              <MathText text={option.text} />
+            </span>
             {option.isCorrect && (
               <span className="ml-auto shrink-0 text-xs font-medium text-green-700 dark:text-green-400">
                 Correct
@@ -105,7 +108,9 @@ export function QuestionDetail({ question }: { question: QuestionDetailData }) {
       </div>
 
       {question.explanation && (
-        <p className="mt-4 text-sm text-neutral-700 dark:text-neutral-300">{question.explanation}</p>
+        <p className="mt-4 text-sm text-neutral-700 dark:text-neutral-300">
+          <MathText text={question.explanation} />
+        </p>
       )}
 
       <div className="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-xs text-neutral-500 dark:text-neutral-400">
