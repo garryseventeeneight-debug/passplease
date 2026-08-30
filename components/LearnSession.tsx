@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { MathText } from "./MathText";
+import { WikiText, type WikiLinkTarget } from "./WikiText";
+import { LearnCheck } from "./LearnCheck";
 
 interface LearnOption {
   id: string;
@@ -14,30 +15,26 @@ interface LearnChunkData {
   subtopicName: string | null;
   heading: string;
   body: string;
-  checkText: string;
+  checkText: string | null;
   options: LearnOption[];
   completed: boolean;
 }
 
-type Phase = "reading" | "checking" | "feedback";
-
 export function LearnSession({ topicId }: { topicId: string }) {
   const [chunks, setChunks] = useState<LearnChunkData[] | null>(null);
+  const [linkTargets, setLinkTargets] = useState<Record<string, WikiLinkTarget>>({});
   const [index, setIndex] = useState(0);
-  const [phase, setPhase] = useState<Phase>("reading");
-  const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
-  const [feedback, setFeedback] = useState<{ correct: boolean; correctOptionId: string | null } | null>(
-    null
-  );
+  const [reading, setReading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
     fetch(`/api/learn/${topicId}`)
       .then((res) => res.json())
-      .then((data: { chunks: LearnChunkData[] }) => {
+      .then((data: { chunks: LearnChunkData[]; linkTargets: Record<string, WikiLinkTarget> }) => {
         if (cancelled) return;
         setChunks(data.chunks);
+        setLinkTargets(data.linkTargets);
         const firstIncomplete = data.chunks.findIndex((c) => !c.completed);
         setIndex(firstIncomplete === -1 ? 0 : firstIncomplete);
       });
@@ -48,30 +45,30 @@ export function LearnSession({ topicId }: { topicId: string }) {
 
   function goTo(nextIndex: number) {
     setIndex(nextIndex);
-    setPhase("reading");
-    setSelectedOptionId(null);
-    setFeedback(null);
+    setReading(true);
     setError(null);
   }
 
-  async function submitCheck() {
-    if (!chunks || !selectedOptionId) return;
+  function markComplete(chunkIndex: number) {
+    setChunks((prev) =>
+      prev ? prev.map((c, i) => (i === chunkIndex ? { ...c, completed: true } : c)) : prev
+    );
+  }
+
+  async function skipCheckless() {
+    if (!chunks) return;
     const chunk = chunks[index];
     const res = await fetch("/api/learn/check", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ chunkId: chunk.id, optionId: selectedOptionId }),
+      body: JSON.stringify({ chunkId: chunk.id }),
     });
     if (!res.ok) {
       setError("Something went wrong recording that.");
       return;
     }
-    const data = await res.json();
-    setFeedback({ correct: data.correct, correctOptionId: data.correctOptionId });
-    setPhase("feedback");
-    setChunks((prev) =>
-      prev ? prev.map((c, i) => (i === index ? { ...c, completed: true } : c)) : prev
-    );
+    markComplete(index);
+    goTo(index + 1);
   }
 
   if (chunks === null) {
@@ -114,78 +111,42 @@ export function LearnSession({ topicId }: { topicId: string }) {
           {chunk.heading}
         </h2>
         <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-          <MathText text={chunk.body} />
+          <WikiText text={chunk.body} linkTargets={linkTargets} />
         </p>
 
-        {phase === "reading" && (
+        {error && <p className="mt-3 text-sm text-red-600">{error}</p>}
+
+        {reading && chunk.checkText && (
           <button
             type="button"
-            onClick={() => setPhase("checking")}
+            onClick={() => setReading(false)}
             className="mt-5 rounded-md bg-neutral-900 px-4 py-2 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
           >
             Continue
           </button>
         )}
 
-        {phase !== "reading" && (
+        {reading && !chunk.checkText && (
+          <button
+            type="button"
+            onClick={skipCheckless}
+            className="mt-5 rounded-md bg-neutral-900 px-4 py-2 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
+          >
+            {isLast ? "Finish" : "Continue"}
+          </button>
+        )}
+
+        {!reading && chunk.checkText && (
           <div className="mt-5 border-t border-neutral-200 pt-5 dark:border-neutral-800">
-            <p className="mb-3 text-sm font-medium text-neutral-800 dark:text-neutral-200">
-              <MathText text={chunk.checkText} />
-            </p>
-            <div className="flex flex-col gap-2">
-              {chunk.options.map((option) => {
-                const isSelected = selectedOptionId === option.id;
-                const isCorrect = feedback && feedback.correctOptionId === option.id;
-                const isWrongSelected = feedback && isSelected && !isCorrect;
-                return (
-                  <button
-                    key={option.id}
-                    type="button"
-                    disabled={phase === "feedback"}
-                    onClick={() => phase === "checking" && setSelectedOptionId(option.id)}
-                    className={[
-                      "rounded-md border px-4 py-2.5 text-left text-sm transition-colors",
-                      isCorrect
-                        ? "border-green-500 bg-green-50 dark:bg-green-900/20"
-                        : isWrongSelected
-                          ? "border-red-500 bg-red-50 dark:bg-red-900/20"
-                          : isSelected
-                            ? "border-blue-500 bg-blue-50 dark:bg-blue-900/20"
-                            : "border-neutral-200 hover:border-neutral-400 dark:border-neutral-700 dark:hover:border-neutral-500",
-                      phase === "feedback" ? "cursor-default" : "cursor-pointer",
-                    ].join(" ")}
-                  >
-                    <MathText text={option.text} />
-                  </button>
-                );
-              })}
-            </div>
-
-            {error && <p className="mt-3 text-sm text-red-600">{error}</p>}
-
-            {phase === "checking" && (
-              <button
-                type="button"
-                onClick={submitCheck}
-                disabled={!selectedOptionId}
-                className="mt-4 rounded-md bg-neutral-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-40 dark:bg-neutral-100 dark:text-neutral-900"
-              >
-                Submit
-              </button>
-            )}
-
-            {phase === "feedback" && feedback && (
-              <div className="mt-4">
-                <p
-                  className={
-                    feedback.correct
-                      ? "text-sm font-semibold text-green-600 dark:text-green-400"
-                      : "text-sm font-semibold text-amber-600 dark:text-amber-400"
-                  }
-                >
-                  {feedback.correct ? "That's right." : "Not quite — take another look above."}
-                </p>
-                {!isLast ? (
+            <LearnCheck
+              key={chunk.id}
+              chunkId={chunk.id}
+              checkText={chunk.checkText}
+              options={chunk.options}
+              linkTargets={linkTargets}
+              onComplete={() => markComplete(index)}
+              afterFeedback={() =>
+                !isLast ? (
                   <button
                     type="button"
                     onClick={() => goTo(index + 1)}
@@ -198,9 +159,9 @@ export function LearnSession({ topicId }: { topicId: string }) {
                     That&apos;s every chunk for this topic — jump back to any of them above, or
                     head back to the dashboard.
                   </p>
-                )}
-              </div>
-            )}
+                )
+              }
+            />
           </div>
         )}
       </div>

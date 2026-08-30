@@ -184,9 +184,15 @@ model LearnChunk {
   subtopicId  String?
   subtopic    Subtopic?           @relation(fields: [subtopicId], references: [id], onDelete: SetNull)
   order       Int                 @default(0)
+  // Globally unique, subject-prefixed (chem-, phys-, econ-, legal-,
+  // mathadv-, mathext1-) so a [[wikilink]] can resolve unambiguously
+  // across subjects without carrying a subject slug of its own.
+  slug        String              @unique
   heading     String
   body        String
-  checkText   String
+  // Null when a concept is only ever reached via a link from elsewhere
+  // (a short glossary-style aside) and isn't worth quizzing on its own.
+  checkText   String?
   checkOptions LearnCheckOption[]
   progress    LearnProgress[]
   createdAt   DateTime            @default(now())

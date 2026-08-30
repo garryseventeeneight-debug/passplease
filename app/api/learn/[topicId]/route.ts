@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDb } from "@/lib/db";
 import { auth } from "@/lib/auth";
+import { resolveLinkTargets } from "@/lib/learn-links";
 
 export async function GET(request: NextRequest, { params }: { params: Promise<{ topicId: string }> }) {
   const session = await auth();
@@ -31,9 +32,11 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
   }
 
   const completedIds = new Set(progress.map((p) => p.chunkId));
+  const linkTargets = await resolveLinkTargets(chunks);
 
   return NextResponse.json({
     topicName: topic.name,
+    linkTargets,
     chunks: chunks.map((c) => ({
       id: c.id,
       order: c.order,

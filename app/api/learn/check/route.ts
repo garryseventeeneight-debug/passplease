@@ -8,8 +8,8 @@ export async function POST(request: NextRequest) {
   const userId = session.user.id;
 
   const { chunkId, optionId } = (await request.json()) as { chunkId?: string; optionId?: string };
-  if (!chunkId || !optionId) {
-    return NextResponse.json({ error: "chunkId and optionId are required" }, { status: 400 });
+  if (!chunkId) {
+    return NextResponse.json({ error: "chunkId is required" }, { status: 400 });
   }
 
   const db = await getDb();
@@ -19,6 +19,21 @@ export async function POST(request: NextRequest) {
   });
   if (!chunk) {
     return NextResponse.json({ error: "unknown chunk" }, { status: 404 });
+  }
+
+  // Checkless chunks (only ever reached via a link, not worth quizzing)
+  // have no options to grade — just record that this one's been read.
+  if (chunk.checkOptions.length === 0) {
+    await db.learnProgress.upsert({
+      where: { userId_chunkId: { userId, chunkId } },
+      update: { completedAt: new Date() },
+      create: { userId, chunkId },
+    });
+    return NextResponse.json({ recorded: true, correct: null, correctOptionId: null });
+  }
+
+  if (!optionId) {
+    return NextResponse.json({ error: "optionId is required for this chunk" }, { status: 400 });
   }
   const selected = chunk.checkOptions.find((o) => o.id === optionId);
   if (!selected) {
@@ -36,6 +51,7 @@ export async function POST(request: NextRequest) {
   });
 
   return NextResponse.json({
+    recorded: true,
     correct: selected.isCorrect,
     correctOptionId: correctOption?.id ?? null,
   });
