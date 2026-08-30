@@ -1,0 +1,365 @@
+{
+  "topicName": "Properties and Structure of Matter",
+  "chunks": [
+    {
+      "slug": "chem-atom-structure",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "What's inside an atom?",
+      "body": "Every atom has a tiny, dense centre called the nucleus. A cloud of electrons surrounds it, taking up almost all of the atom's space.",
+      "checkText": "Where are electrons found in an atom?",
+      "checkOptions": [
+        { "text": "In a cloud around the nucleus", "isCorrect": true },
+        { "text": "Packed inside the nucleus", "isCorrect": false },
+        { "text": "Atoms don't have electrons", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-subatomic-particles",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Three particles, three charges",
+      "body": "Protons are positive, neutrons have no charge, and electrons are negative. Electrons are so light that almost all of an atom's mass comes from its nucleus.",
+      "checkText": "Which particle has no charge at all?",
+      "checkOptions": [
+        { "text": "Neutron", "isCorrect": true },
+        { "text": "Proton", "isCorrect": false },
+        { "text": "Electron", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-atomic-number",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "The atomic number",
+      "body": "The atomic number is the number of protons in an atom's nucleus. Every atom of the same element has the same atomic number.",
+      "checkText": "The atomic number tells you the number of...",
+      "checkOptions": [
+        { "text": "Protons", "isCorrect": true },
+        { "text": "Neutrons", "isCorrect": false },
+        { "text": "Electron shells", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-mass-number",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "The mass number",
+      "body": "The mass number is the total count of protons and neutrons in the nucleus. Subtract the [[chem-atomic-number|atomic number]] from it to find the number of neutrons.",
+      "checkText": "To find the number of neutrons in an atom, you...",
+      "checkOptions": [
+        { "text": "Subtract atomic number from mass number", "isCorrect": true },
+        { "text": "Add atomic number to mass number", "isCorrect": false },
+        { "text": "Divide mass number by two", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-isotopes",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Isotopes: same element, different mass",
+      "body": "Isotopes are atoms of the same element with the same [[chem-atomic-number|atomic number]] but different [[chem-mass-number|mass numbers]]. They have different numbers of neutrons.",
+      "checkText": "Isotopes of the same element always have the same number of...",
+      "checkOptions": [
+        { "text": "Protons", "isCorrect": true },
+        { "text": "Neutrons", "isCorrect": false },
+        { "text": "Total particles in the nucleus", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-radioisotopes",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "When isotopes are unstable",
+      "body": "Some [[chem-isotopes|isotopes]] are unstable and are called radioisotopes. They break down over time, releasing radiation.",
+      "checkText": "A radioisotope is an isotope that...",
+      "checkOptions": [
+        { "text": "Is unstable and releases radiation", "isCorrect": true },
+        { "text": "Never changes", "isCorrect": false },
+        { "text": "Has no neutrons", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-alpha-particles",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Alpha radiation",
+      "body": "An alpha particle is a heavy chunk made of two protons and two neutrons, released by unstable [[chem-radioisotopes|nuclei]]. It barely travels far and is stopped by a sheet of paper.",
+      "checkText": "Alpha particles are stopped by...",
+      "checkOptions": [
+        { "text": "A sheet of paper", "isCorrect": true },
+        { "text": "Nothing — they pass through everything", "isCorrect": false },
+        { "text": "Only very thick lead", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-beta-particles",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Beta radiation",
+      "body": "A beta particle is a fast electron released when a neutron changes into a proton. It travels further than alpha radiation but is stopped by a thin sheet of metal.",
+      "checkText": "A beta particle is actually a fast-moving...",
+      "checkOptions": [
+        { "text": "Electron", "isCorrect": true },
+        { "text": "Proton", "isCorrect": false },
+        { "text": "Whole atom", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-gamma-radiation",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Gamma radiation",
+      "body": "Gamma radiation is pure energy, not a particle. It travels the farthest of the three and needs thick lead to stop it.",
+      "checkText": "Which type of radiation needs thick lead to block it?",
+      "checkOptions": [
+        { "text": "Gamma", "isCorrect": true },
+        { "text": "Alpha", "isCorrect": false },
+        { "text": "Beta", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-carbon12-standard",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Measuring atoms against carbon-12",
+      "body": "Atoms are far too light to weigh in grams easily. So scientists compare every atom's mass to carbon-12, which is fixed at exactly 12 units.",
+      "checkText": "Atomic masses are compared against which isotope?",
+      "checkOptions": [
+        { "text": "Carbon-12", "isCorrect": true },
+        { "text": "Hydrogen-1", "isCorrect": false },
+        { "text": "Oxygen-16", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-relative-atomic-mass",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "One element, one average mass",
+      "body": "Most elements are a mix of [[chem-isotopes|isotopes]] with slightly different masses. Relative atomic mass is the average mass of all of them, weighted by how common each one is.",
+      "checkText": "Relative atomic mass is a kind of...",
+      "checkOptions": [
+        { "text": "Weighted average", "isCorrect": true },
+        { "text": "The mass of the lightest isotope only", "isCorrect": false },
+        { "text": "A fixed number that's the same for every element", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-mass-spectrometer",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Weighing atoms with a machine",
+      "body": "A mass spectrometer is a machine that separates an element's [[chem-isotopes|isotopes]] and measures the mass and abundance of each one.",
+      "checkText": "What does a mass spectrometer measure?",
+      "checkOptions": [
+        { "text": "The mass and abundance of isotopes", "isCorrect": true },
+        { "text": "The temperature of a reaction", "isCorrect": false },
+        { "text": "The colour of an element", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-flame-tests",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Flame tests: metals in colour",
+      "body": "When a metal is heated in a flame, it glows with its own characteristic colour. This lets chemists identify which metal is present.",
+      "checkText": "A flame test helps identify a metal by its...",
+      "checkOptions": [
+        { "text": "Colour", "isCorrect": true },
+        { "text": "Smell", "isCorrect": false },
+        { "text": "Weight", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-emission-spectra",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "The light each element gives off",
+      "body": "Passing a heated element's light through a prism splits it into a pattern of coloured lines. Every element produces its own unique pattern, called an emission spectrum.",
+      "checkText": "An emission spectrum for an element is...",
+      "checkOptions": [
+        { "text": "Unique to that element", "isCorrect": true },
+        { "text": "The same for every element", "isCorrect": false },
+        { "text": "Always a single colour", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-electron-shells",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Electrons live in shells",
+      "body": "Electrons are arranged in shells around the [[chem-atom-structure|nucleus]], numbered 1, 2, 3 and so on. Shells closer to the nucleus hold lower-energy electrons.",
+      "checkText": "Which shell holds the lowest-energy electrons?",
+      "checkOptions": [
+        { "text": "Shell 1, closest to the nucleus", "isCorrect": true },
+        { "text": "The outermost shell", "isCorrect": false },
+        { "text": "It's random", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-electron-energy-jumps",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Why heated atoms glow",
+      "body": "Heating an atom can push an electron up to a higher [[chem-electron-shells|shell]]. When it falls back down, it releases the extra energy as light — producing the lines in an [[chem-emission-spectra|emission spectrum]].",
+      "checkText": "An electron releases light when it...",
+      "checkOptions": [
+        { "text": "Falls back to a lower shell", "isCorrect": true },
+        { "text": "Jumps to a higher shell", "isCorrect": false },
+        { "text": "Stays in the same shell", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-shell-capacity",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "How many electrons fit in a shell",
+      "body": "Each [[chem-electron-shells|shell]] can only hold a set maximum number of electrons: 2 in the first shell, 8 in the second, 18 in the third.",
+      "checkText": "The first electron shell can hold a maximum of...",
+      "checkOptions": [
+        { "text": "2 electrons", "isCorrect": true },
+        { "text": "8 electrons", "isCorrect": false },
+        { "text": "18 electrons", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-electron-configuration",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Writing an atom's electron arrangement",
+      "body": "Electrons fill the lowest [[chem-electron-shells|shell]] first, then the next, until they run out. Writing the count in each shell, like 2,8,1, gives the electron configuration.",
+      "checkText": "Electrons fill shells starting from...",
+      "checkOptions": [
+        { "text": "The shell closest to the nucleus", "isCorrect": true },
+        { "text": "The outermost shell", "isCorrect": false },
+        { "text": "Whichever shell has space, in any order", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-valence-electrons",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "The electrons that matter most",
+      "body": "The electrons in an atom's outermost shell are called valence electrons. These are the ones involved when the atom reacts with other atoms.",
+      "checkText": "Valence electrons are found in...",
+      "checkOptions": [
+        { "text": "The outermost shell", "isCorrect": true },
+        { "text": "The nucleus", "isCorrect": false },
+        { "text": "The innermost shell only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-schrodinger-model",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Electrons as clouds, not orbits",
+      "body": "The Schrödinger model says electrons don't travel in fixed paths like the earlier [[chem-electron-shells|shell]] model suggested. Instead, they behave like clouds of probability around the nucleus.",
+      "checkText": "The Schrödinger model describes electrons as...",
+      "checkOptions": [
+        { "text": "Cloud-like, not travelling in fixed paths", "isCorrect": true },
+        { "text": "Tiny balls orbiting in exact circles", "isCorrect": false },
+        { "text": "Fixed in one spot", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-subshells",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Shells within shells",
+      "body": "Each [[chem-electron-shells|shell]] is actually made of smaller subshells, labelled s, p, d and f. Each subshell can hold its own set number of electrons.",
+      "checkText": "Subshells are labelled using the letters...",
+      "checkOptions": [
+        { "text": "s, p, d, f", "isCorrect": true },
+        { "text": "a, b, c, d", "isCorrect": false },
+        { "text": "1, 2, 3, 4", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-aufbau-principle",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Filling the lowest energy first",
+      "body": "The Aufbau principle says electrons always fill the lowest-energy [[chem-subshells|subshell]] available before moving to a higher one.",
+      "checkText": "According to the Aufbau principle, electrons fill...",
+      "checkOptions": [
+        { "text": "The lowest-energy subshell first", "isCorrect": true },
+        { "text": "Whichever subshell is emptiest", "isCorrect": false },
+        { "text": "The outermost subshell first", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-periodic-table-layout",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "Rows and columns of elements",
+      "body": "The periodic table arranges elements in order of increasing [[chem-atomic-number|atomic number]]. Its rows are called periods and its columns are called groups.",
+      "checkText": "Elements in the periodic table are ordered by...",
+      "checkOptions": [
+        { "text": "Increasing atomic number", "isCorrect": true },
+        { "text": "Alphabetical name", "isCorrect": false },
+        { "text": "Date of discovery", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-group-valence-electrons",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "What a group tells you",
+      "body": "Elements in the same group have the same number of [[chem-valence-electrons|valence electrons]]. That's why they tend to react in similar ways.",
+      "checkText": "Elements in the same group share the same number of...",
+      "checkOptions": [
+        { "text": "Valence electrons", "isCorrect": true },
+        { "text": "Neutrons", "isCorrect": false },
+        { "text": "Electron shells", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-period-shells",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "What a period tells you",
+      "body": "The period number of an element equals the number of electron [[chem-electron-shells|shells]] its atoms use. Elements in period 3, for example, all use three shells.",
+      "checkText": "An element's period number tells you its number of...",
+      "checkOptions": [
+        { "text": "Occupied electron shells", "isCorrect": true },
+        { "text": "Valence electrons", "isCorrect": false },
+        { "text": "Protons", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-periodic-blocks",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "The four blocks of the table",
+      "body": "The periodic table has four blocks, named after the type of [[chem-subshells|subshell]] being filled: s, p, d and f. An element's block matches its highest-energy subshell.",
+      "checkText": "The blocks of the periodic table are named after...",
+      "checkOptions": [
+        { "text": "Subshell types", "isCorrect": true },
+        { "text": "Element colours", "isCorrect": false },
+        { "text": "Discovery order", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-core-charge",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "The pull felt by outer electrons",
+      "body": "Core charge is the pull a [[chem-valence-electrons|valence electron]] feels from the nucleus, after inner-shell electrons shield part of that pull.",
+      "checkText": "Core charge measures the pull felt by...",
+      "checkOptions": [
+        { "text": "Valence electrons, from the nucleus", "isCorrect": true },
+        { "text": "Protons, from neutrons", "isCorrect": false },
+        { "text": "The whole atom, from gravity", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-electronegativity",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "How strongly an atom attracts electrons",
+      "body": "Electronegativity is how strongly an atom pulls electrons towards itself. A higher [[chem-core-charge|core charge]] means a stronger pull, so electronegativity increases across a period.",
+      "checkText": "A higher core charge generally means...",
+      "checkOptions": [
+        { "text": "Higher electronegativity", "isCorrect": true },
+        { "text": "Lower electronegativity", "isCorrect": false },
+        { "text": "No change to electronegativity", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-atomic-radius",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "How big is an atom?",
+      "body": "Atomic radius is the distance from the nucleus to the outer, valence-shell electrons. It shrinks across a period as [[chem-core-charge|core charge]] pulls those electrons in tighter.",
+      "checkText": "Atomic radius tends to decrease across a period because...",
+      "checkOptions": [
+        { "text": "Core charge increases, pulling electrons closer", "isCorrect": true },
+        { "text": "Atoms lose protons", "isCorrect": false },
+        { "text": "Electron shells disappear", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-ionisation-energy",
+      "subtopicName": "Atomic structure and periodicity",
+      "heading": "The energy to remove an electron",
+      "body": "First ionisation energy is the energy needed to pull one electron off an atom. It generally increases across a period, because [[chem-core-charge|core charge]] holds electrons more tightly.",
+      "checkText": "First ionisation energy generally increases...",
+      "checkOptions": [
+        { "text": "Across a period, left to right", "isCorrect": true },
+        { "text": "Down a group", "isCorrect": false },
+        { "text": "It never changes", "isCorrect": false }
+      ]
+    }
+  ]
+}

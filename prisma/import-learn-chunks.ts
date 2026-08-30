@@ -122,17 +122,17 @@ async function main() {
 
       const existing = await db.learnChunk.findUnique({
         where: { slug: chunk.slug },
-        include: { checkOptions: { orderBy: { order: "asc" } } },
+        include: { checkQuestion: { include: { options: { orderBy: { order: "asc" } } } } },
       });
 
       if (existing) {
         const unchanged =
           existing.heading === chunk.heading &&
           existing.body === chunk.body &&
-          (existing.checkText ?? null) === (chunk.checkText ?? null) &&
           (existing.subtopicId ?? null) === (subtopic?.id ?? null) &&
+          (existing.checkQuestion?.questionText ?? null) === (chunk.checkText ?? null) &&
           JSON.stringify(
-            existing.checkOptions.map((o) => ({ text: o.text, isCorrect: o.isCorrect }))
+            existing.checkQuestion?.options.map((o) => ({ text: o.text, isCorrect: o.isCorrect })) ?? []
           ) === JSON.stringify(normalizeOptions(chunk.checkOptions));
 
         knownSlugs.add(chunk.slug);
@@ -141,18 +141,45 @@ async function main() {
           continue;
         }
 
-        await db.learnCheckOption.deleteMany({ where: { chunkId: existing.id } });
+        let checkQuestionId = existing.checkQuestionId;
+        if (chunk.checkText && chunk.checkOptions) {
+          if (existing.checkQuestion) {
+            await db.answerOption.deleteMany({ where: { questionId: existing.checkQuestion.id } });
+            await db.question.update({
+              where: { id: existing.checkQuestion.id },
+              data: {
+                topicId: topic.id,
+                subtopicId: subtopic?.id,
+                questionText: chunk.checkText,
+                options: { create: chunk.checkOptions.map((o, i) => ({ text: o.text, isCorrect: o.isCorrect, order: i })) },
+              },
+            });
+          } else {
+            const created = await db.question.create({
+              data: {
+                subjectId: subject.id,
+                topicId: topic.id,
+                subtopicId: subtopic?.id,
+                type: "MCQ",
+                difficulty: 1,
+                questionText: chunk.checkText,
+                source: "Concept check",
+                isAiGenerated: true,
+                answerVerified: true,
+                options: { create: chunk.checkOptions.map((o, i) => ({ text: o.text, isCorrect: o.isCorrect, order: i })) },
+              },
+            });
+            checkQuestionId = created.id;
+          }
+        } else if (existing.checkQuestion) {
+          // Chunk was edited to drop its check entirely.
+          await db.question.delete({ where: { id: existing.checkQuestion.id } });
+          checkQuestionId = null;
+        }
+
         await db.learnChunk.update({
           where: { id: existing.id },
-          data: {
-            subtopicId: subtopic?.id,
-            heading: chunk.heading,
-            body: chunk.body,
-            checkText: chunk.checkText ?? null,
-            checkOptions: chunk.checkOptions
-              ? { create: chunk.checkOptions.map((o, i) => ({ text: o.text, isCorrect: o.isCorrect, order: i })) }
-              : undefined,
-          },
+          data: { subtopicId: subtopic?.id, heading: chunk.heading, body: chunk.body, checkQuestionId },
         });
         updated += 1;
         continue;
@@ -160,6 +187,25 @@ async function main() {
 
       const order = nextOrderByTopic.get(topic.id)!;
       nextOrderByTopic.set(topic.id, order + 1);
+
+      let checkQuestionId: string | undefined;
+      if (chunk.checkText && chunk.checkOptions) {
+        const question = await db.question.create({
+          data: {
+            subjectId: subject.id,
+            topicId: topic.id,
+            subtopicId: subtopic?.id,
+            type: "MCQ",
+            difficulty: 1,
+            questionText: chunk.checkText,
+            source: "Concept check",
+            isAiGenerated: true,
+            answerVerified: true,
+            options: { create: chunk.checkOptions.map((o, i) => ({ text: o.text, isCorrect: o.isCorrect, order: i })) },
+          },
+        });
+        checkQuestionId = question.id;
+      }
 
       await db.learnChunk.create({
         data: {
@@ -169,10 +215,7 @@ async function main() {
           slug: chunk.slug,
           heading: chunk.heading,
           body: chunk.body,
-          checkText: chunk.checkText ?? null,
-          checkOptions: chunk.checkOptions
-            ? { create: chunk.checkOptions.map((o, i) => ({ text: o.text, isCorrect: o.isCorrect, order: i })) }
-            : undefined,
+          checkQuestionId,
         },
       });
       imported += 1;

@@ -6,11 +6,11 @@ export interface WikiLinkTarget {
   heading: string;
 }
 
-/** Resolve every [[slug]] referenced across a set of chunks to its {subjectSlug, heading}. */
+/** Resolve every [[slug]] referenced across a set of chunk bodies to its {subjectSlug, heading}. */
 export async function resolveLinkTargets(
-  chunks: { body: string; checkText: string | null }[]
+  chunks: { body: string }[]
 ): Promise<Record<string, WikiLinkTarget>> {
-  const slugs = extractWikilinkSlugsFromAll(chunks.flatMap((c) => [c.body, c.checkText]));
+  const slugs = extractWikilinkSlugsFromAll(chunks.map((c) => c.body));
   if (slugs.length === 0) return {};
 
   const db = await getDb();

@@ -20,6 +20,7 @@ interface CheckFeedback {
 // duplicating the question/options/feedback rendering itself.
 export function LearnCheck({
   chunkId,
+  questionId,
   checkText,
   options,
   linkTargets,
@@ -27,6 +28,7 @@ export function LearnCheck({
   afterFeedback,
 }: {
   chunkId: string;
+  questionId: string;
   checkText: string;
   options: CheckOption[];
   linkTargets: Record<string, WikiLinkTarget>;
@@ -39,10 +41,14 @@ export function LearnCheck({
 
   async function submit() {
     if (!selectedOptionId) return;
-    const res = await fetch("/api/learn/check", {
+    // This check IS a real practice question — grading through the same
+    // endpoint practice uses means it counts toward this topic's mastery
+    // and FSRS scheduling, not a separate ungraded score. learnChunkId
+    // additionally marks the chunk read for the guided walk's progress.
+    const res = await fetch("/api/attempts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ chunkId, optionId: selectedOptionId }),
+      body: JSON.stringify({ questionId, selectedOptionId, learnChunkId: chunkId }),
     });
     if (!res.ok) {
       setError("Something went wrong recording that.");

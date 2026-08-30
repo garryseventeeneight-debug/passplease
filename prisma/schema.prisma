@@ -100,6 +100,9 @@ model Question {
   options          AnswerOption[]
   attempts         Attempt[]
   reviewCards      ReviewCard[]
+  // Set when this question IS a Learn concept's comprehension check —
+  // back-reference only, LearnChunk.checkQuestionId owns the relation.
+  learnChunk       LearnChunk?
   createdAt        DateTime       @default(now())
 }
 
@@ -173,40 +176,32 @@ model Mastery {
 }
 
 // A short, plain-language reading passage on one small idea within a topic
-// — the "interactive textbook" side of the app, separate from the graded
-// practice/mastery/FSRS loop. Read the passage, then answer one immediate
-// comprehension check (not a recall test — the answer is right there in
-// what was just read) before moving to the next chunk.
+// — the "interactive textbook" side of the app. Read the passage, then
+// answer one comprehension check — which is a real Question in the same
+// pool practice draws from, so answering it here counts toward that
+// topic's mastery/FSRS exactly like a practice attempt does, and it can
+// resurface later during normal practice or a spaced-repetition review.
 model LearnChunk {
-  id          String              @id @default(cuid())
-  topicId     String
-  topic       Topic               @relation(fields: [topicId], references: [id], onDelete: Cascade)
-  subtopicId  String?
-  subtopic    Subtopic?           @relation(fields: [subtopicId], references: [id], onDelete: SetNull)
-  order       Int                 @default(0)
+  id             String        @id @default(cuid())
+  topicId        String
+  topic          Topic         @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  subtopicId     String?
+  subtopic       Subtopic?     @relation(fields: [subtopicId], references: [id], onDelete: SetNull)
+  order          Int           @default(0)
   // Globally unique, subject-prefixed (chem-, phys-, econ-, legal-,
   // mathadv-, mathext1-) so a [[wikilink]] can resolve unambiguously
   // across subjects without carrying a subject slug of its own.
-  slug        String              @unique
-  heading     String
-  body        String
+  slug           String        @unique
+  heading        String
+  body           String
   // Null when a concept is only ever reached via a link from elsewhere
   // (a short glossary-style aside) and isn't worth quizzing on its own.
-  checkText   String?
-  checkOptions LearnCheckOption[]
-  progress    LearnProgress[]
-  createdAt   DateTime            @default(now())
+  checkQuestionId String?      @unique
+  checkQuestion  Question?     @relation(fields: [checkQuestionId], references: [id], onDelete: SetNull)
+  progress       LearnProgress[]
+  createdAt      DateTime      @default(now())
 
   @@unique([topicId, order])
-}
-
-model LearnCheckOption {
-  id        String     @id @default(cuid())
-  chunkId   String
-  chunk     LearnChunk @relation(fields: [chunkId], references: [id], onDelete: Cascade)
-  text      String
-  isCorrect Boolean    @default(false)
-  order     Int        @default(0)
 }
 
 // Tracks which chunks a user has read through, so a "Learn" session can

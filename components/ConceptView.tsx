@@ -9,6 +9,7 @@ interface ConceptData {
   id: string;
   heading: string;
   body: string;
+  checkQuestionId: string | null;
   checkText: string | null;
   options: { id: string; text: string }[];
   completed: boolean;
@@ -60,7 +61,7 @@ export function ConceptView({ slug }: { slug: string }) {
           <WikiText text={concept.body} linkTargets={concept.linkTargets} />
         </p>
 
-        {concept.checkText && (
+        {concept.checkQuestionId && concept.checkText && (
           <div className="mt-5 border-t border-neutral-200 pt-5 dark:border-neutral-800">
             {!showCheck ? (
               <button
@@ -73,6 +74,7 @@ export function ConceptView({ slug }: { slug: string }) {
             ) : (
               <LearnCheck
                 chunkId={concept.id}
+                questionId={concept.checkQuestionId}
                 checkText={concept.checkText}
                 options={concept.options}
                 linkTargets={concept.linkTargets}

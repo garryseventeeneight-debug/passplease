@@ -20,7 +20,6 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
       slug: true,
       heading: true,
       body: true,
-      checkText: true,
       topic: { select: { name: true } },
     },
   });
@@ -30,7 +29,7 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
   const edges: { source: string; target: string }[] = [];
 
   for (const chunk of chunks) {
-    const refs = extractWikilinkSlugsFromAll([chunk.body, chunk.checkText]);
+    const refs = extractWikilinkSlugsFromAll([chunk.body]);
     for (const ref of refs) {
       // Only draw an edge to a concept that actually exists in this
       // subject's graph — an unresolved or cross-subject reference has

@@ -15,7 +15,9 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
     include: {
       topic: { select: { id: true, name: true, subject: { select: { slug: true, name: true } } } },
       subtopic: { select: { name: true } },
-      checkOptions: { select: { id: true, text: true }, orderBy: { order: "asc" } },
+      checkQuestion: {
+        select: { id: true, questionText: true, options: { select: { id: true, text: true }, orderBy: { order: "asc" } } },
+      },
     },
   });
   if (!chunk) {
@@ -32,8 +34,9 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
     slug: chunk.slug,
     heading: chunk.heading,
     body: chunk.body,
-    checkText: chunk.checkText,
-    options: chunk.checkOptions.map((o) => ({ id: o.id, text: o.text })),
+    checkQuestionId: chunk.checkQuestion?.id ?? null,
+    checkText: chunk.checkQuestion?.questionText ?? null,
+    options: chunk.checkQuestion?.options.map((o) => ({ id: o.id, text: o.text })) ?? [],
     completed: progress !== null,
     topicId: chunk.topic.id,
     topicName: chunk.topic.name,

@@ -15,6 +15,7 @@ interface LearnChunkData {
   subtopicName: string | null;
   heading: string;
   body: string;
+  checkQuestionId: string | null;
   checkText: string | null;
   options: LearnOption[];
   completed: boolean;
@@ -58,7 +59,7 @@ export function LearnSession({ topicId }: { topicId: string }) {
   async function skipCheckless() {
     if (!chunks) return;
     const chunk = chunks[index];
-    const res = await fetch("/api/learn/check", {
+    const res = await fetch("/api/learn/progress", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ chunkId: chunk.id }),
@@ -116,7 +117,7 @@ export function LearnSession({ topicId }: { topicId: string }) {
 
         {error && <p className="mt-3 text-sm text-red-600">{error}</p>}
 
-        {reading && chunk.checkText && (
+        {reading && chunk.checkQuestionId && (
           <button
             type="button"
             onClick={() => setReading(false)}
@@ -126,7 +127,7 @@ export function LearnSession({ topicId }: { topicId: string }) {
           </button>
         )}
 
-        {reading && !chunk.checkText && (
+        {reading && !chunk.checkQuestionId && (
           <button
             type="button"
             onClick={skipCheckless}
@@ -136,11 +137,12 @@ export function LearnSession({ topicId }: { topicId: string }) {
           </button>
         )}
 
-        {!reading && chunk.checkText && (
+        {!reading && chunk.checkQuestionId && chunk.checkText && (
           <div className="mt-5 border-t border-neutral-200 pt-5 dark:border-neutral-800">
             <LearnCheck
               key={chunk.id}
               chunkId={chunk.id}
+              questionId={chunk.checkQuestionId}
               checkText={chunk.checkText}
               options={chunk.options}
               linkTargets={linkTargets}

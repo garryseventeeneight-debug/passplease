@@ -10,11 +10,15 @@ export async function POST(request: NextRequest) {
   const userId = session.user.id;
 
   const body = await request.json();
-  const { questionId, selectedOptionId, dontKnow, responseTimeMs } = body as {
+  const { questionId, selectedOptionId, dontKnow, responseTimeMs, learnChunkId } = body as {
     questionId?: string;
     selectedOptionId?: string;
     dontKnow?: boolean;
     responseTimeMs?: number;
+    // Set when this attempt is a Learn concept's comprehension check, so
+    // completing it also marks that chunk read (LearnSession's resume
+    // position, progress dots) alongside the normal mastery/FSRS update.
+    learnChunkId?: string;
   };
 
   if (!questionId || (!selectedOptionId && !dontKnow)) {
@@ -71,6 +75,13 @@ export async function POST(request: NextRequest) {
         },
       }),
       db.mastery.findUnique({ where: { userId_topicId: { userId, topicId: question.topicId } } }),
+      learnChunkId
+        ? db.learnProgress.upsert({
+            where: { userId_chunkId: { userId, chunkId: learnChunkId } },
+            update: { completedAt: new Date() },
+            create: { userId, chunkId: learnChunkId },
+          })
+        : Promise.resolve(null),
     ]);
 
     return NextResponse.json({
@@ -131,6 +142,13 @@ export async function POST(request: NextRequest) {
       update: nextState,
       create: { userId, questionId, ...nextState },
     }),
+    learnChunkId
+      ? db.learnProgress.upsert({
+          where: { userId_chunkId: { userId, chunkId: learnChunkId } },
+          update: { completedAt: new Date() },
+          create: { userId, chunkId: learnChunkId },
+        })
+      : Promise.resolve(null),
   ]);
   const mcqScore = computeMcqScore([correct, ...priorAttempts.map((a) => a.correct)]);
 

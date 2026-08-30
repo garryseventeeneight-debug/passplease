@@ -18,7 +18,9 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
       orderBy: { order: "asc" },
       include: {
         subtopic: { select: { name: true } },
-        checkOptions: { select: { id: true, text: true }, orderBy: { order: "asc" } },
+        checkQuestion: {
+          select: { id: true, questionText: true, options: { select: { id: true, text: true }, orderBy: { order: "asc" } } },
+        },
       },
     }),
     db.learnProgress.findMany({
@@ -43,8 +45,9 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
       subtopicName: c.subtopic?.name ?? null,
       heading: c.heading,
       body: c.body,
-      checkText: c.checkText,
-      options: c.checkOptions.map((o) => ({ id: o.id, text: o.text })),
+      checkQuestionId: c.checkQuestion?.id ?? null,
+      checkText: c.checkQuestion?.questionText ?? null,
+      options: c.checkQuestion?.options.map((o) => ({ id: o.id, text: o.text })) ?? [],
       completed: completedIds.has(c.id),
     })),
   });
