@@ -1,0 +1,98 @@
+[
+  {
+    "topicName": "Properties and Structure of Matter",
+    "subtopicName": "Atomic structure and periodicity",
+    "scaffoldOrder": 0,
+    "questionText": "Which particle in an atom carries a negative charge?",
+    "options": [
+      { "text": "Proton", "isCorrect": false },
+      { "text": "Neutron", "isCorrect": false },
+      { "text": "Electron", "isCorrect": true }
+    ],
+    "explanation": "Protons are positive, neutrons are neutral, and electrons are the negatively charged particles that orbit the nucleus."
+  },
+  {
+    "topicName": "Properties and Structure of Matter",
+    "subtopicName": "Bonding",
+    "scaffoldOrder": 1,
+    "questionText": "Which of these best describes an ionic bond?",
+    "options": [
+      { "text": "Atoms share a pair of electrons", "isCorrect": false },
+      { "text": "One atom transfers electrons to another, forming oppositely charged ions that attract", "isCorrect": true },
+      { "text": "Atoms exchange neutrons to become stable", "isCorrect": false }
+    ],
+    "explanation": "Ionic bonding involves electron transfer (not sharing) between atoms, creating a positive ion and a negative ion that are held together by electrostatic attraction."
+  },
+  {
+    "topicName": "Introduction to Quantitative Chemistry",
+    "subtopicName": "The mole concept",
+    "scaffoldOrder": 0,
+    "questionText": "One mole of any substance contains the same number of particles. What is this number called?",
+    "options": [
+      { "text": "Avogadro's number", "isCorrect": true },
+      { "text": "Faraday's constant", "isCorrect": false },
+      { "text": "Planck's constant", "isCorrect": false }
+    ],
+    "explanation": "Avogadro's number (about 6.022 × 10^23) is the number of particles in exactly one mole of a substance."
+  },
+  {
+    "topicName": "Introduction to Quantitative Chemistry",
+    "subtopicName": "Concentration and molarity",
+    "scaffoldOrder": 1,
+    "questionText": "Molarity (concentration in mol/L) is calculated as moles of solute divided by what?",
+    "options": [
+      { "text": "The mass of the solvent in kilograms", "isCorrect": false },
+      { "text": "The volume of the solution in litres", "isCorrect": true },
+      { "text": "The volume of solvent added, before mixing", "isCorrect": false }
+    ],
+    "explanation": "Molarity = moles of solute ÷ volume of the final solution (in litres) — not the solvent alone, since the solute itself adds to the total volume."
+  },
+  {
+    "topicName": "Reactive Chemistry",
+    "subtopicName": "Reactivity of metals",
+    "scaffoldOrder": 0,
+    "questionText": "Which of these correctly orders three metals from most reactive to least reactive?",
+    "options": [
+      { "text": "Potassium, Zinc, Copper", "isCorrect": true },
+      { "text": "Copper, Zinc, Potassium", "isCorrect": false },
+      { "text": "Zinc, Potassium, Copper", "isCorrect": false }
+    ],
+    "explanation": "In the reactivity series, potassium (a group 1 metal) is far more reactive than zinc, which in turn is more reactive than copper — copper is one of the least reactive common metals."
+  },
+  {
+    "topicName": "Reactive Chemistry",
+    "subtopicName": "Enthalpy and Hess's Law",
+    "scaffoldOrder": 1,
+    "questionText": "In an exothermic reaction, energy is...",
+    "options": [
+      { "text": "Released to the surroundings", "isCorrect": true },
+      { "text": "Absorbed from the surroundings", "isCorrect": false },
+      { "text": "Neither released nor absorbed", "isCorrect": false }
+    ],
+    "explanation": "Exo- means 'out' — an exothermic reaction releases energy (usually as heat) to the surroundings, so the surroundings get warmer."
+  },
+  {
+    "topicName": "Drivers of Reactions",
+    "subtopicName": "Energy changes in reactions",
+    "scaffoldOrder": 0,
+    "questionText": "Activation energy is best described as...",
+    "options": [
+      { "text": "The total energy released by a reaction", "isCorrect": false },
+      { "text": "The minimum energy needed to get a reaction started", "isCorrect": true },
+      { "text": "The total energy stored in the products", "isCorrect": false }
+    ],
+    "explanation": "Activation energy is the energy 'barrier' that reactants must overcome before a reaction can proceed, regardless of whether the overall reaction is exothermic or endothermic."
+  },
+  {
+    "topicName": "Drivers of Reactions",
+    "subtopicName": "Entropy and Gibbs free energy",
+    "scaffoldOrder": 1,
+    "questionText": "Entropy is a measure of...",
+    "options": [
+      { "text": "The temperature of a system", "isCorrect": false },
+      { "text": "The disorder or randomness of a system", "isCorrect": true },
+      { "text": "The total mass of the reactants", "isCorrect": false }
+    ],
+    "explanation": "Entropy (S) measures disorder — a gas has higher entropy than a liquid, which has higher entropy than a solid, because particles are more randomly arranged."
+  }
+]

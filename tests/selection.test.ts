@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { pickNextQuestion, topicWeight } from "@/lib/selection";
+import { pickNextQuestion, pickScaffoldQuestion, topicWeight } from "@/lib/selection";
 
 describe("topicWeight", () => {
   it("weights a topic with 0% accuracy at full weight", () => {
@@ -70,6 +70,65 @@ describe("pickNextQuestion", () => {
       ["strong", 0.9],
     ]);
     const picked = pickNextQuestion(questions, topicAccuracy, { rng: () => 0 });
+    expect(picked?.id).toBe("weak-1");
+  });
+});
+
+describe("pickScaffoldQuestion", () => {
+  const scaffolds = [
+    { id: "weak-1", topicId: "weak", scaffoldOrder: 1 },
+    { id: "weak-0", topicId: "weak", scaffoldOrder: 0 },
+    { id: "strong-0", topicId: "strong", scaffoldOrder: 0 },
+  ];
+
+  it("picks the lowest-order scaffold for a weak topic", () => {
+    const topicAccuracy = new Map([["weak", 0.2]]);
+    const picked = pickScaffoldQuestion(scaffolds, topicAccuracy, new Set());
+    expect(picked?.id).toBe("weak-0");
+  });
+
+  it("treats a topic with no recorded attempts as weak", () => {
+    const picked = pickScaffoldQuestion(scaffolds, new Map(), new Set());
+    expect(picked?.topicId).toBe("weak");
+  });
+
+  it("skips a topic the learner is already strong in", () => {
+    const topicAccuracy = new Map([["strong", 0.95]]);
+    const picked = pickScaffoldQuestion(
+      scaffolds.filter((s) => s.topicId === "strong"),
+      topicAccuracy,
+      new Set()
+    );
+    expect(picked).toBeNull();
+  });
+
+  it("moves to the next scaffold once the first is cleared", () => {
+    const topicAccuracy = new Map([
+      ["weak", 0.2],
+      ["strong", 0.95],
+    ]);
+    const picked = pickScaffoldQuestion(scaffolds, topicAccuracy, new Set(["weak-0"]));
+    expect(picked?.id).toBe("weak-1");
+  });
+
+  it("returns null once every scaffold for weak topics is cleared", () => {
+    const topicAccuracy = new Map([["weak", 0.2]]);
+    const picked = pickScaffoldQuestion(
+      scaffolds.filter((s) => s.topicId === "weak"),
+      topicAccuracy,
+      new Set(["weak-0", "weak-1"])
+    );
+    expect(picked).toBeNull();
+  });
+
+  it("excludes the given question id even if otherwise eligible", () => {
+    const topicAccuracy = new Map([
+      ["weak", 0.2],
+      ["strong", 0.95],
+    ]);
+    const picked = pickScaffoldQuestion(scaffolds, topicAccuracy, new Set(), {
+      excludeId: "weak-0",
+    });
     expect(picked?.id).toBe("weak-1");
   });
 });

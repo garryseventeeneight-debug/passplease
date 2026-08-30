@@ -42,3 +42,34 @@ export function pickNextQuestion<T extends SelectableQuestion>(
   }
   return pool[pool.length - 1];
 }
+
+export interface ScaffoldCandidate {
+  id: string;
+  topicId: string;
+  scaffoldOrder: number;
+}
+
+// Below this topic accuracy (including a topic with no attempts at all, which
+// defaults to 0), the next question served is a small warm-up concept-check
+// rather than the full past-paper question, so the learner never has to hold
+// several unfamiliar concepts in mind at once.
+const SCAFFOLD_ACCURACY_THRESHOLD = 0.6;
+
+/**
+ * Pick the earliest not-yet-cleared scaffold question for a topic the
+ * learner is weak in or new to. Returns null once every weak topic's
+ * scaffolds have already been answered correctly.
+ */
+export function pickScaffoldQuestion(
+  scaffolds: ScaffoldCandidate[],
+  topicAccuracy: Map<string, number>,
+  clearedIds: Set<string>,
+  options: { excludeId?: string } = {}
+): ScaffoldCandidate | null {
+  const pending = scaffolds
+    .filter((s) => s.id !== options.excludeId)
+    .filter((s) => !clearedIds.has(s.id))
+    .filter((s) => (topicAccuracy.get(s.topicId) ?? 0) < SCAFFOLD_ACCURACY_THRESHOLD)
+    .sort((a, b) => a.scaffoldOrder - b.scaffoldOrder);
+  return pending[0] ?? null;
+}

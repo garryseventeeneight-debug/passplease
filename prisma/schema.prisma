@@ -74,6 +74,12 @@ model Question {
   syllabusOutcome  String?
   isAiGenerated    Boolean        @default(false)
   isTestFixture    Boolean        @default(false)
+  // A small single-concept warm-up MCQ served ahead of the real question for
+  // a topic the learner is weak in or new to, so one past-paper question
+  // doesn't force several concepts to be juggled at once. scaffoldOrder
+  // sequences the ladder within a topic (lower first); ignored otherwise.
+  isScaffold       Boolean        @default(false)
+  scaffoldOrder    Int            @default(0)
   // false when the correct-option flags came from AI reasoning rather than
   // an official answer key in the source document (question text is still
   // real past-paper content either way — see lib/prisma-adapter.ts sibling

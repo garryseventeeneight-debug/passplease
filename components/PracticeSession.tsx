@@ -6,10 +6,14 @@ import { AnswerFeedback, type AttemptFeedback } from "./AnswerFeedback";
 
 async function fetchNextQuestion(
   subjectSlug: string,
+  topicId?: string,
+  subtopicId?: string,
   excludeId?: string
 ): Promise<PracticeQuestion | null> {
   const url = new URL("/api/questions/next", window.location.origin);
   url.searchParams.set("subject", subjectSlug);
+  if (topicId) url.searchParams.set("topic", topicId);
+  if (subtopicId) url.searchParams.set("subtopic", subtopicId);
   if (excludeId) url.searchParams.set("exclude", excludeId);
   const res = await fetch(url);
   const data = await res.json();
@@ -19,9 +23,13 @@ async function fetchNextQuestion(
 export function PracticeSession({
   subjectSlug,
   subjectName,
+  topicId,
+  subtopicId,
 }: {
   subjectSlug: string;
   subjectName: string;
+  topicId?: string;
+  subtopicId?: string;
 }) {
   const [question, setQuestion] = useState<PracticeQuestion | null | undefined>(undefined);
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
@@ -44,16 +52,16 @@ export function PracticeSession({
   // performs a synchronous setState call.
   useEffect(() => {
     let cancelled = false;
-    fetchNextQuestion(subjectSlug).then((next) => {
+    fetchNextQuestion(subjectSlug, topicId, subtopicId).then((next) => {
       if (!cancelled) applyQuestion(next);
     });
     return () => {
       cancelled = true;
     };
-  }, [subjectSlug, applyQuestion]);
+  }, [subjectSlug, topicId, subtopicId, applyQuestion]);
 
   async function goToNextQuestion(excludeId?: string) {
-    const next = await fetchNextQuestion(subjectSlug, excludeId);
+    const next = await fetchNextQuestion(subjectSlug, topicId, subtopicId, excludeId);
     applyQuestion(next);
   }
 

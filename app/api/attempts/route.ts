@@ -54,6 +54,38 @@ export async function POST(request: NextRequest) {
   }
   const correctOption = question.options.find((o) => o.isCorrect);
 
+  // Scaffold (concept-check) questions are a warm-up, not real assessment —
+  // they're recorded so the ladder knows they've been cleared, but they
+  // don't feed mastery scoring or spaced-repetition scheduling, since that
+  // would let an easy warm-up inflate how well the actual topic is known.
+  if (question.isScaffold) {
+    const [, mastery] = await Promise.all([
+      db.attempt.create({
+        data: {
+          userId,
+          questionId,
+          selectedOptionId: dontKnow ? null : selectedOptionId,
+          correct,
+          dontKnow: Boolean(dontKnow),
+          responseTimeMs,
+        },
+      }),
+      db.mastery.findUnique({ where: { userId_topicId: { userId, topicId: question.topicId } } }),
+    ]);
+
+    return NextResponse.json({
+      correct,
+      correctOptionId: correctOption?.id ?? null,
+      explanation: question.explanation,
+      subjectName: question.subject.name,
+      topicName: question.topic.name,
+      source: question.source,
+      answerVerified: question.answerVerified,
+      updatedMasteryScore: mastery?.masteryScore ?? 0,
+      nextReviewDue: null,
+    });
+  }
+
   const nextState: ReviewCardState = nextReviewState(
     existingCard
       ? {
@@ -89,7 +121,7 @@ export async function POST(request: NextRequest) {
       },
     }),
     db.attempt.findMany({
-      where: { userId, question: { topicId: question.topicId } },
+      where: { userId, question: { topicId: question.topicId, isScaffold: false } },
       orderBy: { timestamp: "desc" },
       select: { correct: true },
       take: 20,

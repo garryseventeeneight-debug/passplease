@@ -13,6 +13,7 @@
     "db:migrate": "prisma migrate dev",
     "db:seed": "tsx prisma/seed.ts",
     "db:import": "tsx prisma/import-questions.ts",
+    "db:import-scaffolds": "tsx prisma/import-scaffolds.ts",
     "db:studio": "prisma studio"
   },
   "dependencies": {

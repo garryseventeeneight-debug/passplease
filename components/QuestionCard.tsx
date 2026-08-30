@@ -19,6 +19,7 @@ export interface PracticeQuestion {
   isAiGenerated: boolean;
   answerVerified: boolean;
   imageData: string | null;
+  isScaffold: boolean;
   options: QuestionOption[];
 }
 
@@ -46,6 +47,14 @@ export function QuestionCard({
           {question.subjectName} · {question.topicName}
         </span>
         <span className="flex gap-2">
+          {question.isScaffold && (
+            <span
+              className="rounded bg-blue-100 px-2 py-0.5 font-medium text-blue-700 dark:bg-blue-900/40 dark:text-blue-300"
+              title="A quick single-concept warm-up before the full question on this topic."
+            >
+              Concept check
+            </span>
+          )}
           {question.isAiGenerated && (
             <span className="rounded bg-purple-100 px-2 py-0.5 font-medium text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">
               AI-generated
