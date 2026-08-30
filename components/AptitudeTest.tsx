@@ -20,17 +20,18 @@ interface AptitudeQuestion {
   options: AptitudeOption[];
 }
 
-interface TopicResult {
+interface QuestionResult {
   topicId: string;
   topicName: string;
   correct: boolean;
+  dontKnow: boolean;
 }
 
 export function AptitudeTest({ subjectSlug }: { subjectSlug: string }) {
   const [questions, setQuestions] = useState<AptitudeQuestion[] | null>(null);
   const [index, setIndex] = useState(0);
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
-  const [results, setResults] = useState<TopicResult[]>([]);
+  const [results, setResults] = useState<QuestionResult[]>([]);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const startedAt = useRef<number>(0);
@@ -49,8 +50,8 @@ export function AptitudeTest({ subjectSlug }: { subjectSlug: string }) {
     };
   }, [subjectSlug]);
 
-  async function submitAndAdvance() {
-    if (!questions || !selectedOptionId) return;
+  async function submitAndAdvance(body: { selectedOptionId?: string; dontKnow?: boolean }) {
+    if (!questions) return;
     const question = questions[index];
     setSubmitting(true);
     const res = await fetch("/api/attempts", {
@@ -58,7 +59,7 @@ export function AptitudeTest({ subjectSlug }: { subjectSlug: string }) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         questionId: question.id,
-        selectedOptionId,
+        ...body,
         responseTimeMs: Date.now() - startedAt.current,
       }),
     });
@@ -70,7 +71,12 @@ export function AptitudeTest({ subjectSlug }: { subjectSlug: string }) {
     const data = await res.json();
     setResults((prev) => [
       ...prev,
-      { topicId: question.topicId, topicName: question.topicName, correct: data.correct },
+      {
+        topicId: question.topicId,
+        topicName: question.topicName,
+        correct: data.correct,
+        dontKnow: Boolean(body.dontKnow),
+      },
     ]);
     setSelectedOptionId(null);
     setError(null);
@@ -91,25 +97,47 @@ export function AptitudeTest({ subjectSlug }: { subjectSlug: string }) {
 
   if (index >= questions.length) {
     const correctCount = results.filter((r) => r.correct).length;
-    const weak = results.filter((r) => !r.correct);
+    const dontKnowCount = results.filter((r) => r.dontKnow).length;
+
+    const byTopic = new Map<string, { topicName: string; correct: number; total: number; dontKnow: number }>();
+    for (const r of results) {
+      const stat = byTopic.get(r.topicId) ?? { topicName: r.topicName, correct: 0, total: 0, dontKnow: 0 };
+      stat.total += 1;
+      if (r.correct) stat.correct += 1;
+      if (r.dontKnow) stat.dontKnow += 1;
+      byTopic.set(r.topicId, stat);
+    }
+    const topicRows = Array.from(byTopic.entries());
+    const weakCount = topicRows.filter(([, s]) => s.correct < s.total).length;
+
     return (
       <div className="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
         <h2 className="mb-1 text-lg font-medium text-neutral-900 dark:text-neutral-100">
           {correctCount} / {results.length} correct
         </h2>
         <p className="mb-5 text-sm text-neutral-500 dark:text-neutral-400">
-          One question per topic — a quick snapshot, not a deep test of any single area.
+          {dontKnowCount > 0 ? `${dontKnowCount} marked "don't know". ` : ""}
+          Spread across every topic — a quick snapshot, not a deep test of any single area.
         </p>
         <div className="flex flex-col divide-y divide-neutral-100 rounded-md border border-neutral-200 dark:divide-neutral-800 dark:border-neutral-800">
-          {results.map((r) => (
-            <div key={r.topicId} className="flex items-center justify-between px-4 py-2.5 text-sm">
-              <span className="text-neutral-700 dark:text-neutral-300">{r.topicName}</span>
-              {r.correct ? (
+          {topicRows.map(([topicId, stat]) => (
+            <div key={topicId} className="flex items-center justify-between px-4 py-2.5 text-sm">
+              <span className="text-neutral-700 dark:text-neutral-300">
+                {stat.topicName}{" "}
+                <span className="text-neutral-400">
+                  ({stat.correct}/{stat.total})
+                </span>
+              </span>
+              {stat.correct === stat.total ? (
                 <span className="text-green-600 dark:text-green-400">✓ Correct</span>
               ) : (
                 <Link
-                  href={`/practice/${subjectSlug}?topic=${r.topicId}`}
-                  className="text-red-600 hover:underline dark:text-red-400"
+                  href={`/practice/${subjectSlug}?topic=${topicId}`}
+                  className={
+                    stat.correct === 0 && stat.dontKnow === stat.total
+                      ? "text-amber-600 hover:underline dark:text-amber-400"
+                      : "text-red-600 hover:underline dark:text-red-400"
+                  }
                 >
                   ✗ Practice this
                 </Link>
@@ -117,9 +145,9 @@ export function AptitudeTest({ subjectSlug }: { subjectSlug: string }) {
             </div>
           ))}
         </div>
-        {weak.length > 0 && (
+        {weakCount > 0 && (
           <p className="mt-4 text-sm text-neutral-500 dark:text-neutral-400">
-            {weak.length} topic{weak.length === 1 ? "" : "s"} to focus on — click one above to
+            {weakCount} topic{weakCount === 1 ? "" : "s"} to focus on — click one above to
             practice it directly.
           </p>
         )}
@@ -189,14 +217,24 @@ export function AptitudeTest({ subjectSlug }: { subjectSlug: string }) {
 
         {error && <p className="mt-3 text-sm text-red-600">{error}</p>}
 
-        <button
-          type="button"
-          onClick={submitAndAdvance}
-          disabled={!selectedOptionId || submitting}
-          className="mt-5 rounded-md bg-neutral-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-40 dark:bg-neutral-100 dark:text-neutral-900"
-        >
-          {index === questions.length - 1 ? "Finish" : "Next"}
-        </button>
+        <div className="mt-5 flex gap-3">
+          <button
+            type="button"
+            onClick={() => submitAndAdvance({ selectedOptionId: selectedOptionId! })}
+            disabled={!selectedOptionId || submitting}
+            className="rounded-md bg-neutral-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-40 dark:bg-neutral-100 dark:text-neutral-900"
+          >
+            {index === questions.length - 1 ? "Finish" : "Next"}
+          </button>
+          <button
+            type="button"
+            onClick={() => submitAndAdvance({ dontKnow: true })}
+            disabled={submitting}
+            className="rounded-md border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-600 hover:bg-neutral-50 disabled:opacity-40 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+          >
+            Don&apos;t know
+          </button>
+        </div>
       </div>
     </div>
   );

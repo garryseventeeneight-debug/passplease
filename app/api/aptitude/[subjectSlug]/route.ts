@@ -32,15 +32,30 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
     list.push(q.id);
     byTopic.set(q.topicId, list);
   }
+  // Shuffle each topic's pool so repeated rounds below don't always draw
+  // the same questions in the same order.
+  for (const list of byTopic.values()) {
+    list.sort(() => Math.random() - 0.5);
+  }
 
-  // One question per topic — a quick, evenly-spread diagnostic snapshot
-  // rather than a deep test of any single topic. Topics with no real
-  // content yet are simply skipped.
+  // Round-robin one question per topic per pass, so the test stays spread
+  // across every topic (breadth) before it goes deeper into any one of
+  // them, up to a target length. Topics with no real content are skipped.
+  const TARGET_LENGTH = 20;
   const pickedIds: string[] = [];
-  for (const topic of subject.topics) {
-    const ids = byTopic.get(topic.id);
-    if (!ids || ids.length === 0) continue;
-    pickedIds.push(ids[Math.floor(Math.random() * ids.length)]);
+  const topicsWithContent = subject.topics.filter((t) => (byTopic.get(t.id)?.length ?? 0) > 0);
+  outer: while (pickedIds.length < TARGET_LENGTH) {
+    let drewAny = false;
+    for (const topic of topicsWithContent) {
+      const list = byTopic.get(topic.id)!;
+      const next = list.pop();
+      if (next) {
+        pickedIds.push(next);
+        drewAny = true;
+        if (pickedIds.length >= TARGET_LENGTH) break outer;
+      }
+    }
+    if (!drewAny) break;
   }
 
   if (pickedIds.length === 0) {
