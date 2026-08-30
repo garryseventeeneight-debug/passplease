@@ -64,7 +64,7 @@ export function DashboardTabs({
               : "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800",
           ].join(" ")}
         >
-          Workbook
+          Concept Book
         </button>
       </div>
       {/* Render both, hide with CSS rather than unmounting — avoids a
