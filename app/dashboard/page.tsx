@@ -80,12 +80,20 @@ export default async function DashboardPage() {
             Mixed questions across every subject, weighted toward your weakest topics overall.
           </p>
         </div>
-        <Link
-          href={`/practice/${ASSORTED_SLUG}`}
-          className="shrink-0 rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
-        >
-          Practice
-        </Link>
+        <div className="flex shrink-0 gap-2">
+          <Link
+            href="/questions"
+            className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+          >
+            Browse Questions
+          </Link>
+          <Link
+            href={`/practice/${ASSORTED_SLUG}`}
+            className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
+          >
+            Practice
+          </Link>
+        </div>
       </div>
 
       <div className="flex flex-col gap-10">

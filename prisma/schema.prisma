@@ -84,6 +84,11 @@ model Question {
   // information a student needs (e.g. reading a value off a graph), so
   // these are stored as the genuine source image instead of prose.
   imageData        String?
+  // User-driven QA: a spot check on any question (especially AI-solved
+  // ones) can mark it wrong with a short note, surfaced in the question
+  // browser so it's easy to find what needs a second look or a fix.
+  flaggedWrong     Boolean        @default(false)
+  flagNote         String?
   options          AnswerOption[]
   attempts         Attempt[]
   reviewCards      ReviewCard[]
