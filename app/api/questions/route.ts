@@ -12,6 +12,7 @@ export async function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams;
   const subjectSlug = params.get("subject") ?? undefined;
   const topicId = params.get("topic") ?? undefined;
+  const subtopicId = params.get("subtopic") ?? undefined;
   const search = params.get("q")?.trim() ?? undefined;
   const flaggedOnly = params.get("flagged") === "1";
   const page = Math.max(1, Number(params.get("page")) || 1);
@@ -27,6 +28,7 @@ export async function GET(request: NextRequest) {
     isTestFixture: false,
     ...(subjectId ? { subjectId } : {}),
     ...(topicId ? { topicId } : {}),
+    ...(subtopicId ? { subtopicId } : {}),
     ...(flaggedOnly ? { flaggedWrong: true } : {}),
     ...(search ? { questionText: { contains: search } } : {}),
   };

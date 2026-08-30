@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getDb } from "@/lib/db";
+import { QuestionFilters } from "@/components/QuestionFilters";
 
 export const dynamic = "force-dynamic";
 
@@ -8,11 +9,19 @@ const PAGE_SIZE = 25;
 export default async function QuestionsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ subject?: string; topic?: string; q?: string; flagged?: string; page?: string }>;
+  searchParams: Promise<{
+    subject?: string;
+    topic?: string;
+    subtopic?: string;
+    q?: string;
+    flagged?: string;
+    page?: string;
+  }>;
 }) {
   const sp = await searchParams;
   const subjectSlug = sp.subject ?? "";
   const topicId = sp.topic ?? "";
+  const subtopicId = sp.subtopic ?? "";
   const search = sp.q ?? "";
   const flaggedOnly = sp.flagged === "1";
   const page = Math.max(1, Number(sp.page) || 1);
@@ -20,7 +29,12 @@ export default async function QuestionsPage({
   const db = await getDb();
   const subjects = await db.subject.findMany({
     orderBy: { name: "asc" },
-    include: { topics: { orderBy: { order: "asc" } } },
+    include: {
+      topics: {
+        orderBy: { order: "asc" },
+        include: { subtopics: { orderBy: { order: "asc" } } },
+      },
+    },
   });
 
   let subjectId: string | undefined;
@@ -32,6 +46,7 @@ export default async function QuestionsPage({
     isTestFixture: false,
     ...(subjectId ? { subjectId } : {}),
     ...(topicId ? { topicId } : {}),
+    ...(subtopicId ? { subtopicId } : {}),
     ...(flaggedOnly ? { flaggedWrong: true } : {}),
     ...(search ? { questionText: { contains: search } } : {}),
   };
@@ -57,11 +72,16 @@ export default async function QuestionsPage({
   ]);
   const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
 
-  const selectedSubject = subjects.find((s) => s.slug === subjectSlug);
-
   function pageHref(overrides: Record<string, string | undefined>) {
     const params = new URLSearchParams();
-    const merged = { subject: subjectSlug, topic: topicId, q: search, flagged: flaggedOnly ? "1" : "", ...overrides };
+    const merged = {
+      subject: subjectSlug,
+      topic: topicId,
+      subtopic: subtopicId,
+      q: search,
+      flagged: flaggedOnly ? "1" : "",
+      ...overrides,
+    };
     for (const [k, v] of Object.entries(merged)) {
       if (v) params.set(k, v);
     }
@@ -78,60 +98,14 @@ export default async function QuestionsPage({
         Question Browser
       </h1>
 
-      <form method="get" className="mb-6 flex flex-wrap items-end gap-3">
-        <div>
-          <label className="mb-1 block text-xs text-neutral-500">Subject</label>
-          <select
-            name="subject"
-            defaultValue={subjectSlug}
-            className="rounded-md border border-neutral-300 px-2 py-1.5 text-sm dark:border-neutral-700 dark:bg-neutral-900"
-          >
-            <option value="">All subjects</option>
-            {subjects.map((s) => (
-              <option key={s.id} value={s.slug}>
-                {s.name}
-              </option>
-            ))}
-          </select>
-        </div>
-        {selectedSubject && (
-          <div>
-            <label className="mb-1 block text-xs text-neutral-500">Topic</label>
-            <select
-              name="topic"
-              defaultValue={topicId}
-              className="rounded-md border border-neutral-300 px-2 py-1.5 text-sm dark:border-neutral-700 dark:bg-neutral-900"
-            >
-              <option value="">All topics</option>
-              {selectedSubject.topics.map((t) => (
-                <option key={t.id} value={t.id}>
-                  {t.name}
-                </option>
-              ))}
-            </select>
-          </div>
-        )}
-        <div>
-          <label className="mb-1 block text-xs text-neutral-500">Search</label>
-          <input
-            type="text"
-            name="q"
-            defaultValue={search}
-            placeholder="Search question text…"
-            className="rounded-md border border-neutral-300 px-2 py-1.5 text-sm dark:border-neutral-700 dark:bg-neutral-900"
-          />
-        </div>
-        <label className="flex items-center gap-1.5 pb-1.5 text-sm text-neutral-600 dark:text-neutral-400">
-          <input type="checkbox" name="flagged" value="1" defaultChecked={flaggedOnly} />
-          Flagged only
-        </label>
-        <button
-          type="submit"
-          className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
-        >
-          Filter
-        </button>
-      </form>
+      <QuestionFilters
+        subjects={subjects}
+        subjectSlug={subjectSlug}
+        topicId={topicId}
+        subtopicId={subtopicId}
+        search={search}
+        flaggedOnly={flaggedOnly}
+      />
 
       <p className="mb-3 text-sm text-neutral-500">{total} question{total === 1 ? "" : "s"}</p>
 
