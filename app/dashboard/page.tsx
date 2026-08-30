@@ -5,6 +5,7 @@ import { ASSORTED_SLUG } from "@/lib/constants";
 import { computeStreak } from "@/lib/streak";
 import { MasteryTable } from "@/components/MasteryTable";
 import { SignOutButton } from "@/components/SignOutButton";
+import { DashboardTabs } from "@/components/DashboardTabs";
 
 // Reads live attempt/mastery data on every request — must not be
 // statically prerendered at build time.
@@ -33,7 +34,6 @@ export default async function DashboardPage() {
     select: { topicId: true, topic: { select: { subjectId: true } } },
   });
   const topicsWithLearnContent = new Set(learnTopics.map((t) => t.topicId));
-  const subjectIdsWithLearnContent = new Set(learnTopics.map((t) => t.topic.subjectId));
 
   const subjectsWithContent = await db.question.findMany({
     where: { isTestFixture: false, isScaffold: false },
@@ -90,84 +90,123 @@ export default async function DashboardPage() {
         </p>
       )}
 
-      <div className="mb-10 flex items-center justify-between rounded-lg border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900">
-        <div>
-          <h2 className="font-medium text-neutral-900 dark:text-neutral-100">Assorted Practice</h2>
-          <p className="text-sm text-neutral-500 dark:text-neutral-400">
-            Mixed questions across every subject, weighted toward your weakest topics overall.
-          </p>
-        </div>
-        <div className="flex shrink-0 gap-2">
-          <Link
-            href="/evaluation"
-            className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
-          >
-            Evaluation
-          </Link>
-          <Link
-            href="/questions"
-            className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
-          >
-            Browse Questions
-          </Link>
-          <Link
-            href={`/practice/${ASSORTED_SLUG}`}
-            className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
-          >
-            Practice
-          </Link>
-        </div>
-      </div>
+      <DashboardTabs
+        questionBook={
+          <>
+            <div className="mb-10 flex items-center justify-between rounded-lg border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900">
+              <div>
+                <h2 className="font-medium text-neutral-900 dark:text-neutral-100">Assorted Practice</h2>
+                <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                  Mixed questions across every subject, weighted toward your weakest topics overall.
+                </p>
+              </div>
+              <div className="flex shrink-0 gap-2">
+                <Link
+                  href="/evaluation"
+                  className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+                >
+                  Evaluation
+                </Link>
+                <Link
+                  href="/questions"
+                  className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+                >
+                  Browse Questions
+                </Link>
+                <Link
+                  href={`/practice/${ASSORTED_SLUG}`}
+                  className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
+                >
+                  Practice
+                </Link>
+              </div>
+            </div>
 
-      <div className="flex flex-col gap-10">
-        {subjects.map((subject) => {
-          const rows = subject.topics.map((topic) => {
-            const m = masteryByTopic.get(topic.id);
-            return {
-              topicId: topic.id,
-              topicName: topic.name,
-              mcqScore: m?.mcqScore ?? null,
-              masteryScore: m?.masteryScore ?? null,
-              subtopics: topic.subtopics.map((s) => ({ id: s.id, name: s.name })),
-              hasLearnContent: topicsWithLearnContent.has(topic.id),
-            };
-          });
-          return (
-            <section key={subject.id}>
-              <div className="mb-3 flex items-center justify-between">
-                <h2 className="text-lg font-medium text-neutral-900 dark:text-neutral-100">
-                  {subject.name}
-                </h2>
-                <div className="flex shrink-0 gap-2">
-                  {subjectIdsWithLearnContent.has(subject.id) && (
+            <div className="flex flex-col gap-10">
+              {subjects.map((subject) => {
+                const rows = subject.topics.map((topic) => {
+                  const m = masteryByTopic.get(topic.id);
+                  return {
+                    topicId: topic.id,
+                    topicName: topic.name,
+                    mcqScore: m?.mcqScore ?? null,
+                    masteryScore: m?.masteryScore ?? null,
+                    subtopics: topic.subtopics.map((s) => ({ id: s.id, name: s.name })),
+                    hasLearnContent: topicsWithLearnContent.has(topic.id),
+                  };
+                });
+                return (
+                  <section key={subject.id}>
+                    <div className="mb-3 flex items-center justify-between">
+                      <h2 className="text-lg font-medium text-neutral-900 dark:text-neutral-100">
+                        {subject.name}
+                      </h2>
+                      <div className="flex shrink-0 gap-2">
+                        {subjectIdsWithContent.has(subject.id) && (
+                          <Link
+                            href={`/aptitude/${subject.slug}`}
+                            className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+                          >
+                            Aptitude Test
+                          </Link>
+                        )}
+                        <Link
+                          href={`/practice/${subject.slug}`}
+                          className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
+                        >
+                          Practice
+                        </Link>
+                      </div>
+                    </div>
+                    <MasteryTable subjectSlug={subject.slug} rows={rows} showLearnLinks={false} />
+                  </section>
+                );
+              })}
+            </div>
+          </>
+        }
+        workbook={
+          <div className="flex flex-col gap-10">
+            {subjects
+              .map((subject) => ({
+                subject,
+                learnTopics: subject.topics.filter((t) => topicsWithLearnContent.has(t.id)),
+              }))
+              .filter(({ learnTopics }) => learnTopics.length > 0)
+              .map(({ subject, learnTopics }) => (
+                <section key={subject.id}>
+                  <div className="mb-3 flex items-center justify-between">
+                    <h2 className="text-lg font-medium text-neutral-900 dark:text-neutral-100">
+                      {subject.name}
+                    </h2>
                     <Link
                       href={`/learn/${subject.slug}/map`}
-                      className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+                      className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
                     >
                       Concept Map
                     </Link>
-                  )}
-                  {subjectIdsWithContent.has(subject.id) && (
-                    <Link
-                      href={`/aptitude/${subject.slug}`}
-                      className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
-                    >
-                      Aptitude Test
-                    </Link>
-                  )}
-                  <Link
-                    href={`/practice/${subject.slug}`}
-                    className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
-                  >
-                    Practice
-                  </Link>
-                </div>
-              </div>
-              <MasteryTable subjectSlug={subject.slug} rows={rows} />
-            </section>
-          );
-        })}
-      </div>
+                  </div>
+                  <div className="flex flex-col divide-y divide-neutral-200 rounded-lg border border-neutral-200 dark:divide-neutral-800 dark:border-neutral-800">
+                    {learnTopics.map((topic) => (
+                      <Link
+                        key={topic.id}
+                        href={`/learn/${subject.slug}/${topic.id}`}
+                        className="px-4 py-2.5 text-sm text-neutral-800 hover:bg-neutral-50 dark:text-neutral-200 dark:hover:bg-neutral-900"
+                      >
+                        {topic.name}
+                      </Link>
+                    ))}
+                  </div>
+                </section>
+              ))}
+            {subjects.every(
+              (subject) => subject.topics.filter((t) => topicsWithLearnContent.has(t.id)).length === 0
+            ) && (
+              <p className="text-sm text-neutral-500">No reading content yet — check back soon.</p>
+            )}
+          </div>
+        }
+      />
     </main>
   );
 }

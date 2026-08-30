@@ -1,0 +1,653 @@
+{
+  "topicName": "Introduction to Economics",
+  "chunks": [
+    {
+      "slug": "econ-wants-unlimited",
+      "subtopicName": "The economic problem",
+      "heading": "We always want more",
+      "body": "People's wants never run out. As soon as one want is satisfied, a new one takes its place.",
+      "checkText": "What happens once we satisfy one want?",
+      "checkOptions": [
+        { "text": "A new want appears", "isCorrect": true },
+        { "text": "We stop wanting anything", "isCorrect": false },
+        { "text": "Our wants disappear forever", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-resources-scarce",
+      "subtopicName": "The economic problem",
+      "heading": "Resources are limited",
+      "body": "The resources we use to make goods and services, like land, workers and machines, are limited. There's never enough for everyone to have everything.",
+      "checkText": "What does it mean for a resource to be \"scarce\"?",
+      "checkOptions": [
+        { "text": "There's only a limited amount of it", "isCorrect": true },
+        { "text": "There's an unlimited amount of it", "isCorrect": false },
+        { "text": "It costs nothing to use", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-problem",
+      "subtopicName": "The economic problem",
+      "heading": "The economic problem",
+      "body": "The economic problem is that our [[econ-wants-unlimited|wants are unlimited]] but our [[econ-resources-scarce|resources are limited]]. This forces us to choose.",
+      "checkText": "The economic problem is the clash between...",
+      "checkOptions": [
+        { "text": "Unlimited wants and limited resources", "isCorrect": true },
+        { "text": "Too much money and too few shops", "isCorrect": false },
+        { "text": "Governments and businesses", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-choice-and-priority",
+      "subtopicName": "The economic problem",
+      "heading": "Choosing means missing out",
+      "body": "Because we can't satisfy every want, we must rank them and pick our top choices. Some wants get left unsatisfied.",
+      "checkText": "Why must we rank our wants in order of priority?",
+      "checkOptions": [
+        { "text": "Because we cannot satisfy them all", "isCorrect": true },
+        { "text": "Because all wants cost the same", "isCorrect": false },
+        { "text": "Because governments require it", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-needs-vs-wants",
+      "subtopicName": "The economic problem",
+      "heading": "Needs and wants",
+      "body": "Needs are the basics we must have to survive, like food and shelter. Wants are everything else we'd like to have, but don't strictly need.",
+      "checkText": "Which of these is a need, not a want?",
+      "checkOptions": [
+        { "text": "Basic food", "isCorrect": true },
+        { "text": "A new video game", "isCorrect": false },
+        { "text": "An overseas holiday", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-individual-wants",
+      "subtopicName": "The economic problem",
+      "heading": "Wants that are personal",
+      "body": "Individual wants are the things one person desires. They depend on that person's own income, age and taste.",
+      "checkText": "Individual wants mainly depend on...",
+      "checkOptions": [
+        { "text": "The person's own circumstances, like income", "isCorrect": true },
+        { "text": "What the whole country needs", "isCorrect": false },
+        { "text": "Government decisions only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-collective-wants",
+      "subtopicName": "The economic problem",
+      "heading": "Wants shared by everyone",
+      "body": "Collective wants are things the whole community needs, like parks, schools and hospitals. Governments usually provide these.",
+      "checkText": "Collective wants are usually provided by...",
+      "checkOptions": [
+        { "text": "Governments", "isCorrect": true },
+        { "text": "Only the richest individuals", "isCorrect": false },
+        { "text": "No one, they're never met", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-opportunity-cost",
+      "subtopicName": "The economic problem",
+      "heading": "The real cost of a choice",
+      "body": "Opportunity cost is the next-best thing you give up when you choose something else. It's the true cost of a choice, not just its price.",
+      "checkText": "Opportunity cost is best described as...",
+      "checkOptions": [
+        { "text": "The next-best alternative you give up", "isCorrect": true },
+        { "text": "The price tag on an item", "isCorrect": false },
+        { "text": "The cost of taxes only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-four-key-questions",
+      "subtopicName": "The economic problem",
+      "heading": "Four questions every economy must answer",
+      "body": "Every economy must decide what to produce, how much to produce, how to produce it, and how to share it out among people.",
+      "checkText": "Which is NOT one of the four key economic questions?",
+      "checkOptions": [
+        { "text": "Who invented the product?", "isCorrect": true },
+        { "text": "What to produce?", "isCorrect": false },
+        { "text": "How to distribute production?", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-consumer-capital-goods",
+      "subtopicName": "The economic problem",
+      "heading": "Goods for now, goods for later",
+      "body": "Consumer goods satisfy wants right away, like food. Capital goods, like machinery, aren't used directly but help produce more goods in the future.",
+      "checkText": "A factory machine is an example of a...",
+      "checkOptions": [
+        { "text": "Capital good", "isCorrect": true },
+        { "text": "Consumer good", "isCorrect": false },
+        { "text": "Neither type of good", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-future-choices",
+      "subtopicName": "The economic problem",
+      "heading": "Today's choices shape tomorrow",
+      "body": "Choosing to save money, study, or build [[econ-consumer-capital-goods|capital goods]] instead of spending now can mean a better outcome later, trading a bit of now for more later.",
+      "checkText": "Choosing to study instead of working right away is an example of...",
+      "checkOptions": [
+        { "text": "Sacrificing now to gain more later", "isCorrect": true },
+        { "text": "A choice with no future effect", "isCorrect": false },
+        { "text": "A choice only governments make", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-factors-shaping-choices",
+      "subtopicName": "The economic problem",
+      "heading": "What shapes an economic choice",
+      "body": "Individuals, businesses and governments all weigh things like cost, income and future plans before making an economic choice.",
+      "checkText": "Individuals, businesses and governments all consider what before choosing?",
+      "checkOptions": [
+        { "text": "Costs and future consequences", "isCorrect": true },
+        { "text": "Only what's cheapest today", "isCorrect": false },
+        { "text": "Nothing, choices are random", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-ppf-intro",
+      "subtopicName": "Production possibility frontiers",
+      "heading": "A picture of possible choices",
+      "body": "A production possibility frontier is a graph showing every combination of two goods an economy could produce with its current resources.",
+      "checkText": "A production possibility frontier shows combinations of...",
+      "checkOptions": [
+        { "text": "Two goods that can be produced", "isCorrect": true },
+        { "text": "Every good in the economy at once", "isCorrect": false },
+        { "text": "Only imported goods", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-ppf-full-capacity",
+      "subtopicName": "Production possibility frontiers",
+      "heading": "The line means \"fully used\"",
+      "body": "Every point sitting on the [[econ-ppf-intro|frontier]] line shows the economy using all its resources at once, with nothing wasted.",
+      "checkText": "Points sitting exactly on the frontier line represent...",
+      "checkOptions": [
+        { "text": "All resources being fully used", "isCorrect": true },
+        { "text": "Resources being wasted", "isCorrect": false },
+        { "text": "Points that are impossible to reach", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-ppf-opportunity-cost",
+      "subtopicName": "Production possibility frontiers",
+      "heading": "Moving along the frontier",
+      "body": "To produce more of one good on the [[econ-ppf-intro|frontier]], you must produce less of the other. That drop is the [[econ-opportunity-cost|opportunity cost]] of the choice.",
+      "checkText": "Moving along a production possibility frontier to get more of one good means...",
+      "checkOptions": [
+        { "text": "Producing less of the other good", "isCorrect": true },
+        { "text": "Producing more of both goods", "isCorrect": false },
+        { "text": "Nothing changes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-ppf-inside-point",
+      "subtopicName": "Production possibility frontiers",
+      "heading": "Inside the line means wasted resources",
+      "body": "A point sitting inside the [[econ-ppf-intro|frontier]] means some resources aren't being used, like unemployed workers. The economy could produce more.",
+      "checkText": "A point inside the production possibility frontier shows that...",
+      "checkOptions": [
+        { "text": "Resources are not fully used", "isCorrect": true },
+        { "text": "The economy is at maximum output", "isCorrect": false },
+        { "text": "The frontier has shifted outward", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-ppf-new-tech",
+      "subtopicName": "Production possibility frontiers",
+      "heading": "Better technology moves the line out",
+      "body": "New technology lets an economy produce more with the same resources. This pushes the whole [[econ-ppf-intro|frontier]] outward.",
+      "checkText": "Better technology causes the production possibility frontier to...",
+      "checkOptions": [
+        { "text": "Shift outward", "isCorrect": true },
+        { "text": "Shift inward", "isCorrect": false },
+        { "text": "Stay exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-ppf-new-resources",
+      "subtopicName": "Production possibility frontiers",
+      "heading": "More resources moves the line out",
+      "body": "Discovering new resources, or gaining more workers, also pushes the [[econ-ppf-intro|frontier]] outward, because there's more available to produce with.",
+      "checkText": "An increase in the number of available workers would cause the frontier to...",
+      "checkOptions": [
+        { "text": "Shift outward", "isCorrect": true },
+        { "text": "Shift inward", "isCorrect": false },
+        { "text": "Have no effect", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-ppf-shape",
+      "subtopicName": "Production possibility frontiers",
+      "heading": "Why the line curves",
+      "body": "A straight [[econ-ppf-intro|frontier]] assumes resources swap between goods at a constant rate. In reality, resources suit one good better than another, so the line curves inward instead.",
+      "checkText": "A curved production possibility frontier reflects the fact that...",
+      "checkOptions": [
+        { "text": "Resources aren't equally suited to producing both goods", "isCorrect": true },
+        { "text": "Resources are unlimited", "isCorrect": false },
+        { "text": "Technology never changes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-market-economy",
+      "subtopicName": "Economic systems",
+      "heading": "Letting the market decide",
+      "body": "In a market economy, individuals and businesses make all the economic decisions themselves, motivated by their own self-interest.",
+      "checkText": "In a market economy, who makes the main economic decisions?",
+      "checkOptions": [
+        { "text": "Individuals and businesses", "isCorrect": true },
+        { "text": "Only the government", "isCorrect": false },
+        { "text": "A central planning committee", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-centrally-planned-economy",
+      "subtopicName": "Economic systems",
+      "heading": "Letting the government decide",
+      "body": "In a centrally planned economy, government planners decide what gets produced and how it's shared out, instead of individuals choosing.",
+      "checkText": "In a centrally planned economy, decisions are mostly made by...",
+      "checkOptions": [
+        { "text": "Government planners", "isCorrect": true },
+        { "text": "Individual consumers", "isCorrect": false },
+        { "text": "Private businesses competing freely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-mixed-economy",
+      "subtopicName": "Economic systems",
+      "heading": "A bit of both",
+      "body": "A mixed economy combines [[econ-market-economy|market forces]] with some government decision-making. Australia is a mixed economy.",
+      "checkText": "A mixed economy combines...",
+      "checkOptions": [
+        { "text": "Market forces and government decisions", "isCorrect": true },
+        { "text": "Only market forces", "isCorrect": false },
+        { "text": "Only government planning", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-price-mechanism",
+      "subtopicName": "Economic systems",
+      "heading": "Prices send a message",
+      "body": "The price mechanism is how rising and falling prices match what buyers want with what sellers supply, guiding what gets produced.",
+      "checkText": "The price mechanism works by using...",
+      "checkOptions": [
+        { "text": "Changes in price to guide supply and demand", "isCorrect": true },
+        { "text": "Government orders", "isCorrect": false },
+        { "text": "Fixed prices that never change", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-markets-defined",
+      "subtopicName": "Economic systems",
+      "heading": "What a market actually is",
+      "body": "A market is simply buyers and sellers coming together to trade a particular good, service or resource at some price.",
+      "checkText": "A market is best described as...",
+      "checkOptions": [
+        { "text": "Buyers and sellers trading something", "isCorrect": true },
+        { "text": "A single physical shop", "isCorrect": false },
+        { "text": "A government department", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-private-property",
+      "subtopicName": "Economic systems",
+      "heading": "The right to own things",
+      "body": "In a [[econ-market-economy|market economy]], people can own resources and property, and can use them, sell them, or pass them on however they choose.",
+      "checkText": "Private ownership of property means people can...",
+      "checkOptions": [
+        { "text": "Own, use and sell their resources", "isCorrect": true },
+        { "text": "Never sell what they own", "isCorrect": false },
+        { "text": "Only rent from the government", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-consumer-sovereignty",
+      "subtopicName": "Economic systems",
+      "heading": "Consumers are in charge",
+      "body": "Consumer sovereignty means consumers decide what gets produced, because businesses only make what people are willing to buy.",
+      "checkText": "Consumer sovereignty means that, ultimately, production is decided by...",
+      "checkOptions": [
+        { "text": "What consumers choose to buy", "isCorrect": true },
+        { "text": "What businesses prefer to make", "isCorrect": false },
+        { "text": "Government instructions", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-freedom-of-enterprise",
+      "subtopicName": "Economic systems",
+      "heading": "Free to start a business",
+      "body": "Freedom of enterprise means people can set up their own business and choose what to produce, without the government stopping them.",
+      "checkText": "Freedom of enterprise allows individuals to...",
+      "checkOptions": [
+        { "text": "Start and run their own business", "isCorrect": true },
+        { "text": "Only work for the government", "isCorrect": false },
+        { "text": "Never choose their own job", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-competition",
+      "subtopicName": "Economic systems",
+      "heading": "Why lots of sellers helps buyers",
+      "body": "Competition happens when there are many buyers and sellers, so no single one can control the price. This helps keep prices fair.",
+      "checkText": "Competition in a market helps keep prices...",
+      "checkOptions": [
+        { "text": "Fair, because no single seller controls them", "isCorrect": true },
+        { "text": "High, because sellers work together", "isCorrect": false },
+        { "text": "Fixed by the government", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-why-govt-intervenes-resources",
+      "subtopicName": "Economic systems",
+      "heading": "Reason 1: some goods need government help",
+      "body": "Governments sometimes provide goods like roads or defence because private businesses wouldn't supply them well on their own.",
+      "checkText": "One reason governments get involved in the economy is to...",
+      "checkOptions": [
+        { "text": "Provide goods the market wouldn't supply well", "isCorrect": true },
+        { "text": "Stop all private businesses from operating", "isCorrect": false },
+        { "text": "Remove consumer choice entirely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-merit-goods",
+      "subtopicName": "Economic systems",
+      "heading": "Goods people undervalue",
+      "body": "Merit goods are things like education or the arts that people don't buy enough of on their own, so governments help support them.",
+      "checkText": "Merit goods are goods that...",
+      "checkOptions": [
+        { "text": "The private market tends to under-provide", "isCorrect": true },
+        { "text": "Only wealthy people can buy", "isCorrect": false },
+        { "text": "Governments always ban", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-why-govt-intervenes-distribution",
+      "subtopicName": "Economic systems",
+      "heading": "Reason 2: sharing output more fairly",
+      "body": "Governments also step in to redistribute income, for example through welfare payments and taxes, since the free market alone can leave some people with very little.",
+      "checkText": "Redistributing income through welfare and taxes is an example of the government trying to...",
+      "checkOptions": [
+        { "text": "Make the distribution of income fairer", "isCorrect": true },
+        { "text": "Increase competition among businesses", "isCorrect": false },
+        { "text": "Lower all prices to zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-why-govt-intervenes-stability",
+      "subtopicName": "Economic systems",
+      "heading": "Reason 3: smoothing the ups and downs",
+      "body": "Governments also intervene to reduce the swings of the [[econ-business-cycle|business cycle]], trying to keep the economy more stable over time.",
+      "checkText": "A third reason governments intervene in the economy is to...",
+      "checkOptions": [
+        { "text": "Smooth out swings in economic activity", "isCorrect": true },
+        { "text": "Fix all prices permanently", "isCorrect": false },
+        { "text": "Remove the need for markets", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-comparing-living-standards",
+      "subtopicName": "Economic systems",
+      "heading": "Comparing how well economies are doing",
+      "body": "Economists compare countries using GDP per person, which measures the average value of goods and services produced per person in a year.",
+      "checkText": "GDP per person is used to compare...",
+      "checkOptions": [
+        { "text": "Living standards between economies", "isCorrect": true },
+        { "text": "Only how many people live there", "isCorrect": false },
+        { "text": "Only the weather", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-hdi",
+      "subtopicName": "Economic systems",
+      "heading": "Measuring more than money",
+      "body": "The Human Development Index combines income, life expectancy and education levels to give a broader picture of quality of life than income alone.",
+      "checkText": "The Human Development Index measures quality of life using...",
+      "checkOptions": [
+        { "text": "Income, life expectancy and education together", "isCorrect": true },
+        { "text": "Income only", "isCorrect": false },
+        { "text": "Population size only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-goods-and-services",
+      "subtopicName": "Participants in the economy",
+      "heading": "Goods you can touch, services you can't",
+      "body": "Goods are physical things like food or cars. Services are actions that help you, like a doctor's visit or a haircut.",
+      "checkText": "Which of these is a service, not a good?",
+      "checkOptions": [
+        { "text": "A haircut", "isCorrect": true },
+        { "text": "A loaf of bread", "isCorrect": false },
+        { "text": "A car", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-factors-of-production",
+      "subtopicName": "Participants in the economy",
+      "heading": "The four ingredients of production",
+      "body": "Every good or service needs four resources to make it: natural resources, labour, capital and enterprise. These are called factors of production.",
+      "checkText": "How many factors of production are there?",
+      "checkOptions": [
+        { "text": "Four", "isCorrect": true },
+        { "text": "Two", "isCorrect": false },
+        { "text": "Ten", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-natural-resources",
+      "subtopicName": "Participants in the economy",
+      "heading": "Resources from nature",
+      "body": "Natural resources are things like land, water and minerals that occur naturally and get used in production. Their reward is called rent.",
+      "checkText": "The reward for supplying natural resources is called...",
+      "checkOptions": [
+        { "text": "Rent", "isCorrect": true },
+        { "text": "Wages", "isCorrect": false },
+        { "text": "Profit", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-labour",
+      "subtopicName": "Participants in the economy",
+      "heading": "Human effort at work",
+      "body": "Labour is the physical and mental effort people put into producing goods and services. Workers are rewarded with wages.",
+      "checkText": "The reward for supplying labour is called...",
+      "checkOptions": [
+        { "text": "Wages", "isCorrect": true },
+        { "text": "Rent", "isCorrect": false },
+        { "text": "Interest", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-capital",
+      "subtopicName": "Participants in the economy",
+      "heading": "Tools that help make more",
+      "body": "Capital means things like machines and tools that are used to produce other goods, rather than being consumed directly. Its reward is interest.",
+      "checkText": "A factory machine is an example of which factor of production?",
+      "checkOptions": [
+        { "text": "Capital", "isCorrect": true },
+        { "text": "Labour", "isCorrect": false },
+        { "text": "Natural resources", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-enterprise",
+      "subtopicName": "Participants in the economy",
+      "heading": "The person who takes the risk",
+      "body": "Enterprise is the skill of organising the other resources and taking the risk of running a business. Its reward is profit.",
+      "checkText": "The reward for enterprise is called...",
+      "checkOptions": [
+        { "text": "Profit", "isCorrect": true },
+        { "text": "Wages", "isCorrect": false },
+        { "text": "Rent", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-market-distribution-income",
+      "subtopicName": "Participants in the economy",
+      "heading": "How market economies share output",
+      "body": "In a market economy, people get a share of goods based on the income they earn, which depends on the resources they supply.",
+      "checkText": "In a market economy, how much of total output a person gets mostly depends on...",
+      "checkOptions": [
+        { "text": "Their income", "isCorrect": true },
+        { "text": "Their age", "isCorrect": false },
+        { "text": "The weather", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-money-as-exchange",
+      "subtopicName": "Participants in the economy",
+      "heading": "Why we use money to trade",
+      "body": "Money makes trading goods and services much easier, because it means you don't need to find someone who wants exactly what you're offering.",
+      "checkText": "Using money instead of trading goods directly mainly helps because...",
+      "checkOptions": [
+        { "text": "You don't need to match wants exactly", "isCorrect": true },
+        { "text": "Money has no value", "isCorrect": false },
+        { "text": "It stops all trade", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-barter",
+      "subtopicName": "Participants in the economy",
+      "heading": "Trading goods without money",
+      "body": "Barter is swapping one good or service directly for another, without using money at all. It's rare in modern economies.",
+      "checkText": "Barter means...",
+      "checkOptions": [
+        { "text": "Trading goods directly without money", "isCorrect": true },
+        { "text": "Paying with cash", "isCorrect": false },
+        { "text": "Borrowing from a bank", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-business-cycle",
+      "subtopicName": "Participants in the economy",
+      "heading": "The economy moves in cycles",
+      "body": "The business cycle describes how economic activity rises and falls over time, instead of growing at a steady, constant rate.",
+      "checkText": "The business cycle refers to...",
+      "checkOptions": [
+        { "text": "Ups and downs in economic activity over time", "isCorrect": true },
+        { "text": "A permanent, steady growth rate", "isCorrect": false },
+        { "text": "The four factors of production", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-recession",
+      "subtopicName": "Participants in the economy",
+      "heading": "When the economy shrinks",
+      "body": "A recession is a period when economic activity falls, production drops, and unemployment tends to rise.",
+      "checkText": "During a recession, unemployment tends to...",
+      "checkOptions": [
+        { "text": "Rise", "isCorrect": true },
+        { "text": "Fall", "isCorrect": false },
+        { "text": "Stay exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-boom",
+      "subtopicName": "Participants in the economy",
+      "heading": "When the economy is booming",
+      "body": "A boom is a period of strong economic growth, when production rises and unemployment tends to fall.",
+      "checkText": "During an economic boom, production tends to...",
+      "checkOptions": [
+        { "text": "Increase", "isCorrect": true },
+        { "text": "Decrease", "isCorrect": false },
+        { "text": "Stop completely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-circular-flow-intro",
+      "subtopicName": "Participants in the economy",
+      "heading": "A model of the whole economy",
+      "body": "The circular flow of income is a model that splits the economy into sectors, showing how money moves between them.",
+      "checkText": "The circular flow of income model is used to show...",
+      "checkOptions": [
+        { "text": "How money moves between sectors of the economy", "isCorrect": true },
+        { "text": "The weather patterns of a country", "isCorrect": false },
+        { "text": "The history of a currency", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-circular-flow-individuals-businesses",
+      "subtopicName": "Participants in the economy",
+      "heading": "Individuals and businesses need each other",
+      "body": "Individuals supply resources like [[econ-labour|labour]] to businesses and earn income in return. Businesses use that income by selling goods back to individuals.",
+      "checkText": "In the circular flow, individuals supply businesses with...",
+      "checkOptions": [
+        { "text": "Resources like labour", "isCorrect": true },
+        { "text": "Free products", "isCorrect": false },
+        { "text": "Government funding", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-circular-flow-financial",
+      "subtopicName": "Participants in the economy",
+      "heading": "Where savings go to work",
+      "body": "Financial institutions, like banks, collect savings from individuals and lend that money to businesses so they can invest.",
+      "checkText": "Financial institutions mainly act as a link between...",
+      "checkOptions": [
+        { "text": "Savers and borrowers", "isCorrect": true },
+        { "text": "Individuals and the government only", "isCorrect": false },
+        { "text": "Two different countries", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-circular-flow-government",
+      "subtopicName": "Participants in the economy",
+      "heading": "Government's role in the flow",
+      "body": "Governments collect taxes from individuals and businesses, then spend that money on things like schools, hospitals and roads.",
+      "checkText": "Governments fund their spending mainly through...",
+      "checkOptions": [
+        { "text": "Taxes", "isCorrect": true },
+        { "text": "Borrowing from businesses only", "isCorrect": false },
+        { "text": "Selling goods directly", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-circular-flow-international",
+      "subtopicName": "Participants in the economy",
+      "heading": "Money moving across borders",
+      "body": "The international sector covers trade with other countries: exports, which are goods sold overseas, and imports, which are goods bought from overseas.",
+      "checkText": "Exports are goods and services that are...",
+      "checkOptions": [
+        { "text": "Sold to other countries", "isCorrect": true },
+        { "text": "Bought from other countries", "isCorrect": false },
+        { "text": "Never traded", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-leakages",
+      "subtopicName": "Participants in the economy",
+      "heading": "Money leaving the flow",
+      "body": "Leakages are money that leaves the circular flow, through savings, taxes, or imports, reducing the level of economic activity.",
+      "checkText": "Which of these is an example of a leakage?",
+      "checkOptions": [
+        { "text": "Savings", "isCorrect": true },
+        { "text": "Government spending", "isCorrect": false },
+        { "text": "Exports", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-injections",
+      "subtopicName": "Participants in the economy",
+      "heading": "Money entering the flow",
+      "body": "Injections are money entering the circular flow, through investment, government spending, or exports, increasing the level of economic activity.",
+      "checkText": "Which of these is an example of an injection?",
+      "checkOptions": [
+        { "text": "Investment", "isCorrect": true },
+        { "text": "Savings", "isCorrect": false },
+        { "text": "Taxation", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "econ-equilibrium",
+      "subtopicName": "Participants in the economy",
+      "heading": "When the flow is balanced",
+      "body": "The circular flow is in equilibrium when total [[econ-leakages|leakages]] equal total [[econ-injections|injections]], keeping the level of economic activity steady.",
+      "checkText": "The circular flow is in equilibrium when...",
+      "checkOptions": [
+        { "text": "Leakages equal injections", "isCorrect": true },
+        { "text": "Leakages are always zero", "isCorrect": false },
+        { "text": "Injections are always bigger than leakages", "isCorrect": false }
+      ]
+    }
+  ]
+}

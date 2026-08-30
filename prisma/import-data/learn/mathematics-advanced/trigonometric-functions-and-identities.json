@@ -1,0 +1,329 @@
+{
+  "topicName": "Trigonometric Functions and Identities",
+  "chunks": [
+    {
+      "slug": "mathadv-what-is-identity",
+      "subtopicName": "Trigonometric identities",
+      "heading": "What is a trigonometric identity?",
+      "body": "An identity is a statement that is true for every value of the angle. It's different from an ordinary equation, which is usually only true for some values. sin^2(x) + cos^2(x) = 1 is an identity — it holds no matter what x is.",
+      "checkText": "A trigonometric identity is true for...",
+      "checkOptions": [
+        { "text": "Every possible angle", "isCorrect": true },
+        { "text": "Only one particular angle", "isCorrect": false },
+        { "text": "No angles at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-ratio-identity",
+      "subtopicName": "Trigonometric identities",
+      "heading": "The ratio identities",
+      "body": "Two identities connect tan and cot to sin and cos: tan(θ) = sin(θ)/cos(θ), and cot(θ) = cos(θ)/sin(θ). This matches how [[mathadv-tangent-ratio|tan(A)]] was first defined as sin(A) divided by cos(A).",
+      "checkText": "cot(θ) equals...",
+      "checkOptions": [
+        { "text": "cos(θ)/sin(θ)", "isCorrect": true },
+        { "text": "sin(θ)/cos(θ)", "isCorrect": false },
+        { "text": "1/sin(θ)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-pythagorean-identity",
+      "subtopicName": "Trigonometric identities",
+      "heading": "The Pythagorean identity",
+      "body": "sin^2(θ) + cos^2(θ) = 1 for every angle θ. It comes from Pythagoras' theorem applied to the circle definition of sine and cosine, where x^2 + y^2 = r^2.",
+      "checkText": "sin^2(θ) + cos^2(θ) equals...",
+      "checkOptions": [
+        { "text": "1", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "θ", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-pythagorean-identity-variants",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Two more Pythagorean identities",
+      "body": "Dividing [[mathadv-pythagorean-identity|sin^2(θ) + cos^2(θ) = 1]] by cos^2(θ) gives tan^2(θ) + 1 = sec^2(θ). Dividing it by sin^2(θ) instead gives cot^2(θ) + 1 = cosec^2(θ). Both come from the same starting identity.",
+      "checkText": "tan^2(θ) + 1 equals...",
+      "checkOptions": [
+        { "text": "sec^2(θ)", "isCorrect": true },
+        { "text": "cosec^2(θ)", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-complementary-angle-identities",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Complementary angle identities",
+      "body": "Two angles are complementary if they add to 90°. For any angle θ, cos(90° − θ) = sin(θ). In the same way, cot(90° − θ) = tan(θ) and cosec(90° − θ) = sec(θ).",
+      "checkText": "cos(90° − θ) is always equal to...",
+      "checkOptions": [
+        { "text": "sin(θ)", "isCorrect": true },
+        { "text": "cos(θ)", "isCorrect": false },
+        { "text": "tan(θ)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-proving-identities",
+      "subtopicName": "Trigonometric identities",
+      "heading": "How to prove an identity",
+      "body": "To prove an identity, work on the left side (LHS) and the right side (RHS) separately, simplifying each using known identities, until they match. Never move a term from one side to the other like you would with an equation.",
+      "checkText": "When proving an identity, you should...",
+      "checkOptions": [
+        { "text": "Simplify each side separately until they match", "isCorrect": true },
+        { "text": "Move terms across the equals sign", "isCorrect": false },
+        { "text": "Substitute a single value for the angle", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-trig-equation",
+      "subtopicName": "Trigonometric identities",
+      "heading": "What is a trigonometric equation?",
+      "body": "Unlike an [[mathadv-what-is-identity|identity]], a trigonometric equation like sin(x) = 0.5 is only true for particular values of x. Solving it means finding every value of x, within a given domain, that makes it true.",
+      "checkText": "Solving a trigonometric equation means finding...",
+      "checkOptions": [
+        { "text": "Every value of x that makes it true", "isCorrect": true },
+        { "text": "A proof that it holds for all x", "isCorrect": false },
+        { "text": "The related acute angle only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-domain-restriction",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Watch the domain",
+      "body": "A [[mathadv-trig-equation|trigonometric equation]] is usually solved within a stated domain, like 0° ≤ x ≤ 360°. The domain controls how many solutions there are — a wider domain can give more solutions to the same equation.",
+      "checkText": "Before solving a trigonometric equation, you should always check...",
+      "checkOptions": [
+        { "text": "The domain given for x", "isCorrect": true },
+        { "text": "The amplitude of the graph", "isCorrect": false },
+        { "text": "The related obtuse angle", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-quadrant-method-equations",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Solving trig equations: the quadrant method",
+      "body": "To solve an equation like sin(x) = 0.5: find which quadrants give that sign using the [[mathadv-astc-rule|ASTC rule]], find the [[mathadv-related-acute-angle|related acute angle]], then mark the matching angles in those quadrants within the given domain.",
+      "checkText": "The quadrant method for solving trig equations starts by finding the...",
+      "checkOptions": [
+        { "text": "Quadrants where the sign is correct", "isCorrect": true },
+        { "text": "Amplitude of the function", "isCorrect": false },
+        { "text": "Period of the function", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-reciprocal-equations",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Equations with reciprocal functions",
+      "body": "To solve an equation with cosec, sec or cot, first take the reciprocal of both sides to rewrite it using sin, cos or tan instead. For example, sec(x) = 2 becomes cos(x) = 1/2.",
+      "checkText": "To solve sec(x) = 2, you first rewrite it as...",
+      "checkOptions": [
+        { "text": "cos(x) = 1/2", "isCorrect": true },
+        { "text": "sin(x) = 2", "isCorrect": false },
+        { "text": "tan(x) = 1/2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-compound-angle-equations",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Solving equations with compound angles",
+      "body": "For an equation like sin(2x) = 0.5, let u equal the compound angle (here, 2x). Rewrite the domain in terms of u, solve for u using the [[mathadv-quadrant-method-equations|quadrant method]], then convert back to find x.",
+      "checkText": "To solve an equation like tan(2x) = 1, the first step is to...",
+      "checkOptions": [
+        { "text": "Let u be the compound angle 2x", "isCorrect": true },
+        { "text": "Divide both sides by 2 immediately", "isCorrect": false },
+        { "text": "Ignore the domain restriction", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-equations-multiple-functions",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Turning two functions into one",
+      "body": "Some equations mix two trigonometric functions, like sin(x) + sqrt(3)cos(x) = 0. Dividing every term by cos(x) turns it into an equation in tan(x) alone, which can then be solved.",
+      "checkText": "To solve sin(x) + sqrt(3)cos(x) = 0, a useful step is to divide every term by...",
+      "checkOptions": [
+        { "text": "cos(x)", "isCorrect": true },
+        { "text": "sin(x)", "isCorrect": false },
+        { "text": "2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-triangle-labeling-convention",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Naming a general triangle",
+      "body": "In a general triangle ABC, each vertex has an uppercase letter, and each side is named with the lowercase version of the letter at the opposite vertex. So side a is opposite vertex A.",
+      "checkText": "In triangle ABC, side b is the side opposite...",
+      "checkOptions": [
+        { "text": "Vertex B", "isCorrect": true },
+        { "text": "Vertex A", "isCorrect": false },
+        { "text": "Vertex C", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-sine-rule",
+      "subtopicName": "Trigonometric identities",
+      "heading": "The sine rule",
+      "body": "In any [[mathadv-triangle-labeling-convention|triangle ABC]], a/sin(A) = b/sin(B) = c/sin(C). Each side's length divided by the sine of its opposite angle gives the same value for the whole triangle. Unlike the basic [[mathadv-sine-ratio|sine ratio]], this works for any triangle, not just right triangles.",
+      "checkText": "The sine rule states that a/sin(A) is equal to...",
+      "checkOptions": [
+        { "text": "b/sin(B)", "isCorrect": true },
+        { "text": "b/sin(A)", "isCorrect": false },
+        { "text": "a/sin(B)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-sine-rule-find-side",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Using the sine rule to find a side",
+      "body": "To find an unknown side with the [[mathadv-sine-rule|sine rule]], you need one side and two angles (AAS). Place the unknown side over the sine of its opposite angle, set it equal to the known side over the sine of its opposite angle, then solve.",
+      "checkText": "To use the sine rule to find a missing side, you need to know...",
+      "checkOptions": [
+        { "text": "One side and two angles", "isCorrect": true },
+        { "text": "Three sides", "isCorrect": false },
+        { "text": "Two sides and the angle between them", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-area-formula",
+      "subtopicName": "Trigonometric identities",
+      "heading": "The area formula for a triangle",
+      "body": "In any [[mathadv-triangle-labeling-convention|triangle ABC]], area = (1/2) × b × c × sin(A), using two sides and the angle between them. It generalises the familiar area = (1/2) × base × height formula.",
+      "checkText": "The area formula for a triangle uses two sides and...",
+      "checkOptions": [
+        { "text": "The angle between them", "isCorrect": true },
+        { "text": "The third side", "isCorrect": false },
+        { "text": "The perimeter", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-area-formula-uses",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Finding a side or angle from the area",
+      "body": "If you know a triangle's area along with two sides or two angles, you can rearrange the [[mathadv-area-formula|area formula]] to find the missing side or angle.",
+      "checkText": "If you know a triangle's area and two of its sides, you can rearrange the area formula to find the...",
+      "checkOptions": [
+        { "text": "Angle between those sides", "isCorrect": true },
+        { "text": "Perimeter", "isCorrect": false },
+        { "text": "Third side directly", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-ambiguous-case",
+      "subtopicName": "Trigonometric identities",
+      "heading": "The ambiguous case: two triangles from one set of data",
+      "body": "When you know two sides and a non-included angle (ASS), using the [[mathadv-sine-rule|sine rule]] to find another angle can give two possible answers: one acute, one obtuse. Both may form a valid triangle, so check the angle sum to see if each is possible.",
+      "checkText": "In the ambiguous ASS case, solving for an unknown angle with the sine rule can give...",
+      "checkOptions": [
+        { "text": "Two possible answers", "isCorrect": true },
+        { "text": "Always exactly one answer", "isCorrect": false },
+        { "text": "No possible answers", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-cosine-rule",
+      "subtopicName": "Trigonometric identities",
+      "heading": "The cosine rule",
+      "body": "In any [[mathadv-triangle-labeling-convention|triangle ABC]], a^2 = b^2 + c^2 − 2bc·cos(A). It relates the square of one side to the squares of the other two sides and the cosine of the angle between them.",
+      "checkText": "The cosine rule states that a^2 equals...",
+      "checkOptions": [
+        { "text": "b^2 + c^2 − 2bc·cos(A)", "isCorrect": true },
+        { "text": "b^2 + c^2", "isCorrect": false },
+        { "text": "b^2 − c^2 + 2bc·cos(A)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-cosine-rule-pythagoras",
+      "subtopicName": "Trigonometric identities",
+      "heading": "The cosine rule and Pythagoras' theorem",
+      "body": "When angle A is 90°, cos(A) = 0, so the [[mathadv-cosine-rule|cosine rule]] simplifies to a^2 = b^2 + c^2 — exactly Pythagoras' theorem. The cosine rule is really a generalisation of Pythagoras' theorem to any triangle.",
+      "checkText": "When angle A is 90°, the cosine rule becomes...",
+      "checkOptions": [
+        { "text": "Pythagoras' theorem", "isCorrect": true },
+        { "text": "The sine rule", "isCorrect": false },
+        { "text": "The area formula", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-cosine-rule-find-side",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Using the cosine rule to find a side",
+      "body": "To find an unknown side with the [[mathadv-cosine-rule|cosine rule]], you need two sides and the angle between them (SAS). Substitute these into the formula and solve for the unknown side.",
+      "checkText": "To use the cosine rule to find a missing side, you need to know...",
+      "checkOptions": [
+        { "text": "Two sides and the angle between them", "isCorrect": true },
+        { "text": "One side and two angles", "isCorrect": false },
+        { "text": "Three sides", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-cosine-rule-find-angle",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Using the cosine rule to find an angle",
+      "body": "If all three sides of a triangle are known (SSS), rearrange the [[mathadv-cosine-rule|cosine rule]] to solve for the cosine of an angle. Unlike the sine rule, this always gives exactly one answer for the angle.",
+      "checkText": "To find an angle when all three sides are known, you should use...",
+      "checkOptions": [
+        { "text": "The cosine rule", "isCorrect": true },
+        { "text": "The sine rule", "isCorrect": false },
+        { "text": "The area formula", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-choosing-the-rule",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Choosing the right rule",
+      "body": "Which rule to use depends on what's known. Two angles and a side (AAS) needs the [[mathadv-sine-rule|sine rule]]. Two sides and the angle between them (SAS) needs the [[mathadv-cosine-rule|cosine rule]]. All three sides (SSS) also needs the cosine rule, but to find an angle instead.",
+      "checkText": "If you know all three sides of a triangle (SSS) and want an angle, you should use...",
+      "checkOptions": [
+        { "text": "The cosine rule", "isCorrect": true },
+        { "text": "The sine rule", "isCorrect": false },
+        { "text": "The area formula", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-two-step-triangle-problems",
+      "subtopicName": "Trigonometric identities",
+      "heading": "Two-step triangle problems",
+      "body": "Some triangle problems need two steps: first find a missing side or angle using [[mathadv-choosing-the-rule|the right rule]], then use that new information with another rule to find what's actually being asked for.",
+      "checkText": "A two-step triangle problem typically involves...",
+      "checkOptions": [
+        { "text": "Finding one unknown, then using it to find another", "isCorrect": true },
+        { "text": "Using the same formula twice on the same value", "isCorrect": false },
+        { "text": "Ignoring the given information", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-amplitude",
+      "subtopicName": "Graphs of trigonometric functions",
+      "heading": "Amplitude of a wave",
+      "body": "The amplitude of a wave is how far it rises above (or falls below) its middle value. Both y = sin(x) and y = cos(x) have a maximum of 1, a minimum of −1, and a middle value of 0, so both have amplitude 1.",
+      "checkText": "The amplitude of y = sin(x) is...",
+      "checkOptions": [
+        { "text": "1", "isCorrect": true },
+        { "text": "2", "isCorrect": false },
+        { "text": "0", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-period-trig-functions",
+      "subtopicName": "Graphs of trigonometric functions",
+      "heading": "The period of a trig graph",
+      "body": "The period of a repeating graph is the length of its smallest repeating pattern. y = sin(x) and y = cos(x) repeat every [[mathadv-full-turn-radians|full revolution]], so they have period 2π. y = tan(x) repeats twice as often, with period π.",
+      "checkText": "The period of y = tan(x) is...",
+      "checkOptions": [
+        { "text": "π", "isCorrect": true },
+        { "text": "2π", "isCorrect": false },
+        { "text": "π/2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-even-odd-functions",
+      "subtopicName": "Graphs of trigonometric functions",
+      "heading": "Odd and even functions",
+      "body": "A function is odd if f(−x) = −f(x); its graph has point symmetry about the origin. sin(x) and tan(x) are odd. A function is even if f(−x) = f(x); its graph has line symmetry in the y-axis. cos(x) is even.",
+      "checkText": "Because cos(x) is an even function, cos(−x) equals...",
+      "checkOptions": [
+        { "text": "cos(x)", "isCorrect": true },
+        { "text": "−cos(x)", "isCorrect": false },
+        { "text": "sin(x)", "isCorrect": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "topicName": "Introduction to Differentiation",
+  "chunks": [
+    {
+      "slug": "mathadv-diff-what-is-calculus",
+      "subtopicName": "Gradient of a curve",
+      "heading": "What differentiation studies",
+      "body": "Differentiation is part of calculus. It studies how steep a curve is at each point — in other words, how fast the curve is changing there.",
+      "checkText": "Differentiation studies...",
+      "checkOptions": [
+        { "text": "How steep a curve is at each point", "isCorrect": true },
+        { "text": "The area under a curve", "isCorrect": false },
+        { "text": "The length of a curve", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-chord",
+      "subtopicName": "Gradient of a curve",
+      "heading": "A chord: joining two points",
+      "body": "A chord is the straight line segment joining two points on a curve. It's the same idea as a chord of a circle.",
+      "checkText": "A chord on a curve is...",
+      "checkOptions": [
+        { "text": "A line joining two points on the curve", "isCorrect": true },
+        { "text": "A line touching the curve at only one point", "isCorrect": false },
+        { "text": "The curve itself", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-secant",
+      "subtopicName": "Gradient of a curve",
+      "heading": "A secant: a cutting line",
+      "body": "A secant is the line through two points on a curve, extended in both directions. It contains the [[mathadv-diff-chord|chord]] joining those points.",
+      "checkText": "A secant is a line that...",
+      "checkOptions": [
+        { "text": "Passes through two points on the curve", "isCorrect": true },
+        { "text": "Touches the curve at only one point", "isCorrect": false },
+        { "text": "Never meets the curve", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-tangent",
+      "subtopicName": "Gradient of a curve",
+      "heading": "A tangent: touching at one point",
+      "body": "A tangent is a line that touches a curve at one point and follows the direction the curve is heading there. It shows the curve's steepness at that spot.",
+      "checkText": "A tangent to a curve shows...",
+      "checkOptions": [
+        { "text": "The curve's steepness at one point", "isCorrect": true },
+        { "text": "The total distance travelled", "isCorrect": false },
+        { "text": "The average steepness over the whole curve", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-gradient-of-curve",
+      "subtopicName": "Gradient of a curve",
+      "heading": "The gradient of a curve",
+      "body": "The gradient of a curve at a point is defined as the gradient of the [[mathadv-diff-tangent|tangent]] there. Unlike a straight line, a curve's gradient changes from point to point.",
+      "checkText": "The gradient of a curve at a point equals...",
+      "checkOptions": [
+        { "text": "The gradient of the tangent at that point", "isCorrect": true },
+        { "text": "The gradient of any chord on the curve", "isCorrect": false },
+        { "text": "The height of the curve at that point", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-derivative-intro",
+      "subtopicName": "Gradient of a curve",
+      "heading": "The derivative: a new function",
+      "body": "The derivative, written f'(x), gives the [[mathadv-diff-gradient-of-curve|gradient of the curve]] at every point x. It is itself a function, with its own graph.",
+      "checkText": "The derivative f'(x) of a function tells you...",
+      "checkOptions": [
+        { "text": "The gradient of the curve at each x", "isCorrect": true },
+        { "text": "The y-value of the curve at each x", "isCorrect": false },
+        { "text": "The x-intercepts of the curve", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-secant-approaches-tangent",
+      "subtopicName": "Differentiation from first principles",
+      "heading": "Sliding a secant toward a tangent",
+      "body": "Picture a second point Q sliding along a curve toward a fixed point P. As Q gets closer to P, the [[mathadv-diff-secant|secant]] PQ gets closer to the [[mathadv-diff-tangent|tangent]] at P.",
+      "checkText": "As point Q slides closer to P along a curve, the secant PQ...",
+      "checkOptions": [
+        { "text": "Gets closer to the tangent at P", "isCorrect": true },
+        { "text": "Gets closer to the x-axis", "isCorrect": false },
+        { "text": "Stays exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-difference-quotient",
+      "subtopicName": "Differentiation from first principles",
+      "heading": "The gradient of that secant",
+      "body": "For a point x and a nearby point x+h, the secant's gradient is [f(x+h) - f(x)] / h. This fraction is called the difference quotient.",
+      "checkText": "The difference quotient [f(x+h) - f(x)] / h calculates...",
+      "checkOptions": [
+        { "text": "The gradient of a secant", "isCorrect": true },
+        { "text": "The gradient of a tangent", "isCorrect": false },
+        { "text": "The area between two points", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-limit-idea",
+      "subtopicName": "Differentiation from first principles",
+      "heading": "What a limit means",
+      "body": "A limit describes the value something gets closer and closer to, without needing to actually reach it. Here, we look at what the [[mathadv-diff-difference-quotient|difference quotient]] approaches as h approaches 0.",
+      "checkText": "A limit describes...",
+      "checkOptions": [
+        { "text": "The value something approaches", "isCorrect": true },
+        { "text": "The exact value at one instant only", "isCorrect": false },
+        { "text": "The largest possible value", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-first-principles-definition",
+      "subtopicName": "Differentiation from first principles",
+      "heading": "The formal definition of the derivative",
+      "body": "f'(x) equals the limit, as h approaches 0, of [f(x+h) - f(x)] / h. This turns the sliding-secant idea into one precise formula.",
+      "checkText": "The formal definition of the derivative uses...",
+      "checkOptions": [
+        { "text": "A limit as h approaches 0", "isCorrect": true },
+        { "text": "A limit as x approaches infinity", "isCorrect": false },
+        { "text": "The value of f(x) alone", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-first-principles-method",
+      "subtopicName": "Differentiation from first principles",
+      "heading": "Using the definition directly",
+      "body": "First-principles differentiation means using the [[mathadv-diff-first-principles-definition|limit formula]] directly: simplify the difference quotient algebraically, then let h approach 0.",
+      "checkText": "In first-principles differentiation, you simplify the difference quotient before...",
+      "checkOptions": [
+        { "text": "Taking the limit as h approaches 0", "isCorrect": true },
+        { "text": "Substituting x = 0", "isCorrect": false },
+        { "text": "Squaring both sides", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-linear-derivative",
+      "subtopicName": "Differentiation from first principles",
+      "heading": "Differentiating a straight line",
+      "body": "For a straight line f(x) = mx + b, the tangent at any point is the line itself. So its derivative is just the constant gradient, f'(x) = m.",
+      "checkText": "The derivative of the line f(x) = 5x + 2 is...",
+      "checkOptions": [
+        { "text": "5, a constant", "isCorrect": true },
+        { "text": "2, a constant", "isCorrect": false },
+        { "text": "5x, still a line", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-constant-derivative",
+      "subtopicName": "Differentiation from first principles",
+      "heading": "Differentiating a constant",
+      "body": "A constant function like f(x) = 7 is a horizontal line, so its tangent is always horizontal. Its derivative is therefore the zero function, f'(x) = 0.",
+      "checkText": "The derivative of a constant function is always...",
+      "checkOptions": [
+        { "text": "0", "isCorrect": true },
+        { "text": "The constant itself", "isCorrect": false },
+        { "text": "Undefined", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-power-rule",
+      "subtopicName": "Rules of differentiation",
+      "heading": "The power rule",
+      "body": "For f(x) = x^n, the derivative is f'(x) = nx^(n-1). In words: take the index as a factor, then reduce the index by 1.",
+      "checkText": "Using the power rule, the derivative of x^7 is...",
+      "checkOptions": [
+        { "text": "7x^6", "isCorrect": true },
+        { "text": "7x^7", "isCorrect": false },
+        { "text": "x^6", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-sum-rule",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Differentiating a sum",
+      "body": "If a function is a sum of terms, differentiate each term separately, then add the results. So the derivative of g(x) + k(x) is g'(x) + k'(x).",
+      "checkText": "To differentiate a sum of two functions, you...",
+      "checkOptions": [
+        { "text": "Differentiate each term separately, then add", "isCorrect": true },
+        { "text": "Differentiate only the first term", "isCorrect": false },
+        { "text": "Multiply the two derivatives", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-constant-multiple-rule",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Differentiating a multiple",
+      "body": "A constant multiplying a function stays out front unchanged. So the derivative of a×g(x) is a×g'(x) — just differentiate g(x) and keep the constant.",
+      "checkText": "The derivative of 5x^3 is 5 times...",
+      "checkOptions": [
+        { "text": "The derivative of x^3", "isCorrect": true },
+        { "text": "The derivative of 5", "isCorrect": false },
+        { "text": "x^3 itself", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-expand-before",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Expand first, then differentiate",
+      "body": "The [[mathadv-power-rule|power rule]] only works term by term. If a function is written as a product like x^3(x - 10), expand it first, then differentiate each term.",
+      "checkText": "Before differentiating x(x - 4), it helps to first...",
+      "checkOptions": [
+        { "text": "Expand it into x^2 - 4x", "isCorrect": true },
+        { "text": "Take its square root", "isCorrect": false },
+        { "text": "Substitute x = 0", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-dydx-notation",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Another name for the derivative: dy/dx",
+      "body": "dy/dx is another notation for the derivative, used when a curve is written as y = f(x). It behaves like a fraction, though it's really a limit.",
+      "checkText": "dy/dx is another way of writing...",
+      "checkOptions": [
+        { "text": "The derivative", "isCorrect": true },
+        { "text": "The y-intercept", "isCorrect": false },
+        { "text": "The gradient of a chord only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-tangent-normal",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Equations of tangents and normals",
+      "body": "The tangent at a point has gradient equal to the derivative there. The normal is the line through that same point, perpendicular to the tangent.",
+      "checkText": "The normal to a curve at a point is...",
+      "checkOptions": [
+        { "text": "Perpendicular to the tangent at that point", "isCorrect": true },
+        { "text": "Parallel to the tangent at that point", "isCorrect": false },
+        { "text": "The same line as the tangent", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-horizontal-tangent",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Finding where a tangent is flat",
+      "body": "A horizontal tangent has gradient 0. To find where this happens on a curve, differentiate the function and solve f'(x) = 0.",
+      "checkText": "To find a point where a curve's tangent is horizontal, you solve...",
+      "checkOptions": [
+        { "text": "f'(x) = 0", "isCorrect": true },
+        { "text": "f(x) = 0", "isCorrect": false },
+        { "text": "f'(x) = 1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-second-derivative",
+      "subtopicName": "Rules of differentiation",
+      "heading": "The second derivative",
+      "body": "Differentiating the derivative again gives the second derivative, written f''(x). It's the gradient function of the gradient function.",
+      "checkText": "The second derivative f''(x) is found by...",
+      "checkOptions": [
+        { "text": "Differentiating f'(x) again", "isCorrect": true },
+        { "text": "Differentiating f(x) twice at once", "isCorrect": false },
+        { "text": "Squaring f'(x)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-negative-index",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Negative indices work too",
+      "body": "The [[mathadv-power-rule|power rule]] still applies when n is negative. So for f(x) = x^(-4), the derivative is f'(x) = -4x^(-5).",
+      "checkText": "The derivative of x^(-2) is...",
+      "checkOptions": [
+        { "text": "-2x^(-3)", "isCorrect": true },
+        { "text": "2x^(-3)", "isCorrect": false },
+        { "text": "-2x^(-1)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-fractional-index",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Fractional indices work too",
+      "body": "The [[mathadv-power-rule|power rule]] also applies when n is a fraction. So for f(x) = x^(1/2), the derivative is f'(x) = (1/2)x^(-1/2).",
+      "checkText": "To differentiate the square root of x, first rewrite it as...",
+      "checkOptions": [
+        { "text": "x^(1/2)", "isCorrect": true },
+        { "text": "x^2", "isCorrect": false },
+        { "text": "2x", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-divide-through",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Dividing through before differentiating",
+      "body": "If a fraction has a single term on the bottom, split it into separate power terms first. Then differentiate each piece using the [[mathadv-power-rule|power rule]].",
+      "checkText": "Before differentiating y = (x^3 + x) / x, it helps to first...",
+      "checkOptions": [
+        { "text": "Divide each term on top by x", "isCorrect": true },
+        { "text": "Multiply both sides by x", "isCorrect": false },
+        { "text": "Square the whole expression", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-composite-function",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Functions inside functions",
+      "body": "A composite function is built by feeding the output of one function into another, like a chain. For y = sqrt(25 - x^2), let u = 25 - x^2, then y = sqrt(u).",
+      "checkText": "A composite function is formed by...",
+      "checkOptions": [
+        { "text": "Feeding one function's output into another", "isCorrect": true },
+        { "text": "Adding two functions together", "isCorrect": false },
+        { "text": "Dividing one function by another", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-chain-rule",
+      "subtopicName": "Rules of differentiation",
+      "heading": "The chain rule",
+      "body": "For a [[mathadv-diff-composite-function|composite function]] where y depends on u, and u depends on x, the chain rule says dy/dx = dy/du × du/dx.",
+      "checkText": "The chain rule is used to differentiate...",
+      "checkOptions": [
+        { "text": "A composite function", "isCorrect": true },
+        { "text": "A sum of two functions", "isCorrect": false },
+        { "text": "A constant function", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-diff-linear-power-shortcut",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Shortcut for powers of a linear function",
+      "body": "For y = (ax + b)^n, the [[mathadv-chain-rule|chain rule]] simplifies to dy/dx = an(ax + b)^(n-1). This saves writing out u and du/dx every time.",
+      "checkText": "Using the shortcut, the derivative of (3x + 4)^5 is...",
+      "checkOptions": [
+        { "text": "15(3x + 4)^4", "isCorrect": true },
+        { "text": "5(3x + 4)^4", "isCorrect": false },
+        { "text": "3(3x + 4)^5", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-product-rule",
+      "subtopicName": "Rules of differentiation",
+      "heading": "The product rule",
+      "body": "For y = u × v, where u and v are both functions of x, the product rule says dy/dx = v×(du/dx) + u×(dv/dx).",
+      "checkText": "The product rule is used to differentiate a function that is...",
+      "checkOptions": [
+        { "text": "Two functions multiplied together", "isCorrect": true },
+        { "text": "Two functions divided", "isCorrect": false },
+        { "text": "Two functions added", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-quotient-rule",
+      "subtopicName": "Rules of differentiation",
+      "heading": "The quotient rule",
+      "body": "For y = u/v, where u and v are both functions of x, the quotient rule says dy/dx = [v×(du/dx) - u×(dv/dx)] / v^2.",
+      "checkText": "The quotient rule is used to differentiate a function that is...",
+      "checkOptions": [
+        { "text": "One function divided by another", "isCorrect": true },
+        { "text": "Two functions multiplied together", "isCorrect": false },
+        { "text": "Two functions added", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-rate-of-change-instant",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Instantaneous rate of change",
+      "body": "When a quantity Q changes over time t, its instantaneous rate of change at a moment is the value of the derivative dQ/dt at that moment.",
+      "checkText": "The instantaneous rate of change of a quantity is...",
+      "checkOptions": [
+        { "text": "The value of its derivative at that moment", "isCorrect": true },
+        { "text": "Its average value over all time", "isCorrect": false },
+        { "text": "Its starting value", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-rate-of-change-average",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Average rate of change",
+      "body": "The average rate of change between two times is the gradient of the chord joining those two points, worked out as (Q2 - Q1) / (t2 - t1).",
+      "checkText": "The average rate of change between two times is found using...",
+      "checkOptions": [
+        { "text": "The gradient of a chord", "isCorrect": true },
+        { "text": "The gradient of a tangent", "isCorrect": false },
+        { "text": "The second derivative", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-increasing-decreasing-stationary",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Increasing, decreasing, or stationary",
+      "body": "A curve is increasing where f'(x) is positive, decreasing where f'(x) is negative, and stationary where f'(x) equals 0.",
+      "checkText": "A curve is decreasing at a point where its derivative is...",
+      "checkOptions": [
+        { "text": "Negative", "isCorrect": true },
+        { "text": "Positive", "isCorrect": false },
+        { "text": "Equal to 0", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-continuity",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Continuity at a point",
+      "body": "A function is continuous at a point if its graph can be drawn through that point without lifting the pencil off the page. Otherwise, there's a break, called a discontinuity.",
+      "checkText": "A function is continuous at a point if...",
+      "checkOptions": [
+        { "text": "The graph has no break there", "isCorrect": true },
+        { "text": "The graph has a sharp corner there", "isCorrect": false },
+        { "text": "The derivative is 0 there", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-differentiability",
+      "subtopicName": "Rules of differentiation",
+      "heading": "Differentiability: continuous and smooth",
+      "body": "A function is differentiable at a point if it's [[mathadv-continuity|continuous]] there and has no sharp corner, so a proper tangent can be drawn. If either fails, the derivative doesn't exist there.",
+      "checkText": "A function is differentiable at a point only if it is continuous there and also...",
+      "checkOptions": [
+        { "text": "Has no sharp corner there", "isCorrect": true },
+        { "text": "Has a maximum there", "isCorrect": false },
+        { "text": "Equals zero there", "isCorrect": false }
+      ]
+    }
+  ]
+}

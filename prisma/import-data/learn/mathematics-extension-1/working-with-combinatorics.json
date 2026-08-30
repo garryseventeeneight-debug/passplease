@@ -1,0 +1,389 @@
+{
+  "topicName": "Working with Combinatorics",
+  "chunks": [
+    {
+      "slug": "mathext1-factorial-notation",
+      "subtopicName": "Permutations",
+      "heading": "What does n! mean?",
+      "body": "n! (n factorial) means multiplying every whole number from n down to 1. For example, 4! = 4 × 3 × 2 × 1 = 24.",
+      "checkText": "What is 3!?",
+      "checkOptions": [
+        { "text": "6", "isCorrect": true },
+        { "text": "9", "isCorrect": false },
+        { "text": "3", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-zero-factorial",
+      "subtopicName": "Permutations",
+      "heading": "Why is 0! equal to 1?",
+      "body": "By definition, 0! is set to equal 1, not 0. This makes formulas built from [[mathext1-factorial-notation|factorials]] work correctly even when nothing is left to arrange.",
+      "checkText": "What does 0! equal?",
+      "checkOptions": [
+        { "text": "1", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "It's undefined", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-multiplication-principle",
+      "subtopicName": "Permutations",
+      "heading": "The multiplication principle",
+      "body": "If a choice is made in several stages, multiply the number of options at each stage together to find the total number of outcomes.",
+      "checkText": "You have 3 shirts and 4 hats. Using the multiplication principle, how many outfits can you make?",
+      "checkOptions": [
+        { "text": "12", "isCorrect": true },
+        { "text": "7", "isCorrect": false },
+        { "text": "3", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-ordered-selection-repetition",
+      "subtopicName": "Permutations",
+      "heading": "Counting with repeats allowed",
+      "body": "When choosing r items in order from n options, and repeats are allowed, the [[mathext1-multiplication-principle|multiplication principle]] gives n^r total ways, since each choice has n options.",
+      "checkText": "How many 3-digit codes can you make from the digits 0-9, if digits can repeat?",
+      "checkOptions": [
+        { "text": "10^3 = 1000", "isCorrect": true },
+        { "text": "10 × 9 × 8 = 720", "isCorrect": false },
+        { "text": "30", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-permutation-definition",
+      "subtopicName": "Permutations",
+      "heading": "What is a permutation?",
+      "body": "A permutation is an arrangement of items in a particular order, where no item is repeated. Swapping the order of two items always creates a different permutation.",
+      "checkText": "In a permutation, does the order of the items matter?",
+      "checkOptions": [
+        { "text": "Yes", "isCorrect": true },
+        { "text": "No", "isCorrect": false },
+        { "text": "Only sometimes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-permutations-formula",
+      "subtopicName": "Permutations",
+      "heading": "Counting permutations without repeats",
+      "body": "The number of ways to arrange r items chosen in order from n distinct items, with no repeats, is written nPr and equals n!/(n − r)!.",
+      "checkText": "Which formula gives the number of ordered arrangements of r items chosen from n, without repetition?",
+      "checkOptions": [
+        { "text": "nPr = n!/(n − r)!", "isCorrect": true },
+        { "text": "nPr = n^r", "isCorrect": false },
+        { "text": "nPr = n!/r!", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-permutations-whole-set",
+      "subtopicName": "Permutations",
+      "heading": "Arranging every item in a set",
+      "body": "When you arrange all n items in a set (r = n), the [[mathext1-permutations-formula|permutations formula]] simplifies to nPn = n!, since (n − n)! = 0! = 1.",
+      "checkText": "In how many ways can 5 different books be lined up on a shelf?",
+      "checkOptions": [
+        { "text": "5! = 120", "isCorrect": true },
+        { "text": "5^5", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-restrictions-first",
+      "subtopicName": "Permutations",
+      "heading": "Deal with restrictions first",
+      "body": "When a counting problem has a rule about where certain items must go, place those restricted items into position before counting the ways to arrange everything else.",
+      "checkText": "When a counting problem has a special restriction, the best first step is usually to...",
+      "checkOptions": [
+        { "text": "Handle the restricted item(s) first", "isCorrect": true },
+        { "text": "Ignore the restriction", "isCorrect": false },
+        { "text": "Always multiply the total by 2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-grouping-principle",
+      "subtopicName": "Permutations",
+      "heading": "Keeping some items together",
+      "body": "To arrange items where a few must stay together, treat that group as a single block first, order the blocks, then order the items inside the block separately.",
+      "checkText": "To count arrangements where two people must sit together, it helps to first treat them as...",
+      "checkOptions": [
+        { "text": "One combined block", "isCorrect": true },
+        { "text": "Two separate, unrelated individuals", "isCorrect": false },
+        { "text": "Something to ignore", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-complementary-counting",
+      "subtopicName": "Permutations",
+      "heading": "Counting what you don't want",
+      "body": "Sometimes it's easier to count every possible arrangement, then subtract the ones that break a rule, rather than counting the allowed arrangements directly.",
+      "checkText": "If a problem asks for arrangements where two people are NOT next to each other, a good approach is to...",
+      "checkOptions": [
+        { "text": "Subtract the 'together' arrangements from the total", "isCorrect": true },
+        { "text": "Only count the times they are together", "isCorrect": false },
+        { "text": "Multiply the total by two", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-using-cases",
+      "subtopicName": "Permutations",
+      "heading": "Splitting a problem into cases",
+      "body": "When one counting method can't cover every possibility at once, split the problem into separate, non-overlapping cases, count each one, then add the results together.",
+      "checkText": "When using cases to solve a counting problem, the cases should be...",
+      "checkOptions": [
+        { "text": "Non-overlapping", "isCorrect": true },
+        { "text": "Always exactly two in number", "isCorrect": false },
+        { "text": "Multiplied together at the end", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-identical-elements-permutations",
+      "subtopicName": "Permutations",
+      "heading": "Arranging letters that repeat",
+      "body": "If a word has repeated letters, divide n! by the [[mathext1-factorial-notation|factorial]] of each repeat count, since swapping identical letters doesn't create a new arrangement.",
+      "checkText": "The word 'BOB' has 3 letters, with the letter B repeated twice. How many distinct arrangements does it have?",
+      "checkOptions": [
+        { "text": "3!/2! = 3", "isCorrect": true },
+        { "text": "3! = 6", "isCorrect": false },
+        { "text": "3 × 2 = 6", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-circular-arrangements",
+      "subtopicName": "Permutations",
+      "heading": "Arranging people in a circle",
+      "body": "In a circle, every seat looks the same until someone sits down, so fix one person's seat first. The rest can then be arranged in (n − 1)! ways.",
+      "checkText": "In how many ways can 6 people be seated around a circular table?",
+      "checkOptions": [
+        { "text": "5! = 120", "isCorrect": true },
+        { "text": "6! = 720", "isCorrect": false },
+        { "text": "6", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-circular-groups",
+      "subtopicName": "Permutations",
+      "heading": "Grouping around a circle",
+      "body": "To seat groups around a circle, first order the items inside each group, then use the same idea as [[mathext1-circular-arrangements|circular arrangements]] to place the groups themselves.",
+      "checkText": "To seat 3 couples around a circular table so each couple sits together, you should first...",
+      "checkOptions": [
+        { "text": "Order each couple, then arrange the 3 couples in a circle", "isCorrect": true },
+        { "text": "Ignore the couples and seat everyone randomly", "isCorrect": false },
+        { "text": "Only count the seating of one couple", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-permutations-vs-combinations",
+      "subtopicName": "Combinations",
+      "heading": "Order matters, or it doesn't",
+      "body": "Picking a class captain and vice-captain from 3 friends cares about order (2 different roles). Picking any 2 friends for a group project doesn't — that's a combination, not a [[mathext1-permutation-definition|permutation]].",
+      "checkText": "Choosing 2 winners for two identical prizes from a group of friends is an example of a...",
+      "checkOptions": [
+        { "text": "Combination, because order doesn't matter", "isCorrect": true },
+        { "text": "Permutation, because order matters", "isCorrect": false },
+        { "text": "Neither counting method applies here", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-subset-counting-power-of-two",
+      "subtopicName": "Combinations",
+      "heading": "How many subsets does a set have?",
+      "body": "A set with n members has 2^n possible subsets in total, including the empty subset. Each item is either included or left out, giving 2 choices per item.",
+      "checkText": "How many subsets does a 4-member set have in total?",
+      "checkOptions": [
+        { "text": "2^4 = 16", "isCorrect": true },
+        { "text": "4! = 24", "isCorrect": false },
+        { "text": "4 × 2 = 8", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-combination-formula",
+      "subtopicName": "Combinations",
+      "heading": "Counting combinations: nCr",
+      "body": "The number of ways to choose r items from n, where order doesn't matter, is written nCr and equals n!/(r! × (n − r)!).",
+      "checkText": "Which formula counts the number of unordered selections of r items from n?",
+      "checkOptions": [
+        { "text": "nCr = n!/(r!(n − r)!)", "isCorrect": true },
+        { "text": "nPr = n!/(n − r)!", "isCorrect": false },
+        { "text": "n^r", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-combination-symmetry",
+      "subtopicName": "Combinations",
+      "heading": "Choosing who's in, or who's out",
+      "body": "Choosing r items to include from n is the same as choosing the other (n − r) items to leave out. That's why [[mathext1-combination-formula|nCr]] always equals nC(n − r).",
+      "checkText": "For a group of 10 people, which pair of values must be equal?",
+      "checkOptions": [
+        { "text": "10C3 and 10C7", "isCorrect": true },
+        { "text": "10C3 and 10C4", "isCorrect": false },
+        { "text": "10C3 and 10P3", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-counting-in-probability",
+      "subtopicName": "Combinations",
+      "heading": "Using counting to find probability",
+      "body": "To find a probability, count the favourable outcomes and divide by the total number of outcomes, using [[mathext1-combination-formula|nCr]] or [[mathext1-permutations-formula|nPr]] to count each one.",
+      "checkText": "To calculate a probability using counting, you divide the number of favourable outcomes by the...",
+      "checkOptions": [
+        { "text": "Total number of possible outcomes", "isCorrect": true },
+        { "text": "Number of unfavourable outcomes", "isCorrect": false },
+        { "text": "Value of n!", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-pigeonhole-principle",
+      "subtopicName": "Combinations",
+      "heading": "The pigeonhole principle",
+      "body": "If more items are placed into a smaller number of groups, at least one group must contain more than one item. For example, 11 pigeons in 10 holes means some hole has at least 2.",
+      "checkText": "If 13 people are in a room, why must at least two of them share a birth month?",
+      "checkOptions": [
+        { "text": "13 people but only 12 months, so the pigeonhole principle guarantees a shared month", "isCorrect": true },
+        { "text": "It's just a coincidence", "isCorrect": false },
+        { "text": "Birth months are always evenly spread", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-pigeonhole-general",
+      "subtopicName": "Combinations",
+      "heading": "A stronger pigeonhole rule",
+      "body": "If n items are placed into d groups, at least one group must hold at least the average, rounded up. With 31 pigeons in 10 holes, some hole has at least 4, since 31 ÷ 10 rounds up to 4.",
+      "checkText": "If 25 lollies are shared among 4 kids, why must at least one kid get at least 7?",
+      "checkOptions": [
+        { "text": "25 ÷ 4 = 6 remainder 1, so one kid must have more than 6", "isCorrect": true },
+        { "text": "Every kid always gets exactly the same amount", "isCorrect": false },
+        { "text": "It only applies to actual pigeons", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-binomial-definition",
+      "subtopicName": "Pascal's triangle and binomial expansion",
+      "heading": "What is a binomial?",
+      "body": "A binomial is an expression with exactly two terms added or subtracted, like x + y or 1 − 3x. Raising one to a power, like (x + y)^n, is a binomial expansion.",
+      "checkText": "Which of these is a binomial?",
+      "checkOptions": [
+        { "text": "3x + 2", "isCorrect": true },
+        { "text": "5x", "isCorrect": false },
+        { "text": "x + y + z", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-binomial-expansion-intro",
+      "subtopicName": "Pascal's triangle and binomial expansion",
+      "heading": "Expanding powers of a binomial",
+      "body": "Expanding [[mathext1-binomial-definition|(1 + x)^n]] for increasing values of n produces coefficients that build up a triangular pattern, known as Pascal's triangle.",
+      "checkText": "The coefficients you get from expanding (1 + x)^n for different values of n form a pattern called...",
+      "checkOptions": [
+        { "text": "Pascal's triangle", "isCorrect": true },
+        { "text": "The binomial square", "isCorrect": false },
+        { "text": "The factorial chain", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-pascals-triangle-rows-ends",
+      "subtopicName": "Pascal's triangle and binomial expansion",
+      "heading": "Every row starts and ends with 1",
+      "body": "In [[mathext1-binomial-expansion-intro|Pascal's triangle]], the first and last number in every row is always 1, no matter how far down the triangle you go.",
+      "checkText": "What are the first and last numbers in every row of Pascal's triangle?",
+      "checkOptions": [
+        { "text": "Both 1", "isCorrect": true },
+        { "text": "The row number", "isCorrect": false },
+        { "text": "They change every row", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-pascals-triangle-symmetry",
+      "subtopicName": "Pascal's triangle and binomial expansion",
+      "heading": "Pascal's triangle is symmetric",
+      "body": "Each row of [[mathext1-binomial-expansion-intro|Pascal's triangle]] reads the same forwards and backwards. For example, the row 1, 4, 6, 4, 1 is a mirror image of itself.",
+      "checkText": "Row 1, 5, 10, 10, 5, 1 of Pascal's triangle is an example of a row that is...",
+      "checkOptions": [
+        { "text": "Symmetric", "isCorrect": true },
+        { "text": "Random", "isCorrect": false },
+        { "text": "Always increasing", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-pascals-triangle-addition-rule",
+      "subtopicName": "Pascal's triangle and binomial expansion",
+      "heading": "Building each row from the row above",
+      "body": "Apart from the 1s, every number in Pascal's triangle is the sum of the two numbers directly above it in the row before.",
+      "checkText": "In Pascal's triangle, a number (other than a 1) is found by...",
+      "checkOptions": [
+        { "text": "Adding the two numbers above it", "isCorrect": true },
+        { "text": "Multiplying the row number by itself", "isCorrect": false },
+        { "text": "Subtracting the row above", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-pascals-triangle-terms-count",
+      "subtopicName": "Pascal's triangle and binomial expansion",
+      "heading": "How many terms in an expansion?",
+      "body": "Expanding [[mathext1-binomial-definition|(x + y)^n]] always produces n + 1 terms in total, one more than the power n itself.",
+      "checkText": "How many terms are in the expansion of (x + y)^5?",
+      "checkOptions": [
+        { "text": "6", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "10", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-binomial-expansion-xy",
+      "subtopicName": "Pascal's triangle and binomial expansion",
+      "heading": "Expanding (x + y)^n",
+      "body": "In each term of [[mathext1-binomial-definition|(x + y)^n]], the powers of x and y always add up to n. The coefficients still come from [[mathext1-binomial-expansion-intro|Pascal's triangle]].",
+      "checkText": "In the expansion of (x + y)^6, the powers of x and y in every single term add up to...",
+      "checkOptions": [
+        { "text": "6", "isCorrect": true },
+        { "text": "12", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-binomial-theorem",
+      "subtopicName": "Pascal's triangle and binomial expansion",
+      "heading": "The binomial theorem",
+      "body": "The binomial theorem says the coefficient of x^(n−r) y^r in the expansion of [[mathext1-binomial-expansion-xy|(x + y)^n]] is exactly [[mathext1-combination-formula|nCr]]. This links counting to algebra.",
+      "checkText": "According to the binomial theorem, the coefficient of the term containing y^r in (x + y)^n is...",
+      "checkOptions": [
+        { "text": "nCr", "isCorrect": true },
+        { "text": "nPr", "isCorrect": false },
+        { "text": "n − r", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-ncr-special-values",
+      "subtopicName": "Pascal's triangle and binomial expansion",
+      "heading": "Three values worth memorising",
+      "body": "For any whole number n: nC0 = 1, nC1 = n, and nC2 = n(n − 1)/2. These come straight from the start of every row in [[mathext1-binomial-expansion-intro|Pascal's triangle]].",
+      "checkText": "What does nC1 always equal?",
+      "checkOptions": [
+        { "text": "n", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "n − 1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-pascals-triangle-row-sum",
+      "subtopicName": "Pascal's triangle and binomial expansion",
+      "heading": "Adding up a whole row",
+      "body": "The numbers in row n of [[mathext1-binomial-expansion-intro|Pascal's triangle]] always add up to 2^n, matching the [[mathext1-subset-counting-power-of-two|total number of subsets]] of an n-member set.",
+      "checkText": "What do all the numbers in row 5 of Pascal's triangle add up to?",
+      "checkOptions": [
+        { "text": "2^5 = 32", "isCorrect": true },
+        { "text": "5! = 120", "isCorrect": false },
+        { "text": "5 × 5 = 25", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-binomial-general-term",
+      "subtopicName": "Pascal's triangle and binomial expansion",
+      "heading": "Finding one term without expanding everything",
+      "body": "Using the [[mathext1-binomial-theorem|binomial theorem]], you can jump straight to one specific term of an expansion — like the term in x^3 — without writing out every term first.",
+      "checkText": "To find just the x^3 term in a large binomial expansion, the fastest method is to...",
+      "checkOptions": [
+        { "text": "Use the binomial theorem to pick out that one term", "isCorrect": true },
+        { "text": "Always expand every single term first", "isCorrect": false },
+        { "text": "Guess and check", "isCorrect": false }
+      ]
+    }
+  ]
+}

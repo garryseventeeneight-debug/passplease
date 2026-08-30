@@ -1,0 +1,629 @@
+{
+  "topicName": "Working with Functions",
+  "chunks": [
+    {
+      "slug": "mathadv-function-idea",
+      "subtopicName": "Functions and relations",
+      "heading": "What is a function?",
+      "body": "A function is a rule that takes an input number and gives back exactly one output number. We call the input x and the output y.",
+      "checkText": "A function gives, for each input, ...",
+      "checkOptions": [
+        { "text": "Exactly one output", "isCorrect": true },
+        { "text": "Two or more outputs", "isCorrect": false },
+        { "text": "No output at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-function-notation",
+      "subtopicName": "Functions and relations",
+      "heading": "Writing f(x) instead of y",
+      "body": "f(x) is another way to write a [[mathadv-function-idea|function]]'s output for a given input x. If f(x) = x + 5, then f(3) means put x = 3 in, giving f(3) = 8.",
+      "checkText": "If f(x) = x + 5, what is f(0)?",
+      "checkOptions": [
+        { "text": "5", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "-5", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-domain",
+      "subtopicName": "Functions and relations",
+      "heading": "The domain: which x-values are allowed",
+      "body": "The domain of a [[mathadv-function-idea|function]] is the set of all x-values it's allowed to use as inputs.",
+      "checkText": "The domain of a function is the set of all its possible...",
+      "checkOptions": [
+        { "text": "Input values (x)", "isCorrect": true },
+        { "text": "Output values (y)", "isCorrect": false },
+        { "text": "Coefficients", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-range",
+      "subtopicName": "Functions and relations",
+      "heading": "The range: which y-values come out",
+      "body": "The [[mathadv-domain|domain]] is the inputs allowed; the range is the set of y-values a function actually produces as outputs.",
+      "checkText": "The range of a function is its set of possible...",
+      "checkOptions": [
+        { "text": "Output values (y)", "isCorrect": true },
+        { "text": "Input values (x)", "isCorrect": false },
+        { "text": "Zeroes only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-natural-domain",
+      "subtopicName": "Functions and relations",
+      "heading": "The natural domain: values that just don't work",
+      "body": "If no domain is stated, we use every x-value that makes the rule work — this is called the natural domain. We can't divide by zero, and we can't take the square root of a negative number.",
+      "checkText": "y = 1/x has no natural domain value at x = ...",
+      "checkOptions": [
+        { "text": "0", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "-1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-relation-idea",
+      "subtopicName": "Functions and relations",
+      "heading": "A relation: any pairing of x and y",
+      "body": "A relation is any set of paired x and y values, shown as points on a graph. It doesn't need any special rule about how many y-values go with each x.",
+      "checkText": "A relation is...",
+      "checkOptions": [
+        { "text": "Any set of x-y pairs", "isCorrect": true },
+        { "text": "Always a function", "isCorrect": false },
+        { "text": "Only a straight line", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-function-vs-relation",
+      "subtopicName": "Functions and relations",
+      "heading": "Every function is a relation, but not the reverse",
+      "body": "A [[mathadv-function-idea|function]] is a special [[mathadv-relation-idea|relation]] where each x-value is paired with only one y-value. A relation can pair one x-value with several y-values.",
+      "checkText": "What makes a relation a function?",
+      "checkOptions": [
+        { "text": "Each x has only one y", "isCorrect": true },
+        { "text": "Each y has only one x", "isCorrect": false },
+        { "text": "It must be a straight line", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-vertical-line-test",
+      "subtopicName": "Functions and relations",
+      "heading": "Testing for a function: the vertical line test",
+      "body": "Draw a vertical line through a graph. If it ever crosses the graph more than once, the graph is not a [[mathadv-function-idea|function]].",
+      "checkText": "A graph fails the vertical line test when a vertical line...",
+      "checkOptions": [
+        { "text": "Crosses the graph more than once", "isCorrect": true },
+        { "text": "Never touches the graph", "isCorrect": false },
+        { "text": "Touches the graph exactly once", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-horizontal-line-test",
+      "subtopicName": "Functions and relations",
+      "heading": "Testing for one-to-one: the horizontal line test",
+      "body": "Draw a horizontal line through a graph. If it ever crosses the graph more than once, some y-value is matched to more than one x-value.",
+      "checkText": "The horizontal line test checks whether...",
+      "checkOptions": [
+        { "text": "One y-value matches more than one x-value", "isCorrect": true },
+        { "text": "The graph is a function", "isCorrect": false },
+        { "text": "The graph passes through the origin", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-one-to-one",
+      "subtopicName": "Functions and relations",
+      "heading": "One-to-one: every input and output is unique",
+      "body": "A function passes both the [[mathadv-vertical-line-test|vertical]] and [[mathadv-horizontal-line-test|horizontal]] line tests. Each x gives exactly one y, and each y comes from exactly one x.",
+      "checkText": "A one-to-one function passes...",
+      "checkOptions": [
+        { "text": "Both the vertical and horizontal line tests", "isCorrect": true },
+        { "text": "Only the vertical line test", "isCorrect": false },
+        { "text": "Neither line test", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-many-to-one",
+      "subtopicName": "Functions and relations",
+      "heading": "Many-to-one: several inputs share an output",
+      "body": "A [[mathadv-function-idea|function]] like y = x^2 is many-to-one: it passes the [[mathadv-vertical-line-test|vertical line test]] but fails the [[mathadv-horizontal-line-test|horizontal line test]], because different x-values can give the same y.",
+      "checkText": "Which type of function is y = x^2?",
+      "checkOptions": [
+        { "text": "Many-to-one", "isCorrect": true },
+        { "text": "One-to-one", "isCorrect": false },
+        { "text": "One-to-many", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-one-to-many",
+      "subtopicName": "Functions and relations",
+      "heading": "One-to-many: a relation, not a function",
+      "body": "A relation like y^2 = x is one-to-many: it fails the [[mathadv-vertical-line-test|vertical line test]] but passes the [[mathadv-horizontal-line-test|horizontal line test]]. One x-value can give more than one y-value.",
+      "checkText": "A one-to-many relation fails which test?",
+      "checkOptions": [
+        { "text": "The vertical line test", "isCorrect": true },
+        { "text": "The horizontal line test", "isCorrect": false },
+        { "text": "Both tests", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-many-to-many",
+      "subtopicName": "Functions and relations",
+      "heading": "Many-to-many: fails both tests",
+      "body": "A relation like a circle is many-to-many: it fails both the [[mathadv-vertical-line-test|vertical]] and [[mathadv-horizontal-line-test|horizontal]] line tests.",
+      "checkText": "A circle's equation is an example of a relation that is...",
+      "checkOptions": [
+        { "text": "Many-to-many", "isCorrect": true },
+        { "text": "One-to-one", "isCorrect": false },
+        { "text": "Many-to-one", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-quadratic-function",
+      "subtopicName": "Types of functions",
+      "heading": "What is a quadratic function?",
+      "body": "A quadratic function has the form f(x) = ax^2 + bx + c, where a is not zero. Its graph is always a curve called a parabola.",
+      "checkText": "In a quadratic function, which coefficient can never be zero?",
+      "checkOptions": [
+        { "text": "a (the x^2 coefficient)", "isCorrect": true },
+        { "text": "b (the x coefficient)", "isCorrect": false },
+        { "text": "c (the constant)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-parabola-shape",
+      "subtopicName": "Types of functions",
+      "heading": "Which way does the parabola open?",
+      "body": "In a [[mathadv-quadratic-function|quadratic function]] y = ax^2 + bx + c, a positive value of a makes the parabola open upward. A negative value of a makes it open downward.",
+      "checkText": "If a is negative, the parabola opens...",
+      "checkOptions": [
+        { "text": "Downward", "isCorrect": true },
+        { "text": "Upward", "isCorrect": false },
+        { "text": "Sideways", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-quadratic-zeroes",
+      "subtopicName": "Types of functions",
+      "heading": "Zeroes: where the parabola crosses the x-axis",
+      "body": "The zeroes of a [[mathadv-quadratic-function|quadratic function]] are its x-intercepts, found by setting y = 0. A parabola can have two zeroes, one zero, or none at all.",
+      "checkText": "The zeroes of a function are found by setting...",
+      "checkOptions": [
+        { "text": "y = 0", "isCorrect": true },
+        { "text": "x = 0", "isCorrect": false },
+        { "text": "a = 0", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-factoring-quadratic-zeroes",
+      "subtopicName": "Types of functions",
+      "heading": "Finding zeroes by factoring",
+      "body": "If a [[mathadv-quadratic-function|quadratic]] factors as y = (x − p)(x − q), then setting y = 0 gives zeroes x = p and x = q.",
+      "checkText": "If y = (x − 2)(x + 5), the zeroes are...",
+      "checkOptions": [
+        { "text": "x = 2 and x = -5", "isCorrect": true },
+        { "text": "x = -2 and x = 5", "isCorrect": false },
+        { "text": "x = 2 and x = 5", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-axis-of-symmetry",
+      "subtopicName": "Types of functions",
+      "heading": "The axis of symmetry sits between the zeroes",
+      "body": "A parabola's axis of symmetry is the vertical line exactly midway between its [[mathadv-quadratic-zeroes|zeroes]]. Its x-value is the average of the two zeroes.",
+      "checkText": "If the zeroes are x = 1 and x = 5, the axis of symmetry is...",
+      "checkOptions": [
+        { "text": "x = 3", "isCorrect": true },
+        { "text": "x = 2.5", "isCorrect": false },
+        { "text": "x = 6", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-vertex-from-axis",
+      "subtopicName": "Types of functions",
+      "heading": "Finding the vertex",
+      "body": "The vertex is the parabola's turning point. Substitute the [[mathadv-axis-of-symmetry|axis of symmetry]]'s x-value back into the quadratic to find the vertex's y-value.",
+      "checkText": "To find the vertex's y-value, you substitute the axis of symmetry into...",
+      "checkOptions": [
+        { "text": "The quadratic equation", "isCorrect": true },
+        { "text": "The x-intercept formula", "isCorrect": false },
+        { "text": "The domain", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-completing-square-idea",
+      "subtopicName": "Types of functions",
+      "heading": "Completing the square: rewriting a quadratic",
+      "body": "Completing the square rewrites a [[mathadv-quadratic-function|quadratic]] as a(x − h)^2 + k, a perfect square plus a constant. This form makes the vertex easy to read off.",
+      "checkText": "Completing the square rewrites a quadratic as...",
+      "checkOptions": [
+        { "text": "A perfect square plus a constant", "isCorrect": true },
+        { "text": "Two linear factors", "isCorrect": false },
+        { "text": "A single fraction", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-completing-square-steps",
+      "subtopicName": "Types of functions",
+      "heading": "How to complete the square",
+      "body": "For x^2 + bx, halve b, then square the result, then add and subtract that number. This turns x^2 + bx into a [[mathadv-completing-square-idea|perfect square]] plus a constant.",
+      "checkText": "To complete the square on x^2 + 6x, you halve 6 to get 3, then...",
+      "checkOptions": [
+        { "text": "Square it to get 9", "isCorrect": true },
+        { "text": "Double it to get 12", "isCorrect": false },
+        { "text": "Cube it to get 27", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-vertex-from-completed-square",
+      "subtopicName": "Types of functions",
+      "heading": "Reading the vertex straight off",
+      "body": "Once a quadratic is written as y = a(x − h)^2 + k using [[mathadv-completing-square-steps|completing the square]], the vertex is simply (h, k) — no extra working needed.",
+      "checkText": "For y = 2(x − 3)^2 + 1, the vertex is...",
+      "checkOptions": [
+        { "text": "(3, 1)", "isCorrect": true },
+        { "text": "(-3, 1)", "isCorrect": false },
+        { "text": "(3, -1)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-quadratic-formula",
+      "subtopicName": "Types of functions",
+      "heading": "The quadratic formula finds the zeroes",
+      "body": "For y = ax^2 + bx + c, the [[mathadv-quadratic-zeroes|zeroes]] are x = (−b + sqrt(b^2 − 4ac)) / (2a) and x = (−b − sqrt(b^2 − 4ac)) / (2a).",
+      "checkText": "The quadratic formula is used to find a parabola's...",
+      "checkOptions": [
+        { "text": "Zeroes (x-intercepts)", "isCorrect": true },
+        { "text": "Y-intercept", "isCorrect": false },
+        { "text": "Axis of symmetry only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-discriminant",
+      "subtopicName": "Types of functions",
+      "heading": "The discriminant: what's under the square root",
+      "body": "The discriminant is Δ = b^2 − 4ac, the part of the [[mathadv-quadratic-formula|quadratic formula]] under the square root sign.",
+      "checkText": "The discriminant of y = x^2 + 4x + 3 is Δ = ...",
+      "checkOptions": [
+        { "text": "4", "isCorrect": true },
+        { "text": "16", "isCorrect": false },
+        { "text": "3", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-discriminant-cases",
+      "subtopicName": "Types of functions",
+      "heading": "What the discriminant tells you",
+      "body": "If [[mathadv-discriminant|Δ]] is positive, the parabola has two zeroes. If Δ is zero, it has one zero. If Δ is negative, it has no zeroes.",
+      "checkText": "If the discriminant is negative, the parabola has...",
+      "checkOptions": [
+        { "text": "No zeroes", "isCorrect": true },
+        { "text": "One zero", "isCorrect": false },
+        { "text": "Two zeroes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-cubic-function",
+      "subtopicName": "Types of functions",
+      "heading": "The cube of x: an S-shaped curve",
+      "body": "The graph of y = x^3 passes through the origin and flattens out there. It's negative for negative x and positive for positive x.",
+      "checkText": "The graph of y = x^3 passes through...",
+      "checkOptions": [
+        { "text": "The origin (0, 0)", "isCorrect": true },
+        { "text": "The point (1, 1) only", "isCorrect": false },
+        { "text": "No fixed point", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-polynomial-def",
+      "subtopicName": "Types of functions",
+      "heading": "What is a polynomial?",
+      "body": "A polynomial is an expression built from whole-number powers of x added together, like x^3 − 2x + 5. Its degree is the highest power of x used.",
+      "checkText": "The degree of a polynomial is...",
+      "checkOptions": [
+        { "text": "Its highest power of x", "isCorrect": true },
+        { "text": "Its number of terms", "isCorrect": false },
+        { "text": "Its constant term", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-factored-polynomial-sketch",
+      "subtopicName": "Types of functions",
+      "heading": "Sketching from factors",
+      "body": "If a [[mathadv-polynomial-def|polynomial]] is fully factored, like y = (x + 1)(x − 2)(x − 4), its zeroes are the values that make each factor zero.",
+      "checkText": "For y = (x + 1)(x − 2)(x − 4), one zero is...",
+      "checkOptions": [
+        { "text": "x = 2", "isCorrect": true },
+        { "text": "x = -4", "isCorrect": false },
+        { "text": "x = 1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-repeated-zero-tangent",
+      "subtopicName": "Types of functions",
+      "heading": "A repeated zero: touch, don't cross",
+      "body": "If a factor like (x − a) is squared in a [[mathadv-polynomial-def|polynomial]], the curve touches the x-axis at x = a but doesn't cross it there.",
+      "checkText": "At a repeated zero, the curve...",
+      "checkOptions": [
+        { "text": "Touches the x-axis without crossing", "isCorrect": true },
+        { "text": "Crosses the x-axis normally", "isCorrect": false },
+        { "text": "Never reaches the x-axis", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-square-root-function",
+      "subtopicName": "Types of functions",
+      "heading": "The square root function",
+      "body": "y = sqrt(x) only gives the positive square root, so its graph only exists for x ≥ 0 and only ever gives y ≥ 0.",
+      "checkText": "The graph of y = sqrt(x) exists for which x-values?",
+      "checkOptions": [
+        { "text": "x ≥ 0", "isCorrect": true },
+        { "text": "All real x", "isCorrect": false },
+        { "text": "x ≤ 0", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-circle-equation",
+      "subtopicName": "Types of functions",
+      "heading": "The equation of a circle",
+      "body": "A circle centred at the origin with radius a has equation x^2 + y^2 = a^2. This comes straight from Pythagoras' theorem.",
+      "checkText": "The equation x^2 + y^2 = 9 describes a circle with radius...",
+      "checkOptions": [
+        { "text": "3", "isCorrect": true },
+        { "text": "9", "isCorrect": false },
+        { "text": "4.5", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-semicircle",
+      "subtopicName": "Types of functions",
+      "heading": "Splitting a circle into two functions",
+      "body": "A [[mathadv-circle-equation|circle]]'s equation fails the vertical line test, so it isn't a function. But y = sqrt(a^2 − x^2) is the upper semicircle alone, which is a function.",
+      "checkText": "y = sqrt(a^2 - x^2) describes...",
+      "checkOptions": [
+        { "text": "The upper half of a circle", "isCorrect": true },
+        { "text": "The whole circle", "isCorrect": false },
+        { "text": "The lower half of a circle", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-asymptote-idea",
+      "subtopicName": "Types of functions",
+      "heading": "What is an asymptote?",
+      "body": "An asymptote is a line that a graph gets closer and closer to, but never actually touches.",
+      "checkText": "A graph and its asymptote...",
+      "checkOptions": [
+        { "text": "Get closer but never touch", "isCorrect": true },
+        { "text": "Always cross once", "isCorrect": false },
+        { "text": "Are always parallel lines", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-exponential-function",
+      "subtopicName": "Types of functions",
+      "heading": "Exponential functions",
+      "body": "An exponential function like y = a^x always has y-intercept 1, and the x-axis (y = 0) as an [[mathadv-asymptote-idea|asymptote]].",
+      "checkText": "The y-intercept of y = a^x is always...",
+      "checkOptions": [
+        { "text": "1", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "a", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-hyperbola",
+      "subtopicName": "Types of functions",
+      "heading": "The hyperbola: y = 1/x",
+      "body": "The graph of y = 1/x has two separate branches, with [[mathadv-asymptote-idea|asymptotes]] along both the x-axis and the y-axis.",
+      "checkText": "The hyperbola y = 1/x has how many asymptotes?",
+      "checkOptions": [
+        { "text": "Two", "isCorrect": true },
+        { "text": "One", "isCorrect": false },
+        { "text": "None", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-direct-variation",
+      "subtopicName": "Types of functions",
+      "heading": "Direct variation: y grows with x",
+      "body": "y varies directly with x if y = kx for some constant k. Its graph is a straight line through the origin.",
+      "checkText": "The graph of direct variation y = kx is...",
+      "checkOptions": [
+        { "text": "A straight line through the origin", "isCorrect": true },
+        { "text": "A curve with an asymptote", "isCorrect": false },
+        { "text": "A parabola", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-inverse-variation",
+      "subtopicName": "Types of functions",
+      "heading": "Inverse variation: y shrinks as x grows",
+      "body": "y varies inversely with x if y = k/x for some constant k. Its graph is a [[mathadv-hyperbola|hyperbola]].",
+      "checkText": "y varies inversely with x if...",
+      "checkOptions": [
+        { "text": "y = k/x", "isCorrect": true },
+        { "text": "y = kx", "isCorrect": false },
+        { "text": "y = k + x", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-shift-horizontal",
+      "subtopicName": "Graphing techniques",
+      "heading": "Shifting a graph left or right",
+      "body": "To shift a graph h units to the right, replace x with (x − h) in its equation. Shifting left works the same way, using a negative h.",
+      "checkText": "To shift a graph 3 units to the right, replace x with...",
+      "checkOptions": [
+        { "text": "(x - 3)", "isCorrect": true },
+        { "text": "(x + 3)", "isCorrect": false },
+        { "text": "3x", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-shift-vertical",
+      "subtopicName": "Graphing techniques",
+      "heading": "Shifting a graph up or down",
+      "body": "To shift a graph k units up, add k to the whole function: y = f(x) + k. Shifting down uses a negative k.",
+      "checkText": "To shift y = f(x) up by 4 units, the new equation is...",
+      "checkOptions": [
+        { "text": "y = f(x) + 4", "isCorrect": true },
+        { "text": "y = f(x) - 4", "isCorrect": false },
+        { "text": "y = f(x + 4)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-translate-vertex-parabola",
+      "subtopicName": "Graphing techniques",
+      "heading": "Completing the square as a shift",
+      "body": "Writing a parabola as y = a(x − h)^2 + k is really [[mathadv-shift-horizontal|shifting]] and [[mathadv-shift-vertical|shifting]] the basic parabola y = ax^2 by h right and k up.",
+      "checkText": "y = (x - 2)^2 + 3 is y = x^2 shifted...",
+      "checkOptions": [
+        { "text": "2 right and 3 up", "isCorrect": true },
+        { "text": "2 up and 3 right", "isCorrect": false },
+        { "text": "2 left and 3 down", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-translate-circle-centre",
+      "subtopicName": "Graphing techniques",
+      "heading": "Shifting a circle's centre",
+      "body": "A [[mathadv-circle-equation|circle]] centred at (h, k) with radius r has equation (x − h)^2 + (y − k)^2 = r^2 — the circle x^2 + y^2 = r^2 shifted to a new centre.",
+      "checkText": "The circle (x - 1)^2 + (y - 2)^2 = 9 has its centre at...",
+      "checkOptions": [
+        { "text": "(1, 2)", "isCorrect": true },
+        { "text": "(-1, -2)", "isCorrect": false },
+        { "text": "(9, 9)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-reflect-y-axis",
+      "subtopicName": "Graphing techniques",
+      "heading": "Reflecting in the y-axis",
+      "body": "To reflect a graph in the y-axis, replace x with −x. For a function, this gives the new rule y = f(−x).",
+      "checkText": "Reflecting a graph in the y-axis means replacing x with...",
+      "checkOptions": [
+        { "text": "-x", "isCorrect": true },
+        { "text": "x", "isCorrect": false },
+        { "text": "1/x", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-reflect-x-axis",
+      "subtopicName": "Graphing techniques",
+      "heading": "Reflecting in the x-axis",
+      "body": "To reflect a graph in the x-axis, replace y with −y. For a function, this gives the new rule y = −f(x).",
+      "checkText": "Reflecting y = f(x) in the x-axis gives...",
+      "checkOptions": [
+        { "text": "y = -f(x)", "isCorrect": true },
+        { "text": "y = f(-x)", "isCorrect": false },
+        { "text": "y = f(x)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-rotate-180",
+      "subtopicName": "Graphing techniques",
+      "heading": "Rotating 180° about the origin",
+      "body": "Doing a [[mathadv-reflect-x-axis|reflection in the x-axis]] and a [[mathadv-reflect-y-axis|reflection in the y-axis]] together is the same as rotating the graph 180° about the origin.",
+      "checkText": "A 180° rotation about the origin combines reflections in...",
+      "checkOptions": [
+        { "text": "Both axes", "isCorrect": true },
+        { "text": "Only the x-axis", "isCorrect": false },
+        { "text": "Only the y-axis", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-even-function",
+      "subtopicName": "Graphing techniques",
+      "heading": "Even functions: mirror images in the y-axis",
+      "body": "A function is even if f(−x) = f(x) for every x. Its graph looks the same after [[mathadv-reflect-y-axis|reflecting in the y-axis]].",
+      "checkText": "An even function's graph has symmetry in...",
+      "checkOptions": [
+        { "text": "The y-axis", "isCorrect": true },
+        { "text": "The x-axis", "isCorrect": false },
+        { "text": "The origin", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-odd-function",
+      "subtopicName": "Graphing techniques",
+      "heading": "Odd functions: symmetric through the origin",
+      "body": "A function is odd if f(−x) = −f(x) for every x. Its graph looks the same after [[mathadv-rotate-180|rotating 180° about the origin]].",
+      "checkText": "An odd function satisfies which rule?",
+      "checkOptions": [
+        { "text": "f(-x) = -f(x)", "isCorrect": true },
+        { "text": "f(-x) = f(x)", "isCorrect": false },
+        { "text": "f(-x) = 0", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-absolute-value-idea",
+      "subtopicName": "Graphing techniques",
+      "heading": "Absolute value: distance from zero",
+      "body": "The absolute value |x| is the distance from x to zero on the number line, so it's never negative. For example, |-5| = 5 and |5| = 5.",
+      "checkText": "The absolute value of a number is always...",
+      "checkOptions": [
+        { "text": "Positive or zero", "isCorrect": true },
+        { "text": "Negative or zero", "isCorrect": false },
+        { "text": "Equal to the number itself", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-absolute-value-graph",
+      "subtopicName": "Graphing techniques",
+      "heading": "The V-shaped graph of y = |x|",
+      "body": "The graph of y = [[mathadv-absolute-value-idea|absolute value]] |x| is a V-shape with its sharp point at the origin. It's made of two straight line pieces.",
+      "checkText": "The graph of y = |x| has its sharp point at...",
+      "checkOptions": [
+        { "text": "(0, 0)", "isCorrect": true },
+        { "text": "(1, 1)", "isCorrect": false },
+        { "text": "(-1, 0)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-absolute-value-equation",
+      "subtopicName": "Graphing techniques",
+      "heading": "Solving |ax + b| = k",
+      "body": "To solve |ax + b| = k, there are two solutions if k is positive, one solution if k is zero, and no solutions if k is negative.",
+      "checkText": "The equation |x + 2| = -3 has...",
+      "checkOptions": [
+        { "text": "No solutions", "isCorrect": true },
+        { "text": "One solution", "isCorrect": false },
+        { "text": "Two solutions", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-composite-function",
+      "subtopicName": "Graphing techniques",
+      "heading": "Composite functions: functions inside functions",
+      "body": "The composite g(f(x)) means first apply f to x, then apply g to that result. It combines two functions into one new rule.",
+      "checkText": "In g(f(x)), which function is applied first?",
+      "checkOptions": [
+        { "text": "f", "isCorrect": true },
+        { "text": "g", "isCorrect": false },
+        { "text": "Both at the same time", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-composite-order-matters",
+      "subtopicName": "Graphing techniques",
+      "heading": "Order matters for composites",
+      "body": "In general, [[mathadv-composite-function|g(f(x))]] and f(g(x)) are different functions — swapping the order usually changes the result.",
+      "checkText": "If f(x) = x + 1 and g(x) = x^2, is g(f(x)) the same as f(g(x)) in general?",
+      "checkOptions": [
+        { "text": "No, they're usually different", "isCorrect": true },
+        { "text": "Yes, always the same", "isCorrect": false },
+        { "text": "Only when f(x) = 0", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-composite-domain",
+      "subtopicName": "Graphing techniques",
+      "heading": "The domain of a composite function",
+      "body": "For a to be in the domain of [[mathadv-composite-function|g(f(x))]], a must work in f(x) first, and then f(a) must work in g(x) too.",
+      "checkText": "For g(f(a)) to make sense, f(a) must be a valid input for...",
+      "checkOptions": [
+        { "text": "g", "isCorrect": true },
+        { "text": "f", "isCorrect": false },
+        { "text": "a", "isCorrect": false }
+      ]
+    }
+  ]
+}

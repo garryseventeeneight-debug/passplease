@@ -1,0 +1,257 @@
+{
+  "topicName": "Properties and Structure of Matter",
+  "chunks": [
+    {
+      "slug": "chem-metallic-bonding-model",
+      "subtopicName": "Bonding",
+      "heading": "Metal atoms share their electrons",
+      "body": "In a metal, outer electrons break free and drift through the whole structure as a 'sea' of delocalised electrons. This sea attracts the positive metal ions, holding the metal together.",
+      "checkText": "In the metallic bonding model, delocalised electrons are...",
+      "checkOptions": [
+        { "text": "Free to move through the whole metal", "isCorrect": true },
+        { "text": "Stuck inside one atom", "isCorrect": false },
+        { "text": "Not present in metals", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-metallic-bonding-conductivity",
+      "subtopicName": "Bonding",
+      "heading": "Why metals conduct electricity",
+      "body": "Metals conduct electricity because their [[chem-metallic-bonding-model|delocalised electrons]] are free to move. When a current is applied, these electrons flow through the metal.",
+      "checkText": "Metals conduct electricity well because they contain...",
+      "checkOptions": [
+        { "text": "Free-moving delocalised electrons", "isCorrect": true },
+        { "text": "No electrons at all", "isCorrect": false },
+        { "text": "Electrons locked to one atom", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-metallic-bonding-malleability",
+      "subtopicName": "Bonding",
+      "heading": "Why metals bend instead of breaking",
+      "body": "When a force pushes on a metal, layers of positive ions can slide past each other. The [[chem-metallic-bonding-model|sea of electrons]] moves with them, so the metal bends instead of shattering.",
+      "checkText": "Metals are malleable (bendable) because...",
+      "checkOptions": [
+        { "text": "Layers of ions can slide while the electron sea holds them together", "isCorrect": true },
+        { "text": "The ions are not attracted to each other", "isCorrect": false },
+        { "text": "Metals have no electrons", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-ionic-bond-formation",
+      "subtopicName": "Bonding",
+      "heading": "Metal meets non-metal: electrons transfer",
+      "body": "When a metal reacts with a non-metal, the metal atom transfers its [[chem-valence-electrons|valence electrons]] to the non-metal atom. The metal becomes a positive ion and the non-metal becomes a negative ion.",
+      "checkText": "When a metal reacts with a non-metal, the metal atom...",
+      "checkOptions": [
+        { "text": "Loses electrons to become a positive ion", "isCorrect": true },
+        { "text": "Gains electrons to become negative", "isCorrect": false },
+        { "text": "Shares electrons equally", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-ionic-lattice",
+      "subtopicName": "Bonding",
+      "heading": "Ions pack into a lattice",
+      "body": "Positive and negative ions arrange into a huge three-dimensional lattice, held together by electrostatic attraction called ionic bonding. This attraction is very strong, giving ionic solids very high melting points.",
+      "checkText": "Ionic bonding is the...",
+      "checkOptions": [
+        { "text": "Electrostatic attraction between positive and negative ions", "isCorrect": true },
+        { "text": "Sharing of electrons between two atoms", "isCorrect": false },
+        { "text": "Sea of electrons around metal ions", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-ionic-brittle",
+      "subtopicName": "Bonding",
+      "heading": "Why ionic solids shatter",
+      "body": "A hard knock can shift a layer of ions in the [[chem-ionic-lattice|lattice]], lining up ions with the same charge. These like charges repel, so the crystal shatters instead of bending.",
+      "checkText": "Ionic crystals are brittle because a hard knock can...",
+      "checkOptions": [
+        { "text": "Line up same-charge ions next to each other, causing repulsion", "isCorrect": true },
+        { "text": "Melt the ions instantly", "isCorrect": false },
+        { "text": "Make the ions attract more strongly", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-ionic-conductivity",
+      "subtopicName": "Bonding",
+      "heading": "When ionic compounds conduct electricity",
+      "body": "In a solid, ions are locked in the [[chem-ionic-lattice|lattice]] and can't move, so it doesn't conduct electricity. Once melted or dissolved in water, the ions become free to move and conduct.",
+      "checkText": "A solid ionic compound does not conduct electricity because its ions...",
+      "checkOptions": [
+        { "text": "Are locked in place", "isCorrect": true },
+        { "text": "Have no charge", "isCorrect": false },
+        { "text": "Are too small", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-covalent-bond",
+      "subtopicName": "Bonding",
+      "heading": "Sharing instead of transferring",
+      "body": "When two non-metal atoms bond, they share a pair of [[chem-valence-electrons|valence electrons]] instead of transferring them. This sharing is called a covalent bond.",
+      "checkText": "A covalent bond forms when two atoms...",
+      "checkOptions": [
+        { "text": "Share a pair of electrons", "isCorrect": true },
+        { "text": "Transfer electrons completely", "isCorrect": false },
+        { "text": "Push each other away", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-covalent-bond-types",
+      "subtopicName": "Bonding",
+      "heading": "Single, double and triple bonds",
+      "body": "A single bond shares one pair of electrons, a double bond shares two pairs, and a triple bond shares three pairs. More shared pairs make a stronger bond.",
+      "checkText": "A triple covalent bond involves how many shared pairs of electrons?",
+      "checkOptions": [
+        { "text": "Three", "isCorrect": true },
+        { "text": "One", "isCorrect": false },
+        { "text": "Two", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-lewis-dot-diagram",
+      "subtopicName": "Bonding",
+      "heading": "Drawing electrons as dots",
+      "body": "A Lewis dot diagram shows an atom's [[chem-valence-electrons|valence electrons]] as dots. Dots between two atoms are a shared bonding pair; dots left on one atom are a non-bonding lone pair.",
+      "checkText": "In a Lewis dot diagram, a pair of dots between two atoms represents...",
+      "checkOptions": [
+        { "text": "A shared bonding pair of electrons", "isCorrect": true },
+        { "text": "A proton", "isCorrect": false },
+        { "text": "A whole atom", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-intramolecular-vs-intermolecular",
+      "subtopicName": "Bonding",
+      "heading": "Bonds inside vs forces between",
+      "body": "The [[chem-covalent-bond|covalent bonds]] inside a molecule are strong and are called intramolecular bonds. The forces holding separate molecules together are much weaker and are called intermolecular forces.",
+      "checkText": "Which are generally weaker: intramolecular bonds or intermolecular forces?",
+      "checkOptions": [
+        { "text": "Intermolecular forces", "isCorrect": true },
+        { "text": "Intramolecular bonds", "isCorrect": false },
+        { "text": "They're always equal", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-vsepr-shape",
+      "subtopicName": "Bonding",
+      "heading": "Electron pairs push each other apart",
+      "body": "Electron pairs around an atom repel each other and spread out as far apart as possible. This is why methane's four bonding pairs form a tetrahedral shape.",
+      "checkText": "According to VSEPR theory, electron pairs around an atom arrange themselves to be...",
+      "checkOptions": [
+        { "text": "As far apart from each other as possible", "isCorrect": true },
+        { "text": "As close together as possible", "isCorrect": false },
+        { "text": "In a straight line, always", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-polar-covalent-bond",
+      "subtopicName": "Bonding",
+      "heading": "When sharing isn't equal",
+      "body": "If two bonded atoms have different [[chem-electronegativity|electronegativity]], the more electronegative atom pulls the shared electrons closer. This unequal sharing gives the bond a small positive and negative end, called a dipole.",
+      "checkText": "A polar covalent bond forms when the atoms in the bond have...",
+      "checkOptions": [
+        { "text": "Different electronegativities", "isCorrect": true },
+        { "text": "Identical electronegativities", "isCorrect": false },
+        { "text": "No electrons to share", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-molecular-polarity",
+      "subtopicName": "Bonding",
+      "heading": "Does the whole molecule end up polar?",
+      "body": "A molecule is polar only if its [[chem-polar-covalent-bond|polar bonds]] don't cancel out. Symmetrical molecules cancel their bond dipoles and are non-polar; asymmetrical molecules stay polar.",
+      "checkText": "A molecule with polar bonds arranged symmetrically will be...",
+      "checkOptions": [
+        { "text": "Non-polar overall", "isCorrect": true },
+        { "text": "Always strongly polar", "isCorrect": false },
+        { "text": "Impossible to form", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-dispersion-forces",
+      "subtopicName": "Bonding",
+      "heading": "The weakest force, found everywhere",
+      "body": "Electrons moving randomly can briefly bunch up on one side of a molecule, creating a temporary dipole. This flickering attraction between molecules is called a dispersion force, and it exists between all molecules.",
+      "checkText": "Dispersion forces are present...",
+      "checkOptions": [
+        { "text": "Between all molecules, polar or non-polar", "isCorrect": true },
+        { "text": "Only between polar molecules", "isCorrect": false },
+        { "text": "Only inside a single atom", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-dipole-dipole-forces",
+      "subtopicName": "Bonding",
+      "heading": "Polar molecules attract each other",
+      "body": "In [[chem-molecular-polarity|polar molecules]], the positive end of one molecule is attracted to the negative end of another. This is called a dipole-dipole force, and it's stronger than a dispersion force.",
+      "checkText": "Dipole-dipole forces occur between...",
+      "checkOptions": [
+        { "text": "Polar molecules", "isCorrect": true },
+        { "text": "Non-polar molecules only", "isCorrect": false },
+        { "text": "Single atoms only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-hydrogen-bonding",
+      "subtopicName": "Bonding",
+      "heading": "An extra-strong attraction",
+      "body": "When hydrogen is bonded to nitrogen, oxygen or fluorine, the resulting [[chem-dipole-dipole-forces|dipole-dipole force]] between molecules becomes especially strong. This hydrogen bonding is why ice is less dense than liquid water and floats.",
+      "checkText": "Hydrogen bonding happens when hydrogen is bonded to...",
+      "checkOptions": [
+        { "text": "Nitrogen, oxygen or fluorine", "isCorrect": true },
+        { "text": "Any atom at all", "isCorrect": false },
+        { "text": "Carbon only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-covalent-network-structure",
+      "subtopicName": "Bonding",
+      "heading": "One giant molecule",
+      "body": "Some substances, like diamond, aren't made of small molecules — every atom is joined by [[chem-covalent-bond|covalent bonds]] into one continuous 3D network. This makes them extremely hard with very high melting points.",
+      "checkText": "A covalent network structure is held together by...",
+      "checkOptions": [
+        { "text": "Covalent bonds linking every atom into one giant structure", "isCorrect": true },
+        { "text": "Weak forces between small molecules", "isCorrect": false },
+        { "text": "A sea of delocalised electrons", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-diamond-structure",
+      "subtopicName": "Bonding",
+      "heading": "Diamond: every atom locked in",
+      "body": "In diamond, each carbon atom forms a [[chem-covalent-bond|covalent bond]] to four other carbon atoms in a [[chem-vsepr-shape|tetrahedral]] arrangement. This makes diamond the hardest naturally occurring material.",
+      "checkText": "In diamond, each carbon atom is bonded to how many other carbon atoms?",
+      "checkOptions": [
+        { "text": "Four", "isCorrect": true },
+        { "text": "Two", "isCorrect": false },
+        { "text": "One", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-graphite-structure",
+      "subtopicName": "Bonding",
+      "heading": "Graphite: strong layers, weak stacking",
+      "body": "In graphite, each carbon atom bonds to only three others, forming flat layered [[chem-covalent-network-structure|networks]]. Weak forces between the layers let them slide apart easily, making graphite soft and slippery.",
+      "checkText": "Graphite is soft and slippery because...",
+      "checkOptions": [
+        { "text": "Its layers are held together by weak forces", "isCorrect": true },
+        { "text": "Its carbon atoms aren't bonded to anything", "isCorrect": false },
+        { "text": "It has no layered structure", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-silicon-dioxide-network",
+      "subtopicName": "Bonding",
+      "heading": "Sand's network structure",
+      "body": "In silicon dioxide (the main compound in sand), each silicon atom bonds to four oxygen atoms in a [[chem-covalent-network-structure|network]]. Like diamond, this makes it hard with a very high melting point.",
+      "checkText": "Silicon dioxide has a high melting point because...",
+      "checkOptions": [
+        { "text": "Its atoms are linked by a network of strong covalent bonds", "isCorrect": true },
+        { "text": "It is a metal", "isCorrect": false },
+        { "text": "It has no bonds at all", "isCorrect": false }
+      ]
+    }
+  ]
+}

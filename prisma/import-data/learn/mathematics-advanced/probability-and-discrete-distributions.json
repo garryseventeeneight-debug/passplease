@@ -1,0 +1,557 @@
+{
+  "topicName": "Probability and Discrete Probability Distributions",
+  "chunks": [
+    {
+      "slug": "mathadv-random-experiment",
+      "subtopicName": "Probability",
+      "heading": "What makes an experiment random",
+      "body": "A random experiment has more than one possible result, and you can't be sure which one will happen. Tossing a coin is a random experiment.",
+      "checkText": "A random experiment is one where...",
+      "checkOptions": [
+        { "text": "There is more than one possible result", "isCorrect": true },
+        { "text": "There is only one possible result", "isCorrect": false },
+        { "text": "The result is always the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-equally-likely-outcomes",
+      "subtopicName": "Probability",
+      "heading": "Equally likely outcomes",
+      "body": "Outcomes are equally likely when there's no reason to expect one more than another. Each face of a fair die is equally likely to land up.",
+      "checkText": "Outcomes are equally likely when...",
+      "checkOptions": [
+        { "text": "No outcome is more likely than another", "isCorrect": true },
+        { "text": "One outcome always wins", "isCorrect": false },
+        { "text": "There is only one outcome", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-basic-probability-formula",
+      "subtopicName": "Probability",
+      "heading": "The basic probability formula",
+      "body": "When outcomes are [[mathadv-equally-likely-outcomes|equally likely]], probability equals the number of favourable outcomes divided by the total number of outcomes.",
+      "checkText": "P(event) equals...",
+      "checkOptions": [
+        { "text": "favourable outcomes ÷ total outcomes", "isCorrect": true },
+        { "text": "total outcomes ÷ favourable outcomes", "isCorrect": false },
+        { "text": "favourable outcomes × total outcomes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-sample-space",
+      "subtopicName": "Probability",
+      "heading": "The sample space",
+      "body": "The sample space is the set of every possible outcome of an experiment. For a coin toss, the sample space is {heads, tails}.",
+      "checkText": "The sample space of an experiment is...",
+      "checkOptions": [
+        { "text": "The set of all possible outcomes", "isCorrect": true },
+        { "text": "Just one outcome", "isCorrect": false },
+        { "text": "The probability of winning", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-event-space",
+      "subtopicName": "Probability",
+      "heading": "The event space",
+      "body": "An event space is the set of outcomes you're interested in, out of the whole [[mathadv-sample-space|sample space]]. Rolling an even number on a die gives the event space {2, 4, 6}.",
+      "checkText": "An event space is...",
+      "checkOptions": [
+        { "text": "A set of outcomes you care about", "isCorrect": true },
+        { "text": "Every possible outcome", "isCorrect": false },
+        { "text": "A single impossible outcome", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-impossible-certain-events",
+      "subtopicName": "Probability",
+      "heading": "Probabilities of 0 and 1",
+      "body": "An impossible event has probability 0, and a certain event has probability 1. Every other probability sits somewhere between 0 and 1.",
+      "checkText": "An event that is certain to happen has probability...",
+      "checkOptions": [
+        { "text": "1", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "0.5", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-complementary-events",
+      "subtopicName": "Probability",
+      "heading": "The complement: probability of 'not'",
+      "body": "The complement of an event is 'it does not happen'. P(not A) = 1 − P(A), since the two possibilities together cover everything.",
+      "checkText": "If P(rain) = 0.3, then P(not rain) =",
+      "checkOptions": [
+        { "text": "0.7", "isCorrect": true },
+        { "text": "0.3", "isCorrect": false },
+        { "text": "1.3", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-relative-frequency",
+      "subtopicName": "Probability",
+      "heading": "Estimating probability by experiment",
+      "body": "Relative frequency is how often something actually happened, divided by how many trials you ran. Repeating an experiment many times gives a good estimate of its true probability.",
+      "checkText": "Relative frequency is calculated by...",
+      "checkOptions": [
+        { "text": "Dividing the count of an outcome by the number of trials", "isCorrect": true },
+        { "text": "Multiplying all outcomes together", "isCorrect": false },
+        { "text": "Counting only the favourable outcomes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-multistage-experiments",
+      "subtopicName": "Probability",
+      "heading": "Experiments with more than one stage",
+      "body": "A multi-stage experiment has several steps, like tossing a coin then rolling a die. Each stage adds more possible outcomes to the [[mathadv-sample-space|sample space]].",
+      "checkText": "Tossing two coins one after another is an example of...",
+      "checkOptions": [
+        { "text": "A multi-stage experiment", "isCorrect": true },
+        { "text": "A deterministic experiment", "isCorrect": false },
+        { "text": "An impossible experiment", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-sample-space-graph",
+      "subtopicName": "Probability",
+      "heading": "Graphing a two-stage sample space",
+      "body": "For a two-stage experiment, you can plot every outcome as a dot on a grid, with one stage on each axis. This makes it easy to count outcomes for an event.",
+      "checkText": "In a sample space graph for two dice, each axis represents...",
+      "checkOptions": [
+        { "text": "One of the two throws", "isCorrect": true },
+        { "text": "The total number of dots", "isCorrect": false },
+        { "text": "The probability of winning", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-tree-diagram-outcomes",
+      "subtopicName": "Probability",
+      "heading": "Listing outcomes with a tree diagram",
+      "body": "A tree diagram has a branch for each possible outcome at every stage. Following the branches from start to end lists every possible outcome of the experiment.",
+      "checkText": "In a tree diagram, each branch represents...",
+      "checkOptions": [
+        { "text": "A possible outcome at that stage", "isCorrect": true },
+        { "text": "The final probability only", "isCorrect": false },
+        { "text": "A repeated experiment", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-sets-intro",
+      "subtopicName": "Probability",
+      "heading": "What is a set",
+      "body": "A set is just a collection of things, called its members. We can write a set by listing its members inside curly brackets, like {1, 3, 5}.",
+      "checkText": "The members of a set are listed inside...",
+      "checkOptions": [
+        { "text": "Curly brackets", "isCorrect": true },
+        { "text": "Square brackets", "isCorrect": false },
+        { "text": "Round brackets", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-set-size",
+      "subtopicName": "Probability",
+      "heading": "Counting the members of a set",
+      "body": "The size of a [[mathadv-sets-intro|set]] S is written |S|, and just means how many members it has. If S = {2, 4, 6}, then |S| = 3.",
+      "checkText": "|S| means...",
+      "checkOptions": [
+        { "text": "The number of members in set S", "isCorrect": true },
+        { "text": "The sum of the members of S", "isCorrect": false },
+        { "text": "The largest member of S", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-intersection",
+      "subtopicName": "Probability",
+      "heading": "Intersection: 'and'",
+      "body": "The intersection of two sets, written A∩B, contains only the members that are in both sets. It's what mathematicians mean by 'and'.",
+      "checkText": "A∩B contains members that are...",
+      "checkOptions": [
+        { "text": "In both A and B", "isCorrect": true },
+        { "text": "In A or B, or both", "isCorrect": false },
+        { "text": "In neither A nor B", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-union",
+      "subtopicName": "Probability",
+      "heading": "Union: 'or'",
+      "body": "The union of two sets, written A∪B, contains every member that's in A, in B, or in both. It's what mathematicians mean by 'or'.",
+      "checkText": "A∪B contains members that are...",
+      "checkOptions": [
+        { "text": "In A, in B, or in both", "isCorrect": true },
+        { "text": "Only in both A and B", "isCorrect": false },
+        { "text": "In neither A nor B", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-disjoint-sets",
+      "subtopicName": "Probability",
+      "heading": "Disjoint sets",
+      "body": "Two sets are disjoint if they share no members at all, so their [[mathadv-intersection|intersection]] is empty. {1, 2} and {3, 4} are disjoint.",
+      "checkText": "Two sets are disjoint when...",
+      "checkOptions": [
+        { "text": "They have no members in common", "isCorrect": true },
+        { "text": "They have every member in common", "isCorrect": false },
+        { "text": "One set is bigger than the other", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-venn-diagram",
+      "subtopicName": "Probability",
+      "heading": "Venn diagrams",
+      "body": "A Venn diagram uses overlapping circles inside a rectangle to show how sets relate. The overlap shows the [[mathadv-intersection|intersection]] of the sets.",
+      "checkText": "In a Venn diagram, the overlapping region between two circles shows...",
+      "checkOptions": [
+        { "text": "The intersection of the two sets", "isCorrect": true },
+        { "text": "The union of the two sets", "isCorrect": false },
+        { "text": "Members in neither set", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-set-complement",
+      "subtopicName": "Probability",
+      "heading": "Complement of a set: 'not'",
+      "body": "The complement of a set A, written Ā, is everything outside A but still within the universal set. It's what mathematicians mean by 'not'.",
+      "checkText": "The complement of set A contains...",
+      "checkOptions": [
+        { "text": "Everything not in A", "isCorrect": true },
+        { "text": "Everything in A", "isCorrect": false },
+        { "text": "Nothing at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-counting-rule",
+      "subtopicName": "Probability",
+      "heading": "The counting rule for two sets",
+      "body": "To count the union of two sets, add their sizes then subtract the size of their [[mathadv-intersection|intersection]], so shared members aren't double-counted: |A∪B| = |A| + |B| − |A∩B|.",
+      "checkText": "Why do we subtract |A∩B| in the counting rule?",
+      "checkOptions": [
+        { "text": "Because those members were counted twice", "isCorrect": true },
+        { "text": "Because those members don't exist", "isCorrect": false },
+        { "text": "To make the union smaller than A", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-mutually-exclusive-events",
+      "subtopicName": "Probability",
+      "heading": "Mutually exclusive events",
+      "body": "Two events are mutually exclusive if they can never both happen at once. Rolling a 2 and rolling a 5 on the same die throw are mutually exclusive.",
+      "checkText": "Mutually exclusive events are events that...",
+      "checkOptions": [
+        { "text": "Cannot both occur at the same time", "isCorrect": true },
+        { "text": "Always occur together", "isCorrect": false },
+        { "text": "Have the same probability", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-addition-rule-exclusive",
+      "subtopicName": "Probability",
+      "heading": "Adding probabilities of exclusive events",
+      "body": "For [[mathadv-mutually-exclusive-events|mutually exclusive]] events, P(A or B) = P(A) + P(B), since there's no overlap to worry about.",
+      "checkText": "If A and B are mutually exclusive, P(A or B) equals...",
+      "checkOptions": [
+        { "text": "P(A) + P(B)", "isCorrect": true },
+        { "text": "P(A) × P(B)", "isCorrect": false },
+        { "text": "P(A) − P(B)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-addition-rule-general",
+      "subtopicName": "Probability",
+      "heading": "The general addition rule",
+      "body": "When events can overlap, P(A or B) = P(A) + P(B) − P(A and B), so the overlap isn't counted twice. This matches the [[mathadv-counting-rule|counting rule]] for sets.",
+      "checkText": "The general addition rule subtracts P(A and B) because...",
+      "checkOptions": [
+        { "text": "It was counted twice in P(A) + P(B)", "isCorrect": true },
+        { "text": "It should never be included", "isCorrect": false },
+        { "text": "It makes the answer bigger", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-independent-events-intro",
+      "subtopicName": "Probability",
+      "heading": "Independent events",
+      "body": "Two events are independent if one happening doesn't change the chance of the other happening. Tossing a coin and rolling a die are independent of each other.",
+      "checkText": "Two events are independent when...",
+      "checkOptions": [
+        { "text": "One doesn't affect the probability of the other", "isCorrect": true },
+        { "text": "They can never both happen", "isCorrect": false },
+        { "text": "They always happen together", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-product-rule-two-stage",
+      "subtopicName": "Probability",
+      "heading": "Multiplying probabilities: the product rule",
+      "body": "For two [[mathadv-independent-events-intro|independent]] stages, multiply their probabilities together: P(A and B) = P(A) × P(B).",
+      "checkText": "For independent events, P(A and B) equals...",
+      "checkOptions": [
+        { "text": "P(A) × P(B)", "isCorrect": true },
+        { "text": "P(A) + P(B)", "isCorrect": false },
+        { "text": "P(A) − P(B)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-product-rule-multistage",
+      "subtopicName": "Probability",
+      "heading": "The product rule for many stages",
+      "body": "The [[mathadv-product-rule-two-stage|product rule]] extends to any number of independent stages. Just multiply the probability of each stage together.",
+      "checkText": "To find the probability of three independent events all happening, you...",
+      "checkOptions": [
+        { "text": "Multiply their three probabilities together", "isCorrect": true },
+        { "text": "Add their three probabilities together", "isCorrect": false },
+        { "text": "Only use the smallest probability", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-sampling-without-replacement",
+      "subtopicName": "Probability",
+      "heading": "Sampling without replacement",
+      "body": "When an item isn't put back before the next draw, the probabilities for later draws change. Drawing two marbles without replacing the first is an example.",
+      "checkText": "Sampling without replacement means...",
+      "checkOptions": [
+        { "text": "Removed items are not returned before the next draw", "isCorrect": true },
+        { "text": "Every item is always returned", "isCorrect": false },
+        { "text": "Only one item is ever drawn", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-probability-tree-diagram",
+      "subtopicName": "Probability",
+      "heading": "Building a probability tree diagram",
+      "body": "A probability tree diagram writes the probability on each branch. Multiply along a path to get that outcome's probability, then add outcomes that match what you want.",
+      "checkText": "In a probability tree diagram, you multiply along the branches to find...",
+      "checkOptions": [
+        { "text": "The probability of one full path of outcomes", "isCorrect": true },
+        { "text": "The total of all probabilities", "isCorrect": false },
+        { "text": "The number of stages", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-conditional-probability-intro",
+      "subtopicName": "Probability",
+      "heading": "Conditional probability: new information changes things",
+      "body": "Conditional probability is the chance of an event once you know something else has already happened. Knowing a die roll is even changes the chance it was a 6.",
+      "checkText": "Conditional probability is used when...",
+      "checkOptions": [
+        { "text": "New information changes the sample space", "isCorrect": true },
+        { "text": "No information is available at all", "isCorrect": false },
+        { "text": "Two events are mutually exclusive", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-conditional-probability-formula",
+      "subtopicName": "Probability",
+      "heading": "The formula for conditional probability",
+      "body": "P(A|B) means the probability of A given that B has happened. It's calculated as P(A|B) = P(A and B) ÷ P(B).",
+      "checkText": "P(A|B) is calculated as...",
+      "checkOptions": [
+        { "text": "P(A and B) ÷ P(B)", "isCorrect": true },
+        { "text": "P(A) ÷ P(B)", "isCorrect": false },
+        { "text": "P(A) × P(B)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-independent-events-formal",
+      "subtopicName": "Probability",
+      "heading": "Testing for independence",
+      "body": "Events A and B are independent exactly when P(A|B) = P(A), meaning knowing B happened doesn't change A's probability. This matches the [[mathadv-conditional-probability-formula|conditional probability]] idea.",
+      "checkText": "A and B are independent when...",
+      "checkOptions": [
+        { "text": "P(A|B) equals P(A)", "isCorrect": true },
+        { "text": "P(A|B) equals 0", "isCorrect": false },
+        { "text": "P(A|B) equals P(B)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-probability-distribution",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "What is a probability distribution",
+      "body": "A probability distribution lists every possible outcome of an experiment together with its probability. All the probabilities in the list add up to 1.",
+      "checkText": "The probabilities in a probability distribution always add up to...",
+      "checkOptions": [
+        { "text": "1", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "100", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-random-variable",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "The random variable X",
+      "body": "A random variable, usually called X, stands for the numeric result of a random experiment. X might be the number of heads when you toss three coins.",
+      "checkText": "A random variable represents...",
+      "checkOptions": [
+        { "text": "The numeric result of a random experiment", "isCorrect": true },
+        { "text": "A fixed, unchanging number", "isCorrect": false },
+        { "text": "The name of an experiment", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-categorical-vs-numeric",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "Numeric and categorical data",
+      "body": "Numeric data are values you can do maths with, like a count of heads. Categorical data are labels, like the colour of a marble drawn from a bag.",
+      "checkText": "The colour of a ball drawn from a bag is an example of...",
+      "checkOptions": [
+        { "text": "Categorical data", "isCorrect": true },
+        { "text": "Numeric data", "isCorrect": false },
+        { "text": "Neither type of data", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-uniform-distribution",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "Uniform probability distributions",
+      "body": "A distribution is uniform when every outcome has exactly the same probability. Rolling a fair die gives a uniform distribution, since each number has probability 1/6.",
+      "checkText": "A distribution is uniform when...",
+      "checkOptions": [
+        { "text": "Every outcome has the same probability", "isCorrect": true },
+        { "text": "Only one outcome is possible", "isCorrect": false },
+        { "text": "The probabilities keep changing", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-px-notation",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "The notation p(x)",
+      "body": "p(x) is short for P(X = x), the probability that the [[mathadv-random-variable|random variable]] X takes the value x. It's just a quicker way to write the same thing.",
+      "checkText": "p(x) means the same thing as...",
+      "checkOptions": [
+        { "text": "P(X = x)", "isCorrect": true },
+        { "text": "The value of x itself", "isCorrect": false },
+        { "text": "The number of outcomes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-expected-value-intro",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "What expected value means",
+      "body": "Expected value is the long-run average result if you repeated an experiment many, many times. It's also called the mean of the distribution.",
+      "checkText": "Expected value describes...",
+      "checkOptions": [
+        { "text": "The long-run average result of an experiment", "isCorrect": true },
+        { "text": "The most likely single outcome", "isCorrect": false },
+        { "text": "The largest possible outcome", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-expected-value-formula",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "The formula for expected value",
+      "body": "Expected value is found by multiplying each outcome by its probability, then adding up all the results: E(X) = Σ x p(x).",
+      "checkText": "To find E(X), for each outcome you...",
+      "checkOptions": [
+        { "text": "Multiply the value by its probability, then add them all", "isCorrect": true },
+        { "text": "Just add up all the values", "isCorrect": false },
+        { "text": "Multiply all the probabilities together", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-expected-value-table",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "Calculating expected value in a table",
+      "body": "A handy way to find [[mathadv-expected-value-formula|expected value]] is to add a row to the distribution table showing x times p(x), then sum that row.",
+      "checkText": "In an expected value table, the extra row shows...",
+      "checkOptions": [
+        { "text": "x multiplied by p(x) for each outcome", "isCorrect": true },
+        { "text": "x divided by p(x) for each outcome", "isCorrect": false },
+        { "text": "The square of each outcome", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-deviation-from-mean",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "How far a value is from the mean",
+      "body": "The deviation of a value x is how far it sits from the mean μ, written x − μ. Values above the mean have a positive deviation, and values below have a negative one.",
+      "checkText": "The deviation of a value x from the mean μ is...",
+      "checkOptions": [
+        { "text": "x − μ", "isCorrect": true },
+        { "text": "x + μ", "isCorrect": false },
+        { "text": "x × μ", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-variance-definition",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "Variance: measuring spread",
+      "body": "Variance measures how spread out a distribution's values are from the mean. It's the weighted average of the squared [[mathadv-deviation-from-mean|deviations]]: Var(X) = Σ(x − μ)² p(x).",
+      "checkText": "Variance measures...",
+      "checkOptions": [
+        { "text": "How spread out the values are from the mean", "isCorrect": true },
+        { "text": "The most likely outcome", "isCorrect": false },
+        { "text": "The total number of outcomes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-variance-alternative-formula",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "A quicker way to calculate variance",
+      "body": "An easier formula gives the same answer: Var(X) = E(X²) − μ², where E(X²) is found by summing x² p(x). This avoids working with fraction means.",
+      "checkText": "The alternative formula for variance is...",
+      "checkOptions": [
+        { "text": "E(X²) − μ²", "isCorrect": true },
+        { "text": "E(X) − μ", "isCorrect": false },
+        { "text": "E(X²) + μ²", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-standard-deviation",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "Standard deviation",
+      "body": "Standard deviation is the square root of the [[mathadv-variance-definition|variance]]. Unlike variance, it's measured in the same units as the original values.",
+      "checkText": "Standard deviation is found by...",
+      "checkOptions": [
+        { "text": "Taking the square root of the variance", "isCorrect": true },
+        { "text": "Squaring the variance", "isCorrect": false },
+        { "text": "Dividing the variance by the mean", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-sample-vs-population",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "Sample versus population",
+      "body": "A population is every possible result of an experiment, while a sample is just the results you actually collected by running it several times.",
+      "checkText": "A sample, compared to a population, is...",
+      "checkOptions": [
+        { "text": "Just some of the results, actually collected", "isCorrect": true },
+        { "text": "Every possible result there could be", "isCorrect": false },
+        { "text": "A guaranteed, certain result", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-sample-mean",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "The sample mean",
+      "body": "The sample mean, written x̄, is the average of the values you actually collected. It's found the same way as [[mathadv-expected-value-formula|expected value]], but using relative frequencies instead of true probabilities.",
+      "checkText": "The sample mean x̄ is calculated from...",
+      "checkOptions": [
+        { "text": "The relative frequencies of the collected results", "isCorrect": true },
+        { "text": "The theoretical probabilities only", "isCorrect": false },
+        { "text": "The largest value collected", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-sample-variance",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "Sample variance and standard deviation",
+      "body": "Sample variance s² and sample standard deviation s measure spread in a collected sample, just like [[mathadv-variance-definition|variance]] and [[mathadv-standard-deviation|standard deviation]] do for a full distribution.",
+      "checkText": "Sample variance measures the spread of...",
+      "checkOptions": [
+        { "text": "The values you actually collected", "isCorrect": true },
+        { "text": "Only the theoretical probabilities", "isCorrect": false },
+        { "text": "The number of trials run", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-census-vs-survey",
+      "subtopicName": "Discrete probability distributions",
+      "heading": "Census versus survey",
+      "body": "A census asks everyone in a population, while a survey only asks some of them. Surveys are usually quicker and cheaper, but a census gives exact results.",
+      "checkText": "A census, compared to a survey, asks...",
+      "checkOptions": [
+        { "text": "Everyone in the population", "isCorrect": true },
+        { "text": "Only a small sample", "isCorrect": false },
+        { "text": "Nobody at all", "isCorrect": false }
+      ]
+    }
+  ]
+}

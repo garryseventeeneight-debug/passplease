@@ -1,0 +1,569 @@
+{
+  "topicName": "Kinematics",
+  "chunks": [
+    {
+      "slug": "phys-scalar-vs-vector",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Scalars vs. vectors",
+      "body": "A scalar is just a size with a unit, like 10 seconds. A vector is a size and a unit plus a direction, like 10 metres north.",
+      "checkText": "What does a vector have that a scalar doesn't?",
+      "checkOptions": [
+        { "text": "A direction", "isCorrect": true },
+        { "text": "A unit", "isCorrect": false },
+        { "text": "A number", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-vector-arrows",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Drawing vectors as arrows",
+      "body": "A vector can be drawn as an arrow. Its length stands for how big the vector is, and the direction it points shows the vector's direction.",
+      "checkText": "In a vector arrow diagram, the length of the arrow shows...",
+      "checkOptions": [
+        { "text": "How big the vector is", "isCorrect": true },
+        { "text": "How long the vector lasts", "isCorrect": false },
+        { "text": "The vector's unit", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-1d-sign-convention",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Using plus and minus for direction",
+      "body": "When motion is along one line, one direction is labelled positive and the opposite direction is labelled negative, so numbers alone can show direction.",
+      "checkText": "A negative sign on a 1D vector means it points...",
+      "checkOptions": [
+        { "text": "Opposite to the positive direction", "isCorrect": true },
+        { "text": "Faster than a positive vector", "isCorrect": false },
+        { "text": "Nowhere in particular", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-adding-vectors-1d",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Adding vectors along a line",
+      "body": "To combine vectors on the same line, give each one a sign using the [[phys-1d-sign-convention|sign convention]], then add the signed numbers together.",
+      "checkText": "To add vectors along one line, you first...",
+      "checkOptions": [
+        { "text": "Give each vector a sign, then add", "isCorrect": true },
+        { "text": "Multiply their sizes", "isCorrect": false },
+        { "text": "Ignore their directions", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-subtracting-vectors-1d",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Subtracting one vector from another",
+      "body": "To subtract a vector, flip its direction to the opposite sign, then add it to the other vector as usual.",
+      "checkText": "The first step in subtracting a vector is to...",
+      "checkOptions": [
+        { "text": "Reverse its direction", "isCorrect": true },
+        { "text": "Double its magnitude", "isCorrect": false },
+        { "text": "Delete it", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-distance-travelled",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Distance travelled",
+      "body": "Distance travelled is the total length of the path something moves along. It's a scalar, and it only ever adds up, never goes down.",
+      "checkText": "Distance travelled is a...",
+      "checkOptions": [
+        { "text": "Scalar", "isCorrect": true },
+        { "text": "Vector", "isCorrect": false },
+        { "text": "Direction", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-displacement",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Displacement",
+      "body": "Displacement is how far an object's final position is from where it started, in a straight line, including the direction. It's a vector, unlike [[phys-distance-travelled|distance travelled]].",
+      "checkText": "Displacement is best described as an object's...",
+      "checkOptions": [
+        { "text": "Change in position, including direction", "isCorrect": true },
+        { "text": "Total path length", "isCorrect": false },
+        { "text": "Speed at one instant", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-speed",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Speed",
+      "body": "Speed tells you how fast [[phys-distance-travelled|distance]] is being covered. It's a scalar, so it only needs a size, no direction.",
+      "checkText": "Speed is a measure of how fast...",
+      "checkOptions": [
+        { "text": "Distance is covered", "isCorrect": true },
+        { "text": "Displacement changes", "isCorrect": false },
+        { "text": "Time passes", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-velocity",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Velocity",
+      "body": "Velocity tells you how fast [[phys-displacement|displacement]] is changing. Because direction matters, velocity is a vector, unlike [[phys-speed|speed]].",
+      "checkText": "Unlike speed, velocity always needs a stated...",
+      "checkOptions": [
+        { "text": "Direction", "isCorrect": true },
+        { "text": "Unit", "isCorrect": false },
+        { "text": "Time", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-average-speed",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Average speed",
+      "body": "Average speed is the total [[phys-distance-travelled|distance travelled]] divided by the total time taken. It doesn't tell you if the speed changed along the way.",
+      "checkText": "Average speed is calculated as...",
+      "checkOptions": [
+        { "text": "Distance travelled divided by time taken", "isCorrect": true },
+        { "text": "Distance travelled multiplied by time", "isCorrect": false },
+        { "text": "Displacement divided by time", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-average-velocity",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Average velocity",
+      "body": "Average velocity is [[phys-displacement|displacement]] divided by the time taken. If an object ends up back where it started, its average velocity is zero.",
+      "checkText": "Average velocity is calculated as...",
+      "checkOptions": [
+        { "text": "Displacement divided by time taken", "isCorrect": true },
+        { "text": "Distance divided by time taken", "isCorrect": false },
+        { "text": "Speed multiplied by time", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-instantaneous-vs-average",
+      "subtopicName": "Motion in a straight line",
+      "heading": "One moment vs. the whole trip",
+      "body": "Instantaneous speed or velocity is how fast something is moving right now, like on a speedometer. Average speed or velocity looks at the whole trip instead.",
+      "checkText": "A speedometer reading shows an object's...",
+      "checkOptions": [
+        { "text": "Instantaneous speed", "isCorrect": true },
+        { "text": "Average speed over the whole trip", "isCorrect": false },
+        { "text": "Total distance travelled", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-change-in-speed",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Change in speed",
+      "body": "Change in speed is simply the final speed minus the initial speed. Since [[phys-speed|speed]] is a scalar, this is just plain subtraction.",
+      "checkText": "To find the change in speed, you...",
+      "checkOptions": [
+        { "text": "Subtract initial speed from final speed", "isCorrect": true },
+        { "text": "Add initial and final speed", "isCorrect": false },
+        { "text": "Divide final speed by time", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-change-in-velocity",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Change in velocity",
+      "body": "Change in velocity is the final [[phys-velocity|velocity]] minus the initial velocity. Because velocity is a vector, this subtraction must account for direction.",
+      "checkText": "Change in velocity must take into account...",
+      "checkOptions": [
+        { "text": "Direction, since velocity is a vector", "isCorrect": true },
+        { "text": "Only the numbers, never direction", "isCorrect": false },
+        { "text": "The colour of the object", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-acceleration-concept",
+      "subtopicName": "Motion in a straight line",
+      "heading": "What is acceleration?",
+      "body": "Acceleration measures how quickly [[phys-velocity|velocity]] is changing. An object accelerates whenever it speeds up, slows down, or changes direction.",
+      "checkText": "Acceleration happens whenever an object...",
+      "checkOptions": [
+        { "text": "Speeds up, slows down, or changes direction", "isCorrect": true },
+        { "text": "Moves at a constant speed in a straight line", "isCorrect": false },
+        { "text": "Stays perfectly still", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-average-acceleration",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Average acceleration",
+      "body": "Average acceleration is the [[phys-change-in-velocity|change in velocity]] divided by the time it took for that change to happen.",
+      "checkText": "Average acceleration is calculated as...",
+      "checkOptions": [
+        { "text": "Change in velocity divided by time taken", "isCorrect": true },
+        { "text": "Change in speed divided by distance", "isCorrect": false },
+        { "text": "Final velocity divided by initial velocity", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-negative-acceleration",
+      "subtopicName": "Motion in a straight line",
+      "heading": "What negative acceleration means",
+      "body": "If the positive direction is the direction of travel, a negative [[phys-acceleration-concept|acceleration]] means an object is slowing down, not necessarily moving backwards.",
+      "checkText": "If positive is the direction of travel, a negative acceleration usually means the object is...",
+      "checkOptions": [
+        { "text": "Slowing down", "isCorrect": true },
+        { "text": "Speeding up in the same direction", "isCorrect": false },
+        { "text": "Standing still", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-position-time-graph",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Position-time graphs",
+      "body": "A position-time graph plots an object's position on the vertical axis against time on the horizontal axis, showing where it is at every moment.",
+      "checkText": "A position-time graph shows an object's...",
+      "checkOptions": [
+        { "text": "Position at each moment in time", "isCorrect": true },
+        { "text": "Speed at each moment in time", "isCorrect": false },
+        { "text": "Total distance travelled only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-gradient-xt-velocity",
+      "subtopicName": "Motion in a straight line",
+      "heading": "The slope tells you the velocity",
+      "body": "The gradient (steepness) of a [[phys-position-time-graph|position-time graph]] equals the object's velocity. A flat line means the object isn't moving.",
+      "checkText": "The gradient of a position-time graph gives you the object's...",
+      "checkOptions": [
+        { "text": "Velocity", "isCorrect": true },
+        { "text": "Acceleration", "isCorrect": false },
+        { "text": "Distance travelled", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-curved-xt-graph",
+      "subtopicName": "Motion in a straight line",
+      "heading": "When the position-time graph curves",
+      "body": "A curved [[phys-position-time-graph|position-time graph]] means the velocity is changing. The steepness at any single point gives the velocity at that instant.",
+      "checkText": "A curved position-time graph means the object's velocity is...",
+      "checkOptions": [
+        { "text": "Changing over time", "isCorrect": true },
+        { "text": "Always zero", "isCorrect": false },
+        { "text": "Impossible to find", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-velocity-time-graph",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Velocity-time graphs",
+      "body": "A velocity-time graph plots an object's velocity on the vertical axis against time on the horizontal axis.",
+      "checkText": "A velocity-time graph shows how an object's velocity...",
+      "checkOptions": [
+        { "text": "Changes over time", "isCorrect": true },
+        { "text": "Stays exactly the same forever", "isCorrect": false },
+        { "text": "Relates to its mass", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-area-vt-displacement",
+      "subtopicName": "Motion in a straight line",
+      "heading": "The area under the graph is displacement",
+      "body": "The area between a [[phys-velocity-time-graph|velocity-time graph]] and the time axis equals the object's displacement during that time.",
+      "checkText": "The area under a velocity-time graph gives you the...",
+      "checkOptions": [
+        { "text": "Displacement", "isCorrect": true },
+        { "text": "Acceleration", "isCorrect": false },
+        { "text": "Speed at that instant", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-gradient-vt-acceleration",
+      "subtopicName": "Motion in a straight line",
+      "heading": "The slope of a velocity-time graph",
+      "body": "The gradient of a [[phys-velocity-time-graph|velocity-time graph]] equals the object's acceleration. A steeper line means a bigger acceleration.",
+      "checkText": "The gradient of a velocity-time graph gives you the object's...",
+      "checkOptions": [
+        { "text": "Acceleration", "isCorrect": true },
+        { "text": "Displacement", "isCorrect": false },
+        { "text": "Distance travelled", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-distance-from-vt-graph",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Finding total distance from a v-t graph",
+      "body": "To find total distance from a [[phys-velocity-time-graph|velocity-time graph]], add up all the areas as positive values, even the ones below the time axis.",
+      "checkText": "To find total distance travelled from a velocity-time graph, you should treat all areas as...",
+      "checkOptions": [
+        { "text": "Positive, regardless of position on the graph", "isCorrect": true },
+        { "text": "Negative if below the time axis", "isCorrect": false },
+        { "text": "Zero if the line is flat", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-acceleration-time-graph",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Acceleration-time graphs",
+      "body": "An acceleration-time graph plots acceleration against time. The area under this graph equals the change in velocity over that time.",
+      "checkText": "The area under an acceleration-time graph equals the...",
+      "checkOptions": [
+        { "text": "Change in velocity", "isCorrect": true },
+        { "text": "Change in position", "isCorrect": false },
+        { "text": "Total distance travelled", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-suvat-variables",
+      "subtopicName": "Motion in a straight line",
+      "heading": "The five motion letters",
+      "body": "Motion problems with steady acceleration use five values: displacement (s), initial velocity (u), final velocity (v), acceleration (a), and time (t).",
+      "checkText": "In the standard motion equations, the letter 'u' stands for...",
+      "checkOptions": [
+        { "text": "Initial velocity", "isCorrect": true },
+        { "text": "Final velocity", "isCorrect": false },
+        { "text": "Displacement", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-eom-v-u-at",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Equation: v = u + a*t",
+      "body": "This equation finds the final velocity: v = u + a*t. Start with the initial velocity and add on however much the [[phys-acceleration-concept|acceleration]] changes it over time t.",
+      "checkText": "The equation v = u + a*t is used to find the...",
+      "checkOptions": [
+        { "text": "Final velocity", "isCorrect": true },
+        { "text": "Total distance travelled", "isCorrect": false },
+        { "text": "Initial velocity", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-eom-s-avg-velocity",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Equation: s = ((u+v)/2)*t",
+      "body": "When acceleration is steady, displacement equals the average of the initial and final velocity, multiplied by time: s = ((u+v)/2)*t.",
+      "checkText": "The equation s = ((u+v)/2)*t works because, with steady acceleration, average velocity equals...",
+      "checkOptions": [
+        { "text": "The average of initial and final velocity", "isCorrect": true },
+        { "text": "Just the final velocity", "isCorrect": false },
+        { "text": "Just the initial velocity", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-eom-s-ut-half-at2",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Equation: s = u*t + (1/2)*a*t^2",
+      "body": "This equation finds displacement without needing the final velocity: s = u*t + (1/2)*a*t^2, using only the initial velocity, acceleration, and time.",
+      "checkText": "The equation s = u*t + (1/2)*a*t^2 lets you find displacement without knowing the...",
+      "checkOptions": [
+        { "text": "Final velocity", "isCorrect": true },
+        { "text": "Initial velocity", "isCorrect": false },
+        { "text": "Time taken", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-eom-v2-u2-2as",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Equation: v^2 = u^2 + 2*a*s",
+      "body": "This equation connects velocity and displacement without needing time: v^2 = u^2 + 2*a*s. It's useful when time isn't given in a problem.",
+      "checkText": "The equation v^2 = u^2 + 2*a*s is especially useful when a problem doesn't give you the...",
+      "checkOptions": [
+        { "text": "Time", "isCorrect": true },
+        { "text": "Displacement", "isCorrect": false },
+        { "text": "Acceleration", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-free-fall",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Falling objects speed up the same way",
+      "body": "If air resistance is ignored, all falling objects near Earth speed up at exactly the same rate, no matter how heavy or light they are.",
+      "checkText": "Ignoring air resistance, a heavy object and a light object dropped together will...",
+      "checkOptions": [
+        { "text": "Fall at the same rate", "isCorrect": true },
+        { "text": "The heavy one falls faster", "isCorrect": false },
+        { "text": "The light one falls faster", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-gravity-value",
+      "subtopicName": "Motion in a straight line",
+      "heading": "How fast gravity speeds things up",
+      "body": "Near Earth's surface, gravity gives falling objects an [[phys-acceleration-concept|acceleration]] of about 9.8 metres per second, per second, straight down.",
+      "checkText": "The acceleration due to gravity near Earth's surface is about...",
+      "checkOptions": [
+        { "text": "9.8 m/s^2 downward", "isCorrect": true },
+        { "text": "9.8 m/s^2 upward", "isCorrect": false },
+        { "text": "It's different for every object", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-vertical-motion-equations",
+      "subtopicName": "Motion in a straight line",
+      "heading": "Using the same equations for falling objects",
+      "body": "The same [[phys-suvat-variables|motion equations]] used for straight-line motion also work for objects falling or thrown up, as long as you pick up or down as positive.",
+      "checkText": "To use the motion equations for vertical motion, you first need to...",
+      "checkOptions": [
+        { "text": "Choose whether up or down is positive", "isCorrect": true },
+        { "text": "Use completely different equations", "isCorrect": false },
+        { "text": "Ignore acceleration", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-max-height",
+      "subtopicName": "Motion in a straight line",
+      "heading": "The top of the throw",
+      "body": "When something is thrown straight up, its velocity drops to exactly zero for an instant at its highest point, before it starts falling back down.",
+      "checkText": "At the very top of its flight, an object thrown upward has a velocity of...",
+      "checkOptions": [
+        { "text": "Zero", "isCorrect": true },
+        { "text": "Its maximum speed", "isCorrect": false },
+        { "text": "The same as when it was thrown", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-2d-vector-direction",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "Describing direction in two dimensions",
+      "body": "On a flat plane, a vector's direction needs an angle measured from a known reference, like north, because there are far more than two possible directions.",
+      "checkText": "Why does a 2D vector need an angle to describe its direction?",
+      "checkOptions": [
+        { "text": "Because there are many possible directions, not just two", "isCorrect": true },
+        { "text": "Because 2D vectors don't have a size", "isCorrect": false },
+        { "text": "Because angles are easier to draw", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-true-bearing",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "True bearings",
+      "body": "A true bearing gives direction as an angle measured clockwise from north, from 0 to 360 degrees. For example, due east is 90 degrees.",
+      "checkText": "A true bearing is always measured...",
+      "checkOptions": [
+        { "text": "Clockwise from north", "isCorrect": true },
+        { "text": "Anticlockwise from south", "isCorrect": false },
+        { "text": "From the nearest landmark", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-adding-vectors-2d-graphical",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "Adding 2D vectors by drawing",
+      "body": "To add vectors in two dimensions, draw them head to tail to scale, then measure the length and angle of the resultant with a ruler and protractor.",
+      "checkText": "When adding vectors graphically, the resultant vector is drawn from...",
+      "checkOptions": [
+        { "text": "The tail of the first vector to the head of the last", "isCorrect": true },
+        { "text": "The head of the first vector to its own tail", "isCorrect": false },
+        { "text": "The middle of each vector", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-adding-vectors-2d-pythagoras",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "Adding perpendicular vectors precisely",
+      "body": "For two vectors at right angles, use Pythagoras' theorem to find the resultant's size, and trigonometry to find its angle — this is more accurate than drawing.",
+      "checkText": "For two vectors at right angles, Pythagoras' theorem is used to find the resultant vector's...",
+      "checkOptions": [
+        { "text": "Size (magnitude)", "isCorrect": true },
+        { "text": "Direction only", "isCorrect": false },
+        { "text": "Unit", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-subtracting-vectors-2d",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "Subtracting vectors in two dimensions",
+      "body": "To subtract one 2D vector from another, reverse the direction of the vector being subtracted, then add the two vectors head to tail as usual.",
+      "checkText": "To subtract a 2D vector, you first...",
+      "checkOptions": [
+        { "text": "Reverse its direction", "isCorrect": true },
+        { "text": "Rotate it 90 degrees", "isCorrect": false },
+        { "text": "Halve its size", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-vector-components",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "Splitting a vector into two",
+      "body": "Any vector can be split into two components at right angles to each other, which add back together to make the original vector.",
+      "checkText": "The two components of a vector are always...",
+      "checkOptions": [
+        { "text": "At right angles to each other", "isCorrect": true },
+        { "text": "Pointing in the same direction", "isCorrect": false },
+        { "text": "Equal in size", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-component-smaller-than-original",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "Components can't be bigger than the original",
+      "body": "Because the original vector forms the longest side of a right-angled triangle, each of its [[phys-vector-components|components]] must be smaller than the original vector.",
+      "checkText": "Compared to the original vector, each of its components is always...",
+      "checkOptions": [
+        { "text": "Smaller or equal", "isCorrect": true },
+        { "text": "Larger", "isCorrect": false },
+        { "text": "The same size", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-finding-components-trig",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "Finding components with sine and cosine",
+      "body": "To find a vector's [[phys-vector-components|components]], multiply its size by cosine of the angle for one component, and by sine of the angle for the other.",
+      "checkText": "To calculate a vector's components, you multiply its magnitude by...",
+      "checkOptions": [
+        { "text": "Sine and cosine of the angle", "isCorrect": true },
+        { "text": "The time taken", "isCorrect": false },
+        { "text": "Its own length", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-frame-of-reference",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "Frame of reference",
+      "body": "A frame of reference is the point or object you're measuring motion from. Motion can look different depending on whether that point is still or moving.",
+      "checkText": "A frame of reference is best described as...",
+      "checkOptions": [
+        { "text": "The point motion is measured from", "isCorrect": true },
+        { "text": "A type of vector", "isCorrect": false },
+        { "text": "A unit of speed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-relative-velocity-formula",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "Finding velocity relative to another object",
+      "body": "To find object A's velocity relative to object B, using a stationary [[phys-frame-of-reference|reference]] C, add A's velocity relative to C to C's velocity relative to B.",
+      "checkText": "To find the velocity of A relative to B via a reference point C, you...",
+      "checkOptions": [
+        { "text": "Add A relative to C, and C relative to B", "isCorrect": true },
+        { "text": "Subtract B's velocity from itself", "isCorrect": false },
+        { "text": "Ignore the reference point", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-flipping-vectors",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "Reversing a relative velocity",
+      "body": "The velocity of A relative to B is always the exact opposite of the velocity of B relative to A.",
+      "checkText": "The velocity of A relative to B compared to B relative to A is...",
+      "checkOptions": [
+        { "text": "Exactly reversed in direction", "isCorrect": true },
+        { "text": "Exactly the same", "isCorrect": false },
+        { "text": "Unrelated", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-boat-river-relative-motion",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "A boat crossing a flowing river",
+      "body": "A boat's velocity relative to the ground equals its velocity relative to the water, added to the water's own velocity relative to the ground.",
+      "checkText": "A boat's velocity relative to the ground is found by adding its velocity relative to the water to the...",
+      "checkOptions": [
+        { "text": "Water's velocity relative to the ground", "isCorrect": true },
+        { "text": "Boat's top speed in still water", "isCorrect": false },
+        { "text": "Width of the river", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-plane-crosswind",
+      "subtopicName": "Motion on a plane (vectors)",
+      "heading": "A plane flying through wind",
+      "body": "A plane's velocity relative to the ground equals its velocity relative to the wind, added to the wind's own velocity relative to the ground — just like a [[phys-boat-river-relative-motion|boat crossing a river]].",
+      "checkText": "A plane's velocity relative to the ground is found by adding its velocity relative to the wind to the...",
+      "checkOptions": [
+        { "text": "Wind's velocity relative to the ground", "isCorrect": true },
+        { "text": "Plane's fuel level", "isCorrect": false },
+        { "text": "Distance to the airport", "isCorrect": false }
+      ]
+    }
+  ]
+}

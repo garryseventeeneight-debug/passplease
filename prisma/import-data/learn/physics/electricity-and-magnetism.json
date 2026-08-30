@@ -1,0 +1,593 @@
+{
+  "topicName": "Electricity and Magnetism",
+  "chunks": [
+    {
+      "slug": "phys-charge-basics",
+      "subtopicName": "Electrostatics",
+      "heading": "What is electric charge?",
+      "body": "Charge is a property of matter that can be positive, negative, or neutral. Most objects are neutral because their positive and negative charges balance out.",
+      "checkText": "A neutral object has...",
+      "checkOptions": [
+        { "text": "Balanced positive and negative charge", "isCorrect": true },
+        { "text": "No charge of any kind", "isCorrect": false },
+        { "text": "Only positive charge", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-protons-electrons",
+      "subtopicName": "Electrostatics",
+      "heading": "Where charge lives in an atom",
+      "body": "Protons in the nucleus carry positive charge, and electrons around them carry negative charge. Electrons are much easier to move than protons.",
+      "checkText": "Which particle is easier to move: protons or electrons?",
+      "checkOptions": [
+        { "text": "Electrons", "isCorrect": true },
+        { "text": "Protons", "isCorrect": false },
+        { "text": "Neither can ever move", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-net-charge",
+      "subtopicName": "Electrostatics",
+      "heading": "Gaining or losing electrons",
+      "body": "An object becomes charged when it loses or gains [[phys-protons-electrons|electrons]]. Losing electrons gives it a positive net charge, and gaining electrons gives it a negative net charge.",
+      "checkText": "An object that loses electrons becomes...",
+      "checkOptions": [
+        { "text": "Positively charged", "isCorrect": true },
+        { "text": "Negatively charged", "isCorrect": false },
+        { "text": "Perfectly neutral", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-coulomb-unit",
+      "subtopicName": "Electrostatics",
+      "heading": "Measuring charge: the coulomb",
+      "body": "The coulomb (C) is the standard unit for measuring [[phys-charge-basics|charge]]. A single electron carries a tiny charge of about -1.6 × 10^-19 C.",
+      "checkText": "What is the SI unit for electric charge?",
+      "checkOptions": [
+        { "text": "Coulomb", "isCorrect": true },
+        { "text": "Volt", "isCorrect": false },
+        { "text": "Ampere", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-conductors-insulators",
+      "subtopicName": "Electrostatics",
+      "heading": "Conductors let charge move, insulators don't",
+      "body": "In conductors, such as metals, electrons move freely between atoms. In insulators, such as plastic or glass, electrons are held tightly and cannot move easily.",
+      "checkText": "Electrons move freely through...",
+      "checkOptions": [
+        { "text": "Conductors", "isCorrect": true },
+        { "text": "Insulators", "isCorrect": false },
+        { "text": "Neither conductors nor insulators", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-electrostatic-force",
+      "subtopicName": "Electrostatics",
+      "heading": "Like charges repel, unlike charges attract",
+      "body": "Charged objects push or pull on each other with an electrostatic force. Objects with the same charge repel, and objects with opposite charges attract.",
+      "checkText": "Two positively charged objects will...",
+      "checkOptions": [
+        { "text": "Repel each other", "isCorrect": true },
+        { "text": "Attract each other", "isCorrect": false },
+        { "text": "Have no effect on each other", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-electric-field",
+      "subtopicName": "Electrostatics",
+      "heading": "What is an electric field?",
+      "body": "An electric field is the region of space around a charged object where another charged object would feel a force. Every charged object has one.",
+      "checkText": "An electric field is a region where...",
+      "checkOptions": [
+        { "text": "A charged object experiences a force", "isCorrect": true },
+        { "text": "Only gravity can act", "isCorrect": false },
+        { "text": "Nothing at all happens", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-field-lines",
+      "subtopicName": "Electrostatics",
+      "heading": "Drawing electric field lines",
+      "body": "Field lines show the direction and shape of an [[phys-electric-field|electric field]]. They point away from positive charges and towards negative charges.",
+      "checkText": "Electric field lines point...",
+      "checkOptions": [
+        { "text": "Away from positive charges, towards negative charges", "isCorrect": true },
+        { "text": "Away from negative charges, towards positive charges", "isCorrect": false },
+        { "text": "In completely random directions", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-field-strength",
+      "subtopicName": "Electrostatics",
+      "heading": "How close lines show field strength",
+      "body": "Where [[phys-field-lines|field lines]] are packed close together, the electric field is strong. Where they spread apart, the field is weaker.",
+      "checkText": "Closely spaced field lines show a...",
+      "checkOptions": [
+        { "text": "Strong field", "isCorrect": true },
+        { "text": "Weak field", "isCorrect": false },
+        { "text": "Field with no direction", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-uniform-field",
+      "subtopicName": "Electrostatics",
+      "heading": "A field that's the same everywhere",
+      "body": "Between two parallel charged plates, the [[phys-electric-field|electric field]] is uniform, meaning it has the same strength at every point between them, with straight, evenly spaced field lines.",
+      "checkText": "In a uniform electric field, the field lines are...",
+      "checkOptions": [
+        { "text": "Straight and evenly spaced", "isCorrect": true },
+        { "text": "Curved and random", "isCorrect": false },
+        { "text": "Always arranged in circles", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-force-on-charge",
+      "subtopicName": "Electrostatics",
+      "heading": "Force on a charge in a field",
+      "body": "A charge placed in an [[phys-electric-field|electric field]] feels a force given by F = qE, where q is its charge and E is the field strength.",
+      "checkText": "The force on a charge in an electric field depends on...",
+      "checkOptions": [
+        { "text": "The charge and the field strength", "isCorrect": true },
+        { "text": "Only the size of the charge", "isCorrect": false },
+        { "text": "Only the field strength", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-electrical-potential",
+      "subtopicName": "Electrostatics",
+      "heading": "Electrical potential energy",
+      "body": "Moving a charge within an [[phys-electric-field|electric field]] can store or release energy, just like lifting a ball stores gravitational energy. This stored energy is called electrical potential energy.",
+      "checkText": "Electrical potential energy is stored when a charge...",
+      "checkOptions": [
+        { "text": "Moves within an electric field", "isCorrect": true },
+        { "text": "Stays completely still forever", "isCorrect": false },
+        { "text": "Loses all of its mass", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-potential-difference-field",
+      "subtopicName": "Electrostatics",
+      "heading": "Potential difference between two points",
+      "body": "Potential difference (V) is the energy given to each unit of charge as it moves between two points. It is measured in volts.",
+      "checkText": "Potential difference is measured in...",
+      "checkOptions": [
+        { "text": "Volts", "isCorrect": true },
+        { "text": "Coulombs", "isCorrect": false },
+        { "text": "Newtons", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-work-electric-field",
+      "subtopicName": "Electrostatics",
+      "heading": "Work done moving a charge",
+      "body": "The work done moving a charge through a [[phys-uniform-field|uniform field]] equals W = qEd, where d is the distance moved parallel to the field.",
+      "checkText": "The formula W = qEd calculates the...",
+      "checkOptions": [
+        { "text": "Work done moving a charge", "isCorrect": true },
+        { "text": "Strength of the field alone", "isCorrect": false },
+        { "text": "Charge carried by one electron", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-coulombs-law",
+      "subtopicName": "Electrostatics",
+      "heading": "Coulomb's law: force between two charges",
+      "body": "Coulomb's law says the force between two point charges grows with the size of the charges, but shrinks fast as the distance between them grows. Doubling the distance cuts the force to a quarter.",
+      "checkText": "According to Coulomb's law, doubling the distance between two charges makes the force...",
+      "checkOptions": [
+        { "text": "One quarter as strong", "isCorrect": true },
+        { "text": "Twice as strong", "isCorrect": false },
+        { "text": "Exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-field-point-charge",
+      "subtopicName": "Electrostatics",
+      "heading": "The field around a single point charge",
+      "body": "The strength of the [[phys-electric-field|electric field]] around a single point charge gets weaker the further away you move, following the same pattern as [[phys-coulombs-law|Coulomb's law]].",
+      "checkText": "As you move further from a point charge, the electric field strength...",
+      "checkOptions": [
+        { "text": "Gets weaker", "isCorrect": true },
+        { "text": "Gets stronger", "isCorrect": false },
+        { "text": "Stays exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-current",
+      "subtopicName": "Electric circuits",
+      "heading": "What is electric current?",
+      "body": "Electric current is the flow of electric charge, usually carried by moving electrons in a wire. It is measured in amperes (A).",
+      "checkText": "Electric current is a flow of...",
+      "checkOptions": [
+        { "text": "Electric charge", "isCorrect": true },
+        { "text": "Heat", "isCorrect": false },
+        { "text": "Light", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-circuit-loop",
+      "subtopicName": "Electric circuits",
+      "heading": "A circuit needs a closed loop",
+      "body": "Current only flows when a circuit forms a complete, closed loop from one terminal of a power supply to the other. A break anywhere stops the flow.",
+      "checkText": "Current stops flowing when a circuit...",
+      "checkOptions": [
+        { "text": "Has a break in the loop", "isCorrect": true },
+        { "text": "Is switched on", "isCorrect": false },
+        { "text": "Uses copper wire", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-conventional-current",
+      "subtopicName": "Electric circuits",
+      "heading": "Conventional current vs electron flow",
+      "body": "Conventional current is defined as flowing from the positive terminal to the negative terminal of a battery. Real electrons actually flow the opposite way, negative to positive.",
+      "checkText": "Conventional current flows from the...",
+      "checkOptions": [
+        { "text": "Positive terminal to the negative terminal", "isCorrect": true },
+        { "text": "Negative terminal to the positive terminal", "isCorrect": false },
+        { "text": "Middle of the battery outward", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-current-formula",
+      "subtopicName": "Electric circuits",
+      "heading": "Calculating current: I = q/t",
+      "body": "Current (I) equals the amount of charge (q) that passes a point divided by the time (t) it takes. This is written I = q/t.",
+      "checkText": "The formula I = q/t calculates...",
+      "checkOptions": [
+        { "text": "Current", "isCorrect": true },
+        { "text": "Charge", "isCorrect": false },
+        { "text": "Time", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-ammeter",
+      "subtopicName": "Electric circuits",
+      "heading": "Measuring current with an ammeter",
+      "body": "An ammeter measures [[phys-current|current]] and is connected in series, meaning it sits directly along the same path the current flows through.",
+      "checkText": "An ammeter is connected to a circuit...",
+      "checkOptions": [
+        { "text": "In series, along the current's path", "isCorrect": true },
+        { "text": "In parallel, off to the side", "isCorrect": false },
+        { "text": "Nowhere near the circuit", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-battery-energy",
+      "subtopicName": "Electric circuits",
+      "heading": "How a battery powers a circuit",
+      "body": "A battery stores chemical energy and transforms it into electrical potential energy. This energy pushes electrons around a circuit, giving them the energy to keep moving.",
+      "checkText": "A battery transforms chemical energy into...",
+      "checkOptions": [
+        { "text": "Electrical potential energy", "isCorrect": true },
+        { "text": "Sound energy", "isCorrect": false },
+        { "text": "Nuclear energy", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-potential-difference-def",
+      "subtopicName": "Electric circuits",
+      "heading": "Potential difference (voltage)",
+      "body": "Potential difference, or voltage, is the electrical energy given to each unit of charge as it passes through a component. It is measured in volts (V).",
+      "checkText": "Voltage measures the energy given to each unit of...",
+      "checkOptions": [
+        { "text": "Charge", "isCorrect": true },
+        { "text": "Time", "isCorrect": false },
+        { "text": "Resistance", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-voltmeter",
+      "subtopicName": "Electric circuits",
+      "heading": "Measuring voltage with a voltmeter",
+      "body": "A voltmeter measures [[phys-potential-difference-def|potential difference]] and is connected in parallel, meaning its wires attach on either side of the component being measured.",
+      "checkText": "A voltmeter is connected to a circuit...",
+      "checkOptions": [
+        { "text": "In parallel, either side of a component", "isCorrect": true },
+        { "text": "In series, along the current's path", "isCorrect": false },
+        { "text": "Directly inside the battery", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-power-circuit",
+      "subtopicName": "Electric circuits",
+      "heading": "Power: how fast energy is used",
+      "body": "Power is the rate at which a circuit transforms energy. It can be calculated using P = VI, where V is voltage and I is current.",
+      "checkText": "Power in a circuit can be calculated using...",
+      "checkOptions": [
+        { "text": "P = VI", "isCorrect": true },
+        { "text": "P = V + I", "isCorrect": false },
+        { "text": "P = V minus I", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-resistance",
+      "subtopicName": "Electric circuits",
+      "heading": "What is resistance?",
+      "body": "Resistance measures how hard it is for [[phys-current|current]] to flow through a material. Conductors have low resistance, while insulators have high resistance.",
+      "checkText": "A material with high resistance makes it...",
+      "checkOptions": [
+        { "text": "Hard for current to flow", "isCorrect": true },
+        { "text": "Easy for current to flow", "isCorrect": false },
+        { "text": "Impossible to lose any energy", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-ohms-law",
+      "subtopicName": "Electric circuits",
+      "heading": "Ohm's law: V = IR",
+      "body": "Ohm's law says that for many conductors, potential difference equals current multiplied by [[phys-resistance|resistance]]: V = IR. If resistance stays constant, doubling the voltage doubles the current.",
+      "checkText": "Ohm's law is written as...",
+      "checkOptions": [
+        { "text": "V = IR", "isCorrect": true },
+        { "text": "V = I + R", "isCorrect": false },
+        { "text": "V = I divided by R squared", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-ohmic-conductors",
+      "subtopicName": "Electric circuits",
+      "heading": "Ohmic vs non-ohmic conductors",
+      "body": "Ohmic conductors, like most resistors, have a constant resistance and give a straight-line graph of current against voltage. Non-ohmic conductors, like light bulbs, have a resistance that changes.",
+      "checkText": "An ohmic conductor's current-voltage graph is...",
+      "checkOptions": [
+        { "text": "A straight line", "isCorrect": true },
+        { "text": "A curved line", "isCorrect": false },
+        { "text": "Always flat at zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-resistors-series",
+      "subtopicName": "Electric circuits",
+      "heading": "Resistors connected in series",
+      "body": "When resistors are connected one after another in a single loop, this is called a series circuit. The same current flows through every resistor in the loop.",
+      "checkText": "In a series circuit, the current through each resistor is...",
+      "checkOptions": [
+        { "text": "The same everywhere", "isCorrect": true },
+        { "text": "Different at each resistor", "isCorrect": false },
+        { "text": "Always zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-series-resistance-total",
+      "subtopicName": "Electric circuits",
+      "heading": "Total resistance in series",
+      "body": "The total resistance of [[phys-resistors-series|resistors in series]] is simply the sum of each individual resistance: R total = R1 + R2 + ...",
+      "checkText": "To find total resistance in a series circuit, you...",
+      "checkOptions": [
+        { "text": "Add up each resistance", "isCorrect": true },
+        { "text": "Multiply the resistances together", "isCorrect": false },
+        { "text": "Take the average of the resistances", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-resistors-parallel",
+      "subtopicName": "Electric circuits",
+      "heading": "Resistors connected in parallel",
+      "body": "When resistors are connected side by side, each on its own branch, this is called a parallel circuit. Every branch has the same voltage across it.",
+      "checkText": "In a parallel circuit, the voltage across each branch is...",
+      "checkOptions": [
+        { "text": "The same for every branch", "isCorrect": true },
+        { "text": "Different for every branch", "isCorrect": false },
+        { "text": "Always zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-parallel-resistance-total",
+      "subtopicName": "Electric circuits",
+      "heading": "Total resistance in parallel",
+      "body": "The total resistance of [[phys-resistors-parallel|resistors in parallel]] comes from 1/R total = 1/R1 + 1/R2 + ... This total is always smaller than the smallest resistor.",
+      "checkText": "The total resistance of resistors in parallel is always...",
+      "checkOptions": [
+        { "text": "Smaller than the smallest individual resistor", "isCorrect": true },
+        { "text": "Larger than the largest individual resistor", "isCorrect": false },
+        { "text": "Equal to the average resistance", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-kirchhoff-voltage",
+      "subtopicName": "Electric circuits",
+      "heading": "Kirchhoff's voltage law",
+      "body": "Kirchhoff's voltage law says the potential differences around any closed loop of a circuit must add up to zero. Energy gained from the battery equals energy lost in the components.",
+      "checkText": "Kirchhoff's voltage law says that around a closed loop, the voltages...",
+      "checkOptions": [
+        { "text": "Add up to zero", "isCorrect": true },
+        { "text": "Always add up to the current", "isCorrect": false },
+        { "text": "Are all equal to each other", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-kirchhoff-current",
+      "subtopicName": "Electric circuits",
+      "heading": "Kirchhoff's current law",
+      "body": "Kirchhoff's current law says the total current flowing into a junction must equal the total current flowing out. Charge is never created or destroyed in a circuit.",
+      "checkText": "Kirchhoff's current law is based on the idea that charge...",
+      "checkOptions": [
+        { "text": "Is never created or destroyed", "isCorrect": true },
+        { "text": "Is created at every junction", "isCorrect": false },
+        { "text": "Disappears at every junction", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-series-vs-parallel-household",
+      "subtopicName": "Electric circuits",
+      "heading": "Why homes use parallel wiring",
+      "body": "Household circuits use [[phys-resistors-parallel|parallel]] wiring so every appliance gets the full voltage and can be switched on or off without affecting the others.",
+      "checkText": "Homes use parallel wiring mainly so that appliances can be...",
+      "checkOptions": [
+        { "text": "Switched on or off independently", "isCorrect": true },
+        { "text": "Forced to share the voltage unevenly", "isCorrect": false },
+        { "text": "Connected using less wire", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-magnet-poles",
+      "subtopicName": "Magnetism",
+      "heading": "Every magnet has two poles",
+      "body": "Every magnet has a north pole and a south pole. If you cut a magnet in half, you just get two smaller magnets, each still with both poles.",
+      "checkText": "If you cut a magnet in half, you get...",
+      "checkOptions": [
+        { "text": "Two smaller magnets, each with two poles", "isCorrect": true },
+        { "text": "One pole on its own", "isCorrect": false },
+        { "text": "A magnet with no poles at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-magnetic-poles-force",
+      "subtopicName": "Magnetism",
+      "heading": "Like poles repel, unlike poles attract",
+      "body": "Two north poles, or two south poles, push each other away. A north pole and a south pole pull towards each other.",
+      "checkText": "Two north poles brought close together will...",
+      "checkOptions": [
+        { "text": "Repel each other", "isCorrect": true },
+        { "text": "Attract each other", "isCorrect": false },
+        { "text": "Have no effect on each other", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-ferromagnetic",
+      "subtopicName": "Magnetism",
+      "heading": "Materials that magnetise easily",
+      "body": "Iron, cobalt and nickel are called ferromagnetic materials because they become magnetised much more easily than other materials.",
+      "checkText": "Which of these is a ferromagnetic material?",
+      "checkOptions": [
+        { "text": "Iron", "isCorrect": true },
+        { "text": "Plastic", "isCorrect": false },
+        { "text": "Glass", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-magnetic-domains",
+      "subtopicName": "Magnetism",
+      "heading": "Magnetic domains inside a material",
+      "body": "A [[phys-ferromagnetic|ferromagnetic]] material is made of tiny regions called magnetic domains. In an unmagnetised material, these domains point in random directions and cancel each other out.",
+      "checkText": "In an unmagnetised ferromagnetic material, the magnetic domains...",
+      "checkOptions": [
+        { "text": "Point in random directions", "isCorrect": true },
+        { "text": "All point the same way", "isCorrect": false },
+        { "text": "Do not exist", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-domains-alignment",
+      "subtopicName": "Magnetism",
+      "heading": "How a material becomes magnetised",
+      "body": "Placing a [[phys-ferromagnetic|ferromagnetic]] material in an external magnetic field lines up its [[phys-magnetic-domains|magnetic domains]] in the same direction, turning it into a magnet.",
+      "checkText": "A material becomes magnetised when its magnetic domains...",
+      "checkOptions": [
+        { "text": "Line up in the same direction", "isCorrect": true },
+        { "text": "Spread out randomly", "isCorrect": false },
+        { "text": "Disappear completely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-magnetic-field",
+      "subtopicName": "Magnetism",
+      "heading": "What is a magnetic field?",
+      "body": "A magnetic field is the region of space around a magnet where a magnetic force can be felt. Field lines run from the north pole to the south pole.",
+      "checkText": "Magnetic field lines run from the...",
+      "checkOptions": [
+        { "text": "North pole to the south pole", "isCorrect": true },
+        { "text": "South pole to the north pole", "isCorrect": false },
+        { "text": "Centre outward in every direction equally", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-field-line-density",
+      "subtopicName": "Magnetism",
+      "heading": "Denser lines mean a stronger field",
+      "body": "Where [[phys-magnetic-field|magnetic field]] lines are close together, the field is strong. Further from the magnet, the lines spread out and the field gets weaker.",
+      "checkText": "Widely spaced magnetic field lines show a...",
+      "checkOptions": [
+        { "text": "Weak field", "isCorrect": true },
+        { "text": "Strong field", "isCorrect": false },
+        { "text": "Field of zero strength everywhere", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-current-magnetic-field",
+      "subtopicName": "Magnetism",
+      "heading": "Electric current creates a magnetic field",
+      "body": "In 1820, Hans Christian Ørsted discovered that an electric current flowing through a wire creates its own circular [[phys-magnetic-field|magnetic field]] around the wire.",
+      "checkText": "A current-carrying wire is surrounded by a magnetic field shaped like...",
+      "checkOptions": [
+        { "text": "Circles around the wire", "isCorrect": true },
+        { "text": "A single straight line", "isCorrect": false },
+        { "text": "A square", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-right-hand-rule",
+      "subtopicName": "Magnetism",
+      "heading": "Finding the field direction: right-hand grip rule",
+      "body": "To find the direction of the [[phys-current-magnetic-field|magnetic field]] around a wire, grip the wire with your right hand, thumb pointing along the current. Your curled fingers show the field direction.",
+      "checkText": "In the right-hand grip rule, your thumb points in the direction of the...",
+      "checkOptions": [
+        { "text": "Current", "isCorrect": true },
+        { "text": "Magnetic field", "isCorrect": false },
+        { "text": "Wire's temperature", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-parallel-wires-force",
+      "subtopicName": "Magnetism",
+      "heading": "How two current-carrying wires interact",
+      "body": "Two wires carrying current in the same direction attract each other, while two wires carrying current in opposite directions repel each other.",
+      "checkText": "Two parallel wires carrying current in the same direction will...",
+      "checkOptions": [
+        { "text": "Attract each other", "isCorrect": true },
+        { "text": "Repel each other", "isCorrect": false },
+        { "text": "Not interact at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-solenoid",
+      "subtopicName": "Magnetism",
+      "heading": "A solenoid: coils that add up",
+      "body": "A solenoid is a coil of wire wound into loops. Winding the wire this way makes each loop's [[phys-current-magnetic-field|magnetic field]] add together, producing a field shaped like a bar magnet.",
+      "checkText": "A solenoid's magnetic field is shaped like the field of a...",
+      "checkOptions": [
+        { "text": "Bar magnet", "isCorrect": true },
+        { "text": "Single straight wire", "isCorrect": false },
+        { "text": "Flat sheet of metal", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-electromagnet",
+      "subtopicName": "Magnetism",
+      "heading": "Electromagnets: solenoids with a core",
+      "body": "Wrapping a [[phys-solenoid|solenoid]] around an iron core makes an electromagnet, which is much stronger than the solenoid alone. Its strength can be changed just by changing the current.",
+      "checkText": "Adding an iron core to a solenoid makes the magnetic field...",
+      "checkOptions": [
+        { "text": "Much stronger", "isCorrect": true },
+        { "text": "Much weaker", "isCorrect": false },
+        { "text": "Completely disappear", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-ampere-law-wire",
+      "subtopicName": "Magnetism",
+      "heading": "Calculating the field around a wire",
+      "body": "Ampere's law gives the magnetic field strength around a straight current-carrying wire as B = mu0 × I / (2 × pi × r), where r is the distance from the wire.",
+      "checkText": "According to Ampere's law, moving further from a current-carrying wire makes the magnetic field...",
+      "checkOptions": [
+        { "text": "Weaker", "isCorrect": true },
+        { "text": "Stronger", "isCorrect": false },
+        { "text": "Unchanged", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-solenoid-field-formula",
+      "subtopicName": "Magnetism",
+      "heading": "Calculating the field inside a solenoid",
+      "body": "The magnetic field inside a [[phys-solenoid|solenoid]] is given by B = mu0 × N × I / L, where N is the number of turns and L is the solenoid's length.",
+      "checkText": "Increasing the number of turns N in a solenoid, with current and length unchanged, makes the magnetic field...",
+      "checkOptions": [
+        { "text": "Stronger", "isCorrect": true },
+        { "text": "Weaker", "isCorrect": false },
+        { "text": "Unchanged", "isCorrect": false }
+      ]
+    }
+  ]
+}

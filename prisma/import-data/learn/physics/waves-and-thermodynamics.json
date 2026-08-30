@@ -1,0 +1,905 @@
+{
+  "topicName": "Waves and Thermodynamics",
+  "chunks": [
+    {
+      "slug": "phys-mechanical-wave",
+      "subtopicName": "Wave properties",
+      "heading": "What is a mechanical wave?",
+      "body": "A mechanical wave is a disturbance that needs a medium, like water or a rope, to travel through. Sound and water waves are both mechanical waves.",
+      "checkText": "What does a mechanical wave need in order to travel?",
+      "checkOptions": [
+        { "text": "A medium", "isCorrect": true },
+        { "text": "Nothing at all", "isCorrect": false },
+        { "text": "Only sunlight", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-wave-energy",
+      "subtopicName": "Wave properties",
+      "heading": "Waves carry energy, not matter",
+      "body": "A [[phys-mechanical-wave|mechanical wave]] moves energy from one place to another. The particles of the medium don't travel with the wave — they just wobble in place.",
+      "checkText": "As a wave passes through water, what actually travels forward?",
+      "checkOptions": [
+        { "text": "Energy", "isCorrect": true },
+        { "text": "The water itself", "isCorrect": false },
+        { "text": "Nothing moves", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-pulse-continuous",
+      "subtopicName": "Wave properties",
+      "heading": "A single pulse vs a continuous wave",
+      "body": "One quick flick of a rope sends a single wave pulse. Shaking the rope again and again instead sends a continuous, repeating wave.",
+      "checkText": "What creates a continuous wave rather than a single pulse?",
+      "checkOptions": [
+        { "text": "Repeated, ongoing shaking of the source", "isCorrect": true },
+        { "text": "One single flick", "isCorrect": false },
+        { "text": "Standing completely still", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-transverse-wave",
+      "subtopicName": "Wave properties",
+      "heading": "Transverse waves: side to side",
+      "body": "In a transverse wave, the medium's particles move up and down, at right angles to the direction the wave travels. A wave on a string is transverse.",
+      "checkText": "In a transverse wave, particles move...",
+      "checkOptions": [
+        { "text": "Perpendicular to the wave's direction of travel", "isCorrect": true },
+        { "text": "Parallel to the wave's direction of travel", "isCorrect": false },
+        { "text": "In a circle around the wave", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-crest-trough",
+      "subtopicName": "Wave properties",
+      "heading": "Crest and trough",
+      "body": "In a [[phys-transverse-wave|transverse wave]], the highest point above the resting position is the crest. The lowest point below it is the trough.",
+      "checkText": "The lowest point of a transverse wave is called the...",
+      "checkOptions": [
+        { "text": "Trough", "isCorrect": true },
+        { "text": "Crest", "isCorrect": false },
+        { "text": "Node", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-longitudinal-wave",
+      "subtopicName": "Wave properties",
+      "heading": "Longitudinal waves: back and forth",
+      "body": "In a longitudinal wave, the medium's particles move back and forth in the same direction the wave travels. Sound is a longitudinal wave.",
+      "checkText": "In a longitudinal wave, particles vibrate...",
+      "checkOptions": [
+        { "text": "Parallel to the wave's direction of travel", "isCorrect": true },
+        { "text": "Perpendicular to the wave's direction of travel", "isCorrect": false },
+        { "text": "They don't move at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-compression-rarefaction",
+      "subtopicName": "Wave properties",
+      "heading": "Compression and rarefaction",
+      "body": "In a [[phys-longitudinal-wave|longitudinal wave]], a compression is where particles bunch close together. A rarefaction is where particles spread further apart.",
+      "checkText": "A compression in a longitudinal wave is a region where particles are...",
+      "checkOptions": [
+        { "text": "Bunched close together", "isCorrect": true },
+        { "text": "Spread far apart", "isCorrect": false },
+        { "text": "Completely still", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-amplitude",
+      "subtopicName": "Wave properties",
+      "heading": "Amplitude: how big is the wave?",
+      "body": "Amplitude is the maximum distance a particle moves away from its resting position. A bigger amplitude means the wave is carrying more energy.",
+      "checkText": "A wave with a larger amplitude is carrying...",
+      "checkOptions": [
+        { "text": "More energy", "isCorrect": true },
+        { "text": "Less energy", "isCorrect": false },
+        { "text": "The same energy, always", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-wavelength",
+      "subtopicName": "Wave properties",
+      "heading": "Wavelength: the length of one wave",
+      "body": "Wavelength is the distance between two matching points on a wave, like crest to crest. It's usually measured in metres.",
+      "checkText": "Wavelength is best described as the distance between...",
+      "checkOptions": [
+        { "text": "Two matching points on a wave, like crest to crest", "isCorrect": true },
+        { "text": "The top and bottom of one wave", "isCorrect": false },
+        { "text": "The source and the observer", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-frequency",
+      "subtopicName": "Wave properties",
+      "heading": "Frequency: how often waves arrive",
+      "body": "Frequency is the number of complete waves passing a point each second. It's measured in hertz (Hz).",
+      "checkText": "Frequency measures...",
+      "checkOptions": [
+        { "text": "How many complete waves pass a point each second", "isCorrect": true },
+        { "text": "How tall a wave is", "isCorrect": false },
+        { "text": "How far a wave has travelled", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-period",
+      "subtopicName": "Wave properties",
+      "heading": "Period: the time for one wave",
+      "body": "Period is the time it takes for one complete wave to pass a point. It's the opposite of [[phys-frequency|frequency]] — a short period means a high frequency.",
+      "checkText": "A wave with a very short period has a...",
+      "checkOptions": [
+        { "text": "High frequency", "isCorrect": true },
+        { "text": "Low frequency", "isCorrect": false },
+        { "text": "Zero frequency", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-wave-speed-equation",
+      "subtopicName": "Wave properties",
+      "heading": "Working out wave speed",
+      "body": "A wave's speed equals its [[phys-frequency|frequency]] multiplied by its [[phys-wavelength|wavelength]]. Knowing any two of speed, frequency and wavelength lets you calculate the third.",
+      "checkText": "The speed of a wave can be found by...",
+      "checkOptions": [
+        { "text": "Multiplying frequency by wavelength", "isCorrect": true },
+        { "text": "Dividing frequency by amplitude", "isCorrect": false },
+        { "text": "Adding frequency and period", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-reflection-fixed-end",
+      "subtopicName": "Wave properties",
+      "heading": "Reflecting off a fixed end",
+      "body": "When a wave pulse hits a rope end that's tied down, it bounces back flipped upside down. A crest reflects as a trough.",
+      "checkText": "When a wave reflects off a fixed end, the pulse comes back...",
+      "checkOptions": [
+        { "text": "Flipped upside down", "isCorrect": true },
+        { "text": "Exactly the same way up", "isCorrect": false },
+        { "text": "Twice as tall", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-reflection-free-end",
+      "subtopicName": "Wave properties",
+      "heading": "Reflecting off a free end",
+      "body": "When a wave pulse hits an end that's free to move, it bounces back the same way up. A crest reflects as a crest.",
+      "checkText": "At a free end, a reflected wave pulse...",
+      "checkOptions": [
+        { "text": "Keeps the same orientation as before", "isCorrect": true },
+        { "text": "Always flips upside down", "isCorrect": false },
+        { "text": "Disappears completely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-law-of-reflection",
+      "subtopicName": "Wave properties",
+      "heading": "The law of reflection",
+      "body": "When any wave bounces off a surface, the angle it arrives at equals the angle it leaves at, both measured from an imaginary line called the normal.",
+      "checkText": "The law of reflection states that the angle of incidence...",
+      "checkOptions": [
+        { "text": "Equals the angle of reflection", "isCorrect": true },
+        { "text": "Is always bigger than the angle of reflection", "isCorrect": false },
+        { "text": "Has no relationship to the angle of reflection", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-refraction-wave",
+      "subtopicName": "Wave properties",
+      "heading": "Refraction: waves change direction",
+      "body": "Refraction happens when a wave changes direction because its speed changes as it moves into a different medium. Water waves refract when they move from deep to shallow water.",
+      "checkText": "Refraction is caused by a wave...",
+      "checkOptions": [
+        { "text": "Changing speed as it enters a new medium", "isCorrect": true },
+        { "text": "Bouncing off a surface", "isCorrect": false },
+        { "text": "Losing all of its energy", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-diffraction",
+      "subtopicName": "Wave properties",
+      "heading": "Diffraction: bending around edges",
+      "body": "Diffraction is when a wave bends as it passes through a gap or around an obstacle. It's most noticeable when the gap is about the same size as the wavelength.",
+      "checkText": "Diffraction is most noticeable when the gap is...",
+      "checkOptions": [
+        { "text": "About the same size as the wavelength", "isCorrect": true },
+        { "text": "Much larger than the wavelength", "isCorrect": false },
+        { "text": "Completely closed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-superposition-constructive",
+      "subtopicName": "Wave properties",
+      "heading": "Constructive superposition",
+      "body": "When two waves meet and their crests line up, their displacements add together to make a bigger wave. This is called constructive superposition.",
+      "checkText": "Constructive superposition happens when two waves meet and...",
+      "checkOptions": [
+        { "text": "Their crests line up, making a bigger wave", "isCorrect": true },
+        { "text": "They cancel each other out completely", "isCorrect": false },
+        { "text": "They stop moving forever", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-superposition-destructive",
+      "subtopicName": "Wave properties",
+      "heading": "Destructive superposition",
+      "body": "When a wave's crest meets another wave's trough, the two displacements partly or fully cancel out. This is called destructive superposition.",
+      "checkText": "Destructive superposition happens when a crest meets a...",
+      "checkOptions": [
+        { "text": "Trough", "isCorrect": true },
+        { "text": "Crest", "isCorrect": false },
+        { "text": "Node", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-standing-wave",
+      "subtopicName": "Wave properties",
+      "heading": "Standing waves",
+      "body": "A standing wave forms when two waves of equal frequency travel in opposite directions and overlap. It seems to stay in place, with still points called nodes and points of maximum movement called antinodes.",
+      "checkText": "A point on a standing wave that never moves is called a...",
+      "checkOptions": [
+        { "text": "Node", "isCorrect": true },
+        { "text": "Antinode", "isCorrect": false },
+        { "text": "Crest", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-resonance",
+      "subtopicName": "Wave properties",
+      "heading": "Resonance: pushing at just the right rate",
+      "body": "Every object has its own natural vibration rate. Resonance happens when something is pushed at exactly that rate, causing its vibrations to grow much larger.",
+      "checkText": "Resonance occurs when an object is driven at...",
+      "checkOptions": [
+        { "text": "Its own natural frequency", "isCorrect": true },
+        { "text": "Any random frequency", "isCorrect": false },
+        { "text": "Zero frequency", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-sound-longitudinal",
+      "subtopicName": "Sound waves",
+      "heading": "Sound is a longitudinal wave",
+      "body": "Sound travels as a [[phys-longitudinal-wave|longitudinal wave]], made up of [[phys-compression-rarefaction|compressions and rarefactions]] moving through the air. Vibrating objects, like vocal cords, create these waves.",
+      "checkText": "Sound is an example of a...",
+      "checkOptions": [
+        { "text": "Longitudinal wave", "isCorrect": true },
+        { "text": "Transverse wave", "isCorrect": false },
+        { "text": "Wave with no energy", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-sound-medium",
+      "subtopicName": "Sound waves",
+      "heading": "Sound needs a medium",
+      "body": "Because sound is a [[phys-mechanical-wave|mechanical wave]], it cannot travel through empty space. This is why astronauts can't hear each other shout across the vacuum outside their spacecraft.",
+      "checkText": "Sound cannot travel through...",
+      "checkOptions": [
+        { "text": "A vacuum", "isCorrect": true },
+        { "text": "Air", "isCorrect": false },
+        { "text": "Water", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-sound-pitch",
+      "subtopicName": "Sound waves",
+      "heading": "Pitch depends on frequency",
+      "body": "A sound's pitch is set by its [[phys-frequency|frequency]]. A higher frequency sounds higher-pitched, like a bird's chirp compared to a foghorn.",
+      "checkText": "A higher-pitched sound has a...",
+      "checkOptions": [
+        { "text": "Higher frequency", "isCorrect": true },
+        { "text": "Lower frequency", "isCorrect": false },
+        { "text": "Bigger amplitude, always", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-sound-loudness",
+      "subtopicName": "Sound waves",
+      "heading": "Loudness depends on amplitude",
+      "body": "A sound's loudness is set by its [[phys-amplitude|amplitude]]. More energy in the vibration means a bigger amplitude and a louder sound.",
+      "checkText": "A louder sound has a bigger...",
+      "checkOptions": [
+        { "text": "Amplitude", "isCorrect": true },
+        { "text": "Frequency", "isCorrect": false },
+        { "text": "Wavelength, always", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-sound-behaviour",
+      "subtopicName": "Sound waves",
+      "heading": "Sound behaves like other waves",
+      "body": "Because sound is a wave, it can [[phys-reflection-fixed-end|reflect]] as an echo and [[phys-diffraction|diffract]] around corners. Low-pitched sounds, with longer wavelengths, diffract more than high-pitched sounds.",
+      "checkText": "Compared to high-pitched sounds, low-pitched sounds diffract...",
+      "checkOptions": [
+        { "text": "More, because they have longer wavelengths", "isCorrect": true },
+        { "text": "Less, because they have longer wavelengths", "isCorrect": false },
+        { "text": "Exactly the same amount", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-sound-intensity",
+      "subtopicName": "Sound waves",
+      "heading": "Sound intensity",
+      "body": "Intensity measures how much sound energy passes through an area each second. It's measured in watts per square metre and roughly matches how loud a sound seems.",
+      "checkText": "Sound intensity is measured in...",
+      "checkOptions": [
+        { "text": "Watts per square metre", "isCorrect": true },
+        { "text": "Hertz", "isCorrect": false },
+        { "text": "Metres", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-inverse-square-sound",
+      "subtopicName": "Sound waves",
+      "heading": "Sound fades with distance",
+      "body": "As you move away from a sound source, its energy spreads over a bigger area, so intensity drops sharply. Doubling the distance cuts the intensity to one-quarter.",
+      "checkText": "If you double your distance from a sound source, the intensity becomes...",
+      "checkOptions": [
+        { "text": "One-quarter as much", "isCorrect": true },
+        { "text": "Half as much", "isCorrect": false },
+        { "text": "The same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-doppler-effect",
+      "subtopicName": "Sound waves",
+      "heading": "The Doppler effect",
+      "body": "The Doppler effect is why a siren sounds higher-pitched as it approaches you and lower-pitched as it moves away. The source's actual frequency never changes — only what you hear does.",
+      "checkText": "As an ambulance moves towards you, its siren sounds...",
+      "checkOptions": [
+        { "text": "Higher-pitched than it really is", "isCorrect": true },
+        { "text": "Lower-pitched than it really is", "isCorrect": false },
+        { "text": "Exactly as it really is", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-beats",
+      "subtopicName": "Sound waves",
+      "heading": "Beats: two close frequencies clashing",
+      "body": "When two sounds of slightly different frequency play together, you hear a regular pulsing volume called beats. Musicians use this to tell when two instruments are almost, but not quite, in tune.",
+      "checkText": "Beats are heard when two sounds have...",
+      "checkOptions": [
+        { "text": "Slightly different frequencies", "isCorrect": true },
+        { "text": "Exactly the same frequency", "isCorrect": false },
+        { "text": "No frequency at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-standing-wave-sound",
+      "subtopicName": "Sound waves",
+      "heading": "Standing waves make musical notes",
+      "body": "Instruments like guitars and flutes create [[phys-standing-wave|standing waves]] in strings or air columns. The simplest possible standing wave is the fundamental frequency; the higher ones are called overtones.",
+      "checkText": "The simplest, lowest standing wave frequency of an instrument is called its...",
+      "checkOptions": [
+        { "text": "Fundamental frequency", "isCorrect": true },
+        { "text": "Overtone", "isCorrect": false },
+        { "text": "Beat frequency", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-string-both-ends",
+      "subtopicName": "Sound waves",
+      "heading": "A string fixed at both ends",
+      "body": "Both ends of a guitar string are fixed, so they're always [[phys-standing-wave|nodes]]. Its fundamental wavelength is twice the string's length.",
+      "checkText": "For a string fixed at both ends, the ends are always...",
+      "checkOptions": [
+        { "text": "Nodes", "isCorrect": true },
+        { "text": "Antinodes", "isCorrect": false },
+        { "text": "Moving at maximum speed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-string-one-end",
+      "subtopicName": "Sound waves",
+      "heading": "A string or tube fixed at one end",
+      "body": "If one end is fixed and the other is free, the fixed end is a node and the free end is an antinode. Only odd-numbered harmonics can form this way.",
+      "checkText": "In a system fixed at one end only, which harmonics are possible?",
+      "checkOptions": [
+        { "text": "Only odd-numbered harmonics", "isCorrect": true },
+        { "text": "Only even-numbered harmonics", "isCorrect": false },
+        { "text": "Every harmonic", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-open-pipe",
+      "subtopicName": "Sound waves",
+      "heading": "Wind instruments open at both ends",
+      "body": "In a pipe open at both ends, like a flute, both ends become antinodes. This works the same way as a [[phys-string-both-ends|string fixed at both ends]].",
+      "checkText": "In a pipe open at both ends, the open ends are...",
+      "checkOptions": [
+        { "text": "Antinodes", "isCorrect": true },
+        { "text": "Nodes", "isCorrect": false },
+        { "text": "Silent", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-closed-pipe",
+      "subtopicName": "Sound waves",
+      "heading": "Wind instruments closed at one end",
+      "body": "In a pipe closed at one end, like a clarinet, the closed end is a node and the open end is an antinode. Only odd harmonics are possible, just like a [[phys-string-one-end|string fixed at one end]].",
+      "checkText": "In a pipe closed at one end, the closed end is a...",
+      "checkOptions": [
+        { "text": "Node", "isCorrect": true },
+        { "text": "Antinode", "isCorrect": false },
+        { "text": "Crest", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-light-ray",
+      "subtopicName": "Ray model of light",
+      "heading": "Light as a straight ray",
+      "body": "A simple way to model light is as a straight ray travelling outward from its source. This ray model helps explain how mirrors and lenses form images.",
+      "checkText": "In the ray model, light is represented as...",
+      "checkOptions": [
+        { "text": "A straight line", "isCorrect": true },
+        { "text": "A wobbling particle", "isCorrect": false },
+        { "text": "A random cloud", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-plane-mirror-image",
+      "subtopicName": "Ray model of light",
+      "heading": "Images in a flat mirror",
+      "body": "A flat mirror forms a virtual image that is upright, the same size as the object, and appears as far behind the mirror as the object is in front.",
+      "checkText": "The image formed by a flat mirror is...",
+      "checkOptions": [
+        { "text": "The same size as the object", "isCorrect": true },
+        { "text": "Always bigger than the object", "isCorrect": false },
+        { "text": "Always smaller than the object", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-real-vs-virtual-image",
+      "subtopicName": "Ray model of light",
+      "heading": "Real image or virtual image?",
+      "body": "A real image forms where light rays actually cross, and can be captured on a screen. A virtual image only appears to form, and can only be seen by looking into the mirror or lens.",
+      "checkText": "A real image can be...",
+      "checkOptions": [
+        { "text": "Projected onto a screen", "isCorrect": true },
+        { "text": "Only seen by looking into the mirror", "isCorrect": false },
+        { "text": "Neither seen nor projected", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-light-intensity",
+      "subtopicName": "Ray model of light",
+      "heading": "Measuring brightness",
+      "body": "Luminous intensity, measured in candela, describes how bright a light source is. Like [[phys-inverse-square-sound|sound]], light intensity drops sharply with distance from the source.",
+      "checkText": "The unit for luminous intensity is the...",
+      "checkOptions": [
+        { "text": "Candela", "isCorrect": true },
+        { "text": "Hertz", "isCorrect": false },
+        { "text": "Newton", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-refraction-light",
+      "subtopicName": "Ray model of light",
+      "heading": "Refraction of light",
+      "body": "Just like any [[phys-refraction-wave|wave]], light bends when it moves between materials where its speed changes, such as from air into water.",
+      "checkText": "Light refracts when it...",
+      "checkOptions": [
+        { "text": "Moves into a material where its speed changes", "isCorrect": true },
+        { "text": "Stays in the same material", "isCorrect": false },
+        { "text": "Is completely absorbed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-refractive-index",
+      "subtopicName": "Ray model of light",
+      "heading": "Refractive index",
+      "body": "The refractive index of a material tells you how much slower light travels in it compared to a vacuum. A higher refractive index means light travels more slowly.",
+      "checkText": "A material with a high refractive index causes light to travel...",
+      "checkOptions": [
+        { "text": "More slowly through it", "isCorrect": true },
+        { "text": "Faster through it", "isCorrect": false },
+        { "text": "At the same speed as a vacuum", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-snells-law",
+      "subtopicName": "Ray model of light",
+      "heading": "Snell's law",
+      "body": "Snell's law lets you calculate exactly how much a light ray bends when it crosses into a new material, using the refractive indexes of both materials.",
+      "checkText": "Snell's law is used to calculate...",
+      "checkOptions": [
+        { "text": "How much a light ray bends between two materials", "isCorrect": true },
+        { "text": "How loud a sound is", "isCorrect": false },
+        { "text": "How fast a mirror reflects light", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-total-internal-reflection",
+      "subtopicName": "Ray model of light",
+      "heading": "Total internal reflection",
+      "body": "When light tries to leave a denser material at a steep enough angle, it can't escape and instead reflects entirely back inside, as though the boundary were a mirror.",
+      "checkText": "Total internal reflection happens when light...",
+      "checkOptions": [
+        { "text": "Cannot escape a denser material and reflects back inside", "isCorrect": true },
+        { "text": "Passes straight through unchanged", "isCorrect": false },
+        { "text": "Is absorbed completely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-critical-angle",
+      "subtopicName": "Ray model of light",
+      "heading": "The critical angle",
+      "body": "The critical angle is the exact angle of incidence where light stops refracting out and instead travels right along the boundary. Beyond this angle, [[phys-total-internal-reflection|total internal reflection]] occurs.",
+      "checkText": "At angles greater than the critical angle, light undergoes...",
+      "checkOptions": [
+        { "text": "Total internal reflection", "isCorrect": true },
+        { "text": "No refraction and no reflection", "isCorrect": false },
+        { "text": "Complete absorption", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-dispersion",
+      "subtopicName": "Ray model of light",
+      "heading": "Dispersion: splitting white light",
+      "body": "Dispersion happens because each colour in white light refracts by a slightly different amount. This splits white light into a spectrum of colours, like in a rainbow.",
+      "checkText": "Dispersion splits white light into a spectrum because...",
+      "checkOptions": [
+        { "text": "Each colour refracts by a slightly different amount", "isCorrect": true },
+        { "text": "Only one colour is real", "isCorrect": false },
+        { "text": "All colours always travel at exactly the same speed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-curved-mirror-types",
+      "subtopicName": "Ray model of light",
+      "heading": "Concave and convex mirrors",
+      "body": "A concave mirror curves inward and focuses parallel light rays to a point, so it's called converging. A convex mirror curves outward and spreads light rays apart, so it's called diverging.",
+      "checkText": "A mirror that focuses parallel rays to a point is...",
+      "checkOptions": [
+        { "text": "Concave", "isCorrect": true },
+        { "text": "Convex", "isCorrect": false },
+        { "text": "Flat", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-focal-length",
+      "subtopicName": "Ray model of light",
+      "heading": "Focal length",
+      "body": "The focal length is the distance from a curved mirror to its focus, the point where parallel rays meet. It's half the mirror's radius of curvature.",
+      "checkText": "The focal length of a mirror is...",
+      "checkOptions": [
+        { "text": "Half of its radius of curvature", "isCorrect": true },
+        { "text": "Equal to its radius of curvature", "isCorrect": false },
+        { "text": "Always exactly one metre", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-concave-mirror-images",
+      "subtopicName": "Ray model of light",
+      "heading": "Images in a concave mirror",
+      "body": "A concave mirror's image changes depending on the object's distance: it can be real and inverted, or if the object is very close, virtual, upright and enlarged.",
+      "checkText": "When an object is placed very close to a concave mirror, the image is...",
+      "checkOptions": [
+        { "text": "Virtual, upright and enlarged", "isCorrect": true },
+        { "text": "Always real and inverted", "isCorrect": false },
+        { "text": "Always the same size", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-convex-mirror-images",
+      "subtopicName": "Ray model of light",
+      "heading": "Images in a convex mirror",
+      "body": "A convex mirror always produces a virtual, upright, and smaller image, no matter where the object is placed. This wide view is why they're used as shop security mirrors.",
+      "checkText": "A convex mirror always produces an image that is...",
+      "checkOptions": [
+        { "text": "Virtual, upright and diminished", "isCorrect": true },
+        { "text": "Real and inverted", "isCorrect": false },
+        { "text": "Enlarged and inverted", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-mirror-formula",
+      "subtopicName": "Ray model of light",
+      "heading": "The mirror formula",
+      "body": "The mirror formula, 1/f = 1/u + 1/v, connects the focal length, the object's distance and the image's distance, letting you calculate exactly where an image will form.",
+      "checkText": "The mirror formula relates focal length to...",
+      "checkOptions": [
+        { "text": "Object distance and image distance", "isCorrect": true },
+        { "text": "Only the object's height", "isCorrect": false },
+        { "text": "Only the type of light source", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-magnification",
+      "subtopicName": "Ray model of light",
+      "heading": "Magnification",
+      "body": "Magnification compares the size of an image to the size of the real object. A magnification of 2 means the image appears twice as tall as the object.",
+      "checkText": "A magnification of 0.5 means the image is...",
+      "checkOptions": [
+        { "text": "Half the size of the object", "isCorrect": true },
+        { "text": "Twice the size of the object", "isCorrect": false },
+        { "text": "The same size as the object", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-convex-lens",
+      "subtopicName": "Ray model of light",
+      "heading": "Convex lenses converge light",
+      "body": "A convex lens is thicker in the middle than at its edges and bends parallel light rays inward, converging them to a focus, just like a [[phys-curved-mirror-types|concave mirror]].",
+      "checkText": "A convex lens is thicker...",
+      "checkOptions": [
+        { "text": "In the middle than at the edges", "isCorrect": true },
+        { "text": "At the edges than in the middle", "isCorrect": false },
+        { "text": "Nowhere — it's flat all over", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-concave-lens",
+      "subtopicName": "Ray model of light",
+      "heading": "Concave lenses diverge light",
+      "body": "A concave lens is thinner in the middle than at its edges and spreads parallel light rays apart. It always forms a virtual, diminished image.",
+      "checkText": "A concave lens always forms an image that is...",
+      "checkOptions": [
+        { "text": "Virtual and diminished", "isCorrect": true },
+        { "text": "Real and enlarged", "isCorrect": false },
+        { "text": "Real and inverted", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-lens-formula",
+      "subtopicName": "Ray model of light",
+      "heading": "The lens formula",
+      "body": "The lens formula, 1/f = 1/u + 1/v, works exactly the same way as the [[phys-mirror-formula|mirror formula]], letting you find where a lens forms its image.",
+      "checkText": "The lens formula is...",
+      "checkOptions": [
+        { "text": "The same equation used for the mirror formula", "isCorrect": true },
+        { "text": "A completely different equation to the mirror formula", "isCorrect": false },
+        { "text": "Only used for concave lenses", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-kinetic-particle-model",
+      "subtopicName": "Thermodynamics",
+      "heading": "The kinetic particle model",
+      "body": "This model says all matter is made of tiny particles that are always moving. The particles also pull and push on each other with attractive and repulsive forces.",
+      "checkText": "According to the kinetic particle model, particles in matter are...",
+      "checkOptions": [
+        { "text": "Always in motion", "isCorrect": true },
+        { "text": "Always perfectly still", "isCorrect": false },
+        { "text": "Only moving in solids", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-solid-particles",
+      "subtopicName": "Thermodynamics",
+      "heading": "Particles in a solid",
+      "body": "In a solid, strong forces hold particles in roughly fixed positions, though they still vibrate in place. This is why solids keep a fixed shape.",
+      "checkText": "Particles in a solid mostly...",
+      "checkOptions": [
+        { "text": "Vibrate around fixed positions", "isCorrect": true },
+        { "text": "Move freely throughout the container", "isCorrect": false },
+        { "text": "Stay perfectly motionless", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-gas-particles",
+      "subtopicName": "Thermodynamics",
+      "heading": "Particles in a gas",
+      "body": "In a gas, particles move fast and in random directions, colliding with each other and the container walls. This is why a gas spreads to fill any container.",
+      "checkText": "Compared to a solid, particles in a gas...",
+      "checkOptions": [
+        { "text": "Move much faster and more freely", "isCorrect": true },
+        { "text": "Move more slowly and stay put", "isCorrect": false },
+        { "text": "Don't move at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-heat-vs-temperature",
+      "subtopicName": "Thermodynamics",
+      "heading": "Heat is not the same as temperature",
+      "body": "Heat is the energy transferred from a hotter object to a colder one. Temperature is a measure of the average kinetic energy of a substance's particles.",
+      "checkText": "Heat refers to energy that is...",
+      "checkOptions": [
+        { "text": "Being transferred from hot to cold", "isCorrect": true },
+        { "text": "Stored permanently inside an object", "isCorrect": false },
+        { "text": "The same thing as temperature", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-internal-energy",
+      "subtopicName": "Thermodynamics",
+      "heading": "Internal energy",
+      "body": "A substance's internal energy is the total kinetic and potential energy of all its particles. Adding heat can raise this energy, which raises temperature or changes state.",
+      "checkText": "Internal energy is the total of a substance's particles'...",
+      "checkOptions": [
+        { "text": "Kinetic and potential energy", "isCorrect": true },
+        { "text": "Mass and volume", "isCorrect": false },
+        { "text": "Colour and shape", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-temperature-scales",
+      "subtopicName": "Thermodynamics",
+      "heading": "Celsius, Fahrenheit and Kelvin",
+      "body": "Celsius and Fahrenheit are arbitrary scales based on chosen reference points. The Kelvin scale is absolute, starting at the coldest possible temperature instead of an arbitrary point.",
+      "checkText": "Unlike Celsius, the Kelvin scale starts at...",
+      "checkOptions": [
+        { "text": "The coldest possible temperature", "isCorrect": true },
+        { "text": "The freezing point of water", "isCorrect": false },
+        { "text": "A randomly chosen point", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-absolute-zero",
+      "subtopicName": "Thermodynamics",
+      "heading": "Absolute zero",
+      "body": "Absolute zero is the coldest temperature possible, at 0 kelvin or -273.15 degrees Celsius. At this point, particles have the least possible kinetic energy.",
+      "checkText": "Absolute zero occurs at...",
+      "checkOptions": [
+        { "text": "0 kelvin", "isCorrect": true },
+        { "text": "0 degrees Celsius", "isCorrect": false },
+        { "text": "100 degrees Celsius", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-kelvin-conversion",
+      "subtopicName": "Thermodynamics",
+      "heading": "Converting Celsius to kelvin",
+      "body": "To change a temperature from Celsius to kelvin, add 273. One degree Celsius is exactly the same size as one kelvin, so the numbers just shift.",
+      "checkText": "To convert a Celsius temperature into kelvin, you...",
+      "checkOptions": [
+        { "text": "Add 273", "isCorrect": true },
+        { "text": "Multiply by 273", "isCorrect": false },
+        { "text": "Subtract 273", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-thermal-equilibrium",
+      "subtopicName": "Thermodynamics",
+      "heading": "Thermal equilibrium",
+      "body": "Two objects in thermal contact reach thermal equilibrium once energy stops flowing between them. At that point, they are at the same temperature.",
+      "checkText": "Two objects are in thermal equilibrium when...",
+      "checkOptions": [
+        { "text": "Energy has stopped flowing between them", "isCorrect": true },
+        { "text": "One is much hotter than the other", "isCorrect": false },
+        { "text": "They are touching but never exchange energy", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-first-law-thermo",
+      "subtopicName": "Thermodynamics",
+      "heading": "The first law of thermodynamics",
+      "body": "This law says a system's internal energy changes by the heat added to it minus the work it does. Energy is never created or destroyed, only moved or converted.",
+      "checkText": "According to the first law of thermodynamics, energy...",
+      "checkOptions": [
+        { "text": "Changes form but is never created or destroyed", "isCorrect": true },
+        { "text": "Is always destroyed during heating", "isCorrect": false },
+        { "text": "Can never change form", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-specific-heat-capacity",
+      "subtopicName": "Thermodynamics",
+      "heading": "Specific heat capacity",
+      "body": "Specific heat capacity is the energy needed to raise 1 kilogram of a material by 1 degree. Water has a high specific heat capacity, so it heats up slowly.",
+      "checkText": "A material with a high specific heat capacity...",
+      "checkOptions": [
+        { "text": "Takes a lot of energy to heat up", "isCorrect": true },
+        { "text": "Heats up almost instantly", "isCorrect": false },
+        { "text": "Cannot be heated at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-latent-heat",
+      "subtopicName": "Thermodynamics",
+      "heading": "Latent heat: hidden energy",
+      "body": "Latent heat is the energy absorbed or released when a substance changes state, like melting or boiling. While this happens, temperature stays constant even though energy keeps being added.",
+      "checkText": "While a substance is changing state, its temperature...",
+      "checkOptions": [
+        { "text": "Stays constant", "isCorrect": true },
+        { "text": "Rises steadily", "isCorrect": false },
+        { "text": "Drops steadily", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-latent-heat-fusion",
+      "subtopicName": "Thermodynamics",
+      "heading": "Latent heat of fusion",
+      "body": "The latent heat of fusion is the energy needed to melt a solid into a liquid, without changing its temperature. The same amount of energy is released when it re-freezes.",
+      "checkText": "The latent heat of fusion is the energy needed to...",
+      "checkOptions": [
+        { "text": "Melt a solid into a liquid", "isCorrect": true },
+        { "text": "Boil a liquid into a gas", "isCorrect": false },
+        { "text": "Raise a solid's temperature", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-latent-heat-vaporisation",
+      "subtopicName": "Thermodynamics",
+      "heading": "Latent heat of vaporisation",
+      "body": "The latent heat of vaporisation is the energy needed to turn a liquid into a gas. It usually takes much more energy than melting the same substance, because bonds are broken completely.",
+      "checkText": "Compared to melting, boiling a substance usually needs...",
+      "checkOptions": [
+        { "text": "Much more energy", "isCorrect": true },
+        { "text": "Much less energy", "isCorrect": false },
+        { "text": "Exactly the same energy", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-evaporation",
+      "subtopicName": "Thermodynamics",
+      "heading": "Evaporation and cooling",
+      "body": "Evaporation happens when the fastest, highest-energy particles escape a liquid's surface. This leaves the remaining liquid with lower average energy, cooling it down.",
+      "checkText": "Evaporation cools a liquid because the particles that escape are...",
+      "checkOptions": [
+        { "text": "The fastest, highest-energy ones", "isCorrect": true },
+        { "text": "The slowest, lowest-energy ones", "isCorrect": false },
+        { "text": "Chosen completely at random", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-conduction",
+      "subtopicName": "Thermodynamics",
+      "heading": "Conduction",
+      "body": "Conduction is heat transfer through direct contact between particles, without the particles themselves moving from place to place. Metals conduct heat especially well.",
+      "checkText": "Conduction transfers heat through...",
+      "checkOptions": [
+        { "text": "Direct contact between vibrating particles", "isCorrect": true },
+        { "text": "Particles physically travelling to a new location", "isCorrect": false },
+        { "text": "Empty space with no particles at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-conductors-insulators",
+      "subtopicName": "Thermodynamics",
+      "heading": "Conductors and insulators",
+      "body": "A conductor lets heat pass through it easily, like metal. An insulator resists the flow of heat, like wood or foam.",
+      "checkText": "An insulator is a material that...",
+      "checkOptions": [
+        { "text": "Resists the flow of heat", "isCorrect": true },
+        { "text": "Lets heat pass through very easily", "isCorrect": false },
+        { "text": "Creates heat on its own", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-conduction-rate",
+      "subtopicName": "Thermodynamics",
+      "heading": "What speeds up conduction",
+      "body": "Heat conducts faster through a material with a bigger temperature difference, a thinner layer, or a larger area. Good conductors also speed up the process.",
+      "checkText": "Which of these would speed up conduction through a wall?",
+      "checkOptions": [
+        { "text": "Making the wall thinner", "isCorrect": true },
+        { "text": "Making the wall thicker", "isCorrect": false },
+        { "text": "Cooling both sides to the same temperature", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-convection",
+      "subtopicName": "Thermodynamics",
+      "heading": "Convection",
+      "body": "Convection transfers heat through a fluid as warm, less dense regions rise and cool, denser regions sink. This creates a circulating current that spreads heat through the whole fluid.",
+      "checkText": "Convection relies on...",
+      "checkOptions": [
+        { "text": "Warm fluid rising and cool fluid sinking", "isCorrect": true },
+        { "text": "Direct contact between solid particles", "isCorrect": false },
+        { "text": "Electromagnetic waves travelling through a vacuum", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-radiation",
+      "subtopicName": "Thermodynamics",
+      "heading": "Radiation: heat without a medium",
+      "body": "Radiation transfers heat as electromagnetic waves, so unlike conduction and convection, it needs no medium at all. This is how the Sun's energy reaches Earth through empty space.",
+      "checkText": "Unlike conduction and convection, radiation can transfer heat...",
+      "checkOptions": [
+        { "text": "Through empty space, with no medium needed", "isCorrect": true },
+        { "text": "Only through solids", "isCorrect": false },
+        { "text": "Only through liquids and gases", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-radiation-absorption-emission",
+      "subtopicName": "Thermodynamics",
+      "heading": "What affects radiation absorption",
+      "body": "Dark, matt surfaces absorb and emit radiant heat faster than light, shiny surfaces. This is why a dark car interior heats up faster in the sun than a light one.",
+      "checkText": "A dark, matt surface absorbs and emits radiant heat...",
+      "checkOptions": [
+        { "text": "Faster than a light, shiny surface", "isCorrect": true },
+        { "text": "Slower than a light, shiny surface", "isCorrect": false },
+        { "text": "At exactly the same rate as any surface", "isCorrect": false }
+      ]
+    }
+  ]
+}

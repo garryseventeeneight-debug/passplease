@@ -10,7 +10,15 @@ export interface TopicRow {
   hasLearnContent: boolean;
 }
 
-export function MasteryTable({ subjectSlug, rows }: { subjectSlug: string; rows: TopicRow[] }) {
+export function MasteryTable({
+  subjectSlug,
+  rows,
+  showLearnLinks = true,
+}: {
+  subjectSlug: string;
+  rows: TopicRow[];
+  showLearnLinks?: boolean;
+}) {
   return (
     <div className="overflow-x-auto rounded-lg border border-neutral-200 dark:border-neutral-800">
       <table className="w-full min-w-[480px] text-sm">
@@ -33,7 +41,7 @@ export function MasteryTable({ subjectSlug, rows }: { subjectSlug: string; rows:
                   <Link href={`/practice/${subjectSlug}?topic=${row.topicId}`} className="hover:underline">
                     {row.topicName}
                   </Link>
-                  {row.hasLearnContent && (
+                  {showLearnLinks && row.hasLearnContent && (
                     <Link
                       href={`/learn/${subjectSlug}/${row.topicId}`}
                       className="ml-2 rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 hover:underline dark:bg-blue-900/40 dark:text-blue-300"

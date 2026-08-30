@@ -1,0 +1,197 @@
+{
+  "topicName": "Inverse Trigonometric Functions",
+  "chunks": [
+    {
+      "slug": "mathext1-inverse-relation",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "What is an inverse relation?",
+      "body": "An inverse relation swaps x and y in a graph. You get it by flipping (reflecting) the original graph across the diagonal line y = x.",
+      "checkText": "You find a graph's inverse relation by reflecting it across...",
+      "checkOptions": [
+        { "text": "The line y = x", "isCorrect": true },
+        { "text": "The x-axis", "isCorrect": false },
+        { "text": "The y-axis", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-horizontal-line-test",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "The horizontal line test",
+      "body": "To check if an [[mathext1-inverse-relation|inverse relation]] is also a function, see if any horizontal line crosses the original graph more than once. If none do, the inverse is a function too.",
+      "checkText": "The horizontal line test checks whether...",
+      "checkOptions": [
+        { "text": "A graph's inverse is also a function", "isCorrect": true },
+        { "text": "A graph passes through the origin", "isCorrect": false },
+        { "text": "A graph is symmetric", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-one-to-one-many-to-one",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "One-to-one vs many-to-one",
+      "body": "A function is one-to-one if every horizontal line crosses it at most once. If some line crosses it more than once, the function is many-to-one instead.",
+      "checkText": "A function that fails the horizontal line test is called...",
+      "checkOptions": [
+        { "text": "Many-to-one", "isCorrect": true },
+        { "text": "One-to-one", "isCorrect": false },
+        { "text": "Undefined", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-inverse-function-notation",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Writing an inverse function",
+      "body": "If a function is [[mathext1-one-to-one-many-to-one|one-to-one]], its inverse is also a function, written f⁻¹(x). Don't confuse this with 1/f(x), the reciprocal — they're completely different things.",
+      "checkText": "f⁻¹(x) is best described as...",
+      "checkOptions": [
+        { "text": "The inverse function of f(x)", "isCorrect": true },
+        { "text": "The reciprocal of f(x)", "isCorrect": false },
+        { "text": "The derivative of f(x)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-restricting-domain",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Restricting a domain",
+      "body": "A [[mathext1-one-to-one-many-to-one|many-to-one]] function has no inverse function. But cutting its domain down to a smaller piece can make it one-to-one, so that smaller piece does have an inverse.",
+      "checkText": "Restricting a function's domain can turn it from many-to-one into...",
+      "checkOptions": [
+        { "text": "One-to-one", "isCorrect": true },
+        { "text": "Many-to-many", "isCorrect": false },
+        { "text": "Undefined", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-sin-many-to-one",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "sin(x) is many-to-one",
+      "body": "The graph of y = sin(x) repeats forever, so many horizontal lines cross it again and again. That makes sin(x) [[mathext1-one-to-one-many-to-one|many-to-one]] over all real numbers.",
+      "checkText": "Over all real numbers, y = sin(x) is...",
+      "checkOptions": [
+        { "text": "Many-to-one", "isCorrect": true },
+        { "text": "One-to-one", "isCorrect": false },
+        { "text": "Not a function", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-defining-sin-inverse",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Defining sin⁻¹(x)",
+      "body": "To get an inverse for sin(x), we [[mathext1-restricting-domain|restrict its domain]] to -π/2 to π/2, where it's one-to-one. sin⁻¹(x) is the inverse of just this restricted piece.",
+      "checkText": "sin⁻¹(x) is the inverse of sin(x) restricted to which interval?",
+      "checkOptions": [
+        { "text": "-π/2 to π/2", "isCorrect": true },
+        { "text": "0 to π", "isCorrect": false },
+        { "text": "-π to π", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-sin-inverse-domain-range",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Domain and range of sin⁻¹(x)",
+      "body": "sin⁻¹(x) takes inputs from -1 to 1, and gives outputs from -π/2 to π/2. Any input outside -1 to 1 has no answer.",
+      "checkText": "The domain of sin⁻¹(x) is...",
+      "checkOptions": [
+        { "text": "-1 to 1", "isCorrect": true },
+        { "text": "-π/2 to π/2", "isCorrect": false },
+        { "text": "All real numbers", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-defining-cos-inverse",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Defining cos⁻¹(x)",
+      "body": "cos(x) is also many-to-one, so we [[mathext1-restricting-domain|restrict its domain]] to 0 to π, where it's one-to-one. cos⁻¹(x) is the inverse of just this restricted piece.",
+      "checkText": "cos⁻¹(x) is the inverse of cos(x) restricted to which interval?",
+      "checkOptions": [
+        { "text": "0 to π", "isCorrect": true },
+        { "text": "-π/2 to π/2", "isCorrect": false },
+        { "text": "-π to 0", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-cos-inverse-domain-range",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Domain and range of cos⁻¹(x)",
+      "body": "cos⁻¹(x) takes inputs from -1 to 1, and gives outputs from 0 to π. Compare this to [[mathext1-sin-inverse-domain-range|sin⁻¹(x)]], which has a different range.",
+      "checkText": "The range of cos⁻¹(x) is...",
+      "checkOptions": [
+        { "text": "0 to π", "isCorrect": true },
+        { "text": "-π/2 to π/2", "isCorrect": false },
+        { "text": "-1 to 1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-defining-tan-inverse",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Defining tan⁻¹(x)",
+      "body": "tan(x) is many-to-one too, so we [[mathext1-restricting-domain|restrict its domain]] to between -π/2 and π/2, excluding the endpoints, where it's one-to-one. tan⁻¹(x) is the inverse of just this piece.",
+      "checkText": "tan⁻¹(x) is the inverse of tan(x) restricted to which interval?",
+      "checkOptions": [
+        { "text": "-π/2 to π/2 (not including the endpoints)", "isCorrect": true },
+        { "text": "0 to π", "isCorrect": false },
+        { "text": "-1 to 1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-tan-inverse-domain-range",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Domain and range of tan⁻¹(x)",
+      "body": "tan⁻¹(x) accepts any real number as input, and always gives an output strictly between -π/2 and π/2.",
+      "checkText": "The domain of tan⁻¹(x) is...",
+      "checkOptions": [
+        { "text": "All real numbers", "isCorrect": true },
+        { "text": "-1 to 1", "isCorrect": false },
+        { "text": "0 to π", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-radians-for-inverse-trig",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Always use radians",
+      "body": "When working with sin⁻¹(x), cos⁻¹(x) or tan⁻¹(x), always use radian measure, not degrees. This keeps every answer consistent with the ranges you've learned.",
+      "checkText": "Inverse trigonometric functions should be worked in...",
+      "checkOptions": [
+        { "text": "Radians", "isCorrect": true },
+        { "text": "Degrees", "isCorrect": false },
+        { "text": "Either, it never matters", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-arcsin-notation",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Another name: arcsin, arccos, arctan",
+      "body": "arcsin(x), arccos(x) and arctan(x) mean exactly the same thing as sin⁻¹(x), cos⁻¹(x) and tan⁻¹(x). They're just two different ways of writing the same functions.",
+      "checkText": "arcsin(x) means the same thing as...",
+      "checkOptions": [
+        { "text": "sin^-1(x)", "isCorrect": true },
+        { "text": "1/sin(x)", "isCorrect": false },
+        { "text": "sin(x)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-interpreting-inverse-trig-restriction",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Reading an inverse trig answer",
+      "body": "y = sin⁻¹(x) means x = sin(y), for y between -π/2 and π/2. That restriction is what picks out one correct answer from the many angles sharing that sine.",
+      "checkText": "Why does the restriction on y matter when solving y = sin⁻¹(x)?",
+      "checkOptions": [
+        { "text": "It picks out the one correct answer from many possible angles", "isCorrect": true },
+        { "text": "It changes the value of x", "isCorrect": false },
+        { "text": "It has no real purpose", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-graphing-inverse-trig",
+      "subtopicName": "Inverse trigonometric functions",
+      "heading": "Shifting and reflecting inverse trig graphs",
+      "body": "Like any other function, the graph of [[mathext1-defining-sin-inverse|sin⁻¹(x)]] can be shifted or reflected. For example, adding a number to sin⁻¹(x) shifts its graph straight up.",
+      "checkText": "Adding a number to sin⁻¹(x) shifts its graph...",
+      "checkOptions": [
+        { "text": "Up", "isCorrect": true },
+        { "text": "Sideways", "isCorrect": false },
+        { "text": "It has no effect", "isCorrect": false }
+      ]
+    }
+  ]
+}

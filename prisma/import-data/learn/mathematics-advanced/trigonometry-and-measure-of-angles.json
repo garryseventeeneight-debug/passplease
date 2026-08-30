@@ -1,0 +1,425 @@
+{
+  "topicName": "Trigonometry and Measure of Angles",
+  "chunks": [
+    {
+      "slug": "mathadv-triangle-side-names",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Naming the sides of a right triangle",
+      "body": "In a right triangle, label an angle. The hypotenuse is the longest side, opposite is across from the angle, and adjacent is next to it.",
+      "checkText": "In a right triangle, which side is always the longest?",
+      "checkOptions": [
+        { "text": "The hypotenuse", "isCorrect": true },
+        { "text": "The opposite side", "isCorrect": false },
+        { "text": "The adjacent side", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-sine-ratio",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "The sine ratio",
+      "body": "Sine of an angle is opposite over hypotenuse: sin(A) = opposite / hypotenuse. It compares two sides of a [[mathadv-triangle-side-names|right triangle]].",
+      "checkText": "sin(A) equals...",
+      "checkOptions": [
+        { "text": "opposite / hypotenuse", "isCorrect": true },
+        { "text": "adjacent / hypotenuse", "isCorrect": false },
+        { "text": "opposite / adjacent", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-cosine-ratio",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "The cosine ratio",
+      "body": "Cosine of an angle is adjacent over hypotenuse: cos(A) = adjacent / hypotenuse.",
+      "checkText": "cos(A) equals...",
+      "checkOptions": [
+        { "text": "adjacent / hypotenuse", "isCorrect": true },
+        { "text": "opposite / hypotenuse", "isCorrect": false },
+        { "text": "hypotenuse / adjacent", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-tangent-ratio",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "The tangent ratio",
+      "body": "Tangent of an angle is opposite over adjacent: tan(A) = opposite / adjacent. You can also get it by dividing [[mathadv-sine-ratio|sin(A)]] by [[mathadv-cosine-ratio|cos(A)]].",
+      "checkText": "tan(A) equals...",
+      "checkOptions": [
+        { "text": "sin(A) / cos(A)", "isCorrect": true },
+        { "text": "cos(A) / sin(A)", "isCorrect": false },
+        { "text": "opposite / hypotenuse", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-reciprocal-trig-ratios",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Three more ratios: flip them over",
+      "body": "Cosec, sec and cot are the flipped versions of [[mathadv-sine-ratio|sine]], [[mathadv-cosine-ratio|cosine]] and [[mathadv-tangent-ratio|tangent]]: cosec(A) = 1/sin(A), sec(A) = 1/cos(A), cot(A) = 1/tan(A).",
+      "checkText": "sec(A) is the reciprocal of...",
+      "checkOptions": [
+        { "text": "cos(A)", "isCorrect": true },
+        { "text": "sin(A)", "isCorrect": false },
+        { "text": "tan(A)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-special-angle-values",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Exact values for 30°, 45°, 60°",
+      "body": "Some angles give exact trig values instead of decimals, like sin(30°) = 1/2 and cos(45°) = 1/sqrt(2). These come from two special triangles and are worth memorising.",
+      "checkText": "sin(30°) equals exactly...",
+      "checkOptions": [
+        { "text": "1/2", "isCorrect": true },
+        { "text": "1/sqrt(2)", "isCorrect": false },
+        { "text": "sqrt(3)/2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-find-unknown-side",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Finding a missing side",
+      "body": "To find an unknown side, write unknown/known = sin, cos or tan of the angle, then solve. Choose whichever ratio uses the sides you know from [[mathadv-triangle-side-names|the triangle]].",
+      "checkText": "To find an unknown side, you set up an equation using...",
+      "checkOptions": [
+        { "text": "The angle and one known side", "isCorrect": true },
+        { "text": "Two known angles only", "isCorrect": false },
+        { "text": "The perimeter", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-find-unknown-angle",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Finding a missing angle",
+      "body": "If you know two sides, use the inverse of [[mathadv-sine-ratio|sin]], [[mathadv-cosine-ratio|cos]] or [[mathadv-tangent-ratio|tan]] on your calculator to find the angle.",
+      "checkText": "To find an unknown angle from two known sides, you use...",
+      "checkOptions": [
+        { "text": "An inverse trig function", "isCorrect": true },
+        { "text": "Pythagoras' theorem only", "isCorrect": false },
+        { "text": "The area formula", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-angle-elevation-depression",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Looking up and looking down",
+      "body": "The angle of elevation is measured upward from the horizontal to something above you. The angle of depression is measured downward from the horizontal to something below you.",
+      "checkText": "The angle of elevation is always measured from...",
+      "checkOptions": [
+        { "text": "The horizontal, looking up", "isCorrect": true },
+        { "text": "The vertical, looking up", "isCorrect": false },
+        { "text": "The ground, looking down", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-compass-bearings",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Compass bearings",
+      "body": "A compass bearing gives a direction as an angle turned from north or south, towards east or west, like N30°E or S45°W.",
+      "checkText": "A compass bearing like N30°E is measured starting from...",
+      "checkOptions": [
+        { "text": "North, turning towards east", "isCorrect": true },
+        { "text": "East, turning towards north", "isCorrect": false },
+        { "text": "South, turning towards west", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-true-bearings",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "True bearings",
+      "body": "A true bearing measures the angle clockwise from north, using three digits, like 030°T or 225°T. It's a different way to describe the same directions as a [[mathadv-compass-bearings|compass bearing]].",
+      "checkText": "A true bearing is always measured...",
+      "checkOptions": [
+        { "text": "Clockwise from north", "isCorrect": true },
+        { "text": "Anticlockwise from north", "isCorrect": false },
+        { "text": "Clockwise from east", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-3d-trig-method",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Trigonometry in 3D",
+      "body": "For 3D shapes, sketch the situation, spot every triangle hiding inside it, mark the right angles, then solve one triangle at a time using [[mathadv-sine-ratio|sin]], [[mathadv-cosine-ratio|cos]] or [[mathadv-tangent-ratio|tan]].",
+      "checkText": "The first step in a 3D trigonometry problem is to...",
+      "checkOptions": [
+        { "text": "Sketch the situation and find the triangles", "isCorrect": true },
+        { "text": "Guess the answer", "isCorrect": false },
+        { "text": "Only use Pythagoras' theorem", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-angle-line-plane",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "The angle between a line and a flat surface",
+      "body": "To find the angle between a line and a plane, drop a perpendicular from a point on the line down to the plane, then use the triangle this forms.",
+      "checkText": "To measure the angle between a line and a plane, you first...",
+      "checkOptions": [
+        { "text": "Drop a perpendicular onto the plane", "isCorrect": true },
+        { "text": "Measure along the plane's edge", "isCorrect": false },
+        { "text": "Extend the line indefinitely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-angle-two-planes",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "The angle between two flat surfaces",
+      "body": "Two planes meet along a line. To find the angle between them, draw a line in each plane that is perpendicular to that meeting line, at the same point.",
+      "checkText": "The angle between two planes is measured using lines that are...",
+      "checkOptions": [
+        { "text": "Perpendicular to where the planes meet", "isCorrect": true },
+        { "text": "Parallel to where the planes meet", "isCorrect": false },
+        { "text": "Along the outer edges of each plane", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-general-angle-ray",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Angles beyond the triangle",
+      "body": "A general angle is measured by rotating a ray from the positive x-axis. Rotating anticlockwise gives a positive angle; rotating clockwise gives a negative angle.",
+      "checkText": "Rotating a ray clockwise from the positive x-axis gives a...",
+      "checkOptions": [
+        { "text": "Negative angle", "isCorrect": true },
+        { "text": "Positive angle", "isCorrect": false },
+        { "text": "Right angle", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-coterminal-angles",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Many angles, one ray",
+      "body": "The same ray can represent many different [[mathadv-general-angle-ray|general angles]], because adding or subtracting 360° any number of times brings you back to the same ray.",
+      "checkText": "Two angles that point to the same ray always differ by a multiple of...",
+      "checkOptions": [
+        { "text": "360°", "isCorrect": true },
+        { "text": "180°", "isCorrect": false },
+        { "text": "90°", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-general-trig-definitions",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Redefining sin, cos and tan for any angle",
+      "body": "Place the ray's endpoint at (x, y) on a circle of radius r. Then sin(A) = y/r, cos(A) = x/r and tan(A) = y/x, matching the [[mathadv-sine-ratio|old right-triangle definitions]] for acute angles.",
+      "checkText": "For a general angle, cos(A) is defined as...",
+      "checkOptions": [
+        { "text": "x / r", "isCorrect": true },
+        { "text": "y / r", "isCorrect": false },
+        { "text": "y / x", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-four-quadrants",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "The four quadrants",
+      "body": "The coordinate plane is split into four quadrants, numbered 1 to 4 anticlockwise starting from the top right. Which quadrant a ray lies in affects the sign of its trig values.",
+      "checkText": "The quadrants are numbered starting from...",
+      "checkOptions": [
+        { "text": "The top right, going anticlockwise", "isCorrect": true },
+        { "text": "The top left, going clockwise", "isCorrect": false },
+        { "text": "The bottom right, going anticlockwise", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-astc-rule",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Remembering the signs: ASTC",
+      "body": "In quadrant 1 All ratios are positive, in quadrant 2 only Sine is, in quadrant 3 only Tangent is, and in quadrant 4 only Cosine is. Remember it as 'All Stations To Central'.",
+      "checkText": "In quadrant 3, which trig ratio is positive?",
+      "checkOptions": [
+        { "text": "Tangent", "isCorrect": true },
+        { "text": "Sine", "isCorrect": false },
+        { "text": "Cosine", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-related-acute-angle",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "The related acute angle",
+      "body": "The related acute angle is the acute angle between a ray and the x-axis. Any angle has the same trig values as its related acute angle, apart from the sign.",
+      "checkText": "The related acute angle is always measured between a ray and the...",
+      "checkOptions": [
+        { "text": "x-axis", "isCorrect": true },
+        { "text": "y-axis", "isCorrect": false },
+        { "text": "origin", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-evaluate-general-angle",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Working out any trig value",
+      "body": "To evaluate a trig function for any angle: find its [[mathadv-related-acute-angle|related acute angle]], then use the [[mathadv-astc-rule|ASTC rule]] to decide if the answer is positive or negative.",
+      "checkText": "To evaluate sin(150°) exactly, you first find...",
+      "checkOptions": [
+        { "text": "The related acute angle, then check the sign", "isCorrect": true },
+        { "text": "The hypotenuse only", "isCorrect": false },
+        { "text": "The period of the function", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-given-one-find-another",
+      "subtopicName": "Trigonometric ratios",
+      "heading": "Given one ratio, find the rest",
+      "body": "If you know one trig ratio, sketch the ray on a circle, use Pythagoras' theorem to find the missing side, then use the [[mathadv-astc-rule|ASTC rule]] for the correct sign.",
+      "checkText": "If sin(A) = 1/5, to find cos(A) you would use...",
+      "checkOptions": [
+        { "text": "Pythagoras' theorem and the ASTC rule", "isCorrect": true },
+        { "text": "The area formula", "isCorrect": false },
+        { "text": "Only a calculator's sin key", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-radian-definition",
+      "subtopicName": "Radians",
+      "heading": "What is a radian?",
+      "body": "An angle's size in radians is a ratio: the arc length it cuts off on a circle, divided by the radius of that circle. It's just a number, with no units.",
+      "checkText": "An angle in radians is calculated as...",
+      "checkOptions": [
+        { "text": "arc length divided by radius", "isCorrect": true },
+        { "text": "radius divided by arc length", "isCorrect": false },
+        { "text": "arc length times radius", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-full-turn-radians",
+      "subtopicName": "Radians",
+      "heading": "A full turn in radians",
+      "body": "One full revolution (360°) equals 2π radians, because the whole circumference divided by the radius is 2π.",
+      "checkText": "360° is equal to how many radians?",
+      "checkOptions": [
+        { "text": "2π", "isCorrect": true },
+        { "text": "π", "isCorrect": false },
+        { "text": "π/2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-straight-angle-radians",
+      "subtopicName": "Radians",
+      "heading": "A straight angle in radians",
+      "body": "A straight angle (180°) equals π radians. This is half of the [[mathadv-full-turn-radians|full turn of 2π]].",
+      "checkText": "180° is equal to...",
+      "checkOptions": [
+        { "text": "π radians", "isCorrect": true },
+        { "text": "2π radians", "isCorrect": false },
+        { "text": "π/2 radians", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-right-angle-radians",
+      "subtopicName": "Radians",
+      "heading": "A right angle in radians",
+      "body": "A right angle (90°) equals π/2 radians — half of the [[mathadv-straight-angle-radians|straight angle of π]].",
+      "checkText": "90° is equal to...",
+      "checkOptions": [
+        { "text": "π/2 radians", "isCorrect": true },
+        { "text": "π radians", "isCorrect": false },
+        { "text": "2π radians", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-degrees-to-radians",
+      "subtopicName": "Radians",
+      "heading": "Converting degrees to radians",
+      "body": "To turn degrees into radians, multiply by π/180. For example, 60° × π/180 = π/3 radians.",
+      "checkText": "To convert degrees to radians, you multiply by...",
+      "checkOptions": [
+        { "text": "π/180", "isCorrect": true },
+        { "text": "180/π", "isCorrect": false },
+        { "text": "360/π", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-radians-to-degrees",
+      "subtopicName": "Radians",
+      "heading": "Converting radians to degrees",
+      "body": "To turn radians into degrees, multiply by 180/π. For example, π/3 × 180/π = 60°.",
+      "checkText": "To convert radians to degrees, you multiply by...",
+      "checkOptions": [
+        { "text": "180/π", "isCorrect": true },
+        { "text": "π/180", "isCorrect": false },
+        { "text": "π/2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-one-radian-size",
+      "subtopicName": "Radians",
+      "heading": "How big is one radian?",
+      "body": "One radian is about 57°, a bit less than a right angle. It's the angle where the arc length exactly equals the radius.",
+      "checkText": "One radian is approximately...",
+      "checkOptions": [
+        { "text": "57°", "isCorrect": true },
+        { "text": "90°", "isCorrect": false },
+        { "text": "180°", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-special-angles-radians",
+      "subtopicName": "Radians",
+      "heading": "Special angles in radians",
+      "body": "The special angles convert simply: 30° = π/6, 45° = π/4, and 60° = π/3. These are worth memorising alongside the [[mathadv-special-angle-values|exact trig values]] for them.",
+      "checkText": "π/4 radians equals...",
+      "checkOptions": [
+        { "text": "45°", "isCorrect": true },
+        { "text": "30°", "isCorrect": false },
+        { "text": "60°", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-calculator-radian-mode",
+      "subtopicName": "Radians",
+      "heading": "Set your calculator carefully",
+      "body": "Before using trig functions with radians, always switch your calculator to radian mode. Forgetting this gives completely wrong answers.",
+      "checkText": "Before evaluating sin(1) in radians, you should first...",
+      "checkOptions": [
+        { "text": "Check the calculator is in radian mode", "isCorrect": true },
+        { "text": "Convert 1 to a percentage", "isCorrect": false },
+        { "text": "Square the number first", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-arc-length-formula",
+      "subtopicName": "Arc length and sector area",
+      "heading": "The arc length formula",
+      "body": "The length of an arc is l = rθ, where r is the radius and θ is the angle in [[mathadv-radian-definition|radians]] at the centre.",
+      "checkText": "The formula for arc length is...",
+      "checkOptions": [
+        { "text": "l = rθ", "isCorrect": true },
+        { "text": "l = r + θ", "isCorrect": false },
+        { "text": "l = πr^2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-sector-area-formula",
+      "subtopicName": "Arc length and sector area",
+      "heading": "The sector area formula",
+      "body": "The area of a sector is A = (1/2)r^2θ, where θ is the angle in [[mathadv-radian-definition|radians]] at the centre of the circle.",
+      "checkText": "The formula for the area of a sector is...",
+      "checkOptions": [
+        { "text": "A = (1/2)r^2θ", "isCorrect": true },
+        { "text": "A = rθ", "isCorrect": false },
+        { "text": "A = πr^2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-minor-major-arc",
+      "subtopicName": "Arc length and sector area",
+      "heading": "Minor and major arcs",
+      "body": "Two radii split a circle into two arcs. The minor arc is the shorter one, and the major arc is the longer one that goes the rest of the way around.",
+      "checkText": "The minor arc of a circle is always the...",
+      "checkOptions": [
+        { "text": "Shorter arc", "isCorrect": true },
+        { "text": "Longer arc", "isCorrect": false },
+        { "text": "Straight line between the two points", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-segment-area",
+      "subtopicName": "Arc length and sector area",
+      "heading": "The area of a segment",
+      "body": "A chord splits a circle into two segments. To find a segment's area, take the sector area and add or subtract the triangle area formed by the two radii and the chord.",
+      "checkText": "To find the area of a minor segment, you take the sector area and...",
+      "checkOptions": [
+        { "text": "Subtract the triangle's area", "isCorrect": true },
+        { "text": "Add the circle's whole area", "isCorrect": false },
+        { "text": "Multiply by the radius", "isCorrect": false }
+      ]
+    }
+  ]
+}

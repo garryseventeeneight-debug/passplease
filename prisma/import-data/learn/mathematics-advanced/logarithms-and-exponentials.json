@@ -1,0 +1,449 @@
+{
+  "topicName": "Logarithms and Exponentials",
+  "chunks": [
+    {
+      "slug": "mathadv-power-base-index",
+      "subtopicName": "Indices and logarithms",
+      "heading": "Power, base and index",
+      "body": "In a power like 2^3, the 2 is called the base and the 3 is called the index (or exponent). Together, 2^3 is a power.",
+      "checkText": "In the power 5^4, what is the 4 called?",
+      "checkOptions": [
+        { "text": "The index", "isCorrect": true },
+        { "text": "The base", "isCorrect": false },
+        { "text": "The power", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-positive-integer-index",
+      "subtopicName": "Indices and logarithms",
+      "heading": "What a power means",
+      "body": "a^n means a multiplied by itself n times. For example, 2^4 means 2×2×2×2, which equals 16.",
+      "checkText": "What does 3^4 mean?",
+      "checkOptions": [
+        { "text": "3 multiplied by itself 4 times", "isCorrect": true },
+        { "text": "3 multiplied by 4", "isCorrect": false },
+        { "text": "4 multiplied by itself 3 times", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-index-law-multiply",
+      "subtopicName": "Indices and logarithms",
+      "heading": "Multiplying powers with the same base",
+      "body": "To multiply powers with the same base, add the indices: a^m × a^n = a^(m+n). For example, 2^3 × 2^2 = 2^5.",
+      "checkText": "What is x^3 × x^5 in index form?",
+      "checkOptions": [
+        { "text": "x^8", "isCorrect": true },
+        { "text": "x^15", "isCorrect": false },
+        { "text": "x^2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-index-law-divide",
+      "subtopicName": "Indices and logarithms",
+      "heading": "Dividing powers with the same base",
+      "body": "The opposite of [[mathadv-index-law-multiply|multiplying powers]] is dividing them: subtract the indices instead of adding, so a^m ÷ a^n = a^(m-n).",
+      "checkText": "What is y^7 ÷ y^3 in index form?",
+      "checkOptions": [
+        { "text": "y^4", "isCorrect": true },
+        { "text": "y^10", "isCorrect": false },
+        { "text": "y^21", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-index-law-power-of-power",
+      "subtopicName": "Indices and logarithms",
+      "heading": "A power raised to a power",
+      "body": "To raise a power to another power, multiply the indices: (a^m)^n = a^(mn). For example, (2^3)^2 = 2^6.",
+      "checkText": "What is (x^4)^3 in index form?",
+      "checkOptions": [
+        { "text": "x^12", "isCorrect": true },
+        { "text": "x^7", "isCorrect": false },
+        { "text": "x^64", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-index-law-product-quotient",
+      "subtopicName": "Indices and logarithms",
+      "heading": "Powers of products and quotients",
+      "body": "A power outside brackets applies to every factor inside: (ab)^n = a^n × b^n, and (a/b)^n = a^n/b^n.",
+      "checkText": "What does (3x)^2 expand to?",
+      "checkOptions": [
+        { "text": "9x^2", "isCorrect": true },
+        { "text": "3x^2", "isCorrect": false },
+        { "text": "6x^2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-zero-index",
+      "subtopicName": "Indices and logarithms",
+      "heading": "Why anything to the power 0 is 1",
+      "body": "Any non-zero number raised to the power 0 equals 1. For example, 9^0 = 1. This rule keeps the index laws working consistently.",
+      "checkText": "What is 7^0?",
+      "checkOptions": [
+        { "text": "1", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "7", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-negative-index",
+      "subtopicName": "Indices and logarithms",
+      "heading": "A negative index means reciprocal",
+      "body": "A negative index tells you to take the reciprocal: a^(-n) = 1/a^n. For example, 2^(-3) = 1/2^3 = 1/8.",
+      "checkText": "What does a negative index tell you to do first?",
+      "checkOptions": [
+        { "text": "Take the reciprocal", "isCorrect": true },
+        { "text": "Multiply by -1", "isCorrect": false },
+        { "text": "Ignore the sign", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-fractional-index-root",
+      "subtopicName": "Indices and logarithms",
+      "heading": "A fractional index means a root",
+      "body": "An index of 1/n means the nth root: a^(1/n) is the same as the nth root of a. For example, 9^(1/2) is the square root of 9, which is 3.",
+      "checkText": "What is 8^(1/3)?",
+      "checkOptions": [
+        { "text": "2", "isCorrect": true },
+        { "text": "8", "isCorrect": false },
+        { "text": "24", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-fractional-index-general",
+      "subtopicName": "Indices and logarithms",
+      "heading": "General fractional indices",
+      "body": "For a^(m/n), first take the [[mathadv-fractional-index-root|nth root]] of a, then raise the result to the power m. For example, 8^(2/3) = (cube root of 8)^2 = 2^2 = 4.",
+      "checkText": "How do you simplify a^(m/n)?",
+      "checkOptions": [
+        { "text": "Take the nth root first, then raise to the power m", "isCorrect": true },
+        { "text": "Raise to the power m first, then multiply by n", "isCorrect": false },
+        { "text": "Divide a by m/n", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-logarithm-definition",
+      "subtopicName": "Indices and logarithms",
+      "heading": "What a logarithm is",
+      "body": "A logarithm is an index in disguise. log_a(x) = y means exactly the same thing as x = a^y — the base a raised to y gives x.",
+      "checkText": "log_2(x) = y means the same as...",
+      "checkOptions": [
+        { "text": "x = 2^y", "isCorrect": true },
+        { "text": "y = 2^x", "isCorrect": false },
+        { "text": "x = y^2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-log-index-sentence",
+      "subtopicName": "Indices and logarithms",
+      "heading": "The sentence to remember",
+      "body": "Remember: log_5(25) = 2 means the same as 25 = 5^2. The base of the [[mathadv-logarithm-definition|logarithm]] matches the base of the power, and the log is the index.",
+      "checkText": "log_5(25) = 2 means the same as...",
+      "checkOptions": [
+        { "text": "25 = 5^2", "isCorrect": true },
+        { "text": "2 = 5^25", "isCorrect": false },
+        { "text": "5 = 25^2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-finding-logs",
+      "subtopicName": "Indices and logarithms",
+      "heading": "Finding a logarithm's value",
+      "body": "To find log_4(64), ask: 4 to what power gives 64? Since 4^3 = 64, log_4(64) = 3.",
+      "checkText": "What is log_3(9)?",
+      "checkOptions": [
+        { "text": "2", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "9", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-log-can-be-negative",
+      "subtopicName": "Indices and logarithms",
+      "heading": "Logs can be negative or fractional",
+      "body": "A logarithm's answer isn't always a whole number. For example, log_6(1/6) = -1, because 6^(-1) = 1/6.",
+      "checkText": "What is log_5(1/5)?",
+      "checkOptions": [
+        { "text": "-1", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-log-exp-inverse-functions",
+      "subtopicName": "Laws of logarithms",
+      "heading": "Logs and powers undo each other",
+      "body": "The functions y = a^x and y = log_a(x) are inverse functions. Applying one after the other, in either order, always brings you back to where you started.",
+      "checkText": "If f(x) = a^x and g(x) = log_a(x), what does g(f(x)) equal?",
+      "checkOptions": [
+        { "text": "x", "isCorrect": true },
+        { "text": "a", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-log-law-product",
+      "subtopicName": "Laws of logarithms",
+      "heading": "The log of a product",
+      "body": "The log of a product is the sum of the logs: log_a(xy) = log_a(x) + log_a(y). For example, log_a(3) + log_a(4) = log_a(12).",
+      "checkText": "log_a(3) + log_a(4) equals...",
+      "checkOptions": [
+        { "text": "log_a(12)", "isCorrect": true },
+        { "text": "log_a(7)", "isCorrect": false },
+        { "text": "log_a(1)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-log-law-quotient",
+      "subtopicName": "Laws of logarithms",
+      "heading": "The log of a quotient",
+      "body": "The log of a quotient is the difference of the logs: log_a(x/y) = log_a(x) - log_a(y).",
+      "checkText": "log_a(20) - log_a(4) equals...",
+      "checkOptions": [
+        { "text": "log_a(5)", "isCorrect": true },
+        { "text": "log_a(16)", "isCorrect": false },
+        { "text": "log_a(80)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-log-law-power",
+      "subtopicName": "Laws of logarithms",
+      "heading": "The log of a power",
+      "body": "The log of a power is the multiple of the log: log_a(x^n) = n × log_a(x).",
+      "checkText": "log_a(x^5) equals...",
+      "checkOptions": [
+        { "text": "5 log_a(x)", "isCorrect": true },
+        { "text": "log_a(x) + 5", "isCorrect": false },
+        { "text": "log_a(5x)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-log-of-one",
+      "subtopicName": "Laws of logarithms",
+      "heading": "The log of 1 is always 0",
+      "body": "log_a(1) = 0 for any base a, because a^0 = 1. This is true no matter what the base is.",
+      "checkText": "What is log_10(1)?",
+      "checkOptions": [
+        { "text": "0", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "10", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-log-of-its-own-base",
+      "subtopicName": "Laws of logarithms",
+      "heading": "The log of the base itself",
+      "body": "log_a(a) = 1 for any base a, because a^1 = a. For example, log_9(9) = 1.",
+      "checkText": "What is log_9(9)?",
+      "checkOptions": [
+        { "text": "1", "isCorrect": true },
+        { "text": "0", "isCorrect": false },
+        { "text": "9", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-log-of-reciprocal",
+      "subtopicName": "Laws of logarithms",
+      "heading": "The log of a reciprocal",
+      "body": "log_a(1/x) equals -log_a(x). This follows from [[mathadv-log-law-quotient|the log of a quotient]] rule: flipping a number to its reciprocal flips the sign of its logarithm.",
+      "checkText": "If log_a(x) = 3, what is log_a(1/x)?",
+      "checkOptions": [
+        { "text": "-3", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "1/3", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-change-of-base",
+      "subtopicName": "Laws of logarithms",
+      "heading": "Switching to a different base",
+      "body": "The change-of-base formula rewrites a log in any base you like: log_a(x) = log_b(x) / log_b(a). Calculators use this to find logs of any base.",
+      "checkText": "The change-of-base formula rewrites log_a(x) as a...",
+      "checkOptions": [
+        { "text": "quotient of two other logs", "isCorrect": true },
+        { "text": "product of two other logs", "isCorrect": false },
+        { "text": "power of a", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-solving-exponential-equations",
+      "subtopicName": "Laws of logarithms",
+      "heading": "Solving for x in the index",
+      "body": "To solve an equation like 3^x = 10, rewrite it as a logarithm: x = log_3(10). Then use the [[mathadv-change-of-base|change-of-base formula]] to find a decimal answer.",
+      "checkText": "To solve 5^x = 12 for x, you rewrite it as...",
+      "checkOptions": [
+        { "text": "x = log_5(12)", "isCorrect": true },
+        { "text": "x = 12^5", "isCorrect": false },
+        { "text": "x = 5/12", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-exponential-function-shape",
+      "subtopicName": "Exponential functions",
+      "heading": "The shape of an exponential graph",
+      "body": "The graph of y = a^x (with a > 1) always increases, stays above the x-axis, and gets closer and closer to the x-axis on the left without ever touching it.",
+      "checkText": "The graph of y = 2^x is always...",
+      "checkOptions": [
+        { "text": "above the x-axis", "isCorrect": true },
+        { "text": "below the x-axis", "isCorrect": false },
+        { "text": "crossing the x-axis", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-log-function-shape",
+      "subtopicName": "Exponential functions",
+      "heading": "The shape of a logarithmic graph",
+      "body": "The graph of y = log_a(x) only exists for x > 0, and it gets closer and closer to the y-axis without touching it as x approaches 0.",
+      "checkText": "The graph of y = log_2(x) only exists when x is...",
+      "checkOptions": [
+        { "text": "greater than 0", "isCorrect": true },
+        { "text": "less than 0", "isCorrect": false },
+        { "text": "any real number", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-exp-log-reflection",
+      "subtopicName": "Exponential functions",
+      "heading": "Exponential and log graphs are reflections",
+      "body": "Because y = a^x and [[mathadv-log-function-shape|y = log_a(x)]] are inverse functions, their graphs are mirror images of each other across the line y = x.",
+      "checkText": "The graphs of y = a^x and y = log_a(x) are reflections in the line...",
+      "checkOptions": [
+        { "text": "y = x", "isCorrect": true },
+        { "text": "the x-axis", "isCorrect": false },
+        { "text": "the y-axis", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-exponential-shift",
+      "subtopicName": "Exponential functions",
+      "heading": "Shifting an exponential graph",
+      "body": "Adding a number to a^x shifts the whole graph up or down. For example, y = 2^x + 3 is the graph of [[mathadv-exponential-function-shape|y = 2^x]] moved up 3 units.",
+      "checkText": "Compared to y = 2^x, the graph of y = 2^x - 1 is shifted...",
+      "checkOptions": [
+        { "text": "down 1 unit", "isCorrect": true },
+        { "text": "up 1 unit", "isCorrect": false },
+        { "text": "left 1 unit", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-exponential-growth-applications",
+      "subtopicName": "Exponential functions",
+      "heading": "Exponential growth in real life",
+      "body": "Populations, prices under inflation, and bacteria colonies often grow exponentially — increasing by the same factor over each equal time period.",
+      "checkText": "A quantity that grows exponentially increases by the same...",
+      "checkOptions": [
+        { "text": "factor each time period", "isCorrect": true },
+        { "text": "fixed amount each time period", "isCorrect": false },
+        { "text": "amount, but only once", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-exponential-decay-applications",
+      "subtopicName": "Exponential functions",
+      "heading": "Exponential decay in real life",
+      "body": "Radioactive substances and cooling objects often decay exponentially — losing a fixed fraction of what's left over each equal time period, rather than a fixed amount.",
+      "checkText": "In exponential decay, what stays fixed over each time period?",
+      "checkOptions": [
+        { "text": "The fraction lost", "isCorrect": true },
+        { "text": "The amount lost", "isCorrect": false },
+        { "text": "Nothing stays fixed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-number-e",
+      "subtopicName": "Exponential functions",
+      "heading": "What makes the number e special",
+      "body": "e is a special number, about 2.7183, chosen because the graph of y = e^x has a gradient of exactly 1 at the point where it crosses the y-axis.",
+      "checkText": "The number e is defined so that y = e^x has a gradient of...",
+      "checkOptions": [
+        { "text": "1 at the y-intercept", "isCorrect": true },
+        { "text": "0 at the y-intercept", "isCorrect": false },
+        { "text": "e at the y-intercept", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-ex-graph-properties",
+      "subtopicName": "Exponential functions",
+      "heading": "The graph of y = e^x",
+      "body": "Like other exponential graphs, y = [[mathadv-number-e|e^x]] is always increasing, always positive, and has the x-axis as its asymptote on the left.",
+      "checkText": "The graph of y = e^x has the x-axis as its...",
+      "checkOptions": [
+        { "text": "asymptote", "isCorrect": true },
+        { "text": "tangent", "isCorrect": false },
+        { "text": "axis of symmetry", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-derivative-of-ex",
+      "subtopicName": "Exponential functions",
+      "heading": "e^x differentiates to itself",
+      "body": "The function y = e^x has a remarkable property: its derivative is itself. That is, d/dx(e^x) = e^x.",
+      "checkText": "What is the derivative of e^x?",
+      "checkOptions": [
+        { "text": "e^x", "isCorrect": true },
+        { "text": "x · e^(x-1)", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-gradient-equals-height",
+      "subtopicName": "Exponential functions",
+      "heading": "Gradient equals height, for e^x",
+      "body": "Because [[mathadv-derivative-of-ex|e^x differentiates to itself]], the gradient of the curve y = e^x at any point is exactly equal to its height above the x-axis there.",
+      "checkText": "On the curve y = e^x, the gradient at a point equals its...",
+      "checkOptions": [
+        { "text": "height above the x-axis", "isCorrect": true },
+        { "text": "x-coordinate", "isCorrect": false },
+        { "text": "distance from the origin", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-derivative-eaxb",
+      "subtopicName": "Exponential functions",
+      "heading": "Differentiating e to a linear index",
+      "body": "For a linear index, d/dx(e^(ax+b)) = a × e^(ax+b). For example, the derivative of e^(2x+1) is 2e^(2x+1).",
+      "checkText": "What is the derivative of e^(5x)?",
+      "checkOptions": [
+        { "text": "5e^(5x)", "isCorrect": true },
+        { "text": "e^(5x)", "isCorrect": false },
+        { "text": "5xe^(5x)", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-natural-logarithm",
+      "subtopicName": "Exponential functions",
+      "heading": "The natural logarithm",
+      "body": "The logarithm with base e is called the natural logarithm, written log_e(x) or ln(x). It's the inverse function of [[mathadv-number-e|e^x]].",
+      "checkText": "ln(x) is another way of writing...",
+      "checkOptions": [
+        { "text": "log_e(x)", "isCorrect": true },
+        { "text": "log_10(x)", "isCorrect": false },
+        { "text": "e^x", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-natural-log-graph",
+      "subtopicName": "Exponential functions",
+      "heading": "The graph of the natural logarithm",
+      "body": "The graph of y = ln(x) is the reflection of [[mathadv-ex-graph-properties|y = e^x]] in the line y = x. It only exists for x > 0.",
+      "checkText": "The graph of y = ln(x) is a reflection of y = e^x in...",
+      "checkOptions": [
+        { "text": "the line y = x", "isCorrect": true },
+        { "text": "the x-axis", "isCorrect": false },
+        { "text": "the y-axis", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathadv-exponential-rate-of-change",
+      "subtopicName": "Exponential functions",
+      "heading": "Using e^x to find a rate",
+      "body": "If a quantity grows as Q = A × e^(kt), differentiating gives its rate of change at any time t, using [[mathadv-derivative-eaxb|the derivative of e to a linear index]].",
+      "checkText": "To find how fast a quantity Q = A × e^(kt) is changing, you...",
+      "checkOptions": [
+        { "text": "differentiate Q with respect to t", "isCorrect": true },
+        { "text": "substitute t = 0", "isCorrect": false },
+        { "text": "take the logarithm of Q", "isCorrect": false }
+      ]
+    }
+  ]
+}

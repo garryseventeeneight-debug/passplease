@@ -1,0 +1,209 @@
+{
+  "topicName": "Rates of Change",
+  "chunks": [
+    {
+      "slug": "mathext1-related-rates-meaning",
+      "subtopicName": "Related rates of change",
+      "heading": "What are related rates?",
+      "body": "Sometimes two changing quantities are linked, so as one grows, the other must grow too. Their speeds of change are called related rates.",
+      "checkText": "Related rates describes a situation where...",
+      "checkOptions": [
+        { "text": "Two changing quantities are linked, so their rates of change are connected", "isCorrect": true },
+        { "text": "Two quantities always change at exactly the same speed", "isCorrect": false },
+        { "text": "A single rate that never changes over time", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-related-rates-shared-variable",
+      "subtopicName": "Related rates of change",
+      "heading": "Why the rates connect",
+      "body": "Picture a splash of paint spreading in a circle. Its area depends on its radius, and its radius depends on time — so area depends on time too, through the radius.",
+      "checkText": "In the spreading paint splash, why does the area change over time?",
+      "checkOptions": [
+        { "text": "Because the area depends on the radius, which itself changes over time", "isCorrect": true },
+        { "text": "Because area and radius have no connection to each other", "isCorrect": false },
+        { "text": "Because time depends on the area", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-related-rates-chain-rule",
+      "subtopicName": "Related rates of change",
+      "heading": "Chaining the two rates together",
+      "body": "Because area and radius are [[mathext1-related-rates-shared-variable|linked]], the chain rule connects their rates: dA/dt equals dA/dr times dr/dt. This turns an unknown rate into a known one.",
+      "checkText": "The chain rule dA/dt = dA/dr × dr/dt lets you...",
+      "checkOptions": [
+        { "text": "Turn an unknown rate into one built from known rates", "isCorrect": true },
+        { "text": "Prove that two different rates are always equal", "isCorrect": false },
+        { "text": "Cancel the radius out of the problem entirely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-related-rates-method",
+      "subtopicName": "Related rates of change",
+      "heading": "The two-step method",
+      "body": "First, write one quantity as a function of the other, like area in terms of radius. Then differentiate both sides with respect to time using the [[mathext1-related-rates-chain-rule|chain rule]].",
+      "checkText": "The first step in a related rates problem is to...",
+      "checkOptions": [
+        { "text": "Write one quantity as a function of the other", "isCorrect": true },
+        { "text": "Immediately substitute in the given numbers", "isCorrect": false },
+        { "text": "Find the second derivative of the function", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-related-rates-worked-example",
+      "subtopicName": "Related rates of change",
+      "heading": "Worked example: the paint splash",
+      "body": "If area A = πr², then dA/dt = 2πr × dr/dt. When r = 3 cm and dr/dt = 4 cm/s, dA/dt = 2π(3)(4) ≈ 75 cm²/s.",
+      "checkText": "In this worked example, what does dA/dt ≈ 75 cm²/s represent?",
+      "checkOptions": [
+        { "text": "The rate the splash's area is growing at that instant", "isCorrect": true },
+        { "text": "The splash's radius in centimetres", "isCorrect": false },
+        { "text": "The total area of the splash so far", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-related-rates-units",
+      "subtopicName": "Related rates of change",
+      "heading": "Keep the units straight",
+      "body": "Always check units match before substituting, like centimetres with centimetres, not centimetres with metres. A related rates answer is meaningless without the right units attached.",
+      "checkText": "Before substituting values into a related rates equation, you should always...",
+      "checkOptions": [
+        { "text": "Check that all the units match", "isCorrect": true },
+        { "text": "Convert every value into a percentage", "isCorrect": false },
+        { "text": "Ignore units until the very end", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-diff-equation-meaning",
+      "subtopicName": "Exponential growth and decay",
+      "heading": "What is a differential equation?",
+      "body": "A differential equation is an equation containing a derivative. Instead of solving for a number, you solve for the function itself.",
+      "checkText": "Solving a differential equation means finding...",
+      "checkOptions": [
+        { "text": "A function", "isCorrect": true },
+        { "text": "A single number", "isCorrect": false },
+        { "text": "The units of a derivative", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-exp-growth-equation",
+      "subtopicName": "Exponential growth and decay",
+      "heading": "The natural growth equation",
+      "body": "Natural growth happens when a quantity's rate of change is proportional to the quantity itself. This is written as the [[mathext1-diff-equation-meaning|differential equation]] dQ/dt = kQ.",
+      "checkText": "In the equation dQ/dt = kQ, the rate of change of Q is proportional to...",
+      "checkOptions": [
+        { "text": "Q itself", "isCorrect": true },
+        { "text": "Time only, not Q", "isCorrect": false },
+        { "text": "A fixed constant with no link to Q", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-exp-growth-solution",
+      "subtopicName": "Exponential growth and decay",
+      "heading": "Solving dQ/dt = kQ",
+      "body": "The function that solves [[mathext1-exp-growth-equation|dQ/dt = kQ]] is Q = Ae^(kt), where A and k are constants. This exponential shape is the only one that works.",
+      "checkText": "The solution to the differential equation dQ/dt = kQ has the form...",
+      "checkOptions": [
+        { "text": "Q = Ae^(kt)", "isCorrect": true },
+        { "text": "Q = kt + A", "isCorrect": false },
+        { "text": "Q = A divided by kt", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-initial-value-a",
+      "subtopicName": "Exponential growth and decay",
+      "heading": "What A means: the starting value",
+      "body": "In [[mathext1-exp-growth-solution|Q = Ae^(kt)]], putting t = 0 gives Q = A. So A is just the value of Q at the very start, often written Q0.",
+      "checkText": "In Q = Ae^(kt), the constant A represents...",
+      "checkOptions": [
+        { "text": "The value of Q when t = 0", "isCorrect": true },
+        { "text": "The rate of change of Q", "isCorrect": false },
+        { "text": "The final value Q eventually reaches", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-growth-constant-k",
+      "subtopicName": "Exponential growth and decay",
+      "heading": "What k means: the growth constant",
+      "body": "In [[mathext1-exp-growth-solution|Q = Ae^(kt)]], k is called the growth constant. A bigger k makes the quantity grow faster.",
+      "checkText": "The constant k in Q = Ae^(kt) is called the...",
+      "checkOptions": [
+        { "text": "Growth constant", "isCorrect": true },
+        { "text": "Initial value", "isCorrect": false },
+        { "text": "Time constant", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-exp-decay",
+      "subtopicName": "Exponential growth and decay",
+      "heading": "When k is negative: decay",
+      "body": "If [[mathext1-growth-constant-k|k]] is negative, the quantity shrinks towards zero instead of growing. This is exponential decay, often written Q = Ae^(−kt) with k now positive.",
+      "checkText": "Exponential decay happens when the growth constant is...",
+      "checkOptions": [
+        { "text": "Negative", "isCorrect": true },
+        { "text": "Positive", "isCorrect": false },
+        { "text": "Exactly zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-growth-constant-not-percentage",
+      "subtopicName": "Exponential growth and decay",
+      "heading": "k isn't the same as percentage growth",
+      "body": "The [[mathext1-growth-constant-k|growth constant]] k is not the ordinary percentage growth rate per year. It measures instantaneous change, which is always a bit different from the average change over a year.",
+      "checkText": "The growth constant k is best described as...",
+      "checkOptions": [
+        { "text": "An instantaneous rate, not the average yearly percentage growth", "isCorrect": true },
+        { "text": "Exactly equal to the yearly percentage growth", "isCorrect": false },
+        { "text": "A number with no real meaning", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-modified-growth-equation",
+      "subtopicName": "Exponential growth and decay",
+      "heading": "A new pattern: rate depends on a gap",
+      "body": "Sometimes the rate of change is proportional not to Q itself, as in [[mathext1-exp-growth-equation|natural growth]], but to the gap between Q and some fixed value B: dQ/dt = k(Q − B).",
+      "checkText": "In dQ/dt = k(Q − B), the rate of change is proportional to...",
+      "checkOptions": [
+        { "text": "The difference between Q and the fixed value B", "isCorrect": true },
+        { "text": "Q alone", "isCorrect": false },
+        { "text": "B alone", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-modified-growth-solution",
+      "subtopicName": "Exponential growth and decay",
+      "heading": "Solving dQ/dt = k(Q − B)",
+      "body": "The solution to [[mathext1-modified-growth-equation|dQ/dt = k(Q − B)]] is Q = B + Ae^(kt). It looks like ordinary growth, just shifted up by B.",
+      "checkText": "The solution to dQ/dt = k(Q − B) is...",
+      "checkOptions": [
+        { "text": "Q = B + Ae^(kt)", "isCorrect": true },
+        { "text": "Q = B × Ae^(kt)", "isCorrect": false },
+        { "text": "Q = Ae^(kt) − B", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-modified-growth-limit",
+      "subtopicName": "Exponential growth and decay",
+      "heading": "Where the quantity settles",
+      "body": "When k is negative in [[mathext1-modified-growth-solution|Q = B + Ae^(kt)]], the Ae^(kt) part shrinks to zero over time. So Q settles down towards B.",
+      "checkText": "If k is negative in Q = B + Ae^(kt), as time passes Q gets closer to...",
+      "checkOptions": [
+        { "text": "B", "isCorrect": true },
+        { "text": "A", "isCorrect": false },
+        { "text": "Zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "mathext1-newtons-law-cooling",
+      "subtopicName": "Exponential growth and decay",
+      "heading": "Newton's law of cooling",
+      "body": "A hot object cools at a rate proportional to the gap between its temperature and the surrounding air, matching the [[mathext1-modified-growth-equation|modified growth pattern]]. The same law also describes a cold object warming up.",
+      "checkText": "Newton's law of cooling says the cooling rate is proportional to...",
+      "checkOptions": [
+        { "text": "The difference between the object's temperature and the surrounding temperature", "isCorrect": true },
+        { "text": "The object's temperature alone", "isCorrect": false },
+        { "text": "The amount of time elapsed alone", "isCorrect": false }
+      ]
+    }
+  ]
+}

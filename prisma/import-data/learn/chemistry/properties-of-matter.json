@@ -1,0 +1,473 @@
+{
+  "topicName": "Properties and Structure of Matter",
+  "chunks": [
+    {
+      "slug": "chem-matter-basics",
+      "subtopicName": "Properties of matter",
+      "heading": "What is matter?",
+      "body": "Matter is anything that has mass and takes up space. Almost everything around you, from air to rock, counts as matter.",
+      "checkText": "Which best describes matter?",
+      "checkOptions": [
+        { "text": "Anything with mass that takes up space", "isCorrect": true },
+        { "text": "Only solid objects you can hold", "isCorrect": false },
+        { "text": "Only things you can see", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-element-basics",
+      "subtopicName": "Properties of matter",
+      "heading": "Elements: one type of atom",
+      "body": "An element is a kind of [[chem-matter-basics|matter]] made of only one type of atom. Elements can't be broken down into anything simpler.",
+      "checkText": "Can an element be broken down into simpler substances?",
+      "checkOptions": [
+        { "text": "No, elements are already the simplest substances", "isCorrect": true },
+        { "text": "Yes, by heating them enough", "isCorrect": false },
+        { "text": "Yes, by dissolving them in water", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-monatomic-elements",
+      "subtopicName": "Properties of matter",
+      "heading": "Noble gases: solo atoms",
+      "body": "Some [[chem-element-basics|elements]] exist as single, separate atoms rather than joining together. These are called monatomic elements, and include the noble gases like helium and neon.",
+      "checkText": "Monatomic elements exist as...",
+      "checkOptions": [
+        { "text": "Single, separate atoms", "isCorrect": true },
+        { "text": "Pairs of atoms bonded together", "isCorrect": false },
+        { "text": "Huge 3D networks of atoms", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-element-molecules",
+      "subtopicName": "Properties of matter",
+      "heading": "Elements that form molecules",
+      "body": "Many non-metal [[chem-element-basics|elements]] bond into small groups called molecules. For example, sulfur atoms bond together in groups of eight to form a single sulfur molecule.",
+      "checkText": "A molecule made only of sulfur atoms is an example of...",
+      "checkOptions": [
+        { "text": "An element forming a molecule", "isCorrect": true },
+        { "text": "A compound", "isCorrect": false },
+        { "text": "A mixture", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-covalent-network",
+      "subtopicName": "Properties of matter",
+      "heading": "Elements that form giant networks",
+      "body": "Some non-metal elements bond into a giant 3D network instead of small [[chem-element-molecules|molecules]]. Carbon does this, forming diamond or graphite.",
+      "checkText": "Diamond is an example of a non-metal element forming...",
+      "checkOptions": [
+        { "text": "A giant covalent network", "isCorrect": true },
+        { "text": "A small molecule", "isCorrect": false },
+        { "text": "A monatomic gas", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-compound-basics",
+      "subtopicName": "Properties of matter",
+      "heading": "Compounds: atoms chemically joined",
+      "body": "A compound is made of two or more different [[chem-element-basics|elements]] chemically bonded together in a fixed ratio. Water is a compound of hydrogen and oxygen.",
+      "checkText": "In a compound, the different elements are...",
+      "checkOptions": [
+        { "text": "Chemically bonded together in a fixed ratio", "isCorrect": true },
+        { "text": "Just mixed together loosely", "isCorrect": false },
+        { "text": "Always present in equal amounts", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-compound-vs-mixture",
+      "subtopicName": "Properties of matter",
+      "heading": "Compound or mixture?",
+      "body": "A [[chem-compound-basics|compound]]'s elements are chemically bonded, so separating them usually needs a chemical reaction. A mixture's parts are only physically combined, so they're much easier to separate.",
+      "checkText": "Which is generally easier to separate back into its parts?",
+      "checkOptions": [
+        { "text": "A mixture", "isCorrect": true },
+        { "text": "A compound", "isCorrect": false },
+        { "text": "They're equally easy to separate", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-homogeneous-mixture",
+      "subtopicName": "Properties of matter",
+      "heading": "Homogeneous mixtures",
+      "body": "A homogeneous mixture is the same all the way through. Every sample you take from it looks and behaves the same, like salt fully stirred into water.",
+      "checkText": "In a homogeneous mixture, every sample you take...",
+      "checkOptions": [
+        { "text": "Looks the same as any other sample", "isCorrect": true },
+        { "text": "Looks different depending on where it's taken from", "isCorrect": false },
+        { "text": "Must be a pure element", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-heterogeneous-mixture",
+      "subtopicName": "Properties of matter",
+      "heading": "Heterogeneous mixtures",
+      "body": "Unlike a [[chem-homogeneous-mixture|homogeneous mixture]], a heterogeneous mixture is uneven. Different parts of it can look different, like pebbles mixed into sand, where the heavier pebbles sink to the bottom.",
+      "checkText": "A heterogeneous mixture is one where...",
+      "checkOptions": [
+        { "text": "Different samples of it can look different", "isCorrect": true },
+        { "text": "Every sample looks exactly the same", "isCorrect": false },
+        { "text": "It only contains one substance", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-solution-basics",
+      "subtopicName": "Properties of matter",
+      "heading": "Solutions: solute in solvent",
+      "body": "A solution is a [[chem-homogeneous-mixture|homogeneous]] mixture where a solute dissolves completely into a solvent. The solvent is whichever substance is present in the greater amount.",
+      "checkText": "In a solution, the solute...",
+      "checkOptions": [
+        { "text": "Is fully dissolved into the solvent", "isCorrect": true },
+        { "text": "Settles at the bottom over time", "isCorrect": false },
+        { "text": "Is always the substance in the greater amount", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-aqueous-solution",
+      "subtopicName": "Properties of matter",
+      "heading": "Aqueous solutions: water as solvent",
+      "body": "An aqueous [[chem-solution-basics|solution]] is simply one where water is the solvent. Salt dissolved in water is a common example.",
+      "checkText": "An aqueous solution always has which solvent?",
+      "checkOptions": [
+        { "text": "Water", "isCorrect": true },
+        { "text": "Oil", "isCorrect": false },
+        { "text": "Any liquid at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-suspension",
+      "subtopicName": "Properties of matter",
+      "heading": "Suspensions: mixtures that settle",
+      "body": "A suspension is a [[chem-heterogeneous-mixture|heterogeneous]] mixture where the solid doesn't fully dissolve. Over time, the solid particles settle out, or they can be separated by filtering.",
+      "checkText": "In a suspension, the solid particles...",
+      "checkOptions": [
+        { "text": "Don't fully dissolve, and can settle out", "isCorrect": true },
+        { "text": "Dissolve completely into the liquid", "isCorrect": false },
+        { "text": "Disappear permanently", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-colloid",
+      "subtopicName": "Properties of matter",
+      "heading": "Colloids: in between mixtures",
+      "body": "A colloid has tiny particles spread evenly through a liquid, but unlike a [[chem-suspension|suspension]], they never settle out or separate. Milk is a colloid of fat spread through water.",
+      "checkText": "Unlike the particles in a suspension, the particles in a colloid...",
+      "checkOptions": [
+        { "text": "Stay spread out and don't settle", "isCorrect": true },
+        { "text": "Sink to the bottom over time", "isCorrect": false },
+        { "text": "Form a separate layer on top", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-physical-change",
+      "subtopicName": "Properties of matter",
+      "heading": "Physical changes",
+      "body": "A physical change alters how [[chem-matter-basics|matter]] looks or feels, but not what it's made of. Crushing, bending or melting something are all physical changes.",
+      "checkText": "A physical change is one where...",
+      "checkOptions": [
+        { "text": "The substance stays the same, just its form changes", "isCorrect": true },
+        { "text": "A brand new substance is created", "isCorrect": false },
+        { "text": "The substance disappears completely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-three-states",
+      "subtopicName": "Properties of matter",
+      "heading": "Three states of matter",
+      "body": "[[chem-matter-basics|Matter]] is usually found in one of three states: solid, liquid or gas.",
+      "checkText": "The three most common states of matter are...",
+      "checkOptions": [
+        { "text": "Solid, liquid, gas", "isCorrect": true },
+        { "text": "Hot, warm, cold", "isCorrect": false },
+        { "text": "Heavy, medium, light", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-particle-model",
+      "subtopicName": "Properties of matter",
+      "heading": "The particle model",
+      "body": "The particle model pictures matter as tiny particles that are always moving and attracted to each other. How strong that attraction is explains why solids, liquids and gases behave so differently.",
+      "checkText": "According to the particle model, particles are...",
+      "checkOptions": [
+        { "text": "Always moving and attracted to each other", "isCorrect": true },
+        { "text": "Completely still and unmoving", "isCorrect": false },
+        { "text": "Never attracted to each other", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-solid-particles",
+      "subtopicName": "Properties of matter",
+      "heading": "Particles in a solid",
+      "body": "In a solid, [[chem-particle-model|particles]] are packed tightly and held in fixed positions by strong attraction. They can only vibrate, not move past each other.",
+      "checkText": "In a solid, the particles...",
+      "checkOptions": [
+        { "text": "Vibrate in fixed positions", "isCorrect": true },
+        { "text": "Move freely past each other", "isCorrect": false },
+        { "text": "Spread far apart", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-liquid-particles",
+      "subtopicName": "Properties of matter",
+      "heading": "Particles in a liquid",
+      "body": "Unlike in a [[chem-solid-particles|solid]], liquid particles are held together more loosely, so they can slide past each other. This lets a liquid flow and take the shape of its container.",
+      "checkText": "A liquid can flow because its particles...",
+      "checkOptions": [
+        { "text": "Can slide past each other", "isCorrect": true },
+        { "text": "Are locked in fixed positions", "isCorrect": false },
+        { "text": "Have no attraction between them at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-gas-particles",
+      "subtopicName": "Properties of matter",
+      "heading": "Particles in a gas",
+      "body": "Unlike in a [[chem-liquid-particles|liquid]], the attraction between gas particles is very weak, so they spread far apart and move freely in every direction. This is why a gas fills any container it's put in.",
+      "checkText": "Gas particles spread far apart because...",
+      "checkOptions": [
+        { "text": "The attraction between them is very weak", "isCorrect": true },
+        { "text": "The attraction between them is very strong", "isCorrect": false },
+        { "text": "They stop moving", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-heating-particles",
+      "subtopicName": "Properties of matter",
+      "heading": "Heating speeds particles up",
+      "body": "Adding heat makes [[chem-particle-model|particles]] move faster and spread further apart. Enough heat can overcome the attraction holding a solid or liquid together, causing it to change state.",
+      "checkText": "Heating a substance makes its particles...",
+      "checkOptions": [
+        { "text": "Move faster and spread further apart", "isCorrect": true },
+        { "text": "Move slower and pack closer together", "isCorrect": false },
+        { "text": "Stop moving completely", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-melting-freezing",
+      "subtopicName": "Properties of matter",
+      "heading": "Melting and freezing",
+      "body": "When [[chem-heating-particles|heating]] gives particles enough energy, a solid melts into a liquid. Cooling reverses this: freezing turns a liquid back into a solid.",
+      "checkText": "Freezing is the change from...",
+      "checkOptions": [
+        { "text": "Liquid to solid", "isCorrect": true },
+        { "text": "Solid to liquid", "isCorrect": false },
+        { "text": "Liquid to gas", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-boiling-condensing",
+      "subtopicName": "Properties of matter",
+      "heading": "Boiling and condensing",
+      "body": "Boiling is a liquid turning into a gas when heated. Condensing is the reverse: a gas turning back into a liquid when cooled.",
+      "checkText": "Condensing is the change from...",
+      "checkOptions": [
+        { "text": "Gas to liquid", "isCorrect": true },
+        { "text": "Liquid to gas", "isCorrect": false },
+        { "text": "Solid to gas", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-sublimation",
+      "subtopicName": "Properties of matter",
+      "heading": "Sublimation: skipping the liquid",
+      "body": "Unlike [[chem-melting-freezing|melting]], sublimation is when a solid turns directly into a gas without ever becoming a liquid. Dry ice, solid carbon dioxide, does this.",
+      "checkText": "Sublimation is a change directly from...",
+      "checkOptions": [
+        { "text": "Solid to gas", "isCorrect": true },
+        { "text": "Solid to liquid", "isCorrect": false },
+        { "text": "Gas to solid", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-separation-intro",
+      "subtopicName": "Properties of matter",
+      "heading": "Separating mixtures by physical properties",
+      "body": "Because a [[chem-compound-vs-mixture|mixture]]'s parts are only physically combined, they can be separated using their different physical properties, like particle size or boiling point.",
+      "checkText": "Mixtures can be separated because their parts...",
+      "checkOptions": [
+        { "text": "Keep their own physical properties", "isCorrect": true },
+        { "text": "Become chemically bonded together", "isCorrect": false },
+        { "text": "Cannot be told apart", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-filtration",
+      "subtopicName": "Properties of matter",
+      "heading": "Filtration",
+      "body": "Filtration uses a filter to trap solid particles while letting liquid pass through. The liquid that passes through is called the filtrate.",
+      "checkText": "During filtration, the liquid that passes through the filter is called the...",
+      "checkOptions": [
+        { "text": "Filtrate", "isCorrect": true },
+        { "text": "Solute", "isCorrect": false },
+        { "text": "Precipitate", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-evaporation",
+      "subtopicName": "Properties of matter",
+      "heading": "Evaporation",
+      "body": "Evaporation separates a dissolved solid from a liquid by letting the liquid turn to vapour and escape, leaving the solid behind.",
+      "checkText": "Evaporation works by removing the...",
+      "checkOptions": [
+        { "text": "Liquid, as it turns to vapour", "isCorrect": true },
+        { "text": "Solid, as it turns to vapour", "isCorrect": false },
+        { "text": "Colour of the mixture", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-crystallisation",
+      "subtopicName": "Properties of matter",
+      "heading": "Crystallisation",
+      "body": "Crystallisation happens when a dissolved solid comes out of solution and forms crystals, often as the solvent [[chem-evaporation|evaporates]]. The solid that forms is called a precipitate.",
+      "checkText": "A solid that forms and separates out of a solution is called a...",
+      "checkOptions": [
+        { "text": "Precipitate", "isCorrect": true },
+        { "text": "Filtrate", "isCorrect": false },
+        { "text": "Solvent", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-distillation",
+      "subtopicName": "Properties of matter",
+      "heading": "Distillation",
+      "body": "Unlike simple [[chem-evaporation|evaporation]], distillation separates a mixture of liquids using their different boiling points. The more volatile liquid boils off first, then is cooled back into a liquid and collected.",
+      "checkText": "Distillation separates a mixture of liquids based on their different...",
+      "checkOptions": [
+        { "text": "Boiling points", "isCorrect": true },
+        { "text": "Colours", "isCorrect": false },
+        { "text": "Densities", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-percentage-composition",
+      "subtopicName": "Properties of matter",
+      "heading": "Percentage composition",
+      "body": "Percentage composition tells you what percentage of a [[chem-compound-basics|compound]]'s mass comes from each element. It's found using: mass of element ÷ mass of compound x 100.",
+      "checkText": "Percentage composition by mass tells you...",
+      "checkOptions": [
+        { "text": "What percentage of the total mass each element contributes", "isCorrect": true },
+        { "text": "How many atoms of each element there are", "isCorrect": false },
+        { "text": "The colour of the compound", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-percentage-check",
+      "subtopicName": "Properties of matter",
+      "heading": "Percentages must add to 100",
+      "body": "Since a compound is made up entirely of its elements, all their [[chem-percentage-composition|percentage compositions]] must add up to 100%. This is a handy way to check your working.",
+      "checkText": "The percentage compositions of all elements in a compound should add up to...",
+      "checkOptions": [
+        { "text": "100%", "isCorrect": true },
+        { "text": "0%", "isCorrect": false },
+        { "text": "The compound's mass in grams", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-mass-from-percentage",
+      "subtopicName": "Properties of matter",
+      "heading": "Finding a mass from a percentage",
+      "body": "To find the mass of one element in a sample, multiply its [[chem-percentage-composition|percentage]] by the total mass, then divide by 100.",
+      "checkText": "To find the mass of an element in a sample, you...",
+      "checkOptions": [
+        { "text": "Multiply its percentage by the total mass, then divide by 100", "isCorrect": true },
+        { "text": "Divide its percentage by the total mass", "isCorrect": false },
+        { "text": "Add its percentage to the total mass", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-element-symbols",
+      "subtopicName": "Properties of matter",
+      "heading": "Element names and symbols",
+      "body": "Every [[chem-element-basics|element]] has its own chemical symbol, made of one or two letters. The first letter is always a capital, and a second letter, if there is one, is always lower case.",
+      "checkText": "In a two-letter chemical symbol, the second letter is always...",
+      "checkOptions": [
+        { "text": "Lower case", "isCorrect": true },
+        { "text": "Upper case", "isCorrect": false },
+        { "text": "The same as the first letter", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-metals-nonmetals-metalloids",
+      "subtopicName": "Properties of matter",
+      "heading": "Metals, non-metals and metalloids",
+      "body": "The periodic table sorts elements into three classes: metals, non-metals and metalloids. Most elements are metals.",
+      "checkText": "The periodic table divides elements into which three classes?",
+      "checkOptions": [
+        { "text": "Metals, non-metals, metalloids", "isCorrect": true },
+        { "text": "Solids, liquids, gases", "isCorrect": false },
+        { "text": "Heavy, medium, light", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-metal-properties",
+      "subtopicName": "Properties of matter",
+      "heading": "What metals are like",
+      "body": "[[chem-metals-nonmetals-metalloids|Metals]] are typically shiny, easy to bend into shape, and good conductors of heat and electricity. Most are solid at room temperature.",
+      "checkText": "Which property is typical of metals?",
+      "checkOptions": [
+        { "text": "Good conductor of electricity", "isCorrect": true },
+        { "text": "Dull in colour", "isCorrect": false },
+        { "text": "Poor conductor of heat", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-nonmetal-properties",
+      "subtopicName": "Properties of matter",
+      "heading": "What non-metals are like",
+      "body": "Unlike [[chem-metal-properties|metals]], non-metals are usually dull, brittle if solid, and poor conductors of heat and electricity. Many exist as gases at room temperature.",
+      "checkText": "Compared to metals, non-metals are generally...",
+      "checkOptions": [
+        { "text": "Poor conductors of heat and electricity", "isCorrect": true },
+        { "text": "Shiny and easy to bend into shape", "isCorrect": false },
+        { "text": "Always liquids at room temperature", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-metalloid-properties",
+      "subtopicName": "Properties of matter",
+      "heading": "What metalloids are like",
+      "body": "Metalloids sit between [[chem-metal-properties|metals]] and [[chem-nonmetal-properties|non-metals]]. They can look shiny like metals but are brittle like non-metals, and only conduct electricity moderately.",
+      "checkText": "Metalloids conduct electricity...",
+      "checkOptions": [
+        { "text": "Moderately, better than non-metals but worse than metals", "isCorrect": true },
+        { "text": "Not at all", "isCorrect": false },
+        { "text": "As well as metals do", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-alloys",
+      "subtopicName": "Properties of matter",
+      "heading": "Alloys: metals mixed together",
+      "body": "An alloy is a mixture made mostly of a [[chem-metal-properties|metal]] with small amounts of other elements added. Steel, an alloy of iron and carbon, is stronger than pure iron.",
+      "checkText": "An alloy is...",
+      "checkOptions": [
+        { "text": "A mixture of a metal with other elements", "isCorrect": true },
+        { "text": "A pure element with no other elements added", "isCorrect": false },
+        { "text": "Always weaker than the pure metal alone", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-physical-property-def",
+      "subtopicName": "Properties of matter",
+      "heading": "Physical properties",
+      "body": "A physical property, like colour, density or melting point, can be observed or measured without turning the substance into something new. It's the same idea behind a [[chem-physical-change|physical change]].",
+      "checkText": "A physical property can be measured...",
+      "checkOptions": [
+        { "text": "Without changing what the substance is made of", "isCorrect": true },
+        { "text": "Only by creating a brand new substance", "isCorrect": false },
+        { "text": "Only by heating the substance until it reacts", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "chem-chemical-property-def",
+      "subtopicName": "Properties of matter",
+      "heading": "Chemical properties",
+      "body": "Unlike a [[chem-physical-property-def|physical property]], a chemical property describes how a substance reacts and turns into something new, like how easily magnesium burns to form magnesium oxide.",
+      "checkText": "A chemical property is revealed when a substance...",
+      "checkOptions": [
+        { "text": "Reacts and turns into a new substance", "isCorrect": true },
+        { "text": "Is simply measured, like its mass", "isCorrect": false },
+        { "text": "Is looked at under a microscope", "isCorrect": false }
+      ]
+    }
+  ]
+}

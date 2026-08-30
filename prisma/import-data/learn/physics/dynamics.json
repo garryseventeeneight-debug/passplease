@@ -1,0 +1,665 @@
+{
+  "topicName": "Dynamics",
+  "chunks": [
+    {
+      "slug": "phys-force-def",
+      "subtopicName": "Forces",
+      "heading": "What is a force?",
+      "body": "A force is a push or a pull. It can start an object moving, stop it, speed it up, slow it down, or change its direction.",
+      "checkText": "A force is best described as a...",
+      "checkOptions": [
+        { "text": "Push or a pull", "isCorrect": true },
+        { "text": "Type of energy", "isCorrect": false },
+        { "text": "Measurement of speed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-contact-vs-field-force",
+      "subtopicName": "Forces",
+      "heading": "Touching forces and forces at a distance",
+      "body": "A contact force needs the objects to be touching, like a kick on a ball. A field force, like gravity or magnetism, can act without touching.",
+      "checkText": "Gravity is an example of a...",
+      "checkOptions": [
+        { "text": "Field force, acting without contact", "isCorrect": true },
+        { "text": "Contact force only", "isCorrect": false },
+        { "text": "Force that never exists", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-net-force",
+      "subtopicName": "Forces",
+      "heading": "Adding up all the forces",
+      "body": "When several [[phys-force-def|forces]] act on an object at once, the net force is the sum of all of them combined into one single force.",
+      "checkText": "The net force on an object is...",
+      "checkOptions": [
+        { "text": "The combined sum of all forces acting on it", "isCorrect": true },
+        { "text": "Only the biggest force acting", "isCorrect": false },
+        { "text": "Always zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-equilibrium",
+      "subtopicName": "Forces",
+      "heading": "When forces cancel out",
+      "body": "Equilibrium happens when the [[phys-net-force|net force]] on an object is zero, because all the forces on it balance each other out.",
+      "checkText": "An object is in equilibrium when its net force is...",
+      "checkOptions": [
+        { "text": "Zero", "isCorrect": true },
+        { "text": "At its maximum", "isCorrect": false },
+        { "text": "Always positive", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-newtons-first-law",
+      "subtopicName": "Forces",
+      "heading": "Newton's first law",
+      "body": "Newton's first law says an object keeps a constant velocity unless an unbalanced force acts on it. A resting object stays at rest, a moving one keeps moving.",
+      "checkText": "According to Newton's first law, an object's velocity changes only when...",
+      "checkOptions": [
+        { "text": "An unbalanced force acts on it", "isCorrect": true },
+        { "text": "It stays still for too long", "isCorrect": false },
+        { "text": "It runs out of energy", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-inertia",
+      "subtopicName": "Forces",
+      "heading": "Inertia: resisting a change in motion",
+      "body": "Inertia is an object's tendency to resist a change in its motion. A heavier object has more inertia, so it's harder to speed up, slow down, or turn.",
+      "checkText": "An object with a large mass has...",
+      "checkOptions": [
+        { "text": "A large inertia", "isCorrect": true },
+        { "text": "No inertia at all", "isCorrect": false },
+        { "text": "Less inertia than a light object", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-terminal-velocity",
+      "subtopicName": "Forces",
+      "heading": "Terminal velocity",
+      "body": "As a falling object speeds up, air resistance pushes back harder. Terminal velocity is reached when air resistance balances gravity, so the object stops accelerating.",
+      "checkText": "Terminal velocity is reached when...",
+      "checkOptions": [
+        { "text": "Air resistance balances the pull of gravity", "isCorrect": true },
+        { "text": "An object first starts falling", "isCorrect": false },
+        { "text": "Gravity disappears", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-newtons-second-law",
+      "subtopicName": "Forces",
+      "heading": "Newton's second law",
+      "body": "Newton's second law says force equals mass times acceleration: F = ma. A bigger force or a smaller mass both produce a bigger acceleration.",
+      "checkText": "Newton's second law is written as...",
+      "checkOptions": [
+        { "text": "F = ma", "isCorrect": true },
+        { "text": "F = mv", "isCorrect": false },
+        { "text": "a = Fm", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-newton-unit",
+      "subtopicName": "Forces",
+      "heading": "The newton: a unit of force",
+      "body": "Force is measured in newtons (N). One newton is the force needed to accelerate a 1 kg mass at 1 m/s^2.",
+      "checkText": "The SI unit for force is the...",
+      "checkOptions": [
+        { "text": "Newton", "isCorrect": true },
+        { "text": "Joule", "isCorrect": false },
+        { "text": "Watt", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-more-force-more-acceleration",
+      "subtopicName": "Forces",
+      "heading": "Bigger force, bigger acceleration",
+      "body": "For a fixed mass, applying a bigger [[phys-force-def|force]] causes a bigger acceleration. Doubling the force doubles the acceleration.",
+      "checkText": "If you double the force on a fixed mass, its acceleration...",
+      "checkOptions": [
+        { "text": "Doubles too", "isCorrect": true },
+        { "text": "Stays the same", "isCorrect": false },
+        { "text": "Halves", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-more-mass-less-acceleration",
+      "subtopicName": "Forces",
+      "heading": "Bigger mass, smaller acceleration",
+      "body": "For a fixed force, a bigger mass produces a smaller acceleration. Doubling the mass halves the acceleration.",
+      "checkText": "If you double an object's mass while the force stays the same, its acceleration...",
+      "checkOptions": [
+        { "text": "Halves", "isCorrect": true },
+        { "text": "Doubles", "isCorrect": false },
+        { "text": "Stays the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-mass-vs-weight",
+      "subtopicName": "Forces",
+      "heading": "Mass and weight aren't the same thing",
+      "body": "Mass is how much matter an object has, measured in kilograms. Weight is the force of gravity on that mass, measured in newtons: weight = mg.",
+      "checkText": "Weight is measured in which unit?",
+      "checkOptions": [
+        { "text": "Newtons", "isCorrect": true },
+        { "text": "Kilograms", "isCorrect": false },
+        { "text": "Metres", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-falling-objects-same-rate",
+      "subtopicName": "Forces",
+      "heading": "Why a feather and a hammer fall together",
+      "body": "Without air resistance, all objects accelerate at the same rate when they fall, no matter their mass. A bigger mass also needs a bigger [[phys-mass-vs-weight|weight]] force to move it, so the two effects cancel out.",
+      "checkText": "Ignoring air resistance, a heavy object and a light object dropped together will...",
+      "checkOptions": [
+        { "text": "Hit the ground at the same time", "isCorrect": true },
+        { "text": "The heavy one lands first", "isCorrect": false },
+        { "text": "The light one lands first", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-air-resistance-mass-effect",
+      "subtopicName": "Forces",
+      "heading": "Why a feather really falls slower",
+      "body": "On Earth, air resistance affects light objects much more than heavy ones. That's why a feather drifts down slowly while a hammer falls fast.",
+      "checkText": "Air resistance has the biggest effect on falling objects that are...",
+      "checkOptions": [
+        { "text": "Light, with a large surface area", "isCorrect": true },
+        { "text": "Heavy and small", "isCorrect": false },
+        { "text": "Falling in a vacuum", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-newtons-third-law",
+      "subtopicName": "Forces",
+      "heading": "Newton's third law",
+      "body": "Newton's third law says every action force has an equal and opposite reaction force. If you push on something, it pushes back on you just as hard.",
+      "checkText": "Newton's third law says every action force has...",
+      "checkOptions": [
+        { "text": "An equal and opposite reaction force", "isCorrect": true },
+        { "text": "No effect on anything", "isCorrect": false },
+        { "text": "A much smaller reaction force", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-action-reaction-pairs",
+      "subtopicName": "Forces",
+      "heading": "Action and reaction act on different objects",
+      "body": "In an action-reaction pair, the two forces always act on two different objects, never on the same one. That's why they can't cancel each other out.",
+      "checkText": "The action and reaction forces in a pair act on...",
+      "checkOptions": [
+        { "text": "Two different objects", "isCorrect": true },
+        { "text": "The same object", "isCorrect": false },
+        { "text": "No objects at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-normal-force",
+      "subtopicName": "Forces",
+      "heading": "The normal force",
+      "body": "When an object rests on a surface, the surface pushes back on it. This push, at right angles to the surface, is called the normal force.",
+      "checkText": "The normal force always acts...",
+      "checkOptions": [
+        { "text": "At right angles to the surface", "isCorrect": true },
+        { "text": "Parallel to the surface", "isCorrect": false },
+        { "text": "In the same direction as gravity", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-weight-not-reaction-pair",
+      "subtopicName": "Forces",
+      "heading": "A common mix-up: weight and normal force",
+      "body": "Weight and the [[phys-normal-force|normal force]] on a resting object are equal and opposite, but they are not a Newton's third law pair, because both act on the same object.",
+      "checkText": "Weight and normal force on a resting book are not a Newton's third law pair because...",
+      "checkOptions": [
+        { "text": "They both act on the same object", "isCorrect": true },
+        { "text": "They point in the same direction", "isCorrect": false },
+        { "text": "One of them isn't a real force", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-inclined-plane-forces",
+      "subtopicName": "Forces",
+      "heading": "Forces on a slope",
+      "body": "On a tilted surface, the [[phys-normal-force|normal force]] shrinks as the angle increases, while more of the weight pulls the object down along the slope.",
+      "checkText": "As a slope gets steeper, the normal force acting on an object on it...",
+      "checkOptions": [
+        { "text": "Gets smaller", "isCorrect": true },
+        { "text": "Gets bigger", "isCorrect": false },
+        { "text": "Stays exactly the same", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-friction-def",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Friction: a force that resists sliding",
+      "body": "Friction is a force between two touching surfaces that opposes their movement relative to each other. It always acts against the direction of motion.",
+      "checkText": "Friction always acts...",
+      "checkOptions": [
+        { "text": "Against the direction of motion", "isCorrect": true },
+        { "text": "In the same direction as motion", "isCorrect": false },
+        { "text": "Perpendicular to motion only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-static-vs-kinetic-friction",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Two kinds of friction",
+      "body": "Static [[phys-friction-def|friction]] stops an object from starting to slide. Once it's moving, kinetic friction takes over, and it's usually weaker than static friction.",
+      "checkText": "Which type of friction is usually stronger?",
+      "checkOptions": [
+        { "text": "Static friction", "isCorrect": true },
+        { "text": "Kinetic friction", "isCorrect": false },
+        { "text": "They're always identical", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-coefficient-of-friction",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "The coefficient of friction",
+      "body": "The coefficient of friction is a number that shows how much [[phys-friction-def|friction]] exists between two particular surfaces. Rougher surfaces give a higher number.",
+      "checkText": "A higher coefficient of friction means the surfaces are...",
+      "checkOptions": [
+        { "text": "Rougher, with more friction between them", "isCorrect": true },
+        { "text": "Smoother, with less friction", "isCorrect": false },
+        { "text": "Unrelated to friction", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-friction-formula",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Calculating friction",
+      "body": "The friction force equals the [[phys-coefficient-of-friction|coefficient of friction]] multiplied by the [[phys-normal-force|normal force]] pressing the surfaces together.",
+      "checkText": "To calculate the friction force, you multiply the coefficient of friction by the...",
+      "checkOptions": [
+        { "text": "Normal force", "isCorrect": true },
+        { "text": "Object's mass only", "isCorrect": false },
+        { "text": "Object's speed", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-energy-def",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "What is energy?",
+      "body": "Energy is the capacity to cause change. Anything that can push, lift, heat, or move something else has energy.",
+      "checkText": "Energy is best described as the capacity to...",
+      "checkOptions": [
+        { "text": "Cause change", "isCorrect": true },
+        { "text": "Stay perfectly still", "isCorrect": false },
+        { "text": "Disappear over time", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-kinetic-energy-intro",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Kinetic energy: the energy of motion",
+      "body": "Kinetic energy is [[phys-energy-def|energy]] that a moving object has. The faster something moves, or the more mass it has, the more kinetic energy it carries.",
+      "checkText": "Kinetic energy is energy associated with...",
+      "checkOptions": [
+        { "text": "Motion", "isCorrect": true },
+        { "text": "Position", "isCorrect": false },
+        { "text": "Temperature only", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-potential-energy-intro",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Potential energy: stored energy",
+      "body": "Potential energy is [[phys-energy-def|energy]] stored because of an object's position, like a ball held up high, ready to fall.",
+      "checkText": "Potential energy depends on an object's...",
+      "checkOptions": [
+        { "text": "Position", "isCorrect": true },
+        { "text": "Speed", "isCorrect": false },
+        { "text": "Colour", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-joule-unit",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "The joule: a unit of energy",
+      "body": "Energy and work are both measured in joules (J). One joule is roughly the energy needed to lift a small apple by 10 centimetres.",
+      "checkText": "Energy is measured using which unit?",
+      "checkOptions": [
+        { "text": "Joule", "isCorrect": true },
+        { "text": "Newton", "isCorrect": false },
+        { "text": "Watt", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-work-def",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "What is work?",
+      "body": "Work is done when a force moves an object. It equals the net force multiplied by the distance moved in the force's direction: W = Fs.",
+      "checkText": "Work is defined as force multiplied by...",
+      "checkOptions": [
+        { "text": "Distance moved in the force's direction", "isCorrect": true },
+        { "text": "Time taken", "isCorrect": false },
+        { "text": "Speed of the object", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-work-zero-no-movement",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "No movement means no work",
+      "body": "If a force is applied but the object doesn't move, no [[phys-work-def|work]] is done, even if it takes a lot of effort, like holding a heavy bag still.",
+      "checkText": "If you push against a wall and it doesn't move, how much work do you do on the wall?",
+      "checkOptions": [
+        { "text": "Zero", "isCorrect": true },
+        { "text": "A large amount", "isCorrect": false },
+        { "text": "It depends only on how hard you push", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-work-angle",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Work when the force is at an angle",
+      "body": "If a force acts at an angle to the direction of movement, only the part of the force pointing along the motion actually does [[phys-work-def|work]].",
+      "checkText": "When a force is applied at an angle to an object's motion, the work done depends on...",
+      "checkOptions": [
+        { "text": "Only the part of the force along the direction of motion", "isCorrect": true },
+        { "text": "The entire force, regardless of angle", "isCorrect": false },
+        { "text": "Only the part of the force at right angles to motion", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-kinetic-energy-formula",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Calculating kinetic energy",
+      "body": "The [[phys-kinetic-energy-intro|kinetic energy]] of an object is given by K = 1/2 mv^2, where m is mass and v is speed.",
+      "checkText": "The formula for kinetic energy is...",
+      "checkOptions": [
+        { "text": "K = 1/2 mv^2", "isCorrect": true },
+        { "text": "K = mv", "isCorrect": false },
+        { "text": "K = mgh", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-work-energy-theorem",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Work changes kinetic energy",
+      "body": "The work-energy theorem says the [[phys-work-def|work]] done on an object equals its change in [[phys-kinetic-energy-formula|kinetic energy]].",
+      "checkText": "The work-energy theorem links work done to a change in...",
+      "checkOptions": [
+        { "text": "Kinetic energy", "isCorrect": true },
+        { "text": "Mass", "isCorrect": false },
+        { "text": "Time", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-gravitational-pe-formula",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Calculating gravitational potential energy",
+      "body": "The change in gravitational [[phys-potential-energy-intro|potential energy]] of an object equals its mass times g times the height it rises: change in PE = mgh.",
+      "checkText": "The formula for the change in gravitational potential energy is...",
+      "checkOptions": [
+        { "text": "change in PE = mgh", "isCorrect": true },
+        { "text": "change in PE = 1/2 mv^2", "isCorrect": false },
+        { "text": "change in PE = Fs", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-pe-reference-level",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Choosing a starting point for height",
+      "body": "Gravitational [[phys-potential-energy-intro|potential energy]] is always measured relative to a chosen reference level, like the ground or a tabletop. Only the height change from that level matters.",
+      "checkText": "Gravitational potential energy is always calculated relative to...",
+      "checkOptions": [
+        { "text": "A chosen reference level", "isCorrect": true },
+        { "text": "The centre of the Earth only", "isCorrect": false },
+        { "text": "Nothing — it has no reference point", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-mechanical-energy-def",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Mechanical energy: kinetic plus potential",
+      "body": "Mechanical energy is the sum of an object's [[phys-kinetic-energy-intro|kinetic energy]] and [[phys-potential-energy-intro|potential energy]].",
+      "checkText": "Mechanical energy is the sum of an object's kinetic energy and its...",
+      "checkOptions": [
+        { "text": "Potential energy", "isCorrect": true },
+        { "text": "Mass", "isCorrect": false },
+        { "text": "Momentum", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-conservation-of-mechanical-energy",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Mechanical energy stays constant",
+      "body": "When only gravity acts on a falling object, its [[phys-mechanical-energy-def|mechanical energy]] stays the same. As potential energy drops, kinetic energy rises by the same amount.",
+      "checkText": "As a falling object loses gravitational potential energy, its kinetic energy...",
+      "checkOptions": [
+        { "text": "Increases by the same amount", "isCorrect": true },
+        { "text": "Also decreases", "isCorrect": false },
+        { "text": "Stays at zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-falling-object-speed-formula",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "How fast is a falling object going?",
+      "body": "Using [[phys-conservation-of-mechanical-energy|conservation of mechanical energy]], the speed of a falling object is v = sqrt(2gh), no matter its mass.",
+      "checkText": "The formula for the speed of an object that has fallen a height h is...",
+      "checkOptions": [
+        { "text": "v = sqrt(2gh)", "isCorrect": true },
+        { "text": "v = gh", "isCorrect": false },
+        { "text": "v = 2gh", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-mechanical-energy-loss",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "When mechanical energy isn't conserved",
+      "body": "Real bouncing balls lose a little [[phys-mechanical-energy-def|mechanical energy]] on each bounce, as some of it turns into heat and sound. That's why each bounce is lower than the last.",
+      "checkText": "A bouncing ball gets lower with each bounce because some mechanical energy is turned into...",
+      "checkOptions": [
+        { "text": "Heat and sound", "isCorrect": true },
+        { "text": "More kinetic energy", "isCorrect": false },
+        { "text": "Extra potential energy", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-power-def",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Power: how fast work is done",
+      "body": "Power measures how quickly [[phys-work-def|work]] is done or energy is transferred. It's calculated as power = energy transferred divided by time taken.",
+      "checkText": "Power is a measure of...",
+      "checkOptions": [
+        { "text": "How fast work is done", "isCorrect": true },
+        { "text": "How much energy is stored", "isCorrect": false },
+        { "text": "How far an object moves", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-power-unit",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "The watt: a unit of power",
+      "body": "[[phys-power-def|Power]] is measured in watts (W). One watt equals one joule of energy transferred every second.",
+      "checkText": "One watt is equal to...",
+      "checkOptions": [
+        { "text": "One joule per second", "isCorrect": true },
+        { "text": "One newton per second", "isCorrect": false },
+        { "text": "One joule per metre", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-power-force-velocity",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Power from force and speed",
+      "body": "When something moves at a constant speed against a force, [[phys-power-def|power]] can also be found using P = Fv, force multiplied by velocity.",
+      "checkText": "For an object moving at constant speed, power can be calculated as force multiplied by...",
+      "checkOptions": [
+        { "text": "Velocity", "isCorrect": true },
+        { "text": "Time", "isCorrect": false },
+        { "text": "Mass", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-rolling-air-resistance",
+      "subtopicName": "Forces, acceleration and energy",
+      "heading": "Resistance that slows things down",
+      "body": "Rolling resistance comes from a wheel's contact with the ground, while air resistance comes from air pushing back on a moving object. Both oppose motion and reduce speed.",
+      "checkText": "Rolling resistance is caused by...",
+      "checkOptions": [
+        { "text": "A wheel's contact with the ground", "isCorrect": true },
+        { "text": "Air pushing on a moving object", "isCorrect": false },
+        { "text": "Gravity alone", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-momentum-def",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "What is momentum?",
+      "body": "Momentum is a measure of how hard it is to stop a moving object. It equals mass times velocity: p = mv.",
+      "checkText": "The formula for momentum is...",
+      "checkOptions": [
+        { "text": "p = mv", "isCorrect": true },
+        { "text": "p = ma", "isCorrect": false },
+        { "text": "p = mgh", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-momentum-vector",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "Momentum has a direction",
+      "body": "Because velocity is a vector, [[phys-momentum-def|momentum]] is a vector too. It has both a size and a direction, not just a number.",
+      "checkText": "Momentum is a vector, which means it has...",
+      "checkOptions": [
+        { "text": "Both a size and a direction", "isCorrect": true },
+        { "text": "Only a size", "isCorrect": false },
+        { "text": "Neither size nor direction", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-conservation-of-momentum",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "Momentum is conserved",
+      "body": "In any collision, the total [[phys-momentum-def|momentum]] of a closed system before the collision equals the total momentum after it.",
+      "checkText": "The law of conservation of momentum says total momentum before a collision...",
+      "checkOptions": [
+        { "text": "Equals total momentum after", "isCorrect": true },
+        { "text": "Always increases", "isCorrect": false },
+        { "text": "Always becomes zero", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-momentum-separate-collision",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "When objects bounce apart",
+      "body": "If two objects collide and bounce apart, [[phys-conservation-of-momentum|conservation of momentum]] gives m1u1 + m2u2 = m1v1 + m2v2, with u for initial and v for final velocities.",
+      "checkText": "In a collision where two objects bounce apart and stay separate, the correct equation is...",
+      "checkOptions": [
+        { "text": "m1u1 + m2u2 = m1v1 + m2v2", "isCorrect": true },
+        { "text": "m1u1 = m2v2 only", "isCorrect": false },
+        { "text": "m1 + m2 = v1 + v2", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-momentum-combine-collision",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "When objects stick together",
+      "body": "If two objects collide and stick together, [[phys-conservation-of-momentum|conservation of momentum]] gives m1u1 + m2u2 = (m1 + m2)v, using one final velocity for the combined mass.",
+      "checkText": "When two colliding objects stick together afterwards, they share...",
+      "checkOptions": [
+        { "text": "One single final velocity", "isCorrect": true },
+        { "text": "Two separate final velocities", "isCorrect": false },
+        { "text": "No momentum at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-momentum-explosive-collision",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "When one object splits into two",
+      "body": "In an explosive collision, one object breaks into two pieces. [[phys-conservation-of-momentum|Conservation of momentum]] still applies: the total momentum before equals the total after.",
+      "checkText": "An explosive collision is one where...",
+      "checkOptions": [
+        { "text": "One object breaks apart into two pieces", "isCorrect": true },
+        { "text": "Two objects merge into one", "isCorrect": false },
+        { "text": "Nothing moves at all", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-elastic-collision",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "Elastic collisions keep their energy",
+      "body": "In an elastic collision, total kinetic energy before the collision equals total kinetic energy after it. No energy is lost to heat or sound.",
+      "checkText": "In an elastic collision, kinetic energy is...",
+      "checkOptions": [
+        { "text": "The same before and after", "isCorrect": true },
+        { "text": "Always lost as heat", "isCorrect": false },
+        { "text": "Doubled after the collision", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-inelastic-collision",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "Inelastic collisions lose energy",
+      "body": "In an inelastic collision, unlike an [[phys-elastic-collision|elastic collision]], some kinetic energy is converted into other forms like heat and sound, so total kinetic energy after is less than before.",
+      "checkText": "In an inelastic collision, some kinetic energy is...",
+      "checkOptions": [
+        { "text": "Converted into heat and sound", "isCorrect": true },
+        { "text": "Always exactly conserved", "isCorrect": false },
+        { "text": "Turned into extra momentum", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-impulse-def",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "Impulse: a change in momentum",
+      "body": "Impulse is the change in an object's [[phys-momentum-def|momentum]]. It's calculated as final momentum minus initial momentum: impulse = mv - mu.",
+      "checkText": "Impulse is defined as the...",
+      "checkOptions": [
+        { "text": "Change in an object's momentum", "isCorrect": true },
+        { "text": "Total momentum of a system", "isCorrect": false },
+        { "text": "Speed of an object", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-impulse-2d",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "Change in momentum when direction changes",
+      "body": "When an object changes direction, not just speed, its [[phys-impulse-def|change in momentum]] can be found by drawing the initial and final velocity vectors and using geometry.",
+      "checkText": "To find a change in momentum when direction also changes, you can use...",
+      "checkOptions": [
+        { "text": "Vector diagrams and geometry", "isCorrect": true },
+        { "text": "Only simple subtraction of speeds", "isCorrect": false },
+        { "text": "The colour of the object", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-impulse-force-time",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "Impulse from force and time",
+      "body": "From Newton's second law, [[phys-impulse-def|impulse]] also equals net force multiplied by the time it acts: impulse = F x t.",
+      "checkText": "Impulse can be calculated as net force multiplied by...",
+      "checkOptions": [
+        { "text": "The time the force acts for", "isCorrect": true },
+        { "text": "The object's mass", "isCorrect": false },
+        { "text": "The distance travelled", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-time-force-tradeoff",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "Why airbags make crashes safer",
+      "body": "For the same [[phys-impulse-force-time|impulse]], spreading the change in momentum over a longer time means a smaller force is needed. This is why airbags and soft landings reduce injury.",
+      "checkText": "For the same change in momentum, a longer stopping time results in...",
+      "checkOptions": [
+        { "text": "A smaller force", "isCorrect": true },
+        { "text": "A bigger force", "isCorrect": false },
+        { "text": "No change in force", "isCorrect": false }
+      ]
+    },
+    {
+      "slug": "phys-impulse-graph-area",
+      "subtopicName": "Momentum, energy and simple systems",
+      "heading": "Reading impulse from a graph",
+      "body": "When force changes during a collision, the total [[phys-impulse-def|impulse]] equals the area under a force-versus-time graph.",
+      "checkText": "On a force-versus-time graph, the total impulse is equal to...",
+      "checkOptions": [
+        { "text": "The area under the graph", "isCorrect": true },
+        { "text": "The highest point on the graph", "isCorrect": false },
+        { "text": "The length of the time axis only", "isCorrect": false }
+      ]
+    }
+  ]
+}
