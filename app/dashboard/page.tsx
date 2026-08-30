@@ -167,6 +167,22 @@ export default async function DashboardPage() {
         }
         workbook={
           <div className="flex flex-col gap-10">
+            <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900">
+              <div>
+                <h2 className="font-medium text-neutral-900 dark:text-neutral-100">
+                  Everything, one map
+                </h2>
+                <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                  Every concept across every subject, in a single connected map.
+                </p>
+              </div>
+              <Link
+                href="/learn/map"
+                className="rounded-md bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
+              >
+                Open Map
+              </Link>
+            </div>
             {subjects
               .map((subject) => ({
                 subject,
