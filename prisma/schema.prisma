@@ -30,27 +30,29 @@ model Subject {
 }
 
 model Topic {
-  id                String     @id @default(cuid())
+  id                String       @id @default(cuid())
   subjectId         String
-  subject           Subject    @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  subject           Subject      @relation(fields: [subjectId], references: [id], onDelete: Cascade)
   name              String
   syllabusReference String?
-  order             Int        @default(0)
+  order             Int          @default(0)
   subtopics         Subtopic[]
   questions         Question[]
   masteries         Mastery[]
+  learnChunks       LearnChunk[]
 
   @@unique([subjectId, name])
 }
 
 model Subtopic {
-  id        String     @id @default(cuid())
-  topicId   String
-  topic     Topic      @relation(fields: [topicId], references: [id], onDelete: Cascade)
-  name      String
-  order     Int        @default(0)
-  questions Question[]
-  masteries Mastery[]
+  id          String       @id @default(cuid())
+  topicId     String
+  topic       Topic        @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  name        String
+  order       Int          @default(0)
+  questions   Question[]
+  masteries   Mastery[]
+  learnChunks LearnChunk[]
 
   @@unique([topicId, name])
 }
@@ -168,4 +170,47 @@ model Mastery {
   updatedAt              DateTime  @updatedAt
 
   @@unique([userId, topicId])
+}
+
+// A short, plain-language reading passage on one small idea within a topic
+// — the "interactive textbook" side of the app, separate from the graded
+// practice/mastery/FSRS loop. Read the passage, then answer one immediate
+// comprehension check (not a recall test — the answer is right there in
+// what was just read) before moving to the next chunk.
+model LearnChunk {
+  id          String              @id @default(cuid())
+  topicId     String
+  topic       Topic               @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  subtopicId  String?
+  subtopic    Subtopic?           @relation(fields: [subtopicId], references: [id], onDelete: SetNull)
+  order       Int                 @default(0)
+  heading     String
+  body        String
+  checkText   String
+  checkOptions LearnCheckOption[]
+  progress    LearnProgress[]
+  createdAt   DateTime            @default(now())
+
+  @@unique([topicId, order])
+}
+
+model LearnCheckOption {
+  id        String     @id @default(cuid())
+  chunkId   String
+  chunk     LearnChunk @relation(fields: [chunkId], references: [id], onDelete: Cascade)
+  text      String
+  isCorrect Boolean    @default(false)
+  order     Int        @default(0)
+}
+
+// Tracks which chunks a user has read through, so a "Learn" session can
+// resume where it left off and pick up on any device.
+model LearnProgress {
+  id          String     @id @default(cuid())
+  userId      String
+  chunkId     String
+  chunk       LearnChunk @relation(fields: [chunkId], references: [id], onDelete: Cascade)
+  completedAt DateTime   @default(now())
+
+  @@unique([userId, chunkId])
 }

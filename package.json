@@ -14,6 +14,7 @@
     "db:seed": "tsx prisma/seed.ts",
     "db:import": "tsx prisma/import-questions.ts",
     "db:import-scaffolds": "tsx prisma/import-scaffolds.ts",
+    "db:import-learn": "tsx prisma/import-learn-chunks.ts",
     "db:studio": "prisma studio"
   },
   "dependencies": {

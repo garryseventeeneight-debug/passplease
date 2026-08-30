@@ -28,6 +28,12 @@ export default async function DashboardPage() {
   const masteries = await db.mastery.findMany({ where: { userId } });
   const masteryByTopic = new Map(masteries.map((m) => [m.topicId, m]));
 
+  const learnTopics = await db.learnChunk.findMany({
+    distinct: ["topicId"],
+    select: { topicId: true },
+  });
+  const topicsWithLearnContent = new Set(learnTopics.map((t) => t.topicId));
+
   const attempts = await db.attempt.findMany({
     where: { userId },
     select: { correct: true, timestamp: true },
@@ -115,6 +121,7 @@ export default async function DashboardPage() {
               mcqScore: m?.mcqScore ?? null,
               masteryScore: m?.masteryScore ?? null,
               subtopics: topic.subtopics.map((s) => ({ id: s.id, name: s.name })),
+              hasLearnContent: topicsWithLearnContent.has(topic.id),
             };
           });
           return (

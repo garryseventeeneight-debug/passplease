@@ -7,6 +7,7 @@ export interface TopicRow {
   mcqScore: number | null;
   masteryScore: number | null;
   subtopics: { id: string; name: string }[];
+  hasLearnContent: boolean;
 }
 
 export function MasteryTable({ subjectSlug, rows }: { subjectSlug: string; rows: TopicRow[] }) {
@@ -32,6 +33,14 @@ export function MasteryTable({ subjectSlug, rows }: { subjectSlug: string; rows:
                   <Link href={`/practice/${subjectSlug}?topic=${row.topicId}`} className="hover:underline">
                     {row.topicName}
                   </Link>
+                  {row.hasLearnContent && (
+                    <Link
+                      href={`/learn/${subjectSlug}/${row.topicId}`}
+                      className="ml-2 rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 hover:underline dark:bg-blue-900/40 dark:text-blue-300"
+                    >
+                      Learn
+                    </Link>
+                  )}
                   {row.subtopics.length > 0 && (
                     <details className="mt-1">
                       <summary className="cursor-pointer text-xs text-neutral-500 hover:underline dark:text-neutral-400">

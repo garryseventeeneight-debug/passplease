@@ -1,0 +1,77 @@
+{
+  "topicName": "Reactive Chemistry",
+  "chunks": [
+    {
+      "subtopicName": "Reactivity of metals",
+      "order": 0,
+      "heading": "What makes a metal \"reactive\"?",
+      "body": "Metals react by losing electrons to form positive ions. The more easily a metal gives up its electrons, the more reactive it is. Chemists rank metals from most to least willing to react like this in the \"reactivity series\" — a metal near the top (like potassium) reacts vigorously with water and acids, while one near the bottom (like gold) barely reacts with anything at all.",
+      "checkText": "According to this explanation, a highly reactive metal is one that...",
+      "checkOptions": [
+        { "text": "Holds onto its electrons very tightly", "isCorrect": false },
+        { "text": "Loses electrons very easily", "isCorrect": true },
+        { "text": "Has no electrons to lose", "isCorrect": false }
+      ]
+    },
+    {
+      "subtopicName": "Reactivity of metals",
+      "order": 1,
+      "heading": "Displacement reactions",
+      "body": "Because more reactive metals \"want\" to lose electrons more than less reactive ones, a more reactive metal can push a less reactive metal out of a compound and take its place. For example, zinc metal added to copper sulfate solution produces zinc sulfate and copper metal — zinc is more reactive than copper, so it displaces the copper and takes its spot in the compound, leaving the copper behind as a free metal.",
+      "checkText": "In a displacement reaction, which metal ends up produced as the free element?",
+      "checkOptions": [
+        { "text": "The more reactive metal", "isCorrect": false },
+        { "text": "The less reactive metal", "isCorrect": true },
+        { "text": "Neither — they swap places equally", "isCorrect": false }
+      ]
+    },
+    {
+      "subtopicName": "Rates of reaction",
+      "order": 2,
+      "heading": "What controls how fast a reaction goes?",
+      "body": "For a reaction to happen, particles have to collide with enough energy. Anything that increases how often successful collisions happen speeds the reaction up. Raising the concentration or pressure packs more particles into the same space, so they bump into each other more often. Raising the temperature makes particles move faster, so collisions happen more often and hit harder. Crushing a solid into powder exposes far more surface for other particles to collide with.",
+      "checkText": "Based on this, why does crushing a solid into powder before a reaction usually speed it up?",
+      "checkOptions": [
+        { "text": "It removes the need for collisions altogether", "isCorrect": false },
+        { "text": "It increases the surface area exposed for collisions", "isCorrect": true },
+        { "text": "It cools the reaction down", "isCorrect": false }
+      ]
+    },
+    {
+      "subtopicName": "Rates of reaction",
+      "order": 3,
+      "heading": "Catalysts — a shortcut, not a cheat",
+      "body": "A catalyst speeds up a reaction by offering an alternative pathway that needs less energy to get started, without being used up itself. It comes out the other end of the reaction completely unchanged, ready to do the same job again. Because it doesn't change how much energy the reactants or products actually have, a catalyst speeds up how fast a reaction happens, but not how much energy is released or absorbed overall.",
+      "checkText": "Does a catalyst get used up in a reaction?",
+      "checkOptions": [
+        { "text": "Yes, it's fully consumed", "isCorrect": false },
+        { "text": "No, it comes out unchanged at the end", "isCorrect": true },
+        { "text": "It's used up but at half the original amount", "isCorrect": false }
+      ]
+    },
+    {
+      "subtopicName": "Enthalpy and Hess's Law",
+      "order": 4,
+      "heading": "Energy in and energy out",
+      "body": "Every reaction either releases or absorbs heat energy. An exothermic reaction releases heat to its surroundings — the products end up holding less stored (chemical) energy than the reactants did, and this shows up as a negative enthalpy change (ΔH). An endothermic reaction absorbs heat from its surroundings instead — the products end up holding more stored energy than the reactants, giving a positive ΔH.",
+      "checkText": "If a reaction has a negative ΔH, what does that tell you?",
+      "checkOptions": [
+        { "text": "The reaction absorbed heat from the surroundings", "isCorrect": false },
+        { "text": "The reaction released heat to the surroundings", "isCorrect": true },
+        { "text": "No heat was exchanged at all", "isCorrect": false }
+      ]
+    },
+    {
+      "subtopicName": "Enthalpy and Hess's Law",
+      "order": 5,
+      "heading": "Hess's Law, the short version",
+      "body": "Hess's Law says the total energy change for a reaction only depends on where you start (the reactants) and where you end up (the products) — not on whatever path or number of steps you took to get there. This is just energy conservation at work. It's useful because it means you can work out an enthalpy change you can't measure directly, by adding up the enthalpy changes of a series of steps that get you to the same overall reaction.",
+      "checkText": "Hess's Law says the total energy change for a reaction depends on...",
+      "checkOptions": [
+        { "text": "Only the starting reactants and final products, not the route taken", "isCorrect": true },
+        { "text": "How many steps the reaction is broken into", "isCorrect": false },
+        { "text": "How fast the reaction occurs", "isCorrect": false }
+      ]
+    }
+  ]
+}
