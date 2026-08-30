@@ -30,9 +30,10 @@ export default async function DashboardPage() {
 
   const learnTopics = await db.learnChunk.findMany({
     distinct: ["topicId"],
-    select: { topicId: true },
+    select: { topicId: true, topic: { select: { subjectId: true } } },
   });
   const topicsWithLearnContent = new Set(learnTopics.map((t) => t.topicId));
+  const subjectIdsWithLearnContent = new Set(learnTopics.map((t) => t.topic.subjectId));
 
   const subjectsWithContent = await db.question.findMany({
     where: { isTestFixture: false, isScaffold: false },
@@ -138,6 +139,14 @@ export default async function DashboardPage() {
                   {subject.name}
                 </h2>
                 <div className="flex shrink-0 gap-2">
+                  {subjectIdsWithLearnContent.has(subject.id) && (
+                    <Link
+                      href={`/learn/${subject.slug}/map`}
+                      className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+                    >
+                      Concept Map
+                    </Link>
+                  )}
                   {subjectIdsWithContent.has(subject.id) && (
                     <Link
                       href={`/aptitude/${subject.slug}`}
