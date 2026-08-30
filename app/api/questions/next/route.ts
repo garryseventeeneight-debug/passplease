@@ -89,7 +89,7 @@ export async function GET(request: NextRequest) {
         include: {
           subject: { select: { name: true } },
           topic: { select: { name: true } },
-          options: { select: { id: true, text: true, order: true } },
+          options: { select: { id: true, text: true, order: true }, orderBy: { order: "asc" } },
         },
       });
       return NextResponse.json({
@@ -104,9 +104,10 @@ export async function GET(request: NextRequest) {
           answerVerified: full.answerVerified,
           imageData: full.imageData,
           isScaffold: true,
-          options: full.options
-            .map((o) => ({ id: o.id, text: o.text }))
-            .sort(() => Math.random() - 0.5),
+          // Kept in stored order, not shuffled — an explanation that says
+          // "option C is wrong because..." would otherwise stop matching
+          // whichever option actually ends up under letter C.
+          options: full.options.map((o) => ({ id: o.id, text: o.text })),
         },
       });
     }
@@ -141,7 +142,7 @@ export async function GET(request: NextRequest) {
     include: {
       subject: { select: { name: true } },
       topic: { select: { name: true } },
-      options: { select: { id: true, text: true, order: true } },
+      options: { select: { id: true, text: true, order: true }, orderBy: { order: "asc" } },
     },
   });
 
@@ -157,9 +158,10 @@ export async function GET(request: NextRequest) {
       answerVerified: full.answerVerified,
       imageData: full.imageData,
       isScaffold: false,
-      options: full.options
-        .map((o) => ({ id: o.id, text: o.text }))
-        .sort(() => Math.random() - 0.5),
+      // Kept in stored order, not shuffled — see the scaffold branch above
+      // for why: a stored explanation referencing "option C" would stop
+      // matching reality if C's contents moved around on every fetch.
+      options: full.options.map((o) => ({ id: o.id, text: o.text })),
     },
   });
 }

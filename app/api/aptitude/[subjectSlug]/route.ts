@@ -66,7 +66,7 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
     where: { id: { in: pickedIds } },
     include: {
       topic: { select: { id: true, name: true } },
-      options: { select: { id: true, text: true, order: true } },
+      options: { select: { id: true, text: true, order: true }, orderBy: { order: "asc" } },
     },
   });
   const byId = new Map(full.map((q) => [q.id, q]));
@@ -83,9 +83,10 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
         topicName: q.topic.name,
         difficulty: q.difficulty,
         imageData: q.imageData,
-        options: q.options
-          .map((o) => ({ id: o.id, text: o.text }))
-          .sort(() => Math.random() - 0.5),
+        // Kept in stored order, not shuffled — a stored explanation
+        // referencing "option C" needs C to actually be the same option
+        // it was written about.
+        options: q.options.map((o) => ({ id: o.id, text: o.text })),
       })),
   });
 }
