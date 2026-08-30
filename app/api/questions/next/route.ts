@@ -49,7 +49,22 @@ export async function GET(request: NextRequest) {
     topicAccuracy.set(topicId, stat.correct / stat.total);
   }
 
-  const picked = pickNextQuestion(questions, topicAccuracy, { excludeId });
+  // Spaced repetition: a question that's actually due for review takes
+  // priority over the usual weak-topic pool, same as a real SRS queue.
+  const dueCards = await db.reviewCard.findMany({
+    where: {
+      userId: LOCAL_USER_ID,
+      due: { lte: new Date() },
+      question: { id: { in: questions.map((q) => q.id) } },
+    },
+    select: { questionId: true },
+  });
+  const duePool =
+    dueCards.length > 0
+      ? questions.filter((q) => dueCards.some((c) => c.questionId === q.id))
+      : null;
+
+  const picked = pickNextQuestion(duePool ?? questions, topicAccuracy, { excludeId });
   if (!picked) {
     return NextResponse.json({ question: null });
   }
@@ -73,6 +88,7 @@ export async function GET(request: NextRequest) {
       source: full.source,
       isAiGenerated: full.isAiGenerated,
       answerVerified: full.answerVerified,
+      imageData: full.imageData,
       options: full.options
         .map((o) => ({ id: o.id, text: o.text }))
         .sort(() => Math.random() - 0.5),

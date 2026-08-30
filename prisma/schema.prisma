@@ -72,8 +72,14 @@ model Question {
   // real past-paper content either way — see lib/prisma-adapter.ts sibling
   // note in import-questions.ts for the distinction from isAiGenerated).
   answerVerified   Boolean        @default(true)
+  // A rendered PDF page (data:image/jpeg;base64,...) for questions that
+  // depend on a real diagram/graph/table — a text description loses
+  // information a student needs (e.g. reading a value off a graph), so
+  // these are stored as the genuine source image instead of prose.
+  imageData        String?
   options          AnswerOption[]
   attempts         Attempt[]
+  reviewCards      ReviewCard[]
   createdAt        DateTime       @default(now())
 }
 
@@ -95,10 +101,37 @@ model Attempt {
   selectedOptionId String?
   selectedOption   AnswerOption? @relation(fields: [selectedOptionId], references: [id], onDelete: SetNull)
   correct          Boolean
+  // Explicitly said "I don't know" instead of guessing — distinct from a
+  // wrong guess so mastery/FSRS can tell an honest gap from a mistake.
+  dontKnow         Boolean       @default(false)
   responseTimeMs   Int?
   timestamp        DateTime      @default(now())
 
   @@index([userId, questionId])
+}
+
+// One FSRS card per (user, question) — drives spaced-repetition scheduling.
+// Field names/semantics follow the FSRS algorithm (ts-fsrs) directly so the
+// stored state maps 1:1 onto its Card type.
+model ReviewCard {
+  id            String    @id @default(cuid())
+  userId        String
+  questionId    String
+  question      Question  @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  due           DateTime  @default(now())
+  stability     Float     @default(0)
+  difficulty    Float     @default(0)
+  elapsedDays   Float     @default(0)
+  scheduledDays Float     @default(0)
+  reps          Int       @default(0)
+  lapses        Int       @default(0)
+  state         Int       @default(0)
+  learningSteps Int       @default(0)
+  lastReview    DateTime?
+  updatedAt     DateTime  @updatedAt
+
+  @@unique([userId, questionId])
+  @@index([userId, due])
 }
 
 model Mastery {

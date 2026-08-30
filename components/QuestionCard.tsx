@@ -16,6 +16,7 @@ export interface PracticeQuestion {
   source: string;
   isAiGenerated: boolean;
   answerVerified: boolean;
+  imageData: string | null;
   options: QuestionOption[];
 }
 
@@ -26,6 +27,7 @@ export function QuestionCard({
   correctOptionId,
   onSelect,
   onSubmit,
+  onDontKnow,
 }: {
   question: PracticeQuestion;
   selectedOptionId: string | null;
@@ -33,6 +35,7 @@ export function QuestionCard({
   correctOptionId: string | null;
   onSelect: (optionId: string) => void;
   onSubmit: () => void;
+  onDontKnow: () => void;
 }) {
   return (
     <div className="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
@@ -60,6 +63,16 @@ export function QuestionCard({
       <p className="mb-5 text-lg font-medium text-neutral-900 dark:text-neutral-100">
         {question.questionText}
       </p>
+
+      {question.imageData && (
+        // Per-question data: URIs from the question bank, not a static asset next/image can optimize.
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={question.imageData}
+          alt="Diagram for this question"
+          className="mb-5 max-w-full rounded-md border border-neutral-200 dark:border-neutral-700"
+        />
+      )}
 
       <div className="flex flex-col gap-2">
         {question.options.map((option, i) => {
@@ -95,14 +108,23 @@ export function QuestionCard({
       </div>
 
       {!disabled && (
-        <button
-          type="button"
-          onClick={onSubmit}
-          disabled={!selectedOptionId}
-          className="mt-5 rounded-md bg-neutral-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-40 dark:bg-neutral-100 dark:text-neutral-900"
-        >
-          Submit
-        </button>
+        <div className="mt-5 flex gap-3">
+          <button
+            type="button"
+            onClick={onSubmit}
+            disabled={!selectedOptionId}
+            className="rounded-md bg-neutral-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-40 dark:bg-neutral-100 dark:text-neutral-900"
+          >
+            Submit
+          </button>
+          <button
+            type="button"
+            onClick={onDontKnow}
+            className="rounded-md border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-600 hover:bg-neutral-50 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+          >
+            Don&apos;t know
+          </button>
+        </div>
       )}
     </div>
   );

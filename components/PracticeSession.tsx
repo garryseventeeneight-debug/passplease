@@ -57,14 +57,14 @@ export function PracticeSession({
     applyQuestion(next);
   }
 
-  async function submit() {
-    if (!question || !selectedOptionId) return;
+  async function recordAttempt(body: { selectedOptionId?: string; dontKnow?: boolean }) {
+    if (!question) return;
     const res = await fetch("/api/attempts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         questionId: question.id,
-        selectedOptionId,
+        ...body,
         responseTimeMs: Date.now() - startedAt.current,
       }),
     });
@@ -83,6 +83,15 @@ export function PracticeSession({
       answerVerified: data.answerVerified,
       updatedMasteryScore: data.updatedMasteryScore,
     });
+  }
+
+  function submit() {
+    if (!selectedOptionId) return;
+    return recordAttempt({ selectedOptionId });
+  }
+
+  function submitDontKnow() {
+    return recordAttempt({ dontKnow: true });
   }
 
   if (question === undefined) {
@@ -107,6 +116,7 @@ export function PracticeSession({
         correctOptionId={correctOptionId}
         onSelect={(id) => !feedback && setSelectedOptionId(id)}
         onSubmit={submit}
+        onDontKnow={submitDontKnow}
       />
       {feedback && (
         <AnswerFeedback feedback={feedback} onNext={() => goToNextQuestion(question.id)} />
