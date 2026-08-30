@@ -1,9 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDb } from "@/lib/db";
-import { ASSORTED_SLUG, LOCAL_USER_ID } from "@/lib/constants";
+import { auth } from "@/lib/auth";
+import { ASSORTED_SLUG } from "@/lib/constants";
 import { pickNextQuestion } from "@/lib/selection";
 
 export async function GET(request: NextRequest) {
+  const session = await auth();
+  if (!session) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  const userId = session.user.id;
+
   const subjectSlug = request.nextUrl.searchParams.get("subject");
   const excludeId = request.nextUrl.searchParams.get("exclude") ?? undefined;
 
@@ -33,7 +38,7 @@ export async function GET(request: NextRequest) {
   }
 
   const attempts = await db.attempt.findMany({
-    where: { userId: LOCAL_USER_ID, question: subjectId ? { subjectId } : {} },
+    where: { userId, question: subjectId ? { subjectId } : {} },
     select: { correct: true, question: { select: { topicId: true } } },
   });
 
@@ -53,7 +58,7 @@ export async function GET(request: NextRequest) {
   // priority over the usual weak-topic pool, same as a real SRS queue.
   const dueCards = await db.reviewCard.findMany({
     where: {
-      userId: LOCAL_USER_ID,
+      userId,
       due: { lte: new Date() },
       question: { id: { in: questions.map((q) => q.id) } },
     },

@@ -1,10 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDb } from "@/lib/db";
-import { LOCAL_USER_ID } from "@/lib/constants";
+import { auth } from "@/lib/auth";
 import { computeMcqScore } from "@/lib/mastery";
 import { nextReviewState, type ReviewCardState } from "@/lib/fsrs";
 
 export async function POST(request: NextRequest) {
+  const session = await auth();
+  if (!session) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  const userId = session.user.id;
+
   const body = await request.json();
   const { questionId, selectedOptionId, dontKnow, responseTimeMs } = body as {
     questionId?: string;
@@ -33,7 +37,7 @@ export async function POST(request: NextRequest) {
       },
     }),
     db.reviewCard.findUnique({
-      where: { userId_questionId: { userId: LOCAL_USER_ID, questionId } },
+      where: { userId_questionId: { userId, questionId } },
     }),
   ]);
   if (!question) {
@@ -76,7 +80,7 @@ export async function POST(request: NextRequest) {
   const [, priorAttempts] = await Promise.all([
     db.attempt.create({
       data: {
-        userId: LOCAL_USER_ID,
+        userId,
         questionId,
         selectedOptionId: dontKnow ? null : selectedOptionId,
         correct,
@@ -85,24 +89,24 @@ export async function POST(request: NextRequest) {
       },
     }),
     db.attempt.findMany({
-      where: { userId: LOCAL_USER_ID, question: { topicId: question.topicId } },
+      where: { userId, question: { topicId: question.topicId } },
       orderBy: { timestamp: "desc" },
       select: { correct: true },
       take: 20,
     }),
     db.reviewCard.upsert({
-      where: { userId_questionId: { userId: LOCAL_USER_ID, questionId } },
+      where: { userId_questionId: { userId, questionId } },
       update: nextState,
-      create: { userId: LOCAL_USER_ID, questionId, ...nextState },
+      create: { userId, questionId, ...nextState },
     }),
   ]);
   const mcqScore = computeMcqScore([correct, ...priorAttempts.map((a) => a.correct)]);
 
   await db.mastery.upsert({
-    where: { userId_topicId: { userId: LOCAL_USER_ID, topicId: question.topicId } },
+    where: { userId_topicId: { userId, topicId: question.topicId } },
     update: { mcqScore, masteryScore: mcqScore },
     create: {
-      userId: LOCAL_USER_ID,
+      userId,
       subjectId: question.subjectId,
       topicId: question.topicId,
       mcqScore,

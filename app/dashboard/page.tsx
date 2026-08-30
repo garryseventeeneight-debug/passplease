@@ -1,14 +1,19 @@
 import Link from "next/link";
 import { getDb } from "@/lib/db";
-import { ASSORTED_SLUG, LOCAL_USER_ID } from "@/lib/constants";
+import { auth } from "@/lib/auth";
+import { ASSORTED_SLUG } from "@/lib/constants";
 import { computeStreak } from "@/lib/streak";
 import { MasteryTable } from "@/components/MasteryTable";
+import { SignOutButton } from "@/components/SignOutButton";
 
 // Reads live attempt/mastery data on every request — must not be
 // statically prerendered at build time.
 export const dynamic = "force-dynamic";
 
 export default async function DashboardPage() {
+  const session = await auth();
+  const userId = session!.user.id;
+
   const db = await getDb();
   const subjects = await db.subject.findMany({
     orderBy: { name: "asc" },
@@ -17,11 +22,11 @@ export default async function DashboardPage() {
     },
   });
 
-  const masteries = await db.mastery.findMany({ where: { userId: LOCAL_USER_ID } });
+  const masteries = await db.mastery.findMany({ where: { userId } });
   const masteryByTopic = new Map(masteries.map((m) => [m.topicId, m]));
 
   const attempts = await db.attempt.findMany({
-    where: { userId: LOCAL_USER_ID },
+    where: { userId },
     select: { correct: true, timestamp: true },
   });
 
@@ -44,9 +49,15 @@ export default async function DashboardPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-10">
-      <h1 className="mb-6 text-2xl font-semibold text-neutral-900 dark:text-neutral-100">
-        HSC Dashboard
-      </h1>
+      <div className="mb-6 flex items-center justify-between">
+        <h1 className="text-2xl font-semibold text-neutral-900 dark:text-neutral-100">
+          HSC Dashboard
+        </h1>
+        <div className="flex items-center gap-3 text-sm text-neutral-500 dark:text-neutral-400">
+          <span>{session!.user.email}</span>
+          <SignOutButton />
+        </div>
+      </div>
 
       <div className="mb-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
         <Stat label="Questions completed" value={String(totalAttempts)} />
